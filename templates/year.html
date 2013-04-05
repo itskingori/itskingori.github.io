@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         
         <!-- +++ SITE INFO +++ -->
-        <title>@site_name</title>
+        <title>@year @title</title>
         <base href="@site_scheme@site_base_url" />
         <meta name="author" content="@author"/>
         
@@ -48,7 +48,11 @@
         
             <div id="content">
 
-                :post-home
+                <h2>Published in @year</h2>
+
+                <div class="post-archives">
+                    :archive-by-year
+                </div
 
             </div>
             

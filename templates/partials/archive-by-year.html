@@ -1,0 +1,8 @@
+foreach $children do
+  <h3 class="post-archive-month"><a href="@permalink">@month</a></h3>
+  if $children do
+    foreach $children do
+      <p><a href="@permalink">@title</a> / <span>@date</span></p>
+    endforeach
+  endif
+endforeach

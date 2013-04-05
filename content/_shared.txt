@@ -1,5 +1,9 @@
-name: King'ori J. Maina
+author: King'ori J. Maina
 -
 site_name: King'ori J. Maina
+-
+site_base_url: localhost/kingori.co/
+-
+site_scheme: http://
 -
 email: j@kingori.co

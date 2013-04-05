@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         
         <!-- +++ SITE INFO +++ -->
-        <title>@site_name</title>
+        <title>@title | @site_name</title>
         <base href="@site_scheme@site_base_url" />
         <meta name="author" content="@author"/>
         
@@ -46,11 +46,18 @@
 
             :header
         
-            <div id="content">
+            <div class="post" class="@type">
 
-                :post-home
+                <p class="post-date"><a href="@url">@date @month @year</a></p>
 
+                <h2><a href="@link">@title</a></h2>
+
+                <div class="post-content">
+                    @content
+                </div>
+                
             </div>
+             <!-- .post -->
             
             :footer
 

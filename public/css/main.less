@@ -4,15 +4,19 @@
 
 html,
 button,
+body,
 input,
 select,
 textarea {
-    color: #222;
+    color: @lightgrey;
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    background: white;
+    line-height: 1.8em;
+    font-size: 13px;
+    font-weight: 400; 
+    font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /*
@@ -82,13 +86,122 @@ textarea {
 }
 
 /* ==========================================================================
+   Less Stuff
+   ========================================================================== */
+
+@skyblue: #619ed1;
+@dirtyblue: #4a7aa3;
+@darkgrey: #343434;
+@lightgrey: #474747;
+@lightergrey: #DDD;
+@red: #C94B4B;
+@orange: #f77c0f;
+
+/* ==========================================================================
    My's custom styles
    ========================================================================== */
 
 
+#wrapper {
+    margin: 10px auto 200px auto;
+    padding: 15px;
+    padding-bottom: 3.0em;
+    max-width: 540px;
+}
 
+blockquote {
+    padding: 10px 10px 10px 15px;
+    border-left: 1px solid #DDD;
+    margin-left: 5px;
+}
 
+p, ul, ol, pre, article iframe, blockquote {
+    margin: 0;
+    margin-bottom: 1.0em;
+}
 
+header, footer {
+    padding: 10px 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+}
+
+h3 {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+header {
+    font-style: italic;
+    color: @lightergrey;
+    margin-bottom: 2em;
+    border-bottom: 1px solid @lightergrey;
+}
+
+header p {
+    font-style: italic;
+    color: @lightergrey;
+}
+
+footer {
+    border-top: 1px solid @lightergrey;
+}
+
+a, a:visited { 
+    color: @orange; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: @skyblue;
+    border-bottom: 1px solid;
+}
+
+#content {
+    margin-bottom: 1em;
+}
+
+.post {
+    margin-bottom: 3em;
+}
+
+.post-date {
+    margin-bottom: 0.5em;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.post-archives {
+    margin: 4em 0 2em 0;
+}
+
+.post-archives p {
+    padding-left: 10px;
+}
+
+.post-archive-month {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+}
 
 
 /* ==========================================================================
