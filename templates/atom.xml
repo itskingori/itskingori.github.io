@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title>King'ori.co @title</title> 
+<subtitle>King'ori.co Articles @title</subtitle>
+<link href="http://@base_url/" rel="self"/> 
+<updated>@updated</updated>
+<author> 
+    <name>@author</name>
+    <email>@email</email>
+</author>
+<id>@domain_name:@permalink</id>
+
+get "/articles" do
+    if $children do
+        foreach $children do
+            if $children do
+                foreach $children do
+                    if $children do
+                        foreach $children do
+                            <entry>
+                                <title>@title</title>
+                                <link href="http://@base_url/@permalink" />
+                                <id>@domain_name:@permalink</id>
+                                <updated>@updated</updated>
+                                <content>@content</content>
+                                <category term="articles"/>
+                                <author>
+                                    <name>@author</name>
+                                    <email>@email</email>
+                                </author>
+                            </entry>
+                        endforeach
+                    endif
+                endforeach
+            endif
+        endforeach
+    endif
+end
+
+</feed>
