@@ -1,0 +1,18 @@
+get "/articles" do
+    if $children do
+        foreach $children do
+            if $children do
+                foreach $children do
+
+                    <url>
+                        <loc>http://@base_url/@permalink</loc>
+                        <lastmod>@updated</lastmod>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.3</priority>
+                    </url>
+
+                endforeach
+            endif
+        endforeach
+    endif
+end
