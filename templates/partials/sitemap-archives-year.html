@@ -1,7 +1,7 @@
 get "/articles" do
     if $children do
         foreach $children do
-
+            <!-- archives/year (@year) -->
             <url>
                 <loc>http://@base_url/@permalink</loc>
                 <lastmod>@updated</lastmod>
