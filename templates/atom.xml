@@ -26,9 +26,11 @@ get "/articles" do
                                 <id>@domain_name:@permalink</id>
                                 <updated>@updated</updated>
                                 <content type="xhtml" xml:lang="en">
-                                    <![CDATA[
-                                        @content
-                                    ]]>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <![CDATA[
+                                            @content
+                                        ]]>
+                                    </div>
                                 </content>
                                 <category term="articles"/>
                                 <author>
