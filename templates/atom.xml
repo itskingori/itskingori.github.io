@@ -2,13 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>King'ori.co @title</title> 
 <subtitle>King'ori.co Articles @title</subtitle>
-<link href="http://@base_url/" rel="self"/> 
+<link href="http://@base_url/@permalink" rel="self" type="application/atom+xml"/>
+<link href="http://@base_url/" rel="alternate" type="text/html"/>
 <updated>@updated</updated>
 <author> 
     <name>@author</name>
     <email>@email</email>
+    <uri>http://@base_url/</uri>
 </author>
 <id>@domain_name:@permalink</id>
+<rights>© @current_year @site_name</rights>
 
 get "/articles" do
     if $children do
@@ -22,7 +25,11 @@ get "/articles" do
                                 <link href="http://@base_url/@permalink" />
                                 <id>@domain_name:@permalink</id>
                                 <updated>@updated</updated>
-                                <content>@content</content>
+                                <content type="xhtml" xml:lang="en">
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        @content
+                                    </div>
+                                </content>
                                 <category term="articles"/>
                                 <author>
                                     <name>@author</name>
