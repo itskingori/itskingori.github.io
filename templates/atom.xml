@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title>King'ori.co @title</title> 
-<subtitle>King'ori.co Articles @title</subtitle>
+<title>King'ori.co</title> 
+<subtitle>King'ori.co Articles</subtitle>
 <link href="http://@base_url/@permalink" rel="self" type="application/atom+xml"/>
 <link href="http://@base_url/" rel="alternate" type="text/html"/>
 <updated>@updated</updated>
@@ -22,18 +22,19 @@ get "/articles" do
                         foreach $children do
                             <entry>
                                 <title>@title</title>
-                                <link href="http://@base_url/@permalink" />
+                                <link rel="alternate" type="text/html" href="@link" />
                                 <id>@domain_name:@permalink</id>
                                 <updated>@updated</updated>
                                 <content type="xhtml" xml:lang="en">
-                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <![CDATA[
                                         @content
-                                    </div>
+                                    ]]>
                                 </content>
                                 <category term="articles"/>
                                 <author>
                                     <name>@author</name>
                                     <email>@email</email>
+                                    <uri>http://@base_url/</uri>
                                 </author>
                             </entry>
                         endforeach
