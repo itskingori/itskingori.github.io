@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        
+        :ascii
+                
+        <!-- +++ META +++ -->
+        <meta charset="utf-8">
+        <meta name="robots" content="INDEX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+        <!-- +++ SITE INFO +++ -->
+        <title>@title</title>
+        :meta
+        
+        <!-- +++ FAVICON & ICONS +++ -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        
+        <!-- +++ STYLESHEETS +++ -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet/less" href="css/main.less">
+        
+        <!-- +++ JAVASCRIPT +++ -->
+        <script type="text/javascript" src="js/libs/modernizr.custom.29636.js"></script>
+        <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+
+        <!-- +++ FONTS +++ -->
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans'>
+        
+        :google-analytics
+            
+    </head>
+    
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+
+            :header
+        
+            <div id="content">
+
+                <h2>@title</h2>
+
+                <div class="post-archives">
+                    if $children do
+                        foreach $children do
+                            if $children do
+                                foreach $children do
+                                    <h3 class="post-archive-month"><a href="@permalink">@month @year</a></h3>
+                                    if $children do
+                                        foreach $children do
+                                            <p><a href="@permalink">@title</a> / <span>@date</span></p>
+                                        endforeach
+                                    endif
+                                endforeach
+                            endif
+                        endforeach
+                    endif
+                </div
+
+            </div>
+            
+            :footer
+
+        </div>
+        <!-- #wrapper -->
+
+        <!-- jQuery: Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- jQuery: Grab Google CDN's jQuery Migrate, with a protocol relative URL; fall back to local if necessary -->
+        <script src="//code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-migrate-1.1.1.min.js"><\/script>')</script>
+
+        <!-- SCRIPTS -->
+        <script src="js/debug.min.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

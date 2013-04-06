@@ -1,22 +1,26 @@
-foreach $root do
+get "/articles" do
 	if $children do
 		foreach $children do
 			if $children do
 				foreach $children do
-			  		<div class="post" class="@type">
+					if $children do
+						foreach $children do
+					  		<div class="post" class="@type">
 
-		                <p class="post-date"><a href="@url">@date @month @year</a></p>
+				                <p class="post-date"><a href="@url">@date @month @year</a></p>
 
-		                <h2><a href="@link">@title</a></h2>
+				                <h2><a href="@link">@title</a></h2>
 
-		                <div class="post-content">
-		                    @content
-		                </div>
-		                
-		            </div>
-		             <!-- .post -->
+				                <div class="post-content">
+				                    @content
+				                </div>
+				                
+				            </div>
+				            <!-- .post -->
+		             	endforeach
+		  			endif
 		  		endforeach
 		  	endif
   		endforeach
   	endif
-endforeach
+end
