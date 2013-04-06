@@ -27,9 +27,7 @@ get "/articles" do
                                 <updated>@updated</updated>
                                 <content type="xhtml" xml:lang="en">
                                     <div xmlns="http://www.w3.org/1999/xhtml">
-                                        <![CDATA[
-                                            @content
-                                        ]]>
+                                        @content
                                     </div>
                                 </content>
                                 <category term="articles"/>
