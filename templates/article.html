@@ -44,7 +44,13 @@
 
                 <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("jS") }} {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
 
-                <h2><a href="{{ page.link }}">{{ page.title }}</a></h2>
+                <h2 class="post-title">
+                    {% if  page.type == 'own-post' %}
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    {% elseif page.type == 'linked-post' %}
+                        <a href="{{ page.link }}">{{ page.title }}</a>
+                    {% endif %}
+                </h2>
 
                 <div class="post-content">
                     {{ page.content }}

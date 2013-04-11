@@ -17,7 +17,13 @@
 
                                 <p class="post-date"><a href="{{ article.url }}">{{ article.published | date("jS") }} {{ article.published | date("F") }} {{ article.published | date("Y") }}</a></p>
 
-                                <h2 class="post-title"><a href="{{ article.link }}">{{ article.title }}</a></h2>
+                                <h2 class="post-title">
+                                    {% if  article.type == 'own-post' %}
+                                        <a href="{{ article.url }}">{{ article.title }}</a>
+                                    {% elseif article.type == 'linked-post' %}
+                                        <a href="{{ article.link }}">{{ article.title }}</a>
+                                    {% endif %}
+                                </h2>
 
                                 <div class="post-content">
                                     {{ article.content }}
