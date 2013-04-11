@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        
+        {% include 'partials/chunks/ascii.html' %}
+                
+        <!-- +++ META +++ -->
+        <meta charset="utf-8">
+        <meta name="robots" content="NOINDEX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+        <!-- +++ SITE INFO +++ -->
+        <title>{{ page.title }} ({{ page.code }}) | {{ page.site_name }}</title>
+        {% include 'partials/chunks/meta.html' %}
+        
+        <!-- +++ STYLESHEETS +++ -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet/less" href="css/main.less">
+        
+        <!-- +++ JAVASCRIPT +++ -->
+        <script type="text/javascript" src="js/libs/modernizr.custom.29636.js"></script>
+        <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+
+        <!-- +++ FONTS +++ -->
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans'>
+        
+        {% include 'partials/chunks/google-analytics.html' %}
+        
+    </head>
+    
+    <body>
+
+        {% include 'partials/chunks/chrome-frame.html' %}
+
+        <div id="wrapper">
+
+            <h1>{{ page.code }}</h1>
+            <h2>{{ page.message }}</h2>
+            <p>{{ page.description }}</p>
+            <p><a href="/">&larr; back to the beginning</a></p>
+
+        </div>
+        <!-- #wrapper -->
+
+        {% include 'partials/chunks/scripts-jquery.html' %}
+
+        <!-- SCRIPTS -->
+        <script src="js/debug.min.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
