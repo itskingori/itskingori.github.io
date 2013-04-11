@@ -10,7 +10,9 @@
             {% if year.children %}
                 {% for month in year.children %}
 
-                    <h3 class="post-archive-month"><a href="{{ month.permalink }}">{{ month.published | date("F") }} {{ month.published | date("Y") }}</a></h3>
+                    <h3 class="post-listing-month"><a href="{{ month.permalink }}">{{ month.published | date("F") }} {{ month.published | date("Y") }}</a></h3>
+
+                     <div class="post-listing-month-group">
 
                     {% if month.children %}
                         {% for article in month.children %}
@@ -19,6 +21,8 @@
 
                         {% endfor %}
                     {% endif %}
+
+                </div>
 
                 {% endfor %}
             {% endif %}
