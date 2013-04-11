@@ -1,5 +1,5 @@
 {% for article in page.children %}
     {% if article %}
-        <p><a href="{{ article.permalink }}">{{ article.title }}</a> / <span>{{ article.date }}</span></p>
+        <p><a href="{{ article.permalink }}">{{ article.title }}</a> / <span>{{ article.published | date("jS") }}</span></p>
     {% endif %}
 {% endfor %}

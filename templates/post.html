@@ -42,7 +42,7 @@
         
             <div class="post" class="{{ page.type }}">
 
-                <p class="post-date"><a href="{{ page.url }}">{{ page.date }} {{ page.month }} {{ page.year }}</a></p>
+                <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("jS") }} {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
 
                 <h2><a href="{{ page.link }}">{{ page.title }}</a></h2>
 

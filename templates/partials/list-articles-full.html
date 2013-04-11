@@ -15,7 +15,7 @@
 
                             <div class="post" class="{{ article.type }}">
 
-                                <p class="post-date"><a href="{{ article.url }}">{{ article.date }} {{ article.month }} {{ article.year }}</a></p>
+                                <p class="post-date"><a href="{{ article.url }}">{{ article.published | date("jS") }} {{ article.published | date("F") }} {{ article.published | date("Y") }}</a></p>
 
                                 <h2><a href="{{ article.link }}">{{ article.title }}</a></h2>
 

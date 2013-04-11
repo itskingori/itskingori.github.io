@@ -33,6 +33,7 @@
                                 <title>{{ article.title }}</title>
                                 <link rel="alternate" type="text/html" href="{{ article.link }}" />
                                 <id>{{ article.domain_name }}:{{ article.permalink }}</id>
+                                <published>{{ article.published | date("c")}}</published>
                                 <updated>{{ article.updated }}</updated>
                                 <content type="xhtml" xml:lang="en">
                                     <div xmlns="http://www.w3.org/1999/xhtml">

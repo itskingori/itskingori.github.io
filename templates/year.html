@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         
         <!-- +++ SITE INFO +++ -->
-        <title>{{ page.year }} {{ page.title }}  | {{ page.site_name }}</title>
+        <title>{{ page.published | date("Y") }} {{ page.title }}  | {{ page.site_name }}</title>
         {% include 'partials/chunks/meta.html' %}
         
         <!-- +++ STYLESHEETS +++ -->
@@ -42,7 +42,7 @@
         
             <div id="content">
 
-                <h2>Published in {{ page.year }}</h2>
+                <h2>Published in {{ page.published | date("Y") }}</h2>
 
                 <div class="post-archives">
                     {% include 'partials/archive-by-year.html' %}
