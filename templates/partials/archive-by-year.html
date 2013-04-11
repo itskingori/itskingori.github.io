@@ -1,8 +1,10 @@
-foreach $children do
-  <h3 class="post-archive-month"><a href="@permalink">@month</a></h3>
-  if $children do
-    foreach $children do
-      <p><a href="@permalink">@title</a> / <span>@date</span></p>
-    endforeach
-  endif
-endforeach
+{% for month in page.children %}
+    {% if month %}
+    <h3 class="post-archive-month"><a href="{{ month.permalink }}">{{ month.month }}</a></h3>
+
+        {% for article in month.children %}
+            <p><a href="{{ article.permalink }}">{{ article.title }}</a> / <span>{{ article.date }}</span></p>
+        {% endfor %}
+
+    {% endif %}
+{% endfor %}

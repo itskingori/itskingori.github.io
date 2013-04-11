@@ -1,3 +1,5 @@
-foreach $children do
-<p><a href="@permalink">@title</a> / <span>@date</span></p>
-endforeach
+{% for article in page.children %}
+    {% if article %}
+        <p><a href="{{ article.permalink }}">{{ article.title }}</a> / <span>{{ article.date }}</span></p>
+    {% endif %}
+{% endfor %}

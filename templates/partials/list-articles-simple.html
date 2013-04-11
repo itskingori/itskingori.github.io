@@ -1,0 +1,30 @@
+{# 'page' is '/' #}
+{% block context %}
+{% set page = get('/articles') %}
+
+    {# 'page' is '/articles' #}
+
+    {% if page.children %}
+        {% for year in page.children %}
+
+            {% if year.children %}
+                {% for month in year.children %}
+
+                    <h3 class="post-archive-month"><a href="{{ month.permalink }}">{{ month.month }} {{ month.year }}</a></h3>
+
+                    {% if month.children %}
+                        {% for article in month.children %}
+
+                            <p><a href="{{ article.permalink }}"> {{article.title }}</a> / <span>{{ article.date }}</span></p>
+
+                        {% endfor %}
+                    {% endif %}
+
+                {% endfor %}
+            {% endif %}
+
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}
+{# the page variable is set back to '/' #}

@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
 <title>King'ori.co</title> 
 <subtitle>King'ori.co Articles</subtitle>
-<link href="http://@base_url/@permalink" rel="self" type="application/atom+xml"/>
-<link href="http://@base_url/" rel="alternate" type="text/html"/>
-<updated>@updated</updated>
+<link href="http://{{ page.base_url }}/{{ page.permalink }}" rel="self" type="application/atom+xml"/>
+<link href="http://{{ page.base_url }}/" rel="alternate" type="text/html"/>
+<updated>{{ page.updated }}</updated>
 <author> 
-    <name>@author</name>
-    <email>@email</email>
-    <uri>http://@base_url/</uri>
+    <name>{{ page.author }}</name>
+    <email>{{ page.email }}</email>
+    <uri>http://{{ page.base_url }}/</uri>
 </author>
-<id>@domain_name:@permalink</id>
-<rights>© @current_year @site_name</rights>
+<id>{{ page.domain_name }}:{{ page.permalink }}</id>
+<rights>© {{ page.current_year }} {{ page.site_name }}</rights>
 
-get "/articles" do
-    if $children do
-        foreach $children do
-            if $children do
-                foreach $children do
-                    if $children do
-                        foreach $children do
+{# 'page' is '/' #}
+{% block context %}
+{% set page = get('/articles') %}
+
+    {# 'page' is '/articles' #}
+
+    {% if page.children %}
+        {% for year in page.children %}
+
+            {% if year.children %}
+                {% for month in year.children %}
+
+                    {% if month.children %}
+                        {% for article in month.children %}
+
                             <entry>
-                                <title>@title</title>
-                                <link rel="alternate" type="text/html" href="@link" />
-                                <id>@domain_name:@permalink</id>
-                                <updated>@updated</updated>
+                                <title>{{ article.title }}</title>
+                                <link rel="alternate" type="text/html" href="{{ article.link }}" />
+                                <id>{{ article.domain_name }}:{{ article.permalink }}</id>
+                                <updated>{{ article.updated }}</updated>
                                 <content type="xhtml" xml:lang="en">
                                     <div xmlns="http://www.w3.org/1999/xhtml">
-                                        @content
+                                        {{ article.content }}
                                     </div>
                                 </content>
                                 <category term="articles"/>
                                 <author>
-                                    <name>@author</name>
-                                    <email>@email</email>
-                                    <uri>http://@base_url/</uri>
+                                    <name>{{ article.author }}</name>
+                                    <email>{{ article.email }}</email>
+                                    <uri>http://{{ article.base_url }}/</uri>
                                 </author>
                             </entry>
-                        endforeach
-                    endif
-                endforeach
-            endif
-        endforeach
-    endif
-end
+
+                        {% endfor %}
+                    {% endif %}
+
+                {% endfor %}
+            {% endif %}
+
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}
+{# the page variable is set back to '/' #}
 
 </feed>

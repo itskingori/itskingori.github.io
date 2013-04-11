@@ -6,7 +6,7 @@
 
     <head>
         
-        :ascii
+        {% include 'partials/chunks/ascii.html' %}
                 
         <!-- +++ META +++ -->
         <meta charset="utf-8">
@@ -14,21 +14,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         
         <!-- +++ SITE INFO +++ -->
-        <title>@title</title>
-        :meta
-        
-        <!-- +++ FAVICON & ICONS +++ -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-        <!-- +++ ATOM FEED +++ -->
-        <link href="http://feeds.feedburner.com/kingorico" type="application/atom+xml" rel="alternate" title="King'ori.co Articles Feed">
+        <title>{{ page.title }} |  {{ page.site_name }}</title>
+        {% include 'partials/chunks/meta.html' %}
         
         <!-- +++ STYLESHEETS +++ -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet/less" href="css/main.less">
-
-        <!-- +++ SITEMAP +++ -->
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
         
         <!-- +++ JAVASCRIPT +++ -->
         <script type="text/javascript" src="js/libs/modernizr.custom.29636.js"></script>
@@ -37,57 +28,36 @@
         <!-- +++ FONTS +++ -->
         <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans'>
         
-        :google-analytics
+        {% include 'partials/chunks/google-analytics.html' %}
             
     </head>
     
     <body>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        {% include 'partials/chunks/chrome-frame.html' %}
 
         <div id="wrapper">
 
-            :header
+            {% include 'partials/chunks/header.html' %}
         
             <div id="content">
 
-                <h2>@title</h2>
+                <h2> {{ page.title }}</h2>
 
                 <div class="post-archives">
-                    get "/articles" do
-                        if $children do
-                            foreach $children do
-                                if $children do
-                                    foreach $children do
-                                        <h3 class="post-archive-month"><a href="@permalink">@month @year</a></h3>
-                                        if $children do
-                                            foreach $children do
-                                                <p><a href="@permalink">@title</a> / <span>@date</span></p>
-                                            endforeach
-                                        endif
-                                    endforeach
-                                endif
-                            endforeach
-                        endif
-                    end
+
+                    {% include 'partials/list-articles-simple.html' %}
+                    
                 </div
 
             </div>
             
-            :footer
+            {% include 'partials/chunks/footer.html' %}
 
         </div>
         <!-- #wrapper -->
 
-        <!-- jQuery: Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
-
-        <!-- jQuery: Grab Google CDN's jQuery Migrate, with a protocol relative URL; fall back to local if necessary -->
-        <script src="//code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-migrate-1.1.1.min.js"><\/script>')</script>
+        {% include 'partials/chunks/scripts-jquery.html' %}
 
         <!-- SCRIPTS -->
         <script src="js/debug.min.js"></script>
