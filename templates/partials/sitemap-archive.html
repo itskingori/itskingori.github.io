@@ -1,7 +1,7 @@
 {% block context %}
     {% set page = get('/archives') %}
 
-        <!-- section (Archives) -->
+        <!-- section ({{ page.title }}) -->
         <url>
             <loc>http://{{ page.base_url }}/{{ page.permalink }}</loc>
             <lastmod>{{ page.updated }}</lastmod>

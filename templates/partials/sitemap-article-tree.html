@@ -1,7 +1,7 @@
 {% block context %}
     {% set page = get('/articles') %}
 
-        <!-- section (Articles) -->
+        <!-- section ({{ page.title }}) -->
         <url>
             <loc>http://{{ page.base_url }}/{{ page.permalink }}</loc>
             <lastmod>{{ page.updated }}</lastmod>
@@ -12,7 +12,7 @@
         {% if page.children %}
             {% for year in page.children %}
 
-                <!-- articles/year ({{ year.year }}) -->
+                <!-- articles/year ({{ year.published | date("Y") }}) -->
                 <url>
                     <loc>http://{{ year.base_url }}/{{ year.permalink }}</loc>
                     <lastmod>{{ year.updated }}</lastmod>
@@ -23,7 +23,7 @@
                 {% if year.children %}
                     {% for month in year.children %}
 
-                        <!-- articles/month ({{ month.year }} {{ month.month }}) -->
+                        <!-- articles/month ({{ month.published | date("F") }} {{ month.published | date("Y") }}) -->
                         <url>
                             <loc>http://{{ month.base_url }}/{{ month.permalink }}</loc>
                             <lastmod>{{ month.updated }}</lastmod>
