@@ -12,9 +12,9 @@ type: linked-post
 -
 content:
 
-> In sum, today’s graduates enter a harsher landscape.
+> In sum, today's graduates enter a harsher landscape.
 
-> ... the group she calls Cynic Kids "don’t like the system — however, they are wary
+> ... the group she calls Cynic Kids "don't like the system — however, they are wary
 > of other alternatives as well as dismissive of their ability to actually achieve
 > the desired modifications. As such, the generation is very conservative in its
 > appetite for change. Broadly speaking, Cynic Kids _distrust the link between
@@ -24,7 +24,7 @@ content:
 > these disillusioning events have led to a different epistemological framework.
 > "We are deeply resistant to idealism. Rather, the Cynic Kids have embraced the
 > policy revolution; _they require hypothesis to be tested, substantiated, and
-> then results replicated before_ they commit to any course of action.""
+> then results replicated before_ they commit to any course of action."
 
 > Maybe this empirical mind-set is a sign of maturity, but Buhler acknowledges
 > that the "yearning for definitive 'evidence' ... can retard action ...
