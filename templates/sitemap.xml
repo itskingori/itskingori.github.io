@@ -13,6 +13,16 @@
 
     :sitemap-archives-month
 
+    <!-- section (Archives) -->
+    get '/archives' do
+    <url>
+        <loc>http://@base_url/@permalink</loc>
+        <lastmod>@updated</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    end
+
     <!-- section (Articles) -->
     get '/articles' do
     <url>
