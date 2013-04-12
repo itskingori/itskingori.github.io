@@ -23,7 +23,7 @@ content: |-
 
     On Android, the lack of "" wrapping on realm caused the app to hang, therefore crashing the app ... so use this `realm="..."` instead of `realm=...` if you own the server-side API.
 
-    Looking at the [spec] they seem to imply that the values should be in quotes ... but its not 100% clear.
+    Looking at the [spec](http://tools.ietf.org/html/rfc2617#section-3.2.1) they seem to imply that the values should be in quotes ... but its not 100% clear.
 
     <div markdown="1" class="post-footnotes">
     1. [HttpURLConnection worked fine in Android 2.x but NOT in 4.1: No ...](http://stackoverflow.com/questions/11810447/httpurlconnection-worked-fine-in-android-2-x-but-not-in-4-1-no-authentication-c)
