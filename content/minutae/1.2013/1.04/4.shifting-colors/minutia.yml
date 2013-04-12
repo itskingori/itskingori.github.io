@@ -1,0 +1,25 @@
+title: Shifting colors (Chameleon)
+
+published: 2013-04-13T12:00:00+3:00
+
+type: own-post
+
+content: |-
+
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl(  10, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl(  30, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 152, 25%, 53% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 210, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 230, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 250, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 270, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 290, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 310, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 330, 90%, 60% );"></div>
+    <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 350, 90%, 60% );"></div>
+
+    <div markdown="1" class="post-footnotes">
+    1. [Metafizzy: Business end](http://metafizzy.co/) of [David Desandro](http://desandro.com/) - he deserves the credit for the idea of changing font colors site-wide
+    2. [Tilde (~~) or the Floor?](http://rocha.la/JavaScript-bitwise-operators-in-practice) - hint: tilde is faster
+    3. [Modernizr: CSS3 feature detection](http://modernizr.com/docs/#features-css)
+    </div>
