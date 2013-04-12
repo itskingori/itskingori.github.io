@@ -5,13 +5,13 @@
     {# 'page' is '/minutae' #}
 
     {% if page.children %}
-        {% for year in page.children %}
+        {% for year in page.children | reverse %}
 
             {% if year.children %}
-                {% for month in year.children %}
+                {% for month in year.children | reverse %}
 
                     {% if month.children %}
-                        {% for minutae in month.children %}
+                        {% for minutae in month.children | reverse %}
 
                             <div class="post" class="{{ minutae.type }}">
 
