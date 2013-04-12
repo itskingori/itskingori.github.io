@@ -37,15 +37,15 @@ content: |-
       // Check if we support CSS transitions on the browser
       if ( Modernizr.csstransitions ) {
 
+        // Grab the body, we will be using it a lot
+        Chameleon.bodyElement = $("body");
+
         // ~~ faster than Math.floor() -> http://rocha.la/JavaScript-bitwise-operators-in-practice
         Chameleon.colorT = ~~(Math.random()*Chameleon.noOfColors);
         Chameleon.changeColor();
       }
       // Defaults to @orange and @skyblue on hover if we aren't doing this.
-    }
-
-    // Grab the body, we will be using it a lot
-    Chameleon.bodyElement = $("body");
+    }    
 
     // Switch colors
     Chameleon.changeColor = function() {
