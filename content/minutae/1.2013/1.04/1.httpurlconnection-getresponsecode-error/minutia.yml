@@ -29,9 +29,9 @@ content: |-
 
     So far, this is normal and expected.
 
-    On Android, the lack of "" wrapping on realm caused the app to hang,
-    therefore crashing the app ... so use this `realm="..."` instead of
-    `realm=...` if you own the server-side API.
+    On Android, the lack of "" wrapping on realm caused the app to hang at the
+    `getResponseCode()` attempt, therefore crashing the app ... so use this
+    `realm="..."` instead of `realm=...` if you own the server-side API.
 
     Looking at the [spec](http://tools.ietf.org/html/rfc2617#section-3.2.1) they
     seem to imply that the values should be in quotes ... but its not 100%
