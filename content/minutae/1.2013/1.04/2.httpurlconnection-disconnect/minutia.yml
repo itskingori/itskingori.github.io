@@ -32,7 +32,7 @@ content: |-
 
     Example;
 
-    <pre class="brush: java">
+    <pre class="brush: java; highlight: [49]">
     //Initialize variables
     InputStream responseInputStream = null;
     HttpURLConnection conn = null;
