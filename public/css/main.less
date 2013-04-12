@@ -75,6 +75,20 @@ textarea {
 }
 
 /* ==========================================================================
+   Google Web Fonts: Changing styles when fonts finish loading
+   ========================================================================== */
+
+.wf-loading body { // Show paragraphs in serif font until fonts have loaded.
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.wf-inactive body { // Show paragraphs in serif font if fonts have failed to load.
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.wf-active body { // Show paragraphs in Tangerine when the fonts have loaded.
+    font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
 
