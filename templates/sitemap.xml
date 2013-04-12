@@ -13,4 +13,6 @@
 
     {% include 'partials/sitemap-article-tree.html' %}
 
+    {% include 'partials/sitemap-minutae-tree.html' %}
+
 </urlset>
