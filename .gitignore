@@ -1,6 +1,7 @@
 ## Stacey ##
 app/
-extensions/
+extensions/*
+!extensions/config.php
 
 ## htaccess ##
 .htaccess
