@@ -17,13 +17,9 @@
         <title>{{ page.published | date("Y") }} {{ page.title }}  | {{ page.site_name }}</title>
         {% include 'partials/chunks/meta.html' %}
         
-        <!-- +++ STYLESHEETS +++ -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet/less" href="css/main.less">
+        {% include 'partials/chunks/stylesheets.html' %}
         
-        <!-- +++ JAVASCRIPT +++ -->
-        <script type="text/javascript" src="js/libs/modernizr.custom.29636.js"></script>
-        <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+        {% include 'partials/chunks/scripts-head.html' %}
 
         <!-- +++ FONTS +++ -->
         <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans'>
