@@ -19,6 +19,60 @@ body {
     font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+a, a:visited { 
+    text-decoration: none;
+
+    -webkit-transition: color 5.0s linear;
+    -moz-transition: color 5.0s linear;
+    -ms-transition: color 5.0s linear;
+    -o-transition: color 5.0s linear;
+    transition: color 5.0s linear;
+    color: @orange;
+}
+
+a:hover {
+    color: @skyblue;
+    border-bottom: 1px solid;
+}
+
+blockquote {
+    padding: 10px 10px 10px 15px;
+    border-left: 1px solid #DDD;
+    margin-left: 5px;
+}
+
+p, ul, ol, pre, article iframe, blockquote {
+    margin: 0;
+    margin-bottom: 1.0em;
+}
+
+header, footer {
+    padding: 10px 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+}
+
+h3 {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
@@ -100,7 +154,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Less Stuff
+   LESS Stuff
    ========================================================================== */
 
 @skyblue: #619ed1;
@@ -123,75 +177,59 @@ textarea {
     max-width: 540px;
 }
 
-blockquote {
-    padding: 10px 10px 10px 15px;
-    border-left: 1px solid #DDD;
-    margin-left: 5px;
-}
-
-p, ul, ol, pre, article iframe, blockquote {
-    margin: 0;
-    margin-bottom: 1.0em;
-}
-
-header, footer {
-    padding: 10px 0;
-}
-
-h1, h2 {
-    font-weight: bold;
-    margin: 0;
-}
-
-h1 {
-    font-size: 28px;
-    line-height: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    line-height: 1.2em;
-    margin-bottom: 0.5em;
-    font-size: 16px;
-}
-
-h3 {
-    line-height: 1.2em;
-    margin-bottom: 0.5em;
-    font-size: 14px;
-}
-
 header {
     font-style: italic;
     color: @lightergrey;
     margin-bottom: 2em;
     border-bottom: 1px solid @lightergrey;
-}
 
-header p {
-    font-style: italic;
-    color: @lightergrey;
+    .title {
+        height: 56px;
+        float: left;
+
+        p {
+            font-style: italic;
+            color: @lightergrey;
+            line-height: 56px;
+        }
+    }
+
+    .logo {
+        width: 56px;
+        height: 56px;
+        float: right;
+
+        -webkit-transition: background-color 5.0s linear;
+        -moz-transition: background-color 5.0s linear;
+        -ms-transition: background-color 5.0s linear;
+        -o-transition: background-color 5.0s linear;
+        transition: background-color 5.0s linear;
+        background-color: white;
+
+        a {
+            border: none;
+            display: inline-block;
+        }
+    }
 }
 
 footer {
     border-top: 1px solid @lightergrey;
-}
 
-a {
-    -webkit-transition: color 4.0s linear;
-    -moz-transition: color 4.0s linear;
-    -o-transition: color 4.0s linear;
-    transition: color 4.0s linear;
-}
+    .info {
+        float: left;
+    }
 
-a, a:visited { 
-    color: @orange; 
-    text-decoration: none;
-}
+    .logo {
+        width: 24px;
+        height: 24px;
+        float: right;
 
-a:hover {
-    color: @skyblue;
-    border-bottom: 1px solid;
+        a {
+            border: none;
+            display: inline-block;
+        }
+    }
 }
 
 #content {
@@ -261,6 +299,17 @@ p code {
 .color7 a { color: hsl( 310, 90%, 60% ); } // 8
 .color8 a { color: hsl( 330, 90%, 60% ); } // 9
 .color9 a { color: hsl( 350, 90%, 60% ); } // 10
+
+.bkgcolor0 a { background-color: hsl(  10, 90%, 60% ); } // 1
+.bkgcolor1 a { background-color: hsl(  30, 90%, 60% ); } // 2
+.bkgcolor2 a { background-color: hsl( 152, 25%, 53% ); } // 3
+.bkgcolor3 a { background-color: hsl( 210, 90%, 60% ); } // 4
+.bkgcolor4 a { background-color: hsl( 230, 90%, 60% ); } // 5
+.bkgcolor5 a { background-color: hsl( 270, 90%, 60% ); } // 6
+.bkgcolor6 a { background-color: hsl( 290, 90%, 60% ); } // 7
+.bkgcolor7 a { background-color: hsl( 310, 90%, 60% ); } // 8
+.bkgcolor8 a { background-color: hsl( 330, 90%, 60% ); } // 9
+.bkgcolor9 a { background-color: hsl( 350, 90%, 60% ); } // 10
 
 
 /* ==========================================================================
