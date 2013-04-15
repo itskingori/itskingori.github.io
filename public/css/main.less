@@ -175,6 +175,32 @@ textarea {
     padding: 15px;
     padding-bottom: 3.0em;
     max-width: 540px;
+
+    // Grid global styles
+    .grid_1,
+    .grid_half,
+    .grid_2,
+    .grid_3 {
+        display: inline;
+        float: left;
+    }
+
+    // Column Grid (3 max, 4 possible widths - screw the 1%)
+    .grid_1 {
+        width: 33%;
+    }
+
+    .grid_half {
+        width: 50%;
+    }
+
+    .grid_2 {
+        width: 66%;
+    }
+
+    .grid_3 {
+        width: 100%;
+    }
 }
 
 header {
@@ -183,52 +209,71 @@ header {
     margin-bottom: 2em;
     border-bottom: 1px solid @lightergrey;
 
-    .title {
-        height: 56px;
-        float: left;
+    .col_left {
 
-        p {
+        .title {
+            height: 56px;
             font-style: italic;
             color: @lightergrey;
             line-height: 56px;
+            padding: 0;
+            margin: 0;
         }
     }
+    
+    .col_right {
 
-    .logo {
-        width: 56px;
-        height: 56px;
-        float: right;
-
-        -webkit-transition: background-color 5.0s linear;
-        -moz-transition: background-color 5.0s linear;
-        -ms-transition: background-color 5.0s linear;
-        -o-transition: background-color 5.0s linear;
-        transition: background-color 5.0s linear;
-        background-color: white;
-
-        a {
-            border: none;
+        a.logo {
+            float: right;
+            width: 56px;
+            height: 56px;
             display: inline-block;
+
+            -webkit-transition: background-color 5.0s linear;
+            -moz-transition: background-color 5.0s linear;
+            -ms-transition: background-color 5.0s linear;
+            -o-transition: background-color 5.0s linear;
+            transition: background-color 5.0s linear;
+            background-color: white; // prevent flash of color
         }
+
+        a.logo:hover {
+            border: none;
+        }
+
+        a.bkgcolor0 { background-color: hsl(  10, 90%, 60% ); } // 1
+        a.bkgcolor1 { background-color: hsl(  30, 90%, 60% ); } // 2
+        a.bkgcolor2 { background-color: hsl( 152, 25%, 53% ); } // 3
+        a.bkgcolor3 { background-color: hsl( 210, 90%, 60% ); } // 4
+        a.bkgcolor4 { background-color: hsl( 230, 90%, 60% ); } // 5
+        a.bkgcolor5 { background-color: hsl( 270, 90%, 60% ); } // 6
+        a.bkgcolor6 { background-color: hsl( 290, 90%, 60% ); } // 7
+        a.bkgcolor7 { background-color: hsl( 310, 90%, 60% ); } // 8
+        a.bkgcolor8 { background-color: hsl( 330, 90%, 60% ); } // 9
+        a.bkgcolor9 { background-color: hsl( 350, 90%, 60% ); } // 10
     }
 }
 
 footer {
     border-top: 1px solid @lightergrey;
 
-    .info {
-        float: left;
+    .col_centre {
+
+        a.logo {
+            width: 24px;
+            margin: 0 auto 0 auto;
+            display: block;
+        }
+
+        a.logo:hover {
+            border: none;
+        }
     }
 
-    .logo {
-        width: 24px;
-        height: 24px;
-        float: right;
-
-        a {
-            border: none;
-            display: inline-block;
-        }
+    .col_right p {
+        padding: 0;
+        margin: 0;
+        text-align: right;
     }
 }
 
@@ -294,7 +339,7 @@ p code {
     padding: 5px 0 5px 0 !important;
 }
 
-/* +++ Shifting Color Palette +++ */
+/* +++ Shifting Color Palette (body) +++ */
 
 .color0 a { color: hsl(  10, 90%, 60% ); } // 1
 .color1 a { color: hsl(  30, 90%, 60% ); } // 2
@@ -306,18 +351,6 @@ p code {
 .color7 a { color: hsl( 310, 90%, 60% ); } // 8
 .color8 a { color: hsl( 330, 90%, 60% ); } // 9
 .color9 a { color: hsl( 350, 90%, 60% ); } // 10
-
-.bkgcolor0 a { background-color: hsl(  10, 90%, 60% ); } // 1
-.bkgcolor1 a { background-color: hsl(  30, 90%, 60% ); } // 2
-.bkgcolor2 a { background-color: hsl( 152, 25%, 53% ); } // 3
-.bkgcolor3 a { background-color: hsl( 210, 90%, 60% ); } // 4
-.bkgcolor4 a { background-color: hsl( 230, 90%, 60% ); } // 5
-.bkgcolor5 a { background-color: hsl( 270, 90%, 60% ); } // 6
-.bkgcolor6 a { background-color: hsl( 290, 90%, 60% ); } // 7
-.bkgcolor7 a { background-color: hsl( 310, 90%, 60% ); } // 8
-.bkgcolor8 a { background-color: hsl( 330, 90%, 60% ); } // 9
-.bkgcolor9 a { background-color: hsl( 350, 90%, 60% ); } // 10
-
 
 /* ==========================================================================
    Fixes

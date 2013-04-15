@@ -60,13 +60,18 @@ Chameleon.init = function() {
 
     // Grab the elements, we will be using it a lot
     Chameleon.bodyElement = $("body");
-    Chameleon.logoElement = $("header .logo");
+    Chameleon.logoElement = $("header a.logo");
 
     // ~~ faster than Math.floor() -> http://rocha.la/JavaScript-bitwise-operators-in-practice
     Chameleon.colorT = ~~(Math.random()*Chameleon.noOfColors);
     Chameleon.changeColor();
   }
-  // Defaults to @orange and @skyblue on hover if we aren't doing this.
+  else {
+    // Defaults to @orange and @skyblue on hover if we aren't doing this/done
+    // also to prevent orange flash ... set it here instead
+    $("header a.logo").css("background-color","#F77C0F");
+  }
+  
 }
 
 // Switch colors
