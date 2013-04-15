@@ -15,4 +15,6 @@
 
     {% include 'partials/sitemap-minutae-tree.html' %}
 
+    {% include 'partials/sitemap-about.html' %}
+
 </urlset>

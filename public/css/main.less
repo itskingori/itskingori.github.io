@@ -19,6 +19,17 @@ body {
     font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+body.color0 a { color: hsl(  10, 90%, 60% ); } // 1
+body.color1 a { color: hsl(  30, 90%, 60% ); } // 2
+body.color2 a { color: hsl( 152, 25%, 53% ); } // 3
+body.color3 a { color: hsl( 210, 90%, 60% ); } // 4
+body.color4 a { color: hsl( 230, 90%, 60% ); } // 5
+body.color5 a { color: hsl( 270, 90%, 60% ); } // 6
+body.color6 a { color: hsl( 290, 90%, 60% ); } // 7
+body.color7 a { color: hsl( 310, 90%, 60% ); } // 8
+body.color8 a { color: hsl( 330, 90%, 60% ); } // 9
+body.color9 a { color: hsl( 350, 90%, 60% ); } // 10
+
 a, a:visited { 
     text-decoration: none;
 
@@ -166,15 +177,8 @@ textarea {
 @orange: #F77C0F;
 
 /* ==========================================================================
-   My's custom styles
+   Grid Stuff
    ========================================================================== */
-
-
-#wrapper {
-    margin: 10px auto 200px auto;
-    padding: 15px;
-    padding-bottom: 3.0em;
-    max-width: 540px;
 
     // Grid global styles
     .grid_1,
@@ -201,20 +205,30 @@ textarea {
     .grid_3 {
         width: 100%;
     }
+
+/* ==========================================================================
+   My's custom styles
+   ========================================================================== */
+
+
+#wrapper {
+    margin: 10px auto 200px auto;
+    padding: 15px;
+    padding-bottom: 3.0em;
+    max-width: 540px;
+    min-width: 320px;
 }
 
 header {
-    font-style: italic;
-    color: @lightergrey;
     margin-bottom: 2em;
     border-bottom: 1px solid @lightergrey;
 
     .col_left {
 
         .title {
+            font-size: 13px;
+            font-weight: bold;
             height: 56px;
-            font-style: italic;
-            color: @lightergrey;
             line-height: 56px;
             padding: 0;
             margin: 0;
@@ -338,19 +352,6 @@ p code {
 .syntaxhighlighter {
     padding: 5px 0 5px 0 !important;
 }
-
-/* +++ Shifting Color Palette (body) +++ */
-
-.color0 a { color: hsl(  10, 90%, 60% ); } // 1
-.color1 a { color: hsl(  30, 90%, 60% ); } // 2
-.color2 a { color: hsl( 152, 25%, 53% ); } // 3
-.color3 a { color: hsl( 210, 90%, 60% ); } // 4
-.color4 a { color: hsl( 230, 90%, 60% ); } // 5
-.color5 a { color: hsl( 270, 90%, 60% ); } // 6
-.color6 a { color: hsl( 290, 90%, 60% ); } // 7
-.color7 a { color: hsl( 310, 90%, 60% ); } // 8
-.color8 a { color: hsl( 330, 90%, 60% ); } // 9
-.color9 a { color: hsl( 350, 90%, 60% ); } // 10
 
 /* ==========================================================================
    Fixes
