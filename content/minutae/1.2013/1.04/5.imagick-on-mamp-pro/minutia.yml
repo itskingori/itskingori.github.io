@@ -106,7 +106,7 @@ content: |-
     <div markdown="1" class="post-footnotes">
     1. This was done on MacOSX 10.8.3 (other versions may vary)
     2. Tested with MAMP Pro 2.1.2 (other versions may vary)
-    3. [Image Magick][imagemagick] & [Imagick][imagick] are very two different things. The former is the core library and the latter is a PHP Wrapper that uses the API of the former, so you do need to install the former before the latter
+    3. [Image Magick][imagemagick] & [Imagick][imagick] are two very different things. The former is the core library and the latter is a PHP Wrapper that uses the API of the former, so you do need to install the former before the latter
     4. [Main Reference/ Original post: Imagick for MAMP Pro installation guide](https://github.com/jdlx/install_Imagick_on_MAMP/wiki/Imagick-for-MAMP-Pro---installation-guide) (linked-post)
     5. [Xcode 4.3 and Homebrew: Where did my command line tools go?](http://holgr.com/blog/2012/02/xcode-4-3-and-homebrew-where-did-my-command-line-tools-go/)
     </div>
