@@ -24,13 +24,13 @@ content: |-
     $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
     </pre>
 
-    Install ImageMagick.
+    Install [ImageMagick][imagemagick].
 
     <pre class="brush: bash">
     $ brew install imagemagick
     </pre>
 
-    Installing a PHP53 compat version of Imagick ... first let Homebrew search
+    Installing a PHP53 compat version of [Imagick][imagick] ... first let Homebrew search
     the formula for you
 
     <pre class="brush: bash">
@@ -96,6 +96,8 @@ content: |-
     ImageMagick release date                  2012-09-18
     ImageMagick number of supported formats:  191
     </pre>
+    
+    _Ps: Original post - see footnote #4, has extra's on enabling tiff support_
 
     [xcode]: https://developer.apple.com/xcode/
     [xcode43]: http://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_3.html
@@ -107,6 +109,6 @@ content: |-
     1. This was done on MacOSX 10.8.3 (other versions may vary)
     2. Tested with MAMP Pro 2.1.2 (other versions may vary)
     3. [Image Magick][imagemagick] & [Imagick][imagick] are very two different things. The former is the core library and the latter is a PHP Wrapper that uses the API of the former, so you do need to install the former before the latter
-    4. [Main Reference: Imagick for MAMP Pro installation guide](https://github.com/jdlx/install_Imagick_on_MAMP/wiki/Imagick-for-MAMP-Pro---installation-guide) (linked-post)
+    4. [Main Reference/ Original post: Imagick for MAMP Pro installation guide](https://github.com/jdlx/install_Imagick_on_MAMP/wiki/Imagick-for-MAMP-Pro---installation-guide) (linked-post)
     5. [Xcode 4.3 and Homebrew: Where did my command line tools go?](http://holgr.com/blog/2012/02/xcode-4-3-and-homebrew-where-did-my-command-line-tools-go/)
     </div>
