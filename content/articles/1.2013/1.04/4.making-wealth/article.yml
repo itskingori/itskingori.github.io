@@ -9,14 +9,14 @@ link: http://www.paulgraham.com/wealth.html
 content: |-
 
     One of the most brilliant articles I have ever read by [Paul
-    Graham][paulgraham]. Literally, changed my life & my perceptions about
+    Graham][paulgraham]. Literally, changed my life &amp; my perceptions about
     technology, renumeration, hard-work ... to say the least.
 
     We could also call this _'18 Lessons on Wealth from Paul Graham'_.
 
     _Emphasis, mine._
 
-    ###Lesson #1: Startups & Life###
+    ###Lesson #1: Startups &amp; Life###
 
     > Economically, you can think of a startup as a way to compress your whole
     > working life into a few years. Instead of working at a low intensity for
@@ -57,7 +57,7 @@ content: |-
     > get rich by counterfeiting, talking about making money can make it harder
     > to understand how to make money.
 
-    ##Lesson #4: The Pie Fallacy###
+    ###Lesson #4: The Pie Fallacy###
 
     > A surprising number of people retain from childhood the idea that there is
     > a fixed amount of wealth in the world. There is, in any normal family, a
@@ -71,7 +71,7 @@ content: |-
     > one pristine old car the richer. And not just in some metaphorical way. If
     > you sell your car, you'll get more for it.
 
-    ##Lesson #5: What Is A Job?###
+    ###Lesson #5: What Is A Job?###
 
     > But here there is another layer that tends to obscure the underlying
     > reality. In a company, the work you do is averaged together with a lot of
@@ -89,7 +89,7 @@ content: |-
     > is is a group of people working together to do something people want.
     > _It's doing something people want that matters, not joining the group._
 
-    ##Lesson #6: The 'Working Harder' Misconception & The Value of Work###
+    ###Lesson #6: The 'Working Harder' Misconception &amp; The Value of Work###
 
     > That averaging gets to be a problem. I think the single biggest problem
     > afflicting large companies is the difficulty of assigning a value to each
@@ -128,7 +128,7 @@ content: |-
     > performance is not separately measurable-- and the rest of the group slows
     > you down._
 
-    ##Lesson #7: Measurement & Leverage###
+    ###Lesson #7: Measurement &amp; Leverage###
 
     > To get rich you need to get yourself in a situation with two things,
     > measurement and leverage. You need to be in a position where your
@@ -226,7 +226,7 @@ content: |-
     > with some horrible technical problem. And I'd be delighted, because
     > something that was hard for us would be impossible for our competitors.
 
-    ###Lesson #12: Patents & Competition###
+    ###Lesson #12: Patents &amp; Competition###
 
     > Here, as so often, the best defense is a good offense. If you can develop
     > technology that's simply too hard for competitors to duplicate, you don't
@@ -332,7 +332,7 @@ content: |-
     > You please or annoy customers wholesale. The closer you can get to what
     > they want, the more wealth you generate.
 
-    ###Lesson #18: Wealth & Power (with some history)###
+    ###Lesson #18: Wealth &amp; Power (with some history)###
 
     > Making wealth is not the only way to get rich. For most of human history
     > it has not even been the most common. Until a few centuries ago, the main
@@ -373,7 +373,7 @@ content: |-
 
     <div markdown="1" class="post-footnotes">
     1. [More Essays][paulgrahamessays] by [Paul Graham][paulgraham]
-    2. The original excerpt was from a book he wrote called ['Hackers & Painters'][hackerspainters], you can get if [from Amazon here][hackersfromamazon]
+    2. The original excerpt was from a book he wrote called ['Hackers &amp; Painters'][hackerspainters], you can get if [from Amazon here][hackersfromamazon]
     3. Just to be clear, I did not write this article ... for your reference, I've linked back severally to the original article/essay, including the header ...
     4. If you think this was long, wait till you see [the original][howtomakewealth]
     5. Anything in quoteblocks is the same as what is in the original article - other than the emphasis (i.e. _Italics_)
