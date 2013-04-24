@@ -136,6 +136,10 @@ content: |-
     AMI ID to be used as a template, and write it down. You’ll need an AMI ID
     later. Think of it as your autoscaling-instance-template.
 
+    _Ps: If you already have a running EBS-backed instance, you can save this
+    Amazon Machine Image (AMI) and autoscale with it ... [find steps on how to
+    create your own AMIs here][link10]_
+
     ####Prerequisite 2: Set Up Your Your ELB####
 
     The ELB name that is displayed on the AWS Console will also be required at
@@ -145,23 +149,6 @@ content: |-
     the DNS name given in the AWS Console. Visit ['Use Domain Names with Elastic
     Load Balancing'][link14] at Amazon AWS Documentation page for details on
     this.
-
-    A common mistake is setting up autoscaling while there's already a running
-    instance. Think of it this way ... when autoscaling actually starts it has
-    no information about your already-running-ec2-instance and therefore as far
-    as it's concerned you have 0 instances running in the autoscaling group. So
-    most people who start this and have the `--min-size=1` find it strange that
-    when even when their traffic is low, their minimum configuration is
-    comprised of the ec2 instance that was _already running and which is not
-    linked to the as-group_ and the _minimum instance (set at 1)_. The latter
-    was immediately triggered when the as-policies kicked in since as far as the
-    as-group is concerned it has not running instances ... the result is that
-    you'll have a total of 2 running instances. Use something like this to
-    register an already existing instance to the as-group ...
-
-    <pre class="brush: bash">
-    $ elb-register-instances-with-lb autoscalelb --instances i-xxxxxxxx
-    </pre>
 
     ####Prerequisite 3: Check Credentials/ Keys/ Authorizations Are In Order####
 
@@ -223,8 +210,16 @@ content: |-
     > configuration parameters. Existing instances are not affected.
 
     <pre class="brush: bash; highlight: [1]">
-    $ as-create-launch-config AutoscaleLC --image-id ami-xxxxxxxxc --instance-type m1.small
+    $ as-create-launch-config AutoscaleLC --image-id ami-xxxxxxxxc --instance-type m1.small --group your-security-group --key ~/.aws/your-key.pem
     $ OK-Created launch config
+    </pre>
+
+    Don't forget to set the `--key YourKey` especially if you want to ssh into
+    the instances ... you can get a list of your keys from here in case you
+    don't remember.
+
+    <pre class="brush: bash">
+    $ ec2-describe-keypairs
     </pre>
 
     ####Step 3: Create an Auto Scaling Group####
@@ -235,13 +230,9 @@ content: |-
     > scaling actions.
 
     <pre class="brush: bash; highlight: [1]">
-    $ as-create-auto-scaling-group AutoScalingGroup --availability-zones eu-west-1a --launch-configuration AutoscaleLC --min-size 1 --max-size 2 --load-balancers AutoscaleLB
+    $ as-create-auto-scaling-group AutoScalingGroup --availability-zones eu-west-1a --launch-configuration AutoscaleLC --min-size 1 --max-size 2 --load-balancers AutoscaleLB --desired-capacity 1 --default-cooldown 300 --grace-period 300 --health-check-type ELB
     $ OK-Created AutoScalingGroup
     </pre>
-
-    [Register instances to ELB][link21] (`elb-register-instances-with-lb`) and
-    [all that [health check stuff][link20] if you haven't ... you can do those
-    [two via the GUI, which is what I did.
 
     ####Step 4: Scale Up &amp; Down####
 
@@ -353,6 +344,27 @@ content: |-
     above suggestions are the most common, easiest techniques within Amazon Web
     Services.
 
+    ###Points To Note###
+
+    * Your original instance doesn't have anything to do with Auto Scaling. It
+    lives outside of your Auto Scaling setup and will not be touched. When Auto
+    Scaling launches a new instance, it will always use the AMI you have defined
+    in the launch configuration. That AMI never changes. You simply get a copy
+    of the data from that point in time whenever an instance is launched.
+    * Each instance is entirely separate. There is no connection between them. If
+    you make changes on one instance, you will need to walk through all of them
+    manually. These changes will not be persistent though. When a new instance
+    is launched, it will be a copy of the original AMI. So you will probably
+    want to replace the AMI instead. If you have some application code that can
+    change, you might want to consider building an AMI that can fetch everything
+    on boot, and maybe also react on changes somehow. If you can avoid having to
+    replace the AMI "all the time", that is going to make it easier for you.
+    * You don't need an Elastic IP when you are using Elastic Load Balancing.
+    * When you have a new AMI, you will need to create a new launch configuration
+    and update the Auto Scaling group. You can then, say, double the capacity,
+    wait for the new instances to become available, and finally have the old
+    instances terminated.
+
     <div markdown="1" class="post-footnotes">
     1. [AWS Developer Tools][awsdevelopertools]
     2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from Amazon Downloads][link1]
@@ -362,7 +374,7 @@ content: |-
     6. [Amazon Elastic Load Balancer Setup][link7]
     7. [Autoscaling your website with Amazon Web Services – Part 1][link8]
     8. [Autoscaling your website with Amazon Web Services – Part 2][link9]
-    9. [Create a Custom AMI][link10]
+    9. [Create Your Own AMIs][link10]
     10. [Chef, EC2 Auto Scaling, and Spot Instances for Fun and Profit][link11]
     11. [Use Domain Names with Elastic Load Balancing][link14]
     12. [Autoscaling Documentation - Amazon AWS][link15]
@@ -374,6 +386,7 @@ content: |-
     18. [Amazon AutoScaling Documentation | Cooldown Period][link24]
     19. [Enable Application-Controlled Session Stickiness][link25]
     20. [Why Is It Good To Save Session in Database?][link30]
+    21. [Understanding autoscaled instances][link33]
     </div>
 
     [aws]: https://aws.amazon.com/
@@ -390,7 +403,7 @@ content: |-
     [link7]: http://www.loudsteve.com/2009/05/20/amazon-elastic-load-balancer-setup/
     [link8]: http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-1/
     [link9]: http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-2/
-    [link10]: http://docs.aws.amazon.com/gettingstarted/latest/wah-linux/getting-started-create-custom-ami.html
+    [link10]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami.html
     [link11]: http://engineering.gnip.com/chef-ec2-auto-scaling-and-spot-instances-for-fun-and-profit/
     [link12]: https://www.google.com/search?q=setting+up+amazon+api+tools&amp;aq=f&amp;oq=setting+up+amazon+api+tools
     [link13]: http://packages.ubuntu.com/search?keywords=ec2-api-tools
@@ -412,6 +425,7 @@ content: |-
     [link30]: http://stackoverflow.com/questions/13911210/why-is-it-good-save-session-in-database
     [link31]: http://www.ubuntu.com/cloud/public-cloud/guest
     [link32]: http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/gs-ec2classic.html
+    [link33]: https://forums.aws.amazon.com/thread.jspa?threadID=122659
 
 
 
