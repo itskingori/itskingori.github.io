@@ -1,28 +1,58 @@
-title: "Image Attachments as files in Apple Mail"
+title: "Integrating AWS SDK into MODx"
 
 published: 2013-05-09T12:00:00+3:00
 
-type: linked-post
-
-link: http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/
+type: own-post
 
 content: |-
 
-    > Mail.app by default displays images inline, and most email clients won’t
-    > recognize them as attachments. If you right click (or ctrl click with a
-    > one button mouse) on the image you can select to view the image as icon,
-    > which makes it behave like a normal attachment. To make this the default
-    > behavior you’ll need to use the Terminal to set the preference. Terminal
-    > is in `Applications > Utilities`. Open Terminal and type:
+    ###Scenario###
 
-    <pre class="brush: bash">
-    defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
+    I was working on an extra which used a lot AWS functionality so the logical
+    choice during commencement was to bundle the AWS SDK with my extra ... all
+    this taking cue from [splittingred's][link1] [phpThumbOf][link2] extra that
+    has the SDK bundled in [as you can see here][link3].
+
+    At the time phpThumbOf was written I guess there were no [Media
+    Sources][link4] and it only made sense. But the advent of Media
+    Sources to MODx also had the [AWS SDK bundled into the MODx core][link5] at
+    `core/model/aws`.
+
+    As you can see ... my MODx install therefore had 3 AWS SDKs; 1 by the MODx
+    team, another by phpThumbOf's developer and my own. This is messy and in my
+    case resulted in conflicts when I turned on phpThumbOf's ability to save
+    cache files on S3. An example of this error looks something like this ...
+
+    <pre class="brush: plain">
+    PHP Fatal error: Class 'CFRuntime' not found in /home/xxxxxxxxxxxx/public_html/core/components/phpthumbof/model/aws/services/s3.class.php on line 69
     </pre>
 
-    If you decide this isn’t what you’re looking for, to restore inline attachment viewing type:
+    ###Fix###
 
-    <pre class="brush: bash">
-    defaults write com.apple.mail DisableInlineAttachmentViewing -bool false
+    To avoid adding an SDK to my extra as well, you can set `$aws_access_key`
+    and `$aws_secret_key` to the relevant values and include the SDK from
+    `MODX_CORE_PATH.'model/aws/sdk.class.php`.
+
+    <pre class="brush: php">
+    if (!defined('AWS_KEY')) {
+        define('AWS_KEY', $aws_access_key]);
+    }
+    if (!defined('AWS_SECRET_KEY')) {
+        define('AWS_SECRET_KEY', $aws_secret_key);
+    }
     </pre>
 
-    Restart Mail and you’re back to normal.
+    You can now write your own code and all the methods provided by the SDK.
+
+    <div markdown="1" class="post-footnotes">
+    1. At the time, the AWS SDK version in MODx is 1.4.1 and the one is phpThumbOf is 1.0.1. Which is bad. Hopefully this can be avoided by sticking to the one in the MODx core..
+    2. Comments are welcome on the [MODx Forum post here][link7]
+    </div>
+
+    [link1]: https://github.com/splittingred
+    [link2]: https://github.com/splittingred/phpThumbOf
+    [link3]: https://github.com/splittingred/phpThumbOf/tree/develop/core/components/phpthumbof/model/aws
+    [link4]: http://rtfm.modx.com/display/revolution20/Media+Sources
+    [link5]: https://github.com/modxcms/revolution/tree/develop/core/model/aws
+    [link6]: https://github.com/splittingred/phpThumbOf/issues/42
+    [link7]: http://forums.modx.com/thread/84334/aws-sdk-integration-into-modx
