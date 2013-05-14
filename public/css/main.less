@@ -225,7 +225,7 @@ textarea {
     padding: 15px;
     padding-bottom: 3.0em;
     max-width: 540px;
-    min-width: 320px;
+    min-width: 240px;
 }
 
 header {
@@ -310,27 +310,39 @@ footer {
 
 .post {
     margin-bottom: 6em;
-}
 
-.post-content {
+    .post-head {
 
-    // Give headings some breathing room in the content, things looked a bit too
-    // crowded
+        .post-date {
+            margin-bottom: 0.5em;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            background-color: white;
+        }
 
-    h3 {
-        margin-top: 2em;
+        .post-title {
+            background-color: white;
+        }
+
+        .post-image {
+            margin-bottom: 1em;
+        }
     }
 
-    h4 {
-        margin-top: 2em;
-    }
-}
+    .post-content {
 
-.post-date {
-    margin-bottom: 0.5em;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+        // Give headings some breathing room in the content, things looked a bit
+        // too crowded
+
+        h3 {
+            margin-top: 2em;
+        }
+
+        h4 {
+            margin-top: 2em;
+        }
+    }
 }
 
 /* +++ Post Listing Styling +++ */

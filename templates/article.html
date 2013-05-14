@@ -37,15 +37,23 @@
         
             <div class="post" class="{{ page.type }}">
 
-                <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("jS") }} {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
+                <div class="post-head">
 
-                <h2 class="post-title">
-                    {% if  page.type == 'own-post' %}
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                    {% elseif page.type == 'linked-post' %}
-                        <a href="{{ page.link }}">{{ page.title }}</a>
+                    <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("j") }}<sup>{{ page.published | date("S") }}</sup> {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
+
+                    <h2 class="post-title">
+                        {% if  page.type == 'own-post' %}
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        {% elseif page.type == 'linked-post' %}
+                            <a href="{{ page.link }}">{{ page.title }}</a>
+                        {% endif %}
+                    </h2>
+
+                    {% if  page.image is defined %}
+                        <img class="post-image" src="{{ page.image }}" style="max-width: 540px;">
                     {% endif %}
-                </h2>
+
+                </div>
 
                 <div class="post-content">
                     {{ page.content }}
