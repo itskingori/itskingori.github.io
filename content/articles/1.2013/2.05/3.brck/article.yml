@@ -6,6 +6,8 @@ type: linked-post
 
 link: http://brck.com/
 
+image: http://assets.kingori.co.s3.amazonaws.com/content/article/2013/05/brck@2x.jpg
+
 content: |-
 
     > Since we travel a lot, we decided that it needed to work in every country.
@@ -20,7 +22,9 @@ content: |-
     <div markdown="1" class="post-footnotes">
     1. [Building the BRCK: A backup generator for the internet][link1] by Eric Hersman
     2. [BRCK on Kickstarter][link2]
+    3. [re:publica 2013 - Erik Hersman: Innovating Africa][link3]
     </div>
 
     [link1]: http://whiteafrican.com/2013/05/06/building-the-brck-a-backup-generator-for-the-internet/
     [link2]: http://www.kickstarter.com/projects/1776324009/brck-your-backup-generator-for-the-internet
+    [link3]: http://youtu.be/1AYsmc4Kstw
