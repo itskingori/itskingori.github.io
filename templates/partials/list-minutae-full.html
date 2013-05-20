@@ -15,7 +15,7 @@
 
                             <div class="post" class="{{ minutae.type }}">
 
-                                <p class="post-date"><a href="{{ minutae.url }}">{{ minutae.published | date("jS") }} {{ minutae.published | date("F") }} {{ minutae.published | date("Y") }}</a></p>
+                                <p class="post-date"><a href="{{ minutae.url }}">{{ minutae.published | date("j") }}<sup>{{ minutae.published | date("S") }}</sup> {{ minutae.published | date("F") }} {{ minutae.published | date("Y") }}</a></p>
 
                                 <h2 class="post-title">
                                     {% if  minutae.type == 'own-post' %}
