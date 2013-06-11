@@ -1,7 +1,29 @@
-/* FOR THE PEEPING TOMS */
-debug.debug('You like peeking under the hood don\'t you?',
-			'... twitter\'s @itsmrwave',
-			'... email\'s j@kingori.co');
+/* CONSOLE FIX & MESSAGE */
+// Avoid `console` errors in browsers that lack a console & send snooper's a message
+(function() {
+
+    var method;
+    var noop = function () {};
+    var methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || {});
+
+    while (length--) {
+        method = methods[length];
+
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+
+    console.log('Email me at yo@kingori.co or tweet me, @itsmrwave.');
+}());
 
 /* SYNTAX HIGHLIGHTER */
 function path()
