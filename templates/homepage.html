@@ -37,7 +37,80 @@
         
             <div id="content">
 
-                {% include 'partials/list-articles-full.html' %}
+                {# 'page' is '/' #}
+                {% block context %}
+                {% set page = get('/articles') %}
+
+                    {# 'page' is '/articles' #}
+
+                    {% if page.children %}
+                        {% for year in page.children | reverse %}
+
+                            {% if year.children %}
+                                {% for month in year.children | reverse | slice(0, 1) %}
+
+                                    {% if month.children %}
+                                        {% for article in month.children | reverse %}
+
+                                            <!-- start: .post -->
+                                            <div class="post" class="{{ article.type }}">
+
+                                                <div class="post-head">
+
+                                                    <p class="post-date"><a href="{{ article.url }}">{{ article.published | date("j") }}<sup>{{ article.published | date("S") }}</sup> {{ article.published | date("F") }} {{ article.published | date("Y") }}</a></p>
+
+                                                    <h2 class="post-title">
+                                                        {% if  article.type == 'own-post' %}
+                                                            <a href="{{ article.url }}">{{ article.title }}</a>
+                                                        {% elseif article.type == 'linked-post' %}
+                                                            <a href="{{ article.link }}">{{ article.title }}</a>
+                                                        {% endif %}
+                                                    </h2>
+
+                                                    {% if  article.image is defined %}
+                                                        <img class="post-image" src="{{ article.image }}" style="max-width: 540px;">
+                                                    {% endif %}
+
+                                                </div>
+
+                                                <div class="post-content">
+                                                    {{ article.content }}
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- end: .post -->
+
+                                        {% endfor %}
+                                    {% endif %}
+
+                                <div class="post-navigation">
+                                    <div class="grid_1 col_left">
+                                        {% if month.previous_sibling['0'] %}
+                                            {% for previous in month.previous_sibling %}
+                                                <a href="{{ previous.url }}">←</a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                    <div class="grid_1 col_centre">
+                                        {{ month.published | date("F") }}
+                                    </div>
+                                    <div class="grid_1 col_right">
+                                        {% if month.next_sibling['0'] %}
+                                            {% for next in month.next_sibling %}
+                                                <a href="{{ next.url }}">→</a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                {% endfor %}
+                            {% endif %}
+
+                        {% endfor %}
+                    {% endif %}
+
+                {% endblock %}
+                {# the page variable is set back to '/' #}
 
             </div>
             

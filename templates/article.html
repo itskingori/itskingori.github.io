@@ -34,33 +34,57 @@
         <div id="wrapper">
 
             {% include 'partials/chunks/header.html' %}
+
+            <div id="content">
         
-            <div class="post" class="{{ page.type }}">
+                <div class="post" class="{{ page.type }}">
 
-                <div class="post-head">
+                    <div class="post-head">
 
-                    <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("j") }}<sup>{{ page.published | date("S") }}</sup> {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
+                        <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("j") }}<sup>{{ page.published | date("S") }}</sup> {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
 
-                    <h2 class="post-title">
-                        {% if  page.type == 'own-post' %}
-                            <a href="{{ page.url }}">{{ page.title }}</a>
-                        {% elseif page.type == 'linked-post' %}
-                            <a href="{{ page.link }}">{{ page.title }}</a>
+                        <h2 class="post-title">
+                            {% if  page.type == 'own-post' %}
+                                <a href="{{ page.url }}">{{ page.title }}</a>
+                            {% elseif page.type == 'linked-post' %}
+                                <a href="{{ page.link }}">{{ page.title }}</a>
+                            {% endif %}
+                        </h2>
+
+                        {% if  page.image is defined %}
+                            <img class="post-image" src="{{ page.image }}" style="max-width: 540px;">
                         {% endif %}
-                    </h2>
 
-                    {% if  page.image is defined %}
-                        <img class="post-image" src="{{ page.image }}" style="max-width: 540px;">
-                    {% endif %}
+                    </div>
 
+                    <div class="post-content">
+                        {{ page.content }}
+                    </div>
+                    
+                </div>
+                <!-- .post -->
+
+                <div class="post-navigation">
+                    <div class="grid_1 col_left">
+                        {% if page.previous_sibling['0'] %}
+                            {% for previous in page.previous_sibling %}
+                                <a href="{{ previous.url }}">←</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="grid_1 col_centre">
+                        {{ page.published | date("j") }}<sup>{{ page.published | date("S") }}</sup>
+                    </div>
+                    <div class="grid_1 col_right">
+                        {% if page.next_sibling['0'] %}
+                            {% for next in page.next_sibling %}
+                                <a href="{{ next.url }}">→</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
                 </div>
 
-                <div class="post-content">
-                    {{ page.content }}
-                </div>
-                
             </div>
-             <!-- .post -->
             
             {% include 'partials/chunks/footer.html' %}
 

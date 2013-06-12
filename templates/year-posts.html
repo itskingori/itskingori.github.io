@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        
+        {% include 'partials/chunks/ascii.html' %}
+                
+        <!-- +++ META +++ -->
+        <meta charset="utf-8">
+        <meta name="robots" content="INDEX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+        <!-- +++ SITE INFO +++ -->
+        <title>{{ page.published | date("Y") }} {{ page.title }}  | {{ page.site_name }}</title>
+        {% include 'partials/chunks/meta.html' %}
+        
+        {% include 'partials/chunks/stylesheets.html' %}
+        
+        {% include 'partials/chunks/scripts-head.html' %}
+
+        {% include 'partials/chunks/fonts.html' %}
+        
+        {% include 'partials/chunks/google-analytics.html' %}
+        
+    </head>
+    
+    <body>
+
+        {% include 'partials/chunks/chrome-frame.html' %}
+
+        <div id="wrapper">
+
+            {% include 'partials/chunks/header.html' %}
+        
+            <div id="content">
+
+                <h2>Published in {{ page.published | date("Y") }}</h2>
+
+                <div class="post-listing">
+
+                    {% if page.children %}
+                        {% for month in page.children | reverse %}
+
+                            {% if month.children %}
+                                {% for article in month.children | reverse %}
+
+                                    <!-- start: .post -->
+                                    <div class="post" class="{{ article.type }}">
+
+                                        <div class="post-head">
+
+                                            <p class="post-date"><a href="{{ article.url }}">{{ article.published | date("j") }}<sup>{{ article.published | date("S") }}</sup> {{ article.published | date("F") }} {{ article.published | date("Y") }}</a></p>
+
+                                            <h2 class="post-title">
+                                                {% if  article.type == 'own-post' %}
+                                                    <a href="{{ article.url }}">{{ article.title }}</a>
+                                                {% elseif article.type == 'linked-post' %}
+                                                    <a href="{{ article.link }}">{{ article.title }}</a>
+                                                {% endif %}
+                                            </h2>
+
+                                            {% if  article.image is defined %}
+                                                <img class="post-image" src="{{ article.image }}" style="max-width: 540px;">
+                                            {% endif %}
+
+                                        </div>
+
+                                        <div class="post-content">
+                                            {{ article.content }}
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- end: .post -->
+
+                                {% endfor %}
+                            {% endif %}
+
+                        {% endfor %}
+                    {% endif %}
+
+                </div>
+
+                <div class="post-navigation">
+                    <div class="grid_1 col_left">
+                        {% if page.previous_sibling['0'] %}
+                            {% for previous in page.previous_sibling %}
+                                <a href="{{ previous.url }}">←</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="grid_1 col_centre">
+                        {{ page.published | date("Y") }}
+                    </div>
+                    <div class="grid_1 col_right">
+                        {% if page.next_sibling['0'] %}
+                            {% for next in page.next_sibling %}
+                                <a href="{{ next.url }}">→</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+            
+            {% include 'partials/chunks/footer.html' %}
+
+        </div>
+        <!-- #wrapper -->
+
+        {% include 'partials/chunks/scripts-jquery.html' %}
+
+        {% include 'partials/chunks/scripts-body.html' %}
+        
+    </body>
+</html>

@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         
         <!-- +++ SITE INFO +++ -->
-        <title>{{ page.title }} | {{ page.site_name }}</title>
+        <title>{{ page.published | date("F") }} {{ page.published | date("Y") }} {{ page.title }} | {{ page.site_name }}</title>
         {% include 'partials/chunks/meta.html' %}
         
         {% include 'partials/chunks/stylesheets.html' %}
@@ -34,29 +34,49 @@
         <div id="wrapper">
 
             {% include 'partials/chunks/header.html' %}
-
-            <div id="content">
         
-                <div class="post" class="{{ page.type }}">
+            <div id="content">
 
-                    <p class="post-date"><a href="{{ page.url }}">{{ page.published | date("jS") }} {{ page.published | date("F") }} {{ page.published | date("Y") }}</a></p>
+                <h2>Published in {{ page.published | date("F") }} {{ page.published | date("Y") }}</h2>
 
-                    <h2 class="post-title">
-                        {% if  page.type == 'own-post' %}
-                            <a href="{{ page.url }}">{{ page.title }}</a>
-                        {% elseif page.type == 'linked-post' %}
-                            <a href="{{ page.link }}">{{ page.title }}</a>
-                        {% endif %}
-                    </h2>
+                <div class="post-listing">
+                    {% if page.children %}
+                        {% for article in page.children | reverse %}
 
-                    <div class="post-content">
-                        {{ page.content }}
-                    </div>
-                    
+                            <!-- start: .post -->
+                            <div class="post" class="{{ article.type }}">
+
+                                <div class="post-head">
+
+                                    <p class="post-date"><a href="{{ article.url }}">{{ article.published | date("j") }}<sup>{{ article.published | date("S") }}</sup> {{ article.published | date("F") }} {{ article.published | date("Y") }}</a></p>
+
+                                    <h2 class="post-title">
+                                        {% if  article.type == 'own-post' %}
+                                            <a href="{{ article.url }}">{{ article.title }}</a>
+                                        {% elseif article.type == 'linked-post' %}
+                                            <a href="{{ article.link }}">{{ article.title }}</a>
+                                        {% endif %}
+                                    </h2>
+
+                                    {% if  article.image is defined %}
+                                        <img class="post-image" src="{{ article.image }}" style="max-width: 540px;">
+                                    {% endif %}
+
+                                </div>
+
+                                <div class="post-content">
+                                    {{ article.content }}
+                                </div>
+                                
+                            </div>
+                            <!-- end: .post -->
+
+                        {% endfor %}
+                    {% endif %}
+
                 </div>
-                 <!-- .post -->
 
-                 <div class="post-navigation">
+                <div class="post-navigation">
                     <div class="grid_1 col_left">
                         {% if page.previous_sibling['0'] %}
                             {% for previous in page.previous_sibling %}
@@ -65,7 +85,7 @@
                         {% endif %}
                     </div>
                     <div class="grid_1 col_centre">
-                        {{ page.published | date("j") }}<sup>{{ page.published | date("S") }}</sup>
+                        {{ page.published | date("F") }}
                     </div>
                     <div class="grid_1 col_right">
                         {% if page.next_sibling['0'] %}
