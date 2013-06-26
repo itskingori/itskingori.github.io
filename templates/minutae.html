@@ -46,24 +46,29 @@
                                 {% if month.children %}
                                     {% for minutae in month.children | reverse %}
 
+                                        <!-- start: .post -->
                                         <div class="post" class="{{ minutae.type }}">
 
-                                            <p class="post-date"><a href="{{ minutae.url }}">{{ minutae.published | date("j") }}<sup>{{ minutae.published | date("S") }}</sup> {{ minutae.published | date("F") }} {{ minutae.published | date("Y") }}</a></p>
+                                            <div class="post-head">
 
-                                            <h2 class="post-title">
-                                                {% if  minutae.type == 'own-post' %}
-                                                    <a href="{{ minutae.url }}">{{ minutae.title }}</a>
-                                                {% elseif minutae.type == 'linked-post' %}
-                                                    <a href="{{ minutae.link }}">{{ minutae.title }}</a>
-                                                {% endif %}
-                                            </h2>
+                                                <p class="post-date"><a href="{{ minutae.url }}">{{ minutae.published | date("j") }}<sup>{{ minutae.published | date("S") }}</sup> {{ minutae.published | date("F") }} {{ minutae.published | date("Y") }}</a></p>
+
+                                                <h2 class="post-title">
+                                                    {% if  minutae.type == 'own-post' %}
+                                                        <a href="{{ minutae.url }}">{{ minutae.title }}</a>
+                                                    {% elseif minutae.type == 'linked-post' %}
+                                                        <a href="{{ minutae.link }}">{{ minutae.title }}</a>
+                                                    {% endif %}
+                                                </h2>
+
+                                            </div>
 
                                             <div class="post-content">
                                                 {{ minutae.content }}
                                             </div>
                                             
                                         </div>
-                                        <!-- .post -->
+                                        <!-- end: .post -->
 
                                     {% endfor %}
                                 {% endif %}
