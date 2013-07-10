@@ -28,42 +28,42 @@ content: |-
     <table class="table table-hover table-striped">
         <thead>
             <tr>
-                <th width="25%" align="left">Browser</th>
-                <th width="25%" align="left">MP3</th>
-                <th width="25%" align="left">Wav</th>
-                <th width="25%" align="left">Ogg</th>
+                <th>Browser</th>
+                <th>MP3</th>
+                <th>WAV</th>
+                <th>OGG</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Internet Explorer 9+</td>
-                <td>YES</td>
-                <td>NO</td>
-                <td>NO</td>
+                <td class="success">YES</td>
+                <td class="error">NO</td>
+                <td class="error">NO</td>
             </tr>
             <tr>
                 <td>Chrome 6+</td>
-                <td>YES</td>
-                <td>YES</td>
-                <td>YES</td>
+                <td class="success">YES</td>
+                <td class="success">YES</td>
+                <td class="success">YES</td>
             </tr>
             <tr>
                 <td>Firefox 3.6+</td>
-                <td>NO</td>
-                <td>YES</td>
-                <td>YES</td>
+                <td class="error">NO</td>
+                <td class="success">YES</td>
+                <td class="success">YES</td>
             </tr>
             <tr>
                 <td>Safari 5+</td>
-                <td>YES</td>
-                <td>YES</td>
-                <td>NO</td>
+                <td class="success">YES</td>
+                <td class="success">YES</td>
+                <td class="error">NO</td>
             </tr>
             <tr>
                 <td>Opera 10+</td>
-                <td>NO</td>
-                <td>YES</td>
-                <td>YES</td>
+                <td class="error">NO</td>
+                <td class="success">YES</td>
+                <td class="success">YES</td>
             </tr>
         </tbody>
     </table>
