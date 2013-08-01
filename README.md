@@ -1,8 +1,6 @@
-# King'ori.co #
+[Personal site][1], going steady with [Stacey][2] & always a work
+in progress. Feed [here][3] & hala thru' yo@kingori.co.
 
-Personal site, going steady with [Stacey](http://staceyapp.com/) & always a work
-in progress
-
-Feed [here](http://feeds.feedburner.com/kingorico)
-
-Email: j@kingori.co
+[1]: http://kingori.co
+[2]: http://staceyapp.com/
+[3]: http://feeds.feedburner.com/kingorico
