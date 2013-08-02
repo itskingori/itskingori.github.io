@@ -37,7 +37,17 @@
         
             <div id="content">
 
-                <h2> {{ page.title }}</h2>
+                <h2>
+                    {{ page.title }}
+                    {% if page.parent['0'] == './content/articles' %}
+                        <a class="rss" href="{{ page.feed }}" title="Subscribe to articles">
+                            RSS
+                            <span class="dot"></span>
+                            <span class="inside ring"></span>
+                            <span class="outside ring"></span>
+                        </a>
+                    {% endif %}
+                </h2>
 
                 <div class="post-listing">
 
