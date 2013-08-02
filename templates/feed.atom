@@ -5,6 +5,8 @@
 <subtitle>King'ori.co Articles</subtitle>
 <link href="http://{{ page.base_url }}/{{ page.permalink }}" rel="self" type="application/atom+xml"/>
 <link href="http://{{ page.base_url }}/" rel="alternate" type="text/html"/>
+<icon>http://{{ page.base_url }}/favicon.ico</icon>
+<logo>http://{{ page.base_url }}/images/logo-dark-24@2x.png</logo>
 <updated>{{ page.updated }}</updated>
 <author> 
     <name>{{ page.author }}</name>
