@@ -80,17 +80,17 @@
                     <div class="grid_1 col_left">
                         {% if page.previous_sibling['0'] %}
                             {% for previous in page.previous_sibling %}
-                                <a href="{{ previous.url }}">←</a>
+                                <a href="{{ previous.url }}">← {{ previous.published | date("F") }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
                     <div class="grid_1 col_centre">
-                        {{ page.published | date("F") }}
+                        Posts in {{ page.published | date("F") }} {{ page.published | date("Y") }}
                     </div>
                     <div class="grid_1 col_right">
                         {% if page.next_sibling['0'] %}
                             {% for next in page.next_sibling %}
-                                <a href="{{ next.url }}">→</a>
+                                <a href="{{ next.url }}">{{ next.published | date("F") }} →</a>
                             {% endfor %}
                         {% endif %}
                     </div>
