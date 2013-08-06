@@ -40,12 +40,7 @@
                 <h2>
                     {{ page.title }}
                     {% if page.parent['0'] == './content/articles' %}
-                        <a class="rss" href="{{ page.feed }}" title="Subscribe to articles">
-                            RSS
-                            <span class="dot"></span>
-                            <span class="inside ring"></span>
-                            <span class="outside ring"></span>
-                        </a>
+                        <a href="{{ page.feed }}" title="Subscribe to articles"> <i class="icon-rss"></i></a>
                     {% endif %}
                 </h2>
 
