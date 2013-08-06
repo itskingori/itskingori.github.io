@@ -42,7 +42,7 @@
                                         {{ article.content }}
                                         {% if  article.type == 'linked-post' %}
                                             <p>
-                                                <a title="Permalink to '{{ article.title }}'" href="http://{{ page.base_url }}/{{ article.permalink }}" target="_blank">&nbsp;↩&nbsp;</a>
+                                                <a title="Permalink to '{{ article.title }}'" href="http://{{ page.base_url }}/{{ article.permalink }}" target="_blank">↩</a>
                                             </p>
                                         {% endif %}
                                     </div>
