@@ -64,7 +64,12 @@
                                     {% if month.children %}
                                         {% for article in month.children | reverse %}
 
-                                            <p><a href="{{ article.permalink }}"> {{article.title }}</a> <sup>{{ article.published | date("jS") }}</sup></p>
+                                            <p>
+                                                <a href="{{ article.permalink }}"> {{article.title }}</a> <sup>{{ article.published | date("jS") }}</sup>
+                                                {% if  article.type == 'linked-post' %}
+                                                    ↩
+                                                {% endif %}
+                                            </p>
 
                                         {% endfor %}
                                     {% endif %}

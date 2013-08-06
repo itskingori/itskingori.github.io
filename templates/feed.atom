@@ -32,7 +32,7 @@
                         {% for article in month.children | reverse %}
 
                             <entry>
-                                <title>{{ article.title }}</title>
+                                <title>{{ article.title }}{% if  article.type == 'linked-post' %} ↩{% endif %}</title>
                                 <link rel="alternate" type="text/html" href="{{ article.link }}" />
                                 <id>{{ article.domain_name }}:{{ article.permalink }}</id>
                                 <published>{{ article.published | date("c")}}</published>
