@@ -40,6 +40,11 @@
                                 <content type="xhtml" xml:lang="en">
                                     <div xmlns="http://www.w3.org/1999/xhtml">
                                         {{ article.content }}
+                                        {% if  article.type == 'linked-post' %}
+                                            <p>
+                                                <a title="Permalink to '{{ article.title }}'" href="http://{{ page.base_url }}/{{ article.permalink }}" target="_blank">&nbsp;↩&nbsp;</a>
+                                            </p>
+                                        {% endif %}
                                     </div>
                                 </content>
                                 <category term="articles"/>
