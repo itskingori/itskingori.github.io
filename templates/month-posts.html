@@ -77,17 +77,17 @@
                 </div>
 
                 <div class="post-navigation">
-                    <div class="grid_1 col_left">
+                    <div class="grid_20p col_left">
                         {% if page.previous_sibling['0'] %}
                             {% for previous in page.previous_sibling %}
                                 <a href="{{ previous.url }}">← {{ previous.published | date("F") }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
-                    <div class="grid_1 col_centre">
+                    <div class="grid_60p col_centre">
                         Posts in {{ page.published | date("F") }} {{ page.published | date("Y") }}
                     </div>
-                    <div class="grid_1 col_right">
+                    <div class="grid_20p col_right">
                         {% if page.next_sibling['0'] %}
                             {% for next in page.next_sibling %}
                                 <a href="{{ next.url }}">{{ next.published | date("F") }} →</a>

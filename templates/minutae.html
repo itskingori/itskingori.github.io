@@ -74,17 +74,17 @@
                                 {% endif %}
 
                             <div class="post-navigation">
-                                <div class="grid_1 col_left">
+                                <div class="grid_20p col_left">
                                     {% if month.previous_sibling['0'] %}
                                         {% for previous in month.previous_sibling %}
                                             <a href="{{ previous.url }}">←</a>
                                         {% endfor %}
                                     {% endif %}
                                 </div>
-                                <div class="grid_1 col_centre">
+                                <div class="grid_60p col_centre">
                                     {{ month.published | date("F") }}
                                 </div>
-                                <div class="grid_1 col_right">
+                                <div class="grid_20p col_right">
                                     {% if month.next_sibling['0'] %}
                                         {% for next in month.next_sibling %}
                                             <a href="{{ next.url }}">→</a>
