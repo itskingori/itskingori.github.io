@@ -144,6 +144,14 @@ content: |-
     If you are using MAMP and don't need MySQL, check out the config file
     details [in this other post][12].
 
+    _Ps: For those using Rails & MAMP (using sockets, which seems to be the
+    easier option) ... I'm not quite sure if it works out of the box. I was
+    tinkering with an actual MySQL install using homebrew by the time I found
+    this solution. If it doesn't, try install MySQL using homebrew first. There
+    have been a few articles on the web discussing the fact that the MySQL
+    bundled with MAMP doesn't have everything reuired for a full MySQL
+    installation (which might be necessary for the mysql2 gem install)._
+
 
     ###Your First Rails Project###
 
