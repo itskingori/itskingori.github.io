@@ -26,33 +26,70 @@ content: |-
     development:
         adapter: mysql2
         encoding: utf8
-        database: gearbox_development
+        database: **YOURDBNAME_development**
         pool: 5
-        username: root
-        password:
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
         host: localhost
         port: 3306
 
     test:
         adapter: mysql2
         encoding: utf8
-        database: gearbox_test
+        database: **YOURDBNAME_test**
         pool: 5
-        username: root
-        password:
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
         host: localhost
         port: 3306
 
     production:
         adapter: mysql2
         encoding: utf8
-        database: gearbox_production
+        database: **YOURDBNAME_production**
         pool: 5
-        username: root
-        password:
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
         host: localhost
         port: 3306
     </pre>
+
+    If you are using MAMP, you can use the sockets instead;
+
+    <pre class="brush: plain; highlight: [9,19,29]">
+    development:
+        adapter: mysql2
+        encoding: utf8
+        database: **YOURDBNAME_development**
+        pool: 5
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
+        host: localhost
+        socket: /Applications/MAMP/tmp/mysql/mysql.sock
+
+    test:
+        adapter: mysql2
+        encoding: utf8
+        database: **YOURDBNAME_test**
+        pool: 5
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
+        host: localhost
+        socket: /Applications/MAMP/tmp/mysql/mysql.sock
+
+    production:
+        adapter: mysql2
+        encoding: utf8
+        database: **YOURDBNAME_production**
+        pool: 5
+        username: **YOUR_USERNAME**
+        password: **YOUR_PASSWORD**
+        host: localhost
+        socket: /Applications/MAMP/tmp/mysql/mysql.sock
+    </pre>
+
+    Check out [this other post][3] that has details on installation of Rails on
+    OS X (MySQL included).
 
     _Ps: Find out more options from `rails --help`_
 
@@ -63,3 +100,4 @@ content: |-
 
     [1]: http://stackoverflow.com/questions/1670154/convert-a-ruby-on-rails-app-from-sqlite-to-mysql
     [2]: http://stackoverflow.com/questions/5781482/using-sqlite-vs-mysql-with-ruby
+    [3]: /minutae/2013/07/rails-on-osx/

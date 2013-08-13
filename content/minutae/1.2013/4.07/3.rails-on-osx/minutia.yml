@@ -113,6 +113,38 @@ content: |-
     see loads of other gems being installed at the same time.
 
 
+    ###Installing MySQL###
+
+    Most people prefer MySQL as their DB of choice.
+
+    <pre class="brush: bash">
+    $ gem install mysql2
+    </pre>
+
+    To connect:
+
+    <pre class="brush: bash">
+    $ mysql -u root
+    </pre>
+
+    A few things that you should know:
+
+    <pre class="brush: bash">
+    # To have launchd start mysql at login:
+    $ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+
+    # Then to load mysql now:
+    $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+
+    # Or, if you don't want/need launchctl, you can just run:
+    # mysql.server {start|stop|restart|reload|force-reload|status}
+    $ mysql.server start
+    </pre>
+
+    If you are using MAMP and don't need MySQL, check out the config file
+    details [in this other post][12].
+
+
     ###Your First Rails Project###
 
     <pre class="brush: bash">
@@ -165,5 +197,6 @@ content: |-
     [9]: http://bundler.io/
     [10]: http://rubyonrails.org/
     [11]: https://github.com/mxcl/homebrew/wiki/Installation
+    [12]: /minutae/2013/08/rails-with-mysql/
 
 
