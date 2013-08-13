@@ -19,7 +19,40 @@ content: |-
         -d, [--database=DATABASE] 
     </pre>
 
-    So we could use `$rails new projectname -d mysql`.
+    So we could use `$rails new projectname -d mysql` the specify the port in
+    the database config file, `config/database.yml`.
+
+    <pre class="brush: plain; highlight: [9,19,29]">
+    development:
+        adapter: mysql2
+        encoding: utf8
+        database: gearbox_development
+        pool: 5
+        username: root
+        password:
+        host: localhost
+        port: 3306
+
+    test:
+        adapter: mysql2
+        encoding: utf8
+        database: gearbox_test
+        pool: 5
+        username: root
+        password:
+        host: localhost
+        port: 3306
+
+    production:
+        adapter: mysql2
+        encoding: utf8
+        database: gearbox_production
+        pool: 5
+        username: root
+        password:
+        host: localhost
+        port: 3306
+    </pre>
 
     _Ps: Find out more options from `rails --help`_
 
