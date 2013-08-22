@@ -3,82 +3,48 @@
 // set the site root i.e. ../../.../kingori/
 $site_root = dirname(dirname(dirname(__FILE__))).'/';
 
-// add config & youtube library files
-require_once $site_root.'experiments/config.php'; // global
-require_once $site_root.'experiments/youtube-php-list-client/config.php'; // project specific
-require_once $site_root.'public/php/google-api-php-client/src/Google_Client.php';
-require_once $site_root.'public/php/google-api-php-client/src/contrib/Google_YouTubeService.php';
+// gets the data from a URL
+function get_url_contents($url) {
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    $data = curl_exec($ch);
+    curl_close($ch);
 
-// set cached access token. Remember to replace $_SESSION with a real database
-// or memcached.
-session_start();
-
-$client = new Google_Client();
-
-// use API keys to identify your project when you do not need to access user data.
-// $client->setDeveloperKey($google_api_key);
-
-// set the redirect url
-$redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'], FILTER_SANITIZE_URL);
-
-// Use client details if you need to access user data.
-$client->setClientId($project_oauth2_client_id);
-$client->setClientSecret($project_oauth2_client_secret);
-$client->setRedirectUri($redirect);
-
-$youtube = new Google_YoutubeService($client);
-
-if (isset($_GET['code'])) {
-
-    if (strval($_SESSION['state']) !== strval($_GET['state'])) {
-
-        die('The session state did not match.');
-    }
-
-    $client->authenticate();
-    $_SESSION['token'] = $client->getAccessToken();
-    header('Location: ' . $redirect);
+    return $data;
 }
 
-if (isset($_SESSION['token'])) {
+// add project config file
+require_once $site_root.'experiments/youtube-php-list-client/config.php';
 
-    $client->setAccessToken($_SESSION['token']);
+// initialize
+$htmlBody = '';
+$youtube_public_api   = 'http://gdata.youtube.com/feeds/api/users/'.$youtube_channel_name.'/uploads?alt=json';
+
+// fetch data
+$responce = get_url_contents($youtube_public_api);
+$responce = json_decode($responce);
+$videos = $responce->feed->entry;
+
+// iterate through each video
+$htmlBody .= '<ul>';
+foreach ($videos as $video) {
+
+    // extract the data
+    $title      = ucwords($video->title->{'$t'});
+    $link       = $video->link['0']->href;
+    $thumbnail  = $video->{'media$group'}->{'media$thumbnail'}['0']->url;
+    $time       = $video->{'media$group'}->{'yt$duration'}->seconds;
+
+    // format the time appropriately
+    if ($time > 3600) { $time_format = 'H:i:s'; } else { $time_format = 'i:s'; }
+    $time = gmdate($time_format, $time);
+    
+    $htmlBody .= sprintf('<li><img src="%s" height="180" width="240"><a href="%s">%s (%s)</a></li>', $thumbnail, $link, $title, $time);
 }
-
-// Check if access token successfully acquired
-if ($client->getAccessToken()) {
-
-    try {
-
-        $htmlBody .= 'authorized';
-
-    }
-    catch (Google_ServiceException $e) {
-
-        $htmlBody .= sprintf('<p>A service error occurred: <code>%s</code></p>',
-        htmlspecialchars($e->getMessage()));
-    }
-    catch (Google_Exception $e) {
-
-        $htmlBody .= sprintf('<p>An client error occurred: <code>%s</code></p>',
-        htmlspecialchars($e->getMessage()));
-    }
-
-    $_SESSION['token'] = $client->getAccessToken();
-}
-else {
-
-      // If the user hasn't authorized the app, initiate the OAuth flow
-      $state = mt_rand();
-      $client->setState($state);
-      $_SESSION['state'] = $state;
-
-      $authUrl = $client->createAuthUrl();
-      $htmlBody = <<<END
-  <h3>Authorization Required</h3>
-  <p>You need to <a href="$authUrl">authorize access</a> before proceeding.<p>
-END;
-}
+$htmlBody .= '</ul>';
 
 ?>
 <!DOCTYPE html>
