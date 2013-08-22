@@ -89,19 +89,72 @@ if ($query && $maxResults) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
         <!-- +++ SITE INFO +++ -->
-        <title>YouTube Search Client | King'ori J. Maina</title>
+        <title>YouTube Search Client • Experiment | King'ori J. Maina</title>
+
+        <!-- +++ FAVICON & ICONS: combined 16, 32 & 48 +++ -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../public/favicon.ico">
+
+        <!-- +++ STYLESHEETS +++ -->
+        <link rel="stylesheet" href="../../public/css/normalize.css">
+
+        <!-- +++ JAVASCRIPT +++ -->
+        <script type="text/javascript" src="../../public/js/libs/modernizr.custom.29636.js"></script>
+        <script type="text/javascript" src="../../public/js/less-1.3.3.min.js"></script>
+
+        <!-- jQuery: Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../public/js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- jQuery: Grab Google CDN's jQuery Migrate, with a protocol relative URL; fall back to local if necessary -->
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../public/js/libs/jquery-migrate-1.2.1.min.js"><\/script>')</script>
+        
+        <!-- +++ FONTS +++ -->
+        <script type="text/javascript">
+            //  Displays text in the default font; then after the fonts have
+            //  loaded it displays the text in the specified font. (This code
+            //  reproduces Firefox's default behavior in all other modern
+            //  browsers)
+            WebFontConfig = {
+                google: {
+                    families: [ 'Montserrat' ]
+                }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+                
+        <!-- Google Analytics: Speed optimized with enhanced link attribution -->
+        <script type="text/javascript">
+            var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+            var _gaq=[['_setAccount','UA-39877044-1'],['_trackPageview'],['_require','inpage_linkid',pluginUrl]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 
     </head>
     
     <body>
 
-        <form action="" method="get">
-            <input type="search" name="q" value="<?=$query?>" placeholder="Search YouTube"><br>
-            <input type="number" name="maxResults" min="0" max="10" value="5"><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div id="wrapper">
 
-        <?=$videos?>
+            <form action="" method="get">
+                <input type="search" name="q" value="<?=$query?>" placeholder="Search YouTube"><br>
+                <input type="number" name="maxResults" min="0" max="10" value="5"><br>
+                <input type="submit" value="Submit">
+            </form>
 
+            <?=$videos?>
+            
+        </div>
+    
     </body>
 </html>
