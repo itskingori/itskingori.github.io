@@ -1,7 +1,11 @@
-## Stacey ##
+## stacey ##
 app/
 extensions/*
 !extensions/config.php
 
 ## htaccess ##
 .htaccess
+
+## google-api-php-client ##
+public/php/google-api-php-client/examples/
+public/php/google-api-php-client/test/
