@@ -16,7 +16,7 @@ content: |-
         rails new APP_PATH [options]
 
     Options:
-        -d, [--database=DATABASE] 
+        -d, [--database=DATABASE]
     </pre>
 
     So we could use `$rails new projectname -d mysql` the specify the port in

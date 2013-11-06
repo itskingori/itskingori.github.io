@@ -33,7 +33,7 @@ content: |-
     <pre class="brush: plain">
     # WHERE YOUR JAVA IS
     export JAVA_HOME=/usr
-    
+
     ##################
     ## Amazon Paths ##
     ##################
@@ -256,7 +256,7 @@ content: |-
     For details on the possible variations that can be applied such as the
     various adjustment types you can [read this ...][link23]
 
-    _Ps: Cooldown period is in seconds._ 
+    _Ps: Cooldown period is in seconds._
 
     ####Step 5: Link a CloudWatch event to an auto scaling policy####
 
@@ -325,7 +325,7 @@ content: |-
 
     ... so if your PHP app has a specific cookie it uses to manage settings, the ELB
     will make sure the request is passed to the same server that issued the
-    request. 
+    request.
 
     Your AMI should only have Apache & PHP on it, and each instance will have the
     same, shared MySQL server or RDS connection info, baked into the AMI. If
@@ -396,7 +396,7 @@ content: |-
 
     [link1]: http://www.linux-support.com/cms/ubuntu-developers-eric-hammond-installing-aws-command-line-tools-from-amazon-downloads/
     [link2]: http://kkpradeeban.blogspot.com/2011/01/auto-scaling-with-amazon-ec2.html
-    [link3]: http://aws.amazon.com/developertools/351 
+    [link3]: http://aws.amazon.com/developertools/351
     [link4]: http://aws.amazon.com/developertools/2535
     [link5]: http://aws.amazon.com/developertools/2536
     [link6]: http://alestic.com/2012/09/aws-command-line-tools

@@ -68,17 +68,17 @@ content: |-
     > block), while the definitions are left on the same place.
 
     <pre class="brush: javascript">
-    (function() {  
+    (function() {
 
-        var a = 'a';  
-        // lines of code 
+        var a = 'a';
+        // lines of code
 
-        var b = 'b';  
-        // more lines of code  
+        var b = 'b';
+        // more lines of code
 
-        var c= 'c'; // antipattern  
-        // final lines of scripting  
-    })();  
+        var c= 'c'; // antipattern
+        // final lines of scripting
+    })();
     </pre>
 
     Will be rewritten by the interpreter as;
@@ -87,13 +87,13 @@ content: |-
     (function() {
 
         var a, b, c; // variables declared
-        
+
         a = 'a';
         // lines of code
-        
+
         b = 'b'; // initialized
         // more lines of code
-        
+
         c= 'c'; // initialized
         // final lines of scripting
     })();
@@ -118,11 +118,11 @@ content: |-
     That is;
 
     <pre class="brush: javascript">
-    function b() {  
-        a = 10;  
-        return;  
-        function a() {} 
-    } 
+    function b() {
+        a = 10;
+        return;
+        function a() {}
+    }
     </pre>
 
     Will be rewritten by the interpreter as;

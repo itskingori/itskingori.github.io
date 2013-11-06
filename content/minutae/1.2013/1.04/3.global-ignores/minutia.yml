@@ -37,7 +37,7 @@ content: |-
     ### Solution ###
 
     Git has a global configuration that applies rules to all of your projects.
-    
+
     On linux for example:
 
     <pre class="brush: bash">

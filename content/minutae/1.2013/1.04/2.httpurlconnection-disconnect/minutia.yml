@@ -80,13 +80,13 @@ content: |-
         if (responseInputStream != null) {
 
             try {
-                        
+
                 responseInputStream.close();
             }
             catch (IOException e) {
 
                 // YOU CAN DO WHATEVER HERE
-                
+
                 e.printStackTrace();
             }
         }

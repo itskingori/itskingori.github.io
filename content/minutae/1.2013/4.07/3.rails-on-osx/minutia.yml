@@ -53,7 +53,7 @@ content: |-
 
     ###Installing Bundler###
 
-    [Bundler][9] is a [Ruby gem][8] manages an application's dependencies, kind 
+    [Bundler][9] is a [Ruby gem][8] manages an application's dependencies, kind
     of like a shopping list of other libraries the application needs to work. If
     you're just starting out with Ruby on Rails you will see just how important
     and helpful this gem is.
@@ -88,7 +88,7 @@ content: |-
 
     <pre class="brush: bash">
     $ echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
-    </pre> 
+    </pre>
 
     _Ps: Notice `rbenv rehash` has been used again when installing bundler, you
     need to do this whenever you install a new gem that provides binaries. So if

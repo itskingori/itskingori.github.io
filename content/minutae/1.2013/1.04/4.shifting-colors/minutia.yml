@@ -44,7 +44,7 @@ content: |-
         Chameleon.changeColor();
       }
       // Defaults to @orange and @skyblue on hover if we aren't doing this.
-    }    
+    }
 
     // Switch colors
     Chameleon.changeColor = function() {

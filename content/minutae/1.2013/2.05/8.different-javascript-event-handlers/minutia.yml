@@ -9,7 +9,7 @@ link: http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-the-difference
 content: |-
 
     `<ul id="items"><li> Click Me </li></ul>`
-    
+
     > Bind attaches an event handler only to the elements that match a
     > particular selector. This, expectedly, excludes any dynamically generated
     > elements.
@@ -25,7 +25,7 @@ content: |-
     > does this by attaching the handler to the document. Unfortunately, it does
     > not work well with chaining. Don't expect to chain live() after calls like
     > children().next()...etc.
-    
+
     <pre class="brush: javascript">
     $("li").live("click", function() {
         $(this).parent().append("<li>New Element</li>");
@@ -54,5 +54,5 @@ content: |-
     <pre class="brush: javascript">
     $("li", $("#items")[0]).live("click", function() {
         $(this).parent().append("<li>New Element</li>");
-    }); 
+    });
     </pre>
