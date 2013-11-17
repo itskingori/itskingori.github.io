@@ -5,28 +5,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
     <head>
-        
+
         {% include 'partials/chunks/ascii.html' %}
-                
+
         <!-- +++ META +++ -->
         <meta charset="utf-8">
         <meta name="robots" content="INDEX">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        
+
         <!-- +++ SITE INFO +++ -->
         <title>{{ page.title }} | {{ page.site_name }}</title>
         {% include 'partials/chunks/meta.html' %}
-        
+
         {% include 'partials/chunks/stylesheets.html' %}
-        
+
         {% include 'partials/chunks/scripts-head.html' %}
 
         {% include 'partials/chunks/fonts.html' %}
-        
+
         {% include 'partials/chunks/google-analytics.html' %}
-            
+
     </head>
-    
+
     <body>
 
         {% include 'partials/chunks/chrome-frame.html' %}
@@ -34,7 +34,7 @@
         <div id="wrapper">
 
             {% include 'partials/chunks/header.html' %}
-        
+
             <div id="content">
 
                 {% if page.children %}
@@ -70,7 +70,7 @@
                                             <div class="post-content">
                                                 {{ article.content }}
                                             </div>
-                                            
+
                                         </div>
                                         <!-- end: .post -->
 
@@ -104,13 +104,13 @@
                 {% endif %}
 
             </div>
-            
+
             {% include 'partials/chunks/footer.html' %}
 
         </div>
         <!-- #wrapper -->
 
         {% include 'partials/chunks/scripts-body.html' %}
-        
+
     </body>
 </html>
