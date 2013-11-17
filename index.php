@@ -20,7 +20,7 @@ if(phpversion() < 5.2) {
 
   # start the app
   new Stacey($_GET);
-  
+
 }
 
 ?>
