@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# HUMANS
+
+    King'ori J. Maina -- Owner, Architect, Developer -- @itsmrwave
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll
+    HTML5 + CSS3
+    Normalize.css
+    jQuery, Modernizr, LESS, Debug
