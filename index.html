@@ -1,15 +1,13 @@
 ---
-layout: homepage
-title: Yo!
+layout: default
+title: Your New Jekyll Site
 ---
 
-I'm <a href="about/">King'ori J. Maina</a>, I build web stuff like <a
-href="http://waabeh.com/" target="_blank">this</a>. Often slaving away @ <a
-href="http://watungaji.com/" target="_blank">Watungaji</a>. Find me on <a
-href="http://twitter.com/itsmrwave">Twitter</a>, <a
-href="https://www.google.com/+KingoriMaina">G+</a>, <a
-href="http://ke.linkedin.com/in/jobkingori">LinkedIn</a>, <a
-href="https://github.com/itsmrwave">Github</a> or plain old <a
-href="mailto:yo@kingori.co?Subject=You're%20Awesome">email</a>. I archive smart
-<a href="articles/archives/">articles & thoughts here</a> and  <a
-href="minutae/archives/">code minutae here</a>.
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
