@@ -1,5 +1,0 @@
-{% for article in page.children | reverse %}
-    {% if article %}
-        <p><a href="{{ article.permalink }}">{{ article.title }}</a> <span><sup>{{ article.published | date("jS") }}</sup></span></p>
-    {% endif %}
-{% endfor %}

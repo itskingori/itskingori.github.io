@@ -1,7 +1,0 @@
-## stacey ##
-app/
-extensions/*
-!extensions/config.php
-
-## htaccess ##
-.htaccess
