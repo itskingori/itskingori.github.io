@@ -9,25 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- +++ PAGE INFO +++ -->
-    <title>{{ page.title }} {{ site.name }}</title>
+    <title>{{ page.title }} • {{ site.name }}</title>
 
     <!-- +++ FAVICON & ICONS: combined 16, 32 & 48 +++ -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <!-- +++ STYLESHEETS +++ -->
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link rel="stylesheet" href="stylesheets/foundation.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheets/foundation.css">
 
-    <script src="javascripts/vendor/modernizr.js"></script>
-    <script src="javascripts/vendor/jquery.js"></script>
-    <script src="javascripts/vendor/less-1.6.2.min.js"></script>
-    <script src="javascripts/foundation.min.js"></script>
+    <script src="{{ site.baseurl}}/assets/javascripts/vendor/modernizr.js"></script>
+    <script src="{{ site.baseurl}}/assets/javascripts/vendor/jquery.js"></script>
+    <script src="{{ site.baseurl}}/assets/javascripts/vendor/less-1.6.2.min.js"></script>
+    <script src="{{ site.baseurl}}/assets/javascripts/foundation.min.js"></script>
 
   </head>
   <body>
 
     {{ content }}
-    <a href="articles/archives/">articles & thoughts here</a> and  <a href="minutae/archives/">code minutae here</a>
 
     <script>
       $(document).foundation();
