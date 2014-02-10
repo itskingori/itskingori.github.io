@@ -9,25 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- +++ PAGE INFO +++ -->
-    <title>{{ page.title }} • {{ site.name }}</title>
+    <title>{{ page.title + '•' if defined? page.title }} {{ site.name }}</title>
+    <base href="{{ site.baseurl}}">
 
     <!-- +++ FAVICON & ICONS: combined 16, 32 & 48 +++ -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <!-- +++ STYLESHEETS +++ -->
-    <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheets/normalize.css">
-    <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheets/foundation.css">
-    <link rel="stylesheet/less" href="{{ site.baseurl}}/assets/stylesheets/styles.less">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/foundation.css">
+    <link rel="stylesheet/less" href="assets/stylesheets/styles.less">
 
-    <script src="{{ site.baseurl}}/assets/javascripts/vendor/modernizr.js"></script>
-    <script src="{{ site.baseurl}}/assets/javascripts/vendor/jquery.js"></script>
-    <script src="{{ site.baseurl}}/assets/javascripts/vendor/less-1.6.2.min.js"></script>
-    <script src="{{ site.baseurl}}/assets/javascripts/foundation.min.js"></script>
+    <script src="assets/javascripts/vendor/modernizr.js"></script>
+    <script src="assets/javascripts/vendor/jquery.js"></script>
+    <script src="assets/javascripts/vendor/less-1.6.2.min.js"></script>
+    <script src="assets/javascripts/foundation.min.js"></script>
 
   </head>
   <body>
 
-    {{ content }}
+    <div id="wrapper">
+      <div class="row">
+        <div class="text-center small-11 small-centered medium-8 medium-centered large-6 large-centered column clearfix">
+          {{ content }}
+        </div>
+      </div>
+
+      <footer class="row">
+        <div class="small-11 small-centered medium-8 medium-centered large-6 large-centered column clearfix">
+          <div class="text-left small-6 columns">
+            © 2004 — <a href="{{site.author.twitter_url}}">@</a>
+          </div>
+          <div class="text-right small-6 columns">
+            About
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script>
       $(document).foundation();

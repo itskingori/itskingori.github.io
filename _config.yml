@@ -1,4 +1,16 @@
-name: King'ori.co
+name: King'ori J. Maina
 markdown: redcarpet
 pygments: true
 baseurl: /kingori.co
+
+author:
+  fullname: "King'ori J. Maina"
+  email: "yo@kingori.co"
+  github: "itsmrwave"
+  github_url: "https://github.com/itsmrwave"
+  googleplus: "+KingoriMaina"
+  googleplus_url: "https://www.google.com/+KingoriMaina"
+  linkedin: "jobkingori"
+  linkedin_url: "http://ke.linkedin.com/in/jobkingori"
+  twitter: "@itsmrwave"
+  twitter_url: "https://twitter.com/itsmrwave"
