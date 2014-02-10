@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div id="posts">
-  <h2>Article Archives</h2>
+<div id="archives">
+  <h2>Code Minutae</h2>
 
   <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories.minutae %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
