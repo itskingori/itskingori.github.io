@@ -1,18 +1,36 @@
 @lightergrey: #DDD;
+@orange: hsl(  10, 90%, 60% );
 
-#homepage-entrance p {
-  line-height: 1.15em;
-  font-size: 2.3em;
+body {
+  font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
 }
 
-#wrapper {
-  padding-bottom: 10%;
-  padding-top: 10%;
+p {
+  font-size: 13px;
+}
 
-  > div {
-    padding-bottom: 30px;
-    padding-top: 20px;
-  }
+body.color0 a { color: hsl(  10, 90%, 60% ); } // 1
+body.color1 a { color: hsl(  30, 90%, 60% ); } // 2
+body.color2 a { color: hsl( 152, 25%, 53% ); } // 3
+body.color3 a { color: hsl( 210, 90%, 60% ); } // 4
+body.color4 a { color: hsl( 230, 90%, 60% ); } // 5
+body.color5 a { color: hsl( 270, 90%, 60% ); } // 6
+body.color6 a { color: hsl( 290, 90%, 60% ); } // 7
+body.color7 a { color: hsl( 310, 90%, 60% ); } // 8
+body.color8 a { color: hsl( 330, 90%, 60% ); } // 9
+body.color9 a { color: hsl( 350, 90%, 60% ); } // 10
+
+a, a:visited {
+  color: @orange;
+  -webkit-transition: color 5.0s linear;
+  -moz-transition: color 5.0s linear;
+  -ms-transition: color 5.0s linear;
+  -o-transition: color 5.0s linear;
+  transition: color 5.0s linear;
+}
+
+a:hover {
+    border-bottom: 1px solid;
 }
 
 header {
@@ -21,13 +39,76 @@ header {
     border-bottom: 1px solid @lightergrey;
     padding-bottom: 10px;
   }
+
+  div {
+    height: 59px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  a#logo {
+    background-color: white; // prevent flash of color
+    display: inline-block;
+    -webkit-transition: background-color 5.0s linear;
+    -moz-transition: background-color 5.0s linear;
+    -ms-transition: background-color 5.0s linear;
+    -o-transition: background-color 5.0s linear;
+    transition: background-color 5.0s linear;
+  }
+
+  a#logo.bkgcolor0 { background-color: hsl(  10, 90%, 60% ); } // 1
+  a#logo.bkgcolor1 { background-color: hsl(  30, 90%, 60% ); } // 2
+  a#logo.bkgcolor2 { background-color: hsl( 152, 25%, 53% ); } // 3
+  a#logo.bkgcolor3 { background-color: hsl( 210, 90%, 60% ); } // 4
+  a#logo.bkgcolor4 { background-color: hsl( 230, 90%, 60% ); } // 5
+  a#logo.bkgcolor5 { background-color: hsl( 270, 90%, 60% ); } // 6
+  a#logo.bkgcolor6 { background-color: hsl( 290, 90%, 60% ); } // 7
+  a#logo.bkgcolor7 { background-color: hsl( 310, 90%, 60% ); } // 8
+  a#logo.bkgcolor8 { background-color: hsl( 330, 90%, 60% ); } // 9
+  a#logo.bkgcolor9 { background-color: hsl( 350, 90%, 60% ); } // 10
+
+  a#logo:hover {
+    border-bottom: none;
+  }
+
+  a#title {
+    font-weight: bold;
+    height:59px;
+    line-height:59px;
+  }
 }
 
 footer {
-  font-size: 0.8em;
+  font-size: 0.75em;
 
   > div {
     border-top: 1px solid @lightergrey;
     padding-top: 10px;
+  }
+
+  div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+#homepage-entrance p {
+  line-height: 1.2em;
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+#wrapper {
+  padding-bottom: 10%;
+  padding-top: 5%;
+
+  > div {
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    > div {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 }
