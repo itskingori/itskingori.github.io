@@ -2,6 +2,7 @@ name: "King'ori J. Maina"
 markdown: redcarpet
 pygments: true
 baseurl: /kingori.co
+permalink: /:categories/:year/:month/:title/
 
 author:
   fullname: "King'ori J. Maina"

@@ -14,7 +14,7 @@ Like my life, this (the entire collective), is a draft and probably will always
 be a work in progress, minimal so that's it's as timeless as possible ... this
 was (and still is) an attempt at creating a portfolio of 'sorts' and
 occassionally ['Publishing What I Learn'][1] under thoughts/articles -
-[here][articles] &amp; code minutae - [here][minutae] ... when I can.
+[here][articles_archive] &amp; code minutae - [here][minutae_archive] ... when I can.
 
 I also love God, _**deeply**_&nbsp;&nbsp;&amp; constantly trying to be a man of
 character ... in a world of compromise.
@@ -27,8 +27,8 @@ Kenya][3] ... if you prefer a face-to-face meet.
 [twitter]: {{site.author.twitter_url}}
 [github]: {{site.author.github_url}}
 [googleplus]: {{site.author.googleplus_url}}
-[articles]: articles.html
-[minutae]: minutae.html
+[articles_archive]: articles/archive/
+[minutae_archive]: minutae/archive/
 [email]: mailto:yo@kingori.co?Subject=You're%20Awesome
 [1]: http://movethewebforward.org/#write
 [2]: articles/2013/09/riding-lions/
