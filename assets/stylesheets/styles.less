@@ -1,12 +1,9 @@
 @lightergrey: #DDD;
 @orange: hsl(  10, 90%, 60% );
 
-body {
-  font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
-}
-
-p {
+html, body {
   font-size: 13px;
+  font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
 }
 
 body.color0 a { color: hsl(  10, 90%, 60% ); } // 1
@@ -73,14 +70,13 @@ header {
 
   a#title {
     font-weight: bold;
-    font-size: 1em;
     height:59px;
     line-height:59px;
   }
 }
 
 footer {
-  font-size: 0.70em;
+  font-size: 0.9em;
 
   > div {
     border-top: 1px solid @lightergrey;
@@ -94,7 +90,7 @@ footer {
 }
 
 sup {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 #wrapper {
@@ -114,26 +110,16 @@ sup {
 
 #homepage-entrance p {
   line-height: 1.2em;
-  font-size: 2.0em;
+  font-size: 2.2em;
   font-weight: bold;
 }
 
 #archives {
 
   h2 {
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
     font-weight: bold;
-  }
-
-  h3 {
-    font-size: 0.75em;
-    font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: bold;
-  }
-
-  a {
-    font-size: 13px;
   }
 
   ul {
@@ -145,7 +131,12 @@ sup {
     padding-top: 20px;
 
     > li {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
+  }
+
+  .post-date {
+    font-size: 0.8em;
+    padding-right: 0px;
   }
 }

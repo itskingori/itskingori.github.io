@@ -3,39 +3,26 @@ layout: default
 ---
 
 <div id="archives">
-  <h2>Article &amp; Thoughts</h2>
+  <h2>{{page.title}}</h2>
   <ul>
-    {% for post in site.posts %}
-
-      {% capture this_post_group %}{{ post.date | date: '%Y %B' }}{% endcapture %}
-      {% capture next_post_group %}{{ post.previous.date | date: '%Y %B' }}{% endcapture %}
-
-      {% if forloop.first %}
-        <li><h3>{{this_post_group}}</h3><ul>
-      {% endif %}
-
+   {% for post in site.categories.articles %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <sup>{% assign d = post.date | date: "%-d" %}
-             {% case d %}
-             {% when "1" or "21" or "31" %}{{ d }}st
-             {% when "2" or "22" %}{{ d }}nd
-             {% when "3" or "23" %}{{ d }}rd
-             {% else %}{{ d }}th
-             {% endcase %}
-        </sup>
-        {% if post.link %} ↩{% endif %}
+        <div class="row">
+          <div class="post-date text-right small-3 column">
+            {% assign d = post.date | date: "%-d" %}
+            {% case d %}
+            {% when "1" or "21" or "31" %}{{ d }}st
+            {% when "2" or "22" %}{{ d }}nd
+            {% when "3" or "23" %}{{ d }}rd
+            {% else %}{{ d }}th
+            {% endcase %}
+            {{ post.date | date: '%b %Y' }}
+          </div>
+          <div class="small-9 text-left column">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+        </div>
       </li>
-
-      {% unless forloop.last %}
-        {% if this_post_group != next_post_group %}
-          </ul></li><li><h3>{{next_post_group}}</h3><ul>
-        {% endif %}
-      {% endunless %}
-
-      {% if forloop.last %}
-        </ul>
-      {% endif %}
     {% endfor %}
   </ul>
 </div>
