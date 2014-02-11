@@ -4,20 +4,38 @@ layout: default
 
 <div id="archives">
   <h2>Article &amp; Thoughts</h2>
-
   <ul>
-    {% for post in site.categories.articles %}
-      {% unless post.next %}
-        <h3>{{ post.date | date: '%Y %b' }}</h3>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
-        {% if year != nyear %}
-          <h3>{{ post.date | date: '%Y %b' }}</h3>
+    {% for post in site.posts %}
+
+      {% capture this_post_group %}{{ post.date | date: '%Y %B' }}{% endcapture %}
+      {% capture next_post_group %}{{ post.previous.date | date: '%Y %B' }}{% endcapture %}
+
+      {% if forloop.first %}
+        <li><h3>{{this_post_group}}</h3><ul>
+      {% endif %}
+
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <sup>{% assign d = post.date | date: "%-d" %}
+             {% case d %}
+             {% when "1" or "21" or "31" %}{{ d }}st
+             {% when "2" or "22" %}{{ d }}nd
+             {% when "3" or "23" %}{{ d }}rd
+             {% else %}{{ d }}th
+             {% endcase %}
+        </sup>
+        {% if post.link %} ↩{% endif %}
+      </li>
+
+      {% unless forloop.last %}
+        {% if this_post_group != next_post_group %}
+          </ul></li><li><h3>{{next_post_group}}</h3><ul>
         {% endif %}
       {% endunless %}
 
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if forloop.last %}
+        </ul>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

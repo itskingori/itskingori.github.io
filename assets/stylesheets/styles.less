@@ -73,14 +73,14 @@ header {
 
   a#title {
     font-weight: bold;
-    font-size: 1.0em;
+    font-size: 1em;
     height:59px;
     line-height:59px;
   }
 }
 
 footer {
-  font-size: 0.75em;
+  font-size: 0.70em;
 
   > div {
     border-top: 1px solid @lightergrey;
@@ -91,6 +91,10 @@ footer {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+}
+
+sup {
+  font-size: 0.6em;
 }
 
 #wrapper {
@@ -117,7 +121,13 @@ footer {
 #archives {
 
   h2 {
-    font-size: 1em;
+    font-size: 0.9em;
+    font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 0.75em;
     font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
     font-weight: bold;
   }
@@ -128,5 +138,14 @@ footer {
 
   ul {
     list-style-type: none;
+  }
+
+  > ul {
+    margin-left: 0px;
+    padding-top: 20px;
+
+    > li {
+      padding-bottom: 20px;
+    }
   }
 }

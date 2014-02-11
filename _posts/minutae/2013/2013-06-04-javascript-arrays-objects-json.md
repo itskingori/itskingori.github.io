@@ -1,5 +1,5 @@
 ---
-title: "Serialize Javascript Array/Objects To JSON & Vice Versa"
+title: Serialize Javascript Array/Objects To JSON & Vice Versa
 category: minutae
 ---
 
