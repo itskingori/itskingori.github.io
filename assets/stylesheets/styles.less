@@ -1,25 +1,37 @@
-@lightergrey: #DDD;
-@orange: hsl(  10, 90%, 60% );
+@font_color:        hsl(  0,  0%, 44% );
+@highlight_default: hsl( 10, 90%, 60% );
+@lightergrey:       hsl(  0,  0%, 87% );
+
+@color1:  hsl(  10, 90%, 60% );
+@color2:  hsl(  30, 90%, 60% );
+@color3:  hsl( 152, 25%, 53% );
+@color4:  hsl( 210, 90%, 60% );
+@color5:  hsl( 230, 90%, 60% );
+@color6:  hsl( 270, 90%, 60% );
+@color7:  hsl( 290, 90%, 60% );
+@color8:  hsl( 310, 90%, 60% );
+@color9:  hsl( 330, 90%, 60% );
+@color10: hsl( 350, 90%, 60% );
 
 html, body {
-  color: #575757;
+  color: @font_color;
   font-size: 13px;
   font-family: 'Lucida Grande', 'Verdana', 'Helvetica Neue', Arial, sans-serif;
 }
 
-body.color0 a { color: hsl(  10, 90%, 60% ); } // 1
-body.color1 a { color: hsl(  30, 90%, 60% ); } // 2
-body.color2 a { color: hsl( 152, 25%, 53% ); } // 3
-body.color3 a { color: hsl( 210, 90%, 60% ); } // 4
-body.color4 a { color: hsl( 230, 90%, 60% ); } // 5
-body.color5 a { color: hsl( 270, 90%, 60% ); } // 6
-body.color6 a { color: hsl( 290, 90%, 60% ); } // 7
-body.color7 a { color: hsl( 310, 90%, 60% ); } // 8
-body.color8 a { color: hsl( 330, 90%, 60% ); } // 9
-body.color9 a { color: hsl( 350, 90%, 60% ); } // 10
+body.color0 a { color: @color1; } // 1
+body.color1 a { color: @color2; } // 2
+body.color2 a { color: @color3; } // 3
+body.color3 a { color: @color4; } // 4
+body.color4 a { color: @color5; } // 5
+body.color5 a { color: @color6; } // 6
+body.color6 a { color: @color7; } // 7
+body.color7 a { color: @color8; } // 8
+body.color8 a { color: @color9; } // 9
+body.color9 a { color: @color10; } // 10
 
 a, a:visited {
-  color: @orange;
+  color: @highlight_default;
   -webkit-transition: color 5.0s linear;
   -moz-transition: color 5.0s linear;
   -ms-transition: color 5.0s linear;
@@ -69,16 +81,16 @@ header {
     transition: background-color 5.0s linear;
   }
 
-  a#logo.bkgcolor0 { background-color: hsl(  10, 90%, 60% ); } // 1
-  a#logo.bkgcolor1 { background-color: hsl(  30, 90%, 60% ); } // 2
-  a#logo.bkgcolor2 { background-color: hsl( 152, 25%, 53% ); } // 3
-  a#logo.bkgcolor3 { background-color: hsl( 210, 90%, 60% ); } // 4
-  a#logo.bkgcolor4 { background-color: hsl( 230, 90%, 60% ); } // 5
-  a#logo.bkgcolor5 { background-color: hsl( 270, 90%, 60% ); } // 6
-  a#logo.bkgcolor6 { background-color: hsl( 290, 90%, 60% ); } // 7
-  a#logo.bkgcolor7 { background-color: hsl( 310, 90%, 60% ); } // 8
-  a#logo.bkgcolor8 { background-color: hsl( 330, 90%, 60% ); } // 9
-  a#logo.bkgcolor9 { background-color: hsl( 350, 90%, 60% ); } // 10
+  a#logo.bkgcolor0 { background-color: @color1; } // 1
+  a#logo.bkgcolor1 { background-color: @color2; } // 2
+  a#logo.bkgcolor2 { background-color: @color3; } // 3
+  a#logo.bkgcolor3 { background-color: @color4; } // 4
+  a#logo.bkgcolor4 { background-color: @color5; } // 5
+  a#logo.bkgcolor5 { background-color: @color6; } // 6
+  a#logo.bkgcolor6 { background-color: @color7; } // 7
+  a#logo.bkgcolor7 { background-color: @color8; } // 8
+  a#logo.bkgcolor8 { background-color: @color9; } // 9
+  a#logo.bkgcolor9 { background-color: @color10; } // 10
 
   a#logo:hover {
     border-bottom: none;
@@ -180,11 +192,11 @@ sup {
 #nprogress {
 
   .bar {
-    background: @orange !important;
+    background: @highlight_default !important;
   }
 
   .spinner-icon {
-    border-top-color:  @orange !important;
-    border-left-color: @orange !important;
+    border-top-color:  @highlight_default !important;
+    border-left-color: @highlight_default !important;
   }
 }
