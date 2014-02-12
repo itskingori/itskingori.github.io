@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div id="post">
+   <div class="row">
+    <div class="small-12 column">
+      <div class="p-date">
+          <a href="{{page.url}}">
+          {% assign d = page.date | date: "%-d" %}
+          {% case d %}
+          {% when "1" or "21" or "31" %}{{ d }}<sup>st</sup>
+          {% when "2" or "22" %}{{ d }}<sup>nd</sup>
+          {% when "3" or "23" %}{{ d }}<sup>rd</sup>
+          {% else %}{{ d }}<sup>th</sup>
+          {% endcase %}
+          {{ page.date | date: '%b %Y' }}
+          </a>
+      </div>
+      <div class="p-title">
+        <h2>
+          <a href="{% if page.link %}{{page.link}}{% else %}}{{page.url}}{% endif %}">{{page.title}}</a>
+          {% if page.link %}↩{% endif %}
+        </h2>
+      </div>
+      <div class="p-content">
+      {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

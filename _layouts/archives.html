@@ -8,13 +8,13 @@ layout: default
     {% for post in site.categories[{{page.group}}] %}
       <li>
         <div class="row">
-          <div class="post-date text-right small-3 column">
+          <div class="p-date text-right small-3 column">
             {% assign d = post.date | date: "%-d" %}
             {% case d %}
-            {% when "1" or "21" or "31" %}{{ d }}st
-            {% when "2" or "22" %}{{ d }}nd
-            {% when "3" or "23" %}{{ d }}rd
-            {% else %}{{ d }}th
+            {% when "1" or "21" or "31" %}{{ d }}<sup>st</sup>
+            {% when "2" or "22" %}{{ d }}<sup>nd</sup>
+            {% when "3" or "23" %}{{ d }}<sup>rd</sup>
+            {% else %}{{ d }}<sup>th</sup>
             {% endcase %}
             {{ post.date | date: '%b %Y' }}
           </div>
