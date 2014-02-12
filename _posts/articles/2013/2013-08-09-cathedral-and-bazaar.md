@@ -2,6 +2,7 @@
 title: "The Cathedral And The Bazaar"
 link: http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 category: articles
+layout: post
 ---
 
 First published in 1997 by [Eric S. Raymond][2] and revised occassionally
@@ -33,6 +34,7 @@ Main points listed below:
 19. Provided the development coordinator has a communications medium at least as good as the Internet, and knows how to lead without coercion, many heads are inevitably better than one.
 
 Brilliant. _Just brilliant_.
+
 [1]: http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html
 [2]: http://www.catb.org/~esr/
 [3]: http://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar

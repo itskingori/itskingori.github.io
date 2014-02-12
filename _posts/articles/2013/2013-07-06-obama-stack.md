@@ -2,13 +2,14 @@
 title: "Obama Campaign Stack"
 link: "http://net.tutsplus.com/articles/interview-with-dan-croak-of-thoughtbot/"
 category: articles
+layout: post
 ---
 
 From an interview with [Dan Croak][4] of [Thoughtbot][2] by [Nettuts][3]
 
 > I’d also like to try doing something like the Barack Obama 2012 campaign’s
-> architecture, which was [static HTML/CSS/JS served by Akamai and S3][1],
-> with hundreds of backend APIs.
+> architecture, which was [static HTML/CSS/JS served by Akamai and S3][1], with
+> hundreds of backend APIs.
 
 [Jekyll][5] is worth a look.
 

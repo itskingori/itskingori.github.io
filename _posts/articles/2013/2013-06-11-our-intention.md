@@ -2,6 +2,7 @@
 title: "Our Intention"
 link: http://www.youtube.com/watch?v=VpZmIiIXuZ0
 category: articles
+layout: post
 ---
 
 If everyone, is busy making everything,  

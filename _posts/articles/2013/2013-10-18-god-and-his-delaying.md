@@ -2,6 +2,7 @@
 title: "Why God May Delay"
 link: http://theschoolofchrist.org/daily/october16.html
 category: articles
+layout: post
 ---
 
 > _"Jesus lifted up His eyes, and seeing a great multitude coming toward Him,

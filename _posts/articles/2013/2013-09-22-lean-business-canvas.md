@@ -1,10 +1,11 @@
 ---
 title: "Lean Business Canvas"
 category: articles
+layout: post
 ---
 
-Lessons from [Ash Maurya][7], author of [Running Lean][8] [(book)][9] and founder
-of [Sparks59][10]. Follow him on twitter as [@ashmaurya][7].
+Lessons from [Ash Maurya][7], author of [Running Lean][8] [(book)][9] and
+founder of [Sparks59][10]. Follow him on twitter as [@ashmaurya][7].
 
 * Life's too short to built something nobody wants.
 * Ideas are cheap but acting on them is really expensive.
@@ -63,14 +64,14 @@ of [Sparks59][10]. Follow him on twitter as [@ashmaurya][7].
 * _"Advisor Paradox: Hire advisors for advice but don't follow it, apply it."_ - [Venture Hacks][18]
 * _"If you can't describe what you do as a process you don't know what you are doing."_ - [Edward Deming][19]
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [Video: Why Startups (Products) Fail][1]
 2. [Video: Capture Your Business Model in 20 Minutes][2]
 3. [Video: Top 10 Business Model Pitfalls][3]
 4. [Video: How to Prioritize Risks on Your Business Model][4]
 5. [Video: Systematically Test Your Business Model Through Experiments][5]
 6. [Book: Running Lean][8] (website - [get the book on Amazon][9])
-</div>
 
 [1]: https://www.youtube.com/watch?v=ouHDNBT_leg
 [2]: https://www.youtube.com/watch?v=7o8uYdUaFR4

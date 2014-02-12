@@ -1,6 +1,7 @@
 ---
 title: "Bucket List"
 category: articles
+layout: post
 ---
 
 This is an attempt at being accountable to myself in regards to the simple
@@ -46,11 +47,11 @@ And in no particular order:
 * Go to bed smarter than I was when I woke up, everyday - [(hard to prove but here's how I'm doing it)][3]
 * [Make wealth (wealth is NOT money)][10]
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [The Bucket List (2007) - IMDb][5]
 2. [Check it out on Wikipedia][6] as well
 3. See [bucket list edit history here][8]
-</div>
 
 [1]: articles/2013/08/my-bucket-list/
 [2]: http://bible.us/111/pro.31.10-31.niv

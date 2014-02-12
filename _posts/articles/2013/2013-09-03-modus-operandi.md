@@ -1,26 +1,27 @@
 ---
 title: "M.O. ★"
 category: articles
+layout: post
 ---
 
 **No matter how complex the processes or magical the output is, ultimately,
 it can and should be reduced to a set of rules, for continuity sake.**
 
 > Modus operandi (plural modi operandi) is a Latin phrase, approximately
-> translated as "method of operation". The term is used to describe
-> someone's habits of working, particularly in the context of business or
-> criminal investigations. In English, it is often shortened to M.O. [...]
-> In business, modus operandi is used to describe a firm's preferred means
-> of doing business and interacting with other firms.
->
+> translated as "method of operation". The term is used to describe someone's
+> habits of working, particularly in the context of business or criminal
+> investigations. In English, it is often shortened to M.O. [...] In business,
+> modus operandi is used to describe a firm's preferred means of doing business
+> and interacting with other firms.
+
 > **modus operandi**  
 > _noun_  
 > \ˌmō-dəs-ˌä-pə-ˈran-dē, -ˌdī\  
 > (moh-duhs op-uh-ran-dee)
 
-Any organisation (community or company) needs a sort of [M.O. ★][2] for the
-sake of effeciency and to have the ability to respond and recover from any
-sudden changes in the operations or workforce.
+Any organisation (community or company) needs a sort of [M.O. ★][2] for the sake
+of effeciency and to have the ability to respond and recover from any sudden
+changes in the operations or workforce.
 
 On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 
@@ -53,10 +54,10 @@ On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 * _"Team"_ comprises a group of people linked in a common purpose.
 * Lack of _"Avoid"_, _"Don't"_, _"Prefer"_, _"Use"_ or _"Limit"_ implies a rule.
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [Modus Operandi - Wikipedia][1]
 2. [M.O. ★][2] on [my Github page][9]
-</div>
 
 [1]: http://en.wikipedia.org/wiki/Modus_operandi
 [2]: https://github.com/itsmrwave/mo

@@ -1,24 +1,23 @@
 ---
 title: "Smalltalk, Listening And Sharing"
 category: articles
+layout: post
 ---
 
-This [pastry][2] by [Leslie Jensen-Inman][3] got me thinking about
-triggering sharing during smalltalk ...
+This [pastry][2] by [Leslie Jensen-Inman][3] got me thinking about triggering
+sharing during smalltalk ...
 
-> When I travel, I always bring a book with the intention of being able to
-> read while waiting for the plane to arrive and while inflight. However, I
-> rarely get to read as much as I intend. Instead, I get into conversations
-> with complete strangers who tell me very personal details of their lives.
-> For example, on two different flights in one day, I had two separate women
-> tell me about their [hysterectomies][1]. I hadn’t asked anything specific
-> that would lead both women to share this very personal experience, but
-> they both did.
+> When I travel, I always bring a book with the intention of being able to read
+> while waiting for the plane to arrive and while inflight. However, I rarely
+> get to read as much as I intend. Instead, I get into conversations with
+> complete strangers who tell me very personal details of their lives. For
+> example, on two different flights in one day, I had two separate women tell me
+> about their [hysterectomies][1]. I hadn’t asked anything specific that would
+> lead both women to share this very personal experience, but they both did.
 
-> I shared these and other examples of stories that have been told to me
-> with a friend. I wondered if he had similar experiences. He clearly
-> explained, “People share things with you because you ask the follow-up
-> question.”
+> I shared these and other examples of stories that have been told to me with a
+> friend. I wondered if he had similar experiences. He clearly explained,
+> “People share things with you because you ask the follow-up question.”
 
 ###Furthering The Smalltalk###
 
@@ -81,10 +80,10 @@ others can speak.
 observe whether the interviewer is practicing active listening. Learn from
 the mistakes of others.
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [How to Ask Follow-Up Questions During Small Talk][5]
 2. [How To Practice Active Listening][4]
-</div>
 
 [1]: https://en.wikipedia.org/wiki/Hysterectomy
 [2]: http://the-pastry-box-project.net/leslie-jensen-inman/2013-october-24/

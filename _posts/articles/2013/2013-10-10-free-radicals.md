@@ -1,6 +1,7 @@
 ---
 title: "Free Radicals"
 category: articles
+layout: post
 ---
 
 > When it comes to our careers and our experience at work, we’ve become
@@ -90,12 +91,12 @@ Belsky.
 Check out [the book's official web page][5]. It's actually part of the [99U
 Book Series][6].
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [The Free Radical At Work (LinkedIn)][1]
 2. [Do Not Follow Your Passion, Cultivate It][2]
 3. [A Manifesto For Free Radicals: Less Paperwork, Less Waiting, More Action][3]
 4. [99U: Insights On Making Ideas Happen][7] by [Behance][8]
-</div>
 
 [1]: http://www.linkedin.com/today/post/article/20130924212836-4074853-the-free-radical-at-work
 [2]: http://www.farnamstreetblog.com/2013/10/maximize-your-potential-99u/

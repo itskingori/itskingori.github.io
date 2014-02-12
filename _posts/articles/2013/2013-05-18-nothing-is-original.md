@@ -2,25 +2,26 @@
 title: "Nothing Is Original, Everything Is A Remix"
 link: http://everythingisaremix.info/watch-the-series/
 category: articles
+layout: post
 ---
 
-###COPY. TRANSFORM. COMBINE.###
+####COPY. TRANSFORM. COMBINE.####
 
 > The act of creation is surrounded by a fog of myths. Myths that creativity
 > comes via inspiration ... that original creations break the mould ... that
-> they are the products of geniuses ... and appears quickly as electricity
-> can heat a filament _but_ creativity isn't magic.
+> they are the products of geniuses ... and appears quickly as electricity can
+> heat a filament _but_ creativity isn't magic.
 
-> It happens by applying ordinary tools of thought to existing materials.
-> And the soil from which we grow our creations is something we scorn and
+> It happens by applying ordinary tools of thought to existing materials. And
+> the soil from which we grow our creations is something we scorn and
 > misunderstand even when it gives us so much, and that's ... copying.
 
-> Put simply, copying is how we learn we can't introduce anything new until
-> we are fluent in the language of our domain. And we do that through
-> emulation. For instance all artists spend their formative years producing
-> derivative work.
+> Put simply, copying is how we learn we can't introduce anything new until we
+> are fluent in the language of our domain. And we do that through emulation.
+> For instance all artists spend their formative years producing derivative
+> work.
 
-<img src="http://assets.kingori.co/content/article/2013/05/good-vs-bad-theft.jpeg" style="max-width: 540px;" />
+![poster][poster]
 
 > I _invented nothing new_.
 
@@ -51,4 +52,5 @@ Just, _[EMBRACE THE REMIX][6]_
 [4]: http://vimeo.com/36881035
 [5]: http://vimeo.com/kirbyferguson/videos
 [6]: http://www.youtube.com/watch?v=zd-dqUuvLk4
+[poster]: http://assets.kingori.co/content/article/2013/05/good-vs-bad-theft.jpeg
 

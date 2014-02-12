@@ -2,6 +2,7 @@
 title: "Never Sit At A Table You Can't Walk Away From"
 link: http://insidetv.ew.com/2013/09/24/joss-whedon-interview/2/
 category: articles
+layout: post
 ---
 
 > This is something that I do consider to be good advice: I took my first

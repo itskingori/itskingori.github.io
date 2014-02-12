@@ -1,6 +1,7 @@
 ---
 title: "State Of Entrepreneurial Assets In Accelerating Entrepreneurship In Africa"
 category: articles
+layout: post
 ---
 
 A culture of entrepreneurship is growing in Sub-Saharan Africa, with
@@ -43,7 +44,7 @@ ventures. If one considers the fact that banks’ earnings are capped on loans
 made, and that nine out of 10 ventures fail within five years of operation,
 the risks are exceedingly high and do not offer a corresponding reward.
 Banks make loans using depositors’ savings, which are put at considerable
-risk if they invest heavily in entrepreneurial ventures. 
+risk if they invest heavily in entrepreneurial ventures.
 
 * Venture capital, where investors share the risk but also the gain on the
 equity upside, provides a more appropriate source of financing which is
@@ -135,7 +136,8 @@ effective means of attracting talented staff.
 rail networks, and poor communications infrastructure are all highlighted as
 having a significant impact on the cost of doing business.
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. Borrowed from the [Omidyar][2] Report on Accelerating Entrepreneurship In Africa. [Download the full report here][1].
 2. While I've only cross-posted the state of entrepreneurial assets only, the report goes to details of other issues namely (including recommendations of how to tackle the mentioned problems);
     * Business Support
@@ -143,7 +145,6 @@ having a significant impact on the cost of doing business.
     * Motivations and Mindset
     * The Way Forward
 3. Found this report from [@whiteafrican][3]'s blog. [Find post here][4].
-</div>
 
 [1]: http://assets.kingori.co/content/article/2013/07/ON_Africa_Report_April_2013_Final.pdf
 [2]: http://www.omidyar.com/

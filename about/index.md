@@ -30,6 +30,6 @@ Kenya][3] ... if you prefer a face-to-face meet.
 [articles_archive]: articles/archive/
 [minutae_archive]: minutae/archive/
 [email]: mailto:yo@kingori.co?Subject=You're%20Awesome
-[1]: http://movethewebforward.org/#write
+[1]: articles/2013/06/publish-what-you-learn/
 [2]: articles/2013/09/riding-lions/
 [3]: https://www.google.co.ke/maps/preview#!q=nairobi%2C+kenya

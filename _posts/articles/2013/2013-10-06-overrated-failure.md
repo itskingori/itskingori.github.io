@@ -2,6 +2,7 @@
 title: "Failure Is Overrated"
 link: http://37signals.com/svn/posts/1555-learning-from-failure-is-overrated
 category: articles
+layout: post
 ---
 
 Right after [I post an article emphasizing the lessons of failure to the
