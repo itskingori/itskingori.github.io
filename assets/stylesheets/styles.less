@@ -32,7 +32,7 @@ body.color9 a { color: @color10; } // 10
 
 a, a:visited {
   color: @highlight_default;
-  -webkit-transition: color 5.0s linear;
+  -webkit-border-radius: color 5.0s linear;
   -moz-transition: color 5.0s linear;
   -ms-transition: color 5.0s linear;
   -o-transition: color 5.0s linear;
@@ -205,6 +205,23 @@ sup {
 
     li > ul {
       margin-bottom: 1.25rem;
+    }
+
+    p {
+      line-height: 1.8em;
+
+      code {
+        background-color: hsl(0, 0%, 94%);
+        border-radius: 3px;
+        color: @font_color;
+        font-weight: normal;
+        padding: 1px 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+      }
     }
   }
 }

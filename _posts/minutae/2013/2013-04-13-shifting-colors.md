@@ -1,6 +1,7 @@
 ---
 title: Shifting colors (Chameleon)
 category: minutae
+layout: post
 ---
 
 <div markdown="1" style="width: 100%; height: 30px; background-color: hsl(  10, 90%, 60% );"></div>
@@ -16,8 +17,8 @@ category: minutae
 
 ### Update: ###
 
-Just realized this won't make much sense a few years later if I change the
-theme & so ... the JS;
+Just realized this won't make much sense a few years later if I change the theme
+& so ... the JS;
 
 <pre class="brush: javascript">
 /* SHIFTING COLORS ~ Chameleon */
@@ -77,8 +78,8 @@ a {
 .color9 a { color: hsl( 350, 90%, 60% ); } // 10
 </pre>
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [Metafizzy: Business end](http://metafizzy.co/) of [David Desandro](http://desandro.com/) - he deserves the credit for the idea of changing font colors site-wide
 2. [Tilde (~~) or the Floor?](http://rocha.la/JavaScript-bitwise-operators-in-practice) - hint: tilde is faster
 3. [Modernizr: CSS3 feature detection](http://modernizr.com/docs/#features-css)
-</div>

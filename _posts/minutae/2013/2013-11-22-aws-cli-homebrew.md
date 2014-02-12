@@ -1,6 +1,7 @@
 ---
 title: "Install AWS Command Line Tools Using Homebrew"
 category: minutae
+layout: post
 ---
 
 <pre class="brush: bash">

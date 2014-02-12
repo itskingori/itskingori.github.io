@@ -1,6 +1,7 @@
 ---
 title: Serialize Javascript Array/Objects To JSON & Vice Versa
 category: minutae
+layout: post
 ---
 
 ###JSON Object###
@@ -34,17 +35,17 @@ JSON.parse('null'); // null
 
 ###Browser Compatibility###
 
-[Newer browsers][4] support the [JSON object][1] natively. Well-known
-polyfills for the JSON object are [JSON2][5] and [JSON3][6] that will only
-define [`JSON.stringify`][2] and [`JSON.parse`][3] if they're not already
-defined, leaving any browser native implementation intact.
+[Newer browsers][4] support the [JSON object][1] natively. Well-known polyfills
+for the JSON object are [JSON2][5] and [JSON3][6] that will only define
+[`JSON.stringify`][2] and [`JSON.parse`][3] if they're not already defined,
+leaving any browser native implementation intact.
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. [Mozilla Developer Network | JSON][1]
 2. [`JSON.stringify` method][2]
 3. [`JSON.parse` method][3]
 4. [Serializing to JSON in jQuery][7]
-</div>
 
 [1]: https://developer.mozilla.org/en-US/docs/JSON
 [2]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/JSON/stringify

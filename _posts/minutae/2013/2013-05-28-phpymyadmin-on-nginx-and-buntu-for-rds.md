@@ -1,13 +1,14 @@
 ---
 title: "PHPMyAdmin On Nginx (on Ubuntu) For RDS"
 category: minutae
+layout: post
 ---
 
 ###Installing PHPMyAdmin###
 
-An example using conditional filter expressions that have multiple
-conditional paths. Here is a simple conditional that can quickly become a
-drain on performance because of the order of parsing;
+An example using conditional filter expressions that have multiple conditional
+paths. Here is a simple conditional that can quickly become a drain on
+performance because of the order of parsing;
 
 <pre class="brush: bash">
 $ apt-get install phpmyadmin
@@ -19,17 +20,16 @@ Configure database for phpmyadmin with dbconfig-common? No.
 
 ###Configure Amazon RDS###
 
-> The one thing I had trouble with was the DB Security Group setup.  When
-> you go to add access for an CIDR/IP it provides a recommended value.  It
-> took some messing around to determine that this default value isn’t
-> actually what needed to be there.  If you’re not able to connect to your
-> instance when it’s all said and done, be sure to double check this value.
-> The IP they provided did not match the IP address that was provided to us
-> by our ISP.  Once you’ve created your DB Instance and setup the security
-> group you’re good to go.
+> The one thing I had trouble with was the DB Security Group setup.  When you go
+> to add access for an CIDR/IP it provides a recommended value.  It took some
+> messing around to determine that this default value isn’t actually what needed
+> to be there.  If you’re not able to connect to your instance when it’s all
+> said and done, be sure to double check this value. The IP they provided did
+> not match the IP address that was provided to us by our ISP.  Once you’ve
+> created your DB Instance and setup the security group you’re good to go.
 
-In summary, just add your EC2 Security group ... i.e. the one that you want
-to be able to access RDS.
+In summary, just add your EC2 Security group ... i.e. the one that you want to
+be able to access RDS.
 
 ###Configure PHPMyAdmin###
 
@@ -118,13 +118,13 @@ server {
 }
 </pre>
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. There's the assumption that you already have Nginx up and running on an Ubuntu box.
 2. This was done practially on Ubuntu 13.04
 3. [Ubuntu Community Help Wiki | phpMyAdmin][1]
 4. [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu 12.10][2]
 5. [How to remotely manage an Amazon RDS instance with PHPMyAdmin][3]
-</div>
 
 [1]: https://help.ubuntu.com/community/phpMyAdmin
 [2]: http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-lemp-on-ubuntu-12.

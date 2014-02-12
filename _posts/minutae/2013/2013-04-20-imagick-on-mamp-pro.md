@@ -2,17 +2,18 @@
 title: "Image Magick, Imagick, Homebrew & MAMP-Pro"
 link: https://github.com/jdlx/install_Imagick_on_MAMP/wiki/Imagick-for-MAMP-Pro---installation-guide
 category: minutae
+layout: post
 ---
 
-Install [XCode][xcode] + the Command-Line Tools. (CL tools are not bundled
-with [Xcode 4.3][xcode43] by default anymore and should contain build tools
-such as `gcc` (confirm with whatever version you are using). XCode app
-(found on the AppStore) is easy to install but the CL Tools can only be
-installed within XCode as an optional install on  the Components tab of the
-Downloads preferences panel.
+Install [XCode][xcode] + the Command-Line Tools. (CL tools are not bundled with
+[Xcode 4.3][xcode43] by default anymore and should contain build tools such as
+`gcc` (confirm with whatever version you are using). XCode app (found on the
+AppStore) is easy to install but the CL Tools can only be installed within XCode
+as an optional install on  the Components tab of the Downloads preferences
+panel.
 
-Install [Homebrew][homebrew] which will be used to install libs/components
-as well as manage the dependencies for us.
+Install [Homebrew][homebrew] which will be used to install libs/components as
+well as manage the dependencies for us.
 
 <pre class="brush: bash">
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
@@ -24,8 +25,8 @@ Install [ImageMagick][imagemagick].
 $ brew install imagemagick
 </pre>
 
-Installing a PHP53 compat version of [Imagick][imagick] ... first let Homebrew search
-the formula for you
+Installing a PHP53 compatible version of [Imagick][imagick] ... first let
+Homebrew search the formula for you
 
 <pre class="brush: bash">
 $ brew search php53-imagick
@@ -37,8 +38,8 @@ $ brew search php53-imagick
 $ brew search imagick
 </pre>
 
-The above searches should return something like
-'josegonzalez/php/php53-imagick' ... use this for the next step:
+The above searches should return something like 'josegonzalez/php/php53-imagick'
+... use this for the next step:
 
 <pre class="brush: bash">
 $ brew install josegonzalez/php/php53-imagick
@@ -55,10 +56,10 @@ Please tap it and then try again: brew tap XYZ
 error told you. After that, repeat the step which caused that error.
 
 Now edit MAMP config & add the extension to MAMP Pro's php.ini. In MAMP Pro go
-to the menubar, and choose `File > Edit Templates > PHP > PHP x.x.x
-php.ini`. A simple editor window will popup where you can edit the ini file.
-A search for the term 'extension=', will lead you to a block with various
-lines of 'extension=...'. Now simply ad the following one and save the file:
+to the menubar, and choose `File > Edit Templates > PHP > PHP x.x.x php.ini`. A
+simple editor window will popup where you can edit the ini file. A search for
+the term 'extension=', will lead you to a block with various lines of
+'extension=...'. Now simply ad the following one and save the file:
 
 <pre class="brush: bash">
 extension="/usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so"
@@ -79,8 +80,8 @@ cDYLD_LIBRARY_PATH="/Applications/MAMP/Library/lib:$DYLD_LIBRARY_PATH"
 export DYLD_LIBRARY_PATH
 </pre>
 
-Restart MAMP and check the phpinfo tab: a search for the term `imagick`
-should bring you to a section reading like so:
+Restart MAMP and check the phpinfo tab: a search for the term `imagick` should
+bring you to a section reading like so:
 
 <pre class="brush: bash">
 imagick module version                    3.1.0RC2
@@ -95,8 +96,8 @@ _Ps: Original post - see footnote #4, has extra's on enabling tiff support_
 
 ####Update <sup>7th/05/2013</sup> :####
 
-After installing Imagemagick using Homebrew on Lion, everything is fine
-except that it doesn't work at all when being called from php.
+After installing Imagemagick using Homebrew on Lion, everything is fine except
+that it doesn't work at all when being called from php.
 
 <pre class="brush: php">
 exec ('/usr/local/bin/convert') // works, but
@@ -111,18 +112,18 @@ ln -s /usr/local/bin/convert /usr/bin/convert
 
 ####Update <sup>25th/12/2013</sup> :####
 
-This article was originally linked to [this][1] ... which is now broken.
-I've also update Homebrew links which seem to have moved. Thanks to
+This article was originally linked to [this][1] ... which is now broken. I've
+also update Homebrew links which seem to have moved. Thanks to
 [@CreativityKills][2] for the heads up.
 
-<div markdown="1" class="post-footnotes">
+---
+
 1. This was done on MacOSX 10.8.3 (other versions may vary)
 2. Tested with MAMP Pro 2.1.2 (other versions may vary)
 3. [Image Magick][imagemagick] & [Imagick][imagick] are two very different things. The former is the core library and the latter is a PHP Wrapper that uses the API of the former, so you do need to install the former before the latter
 4. [Xcode 4.3 and Homebrew: Where did my command line tools go?](http://holgr.com/blog/2012/02/xcode-4-3-and-homebrew-where-did-my-command-line-tools-go/)
 5. [Resolved: MAMP Php can't exec ('convert') after Homebrew ImageMagick install][link1]
 6. [Installing PHP PEAR and PECL extensions on MAMP for Mac OS X 10.7 (Lion)][link2]
-</div>
 
 [xcode]: https://developer.apple.com/xcode/
 [xcode43]: http://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_3.html

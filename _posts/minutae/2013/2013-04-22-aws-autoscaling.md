@@ -1,31 +1,31 @@
 ---
 title: "Autoscaling on EC2 with ELB &amp; Cloudwatch on Ubuntu"
 category: minutae
+layout: post
 ---
 
-_Please note that this is not a detailed guide ... relevant links are
-included if you want detail. The objective is to highlight the key steps or
-rather, the 'points-to-note 'throughout the process. A LOT is assumed._
+_Please note that this is not a detailed guide ... relevant links are included
+if you want detail. The objective is to highlight the key steps or rather, the
+'points-to-note 'throughout the process. A LOT is assumed._
 
 ###Basic Expected Setup###
 
 The first obvious assumption is that you are running Ubuntu. Running [Ubuntu
-Cloud Guest][link31] on [Amazon Web Services][aws] requires you to go
-through the following steps;
+Cloud Guest][link31] on [Amazon Web Services][aws] requires you to go through
+the following steps;
 
 1. Create your account on Amazon (if you do not already have one) and setup your credentials - [Getting Started With Aws][link26]
 2. [Install Amazon EC2 API Tools][ubuntuec2guide]
 3. Instantiate your [images(s)][link28]
 4. Configure your [instance][link27]
 
-Details of the above steps can be [found here][ubuntuec2guide] ... though
-they seem a bit complicated due to reliance on the CLI, but if its any
-consolation, _some_ of the tasks can be done via the [Amazon Web
-Console][awsconsole].
+Details of the above steps can be [found here][ubuntuec2guide] ... though they
+seem a bit complicated due to reliance on the CLI, but if its any consolation,
+_some_ of the tasks can be done via the [Amazon Web Console][awsconsole].
 
-Double check you have the following environment variables set up in your
-shell profile. You should have something close to ... (see below code block)
-... in your `~/.bashrc` if you use bash as your shell.
+Double check you have the following environment variables set up in your shell
+profile. You should have something close to ... (see below code block) ... in
+your `~/.bashrc` if you use bash as your shell.
 
 <pre class="brush: plain">
 # WHERE YOUR JAVA IS
@@ -69,47 +69,43 @@ export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
 export ELASTIC_MAPREDUCE_CREDENTIALS=$HOME/.aws/aws-credentials.json
 </pre>
 
-Refresh environment variables after editing `~/.bashrc` file. Just to be
-sure.
+Refresh environment variables after editing `~/.bashrc` file. Just to be sure.
 
 <pre class="brush: bash">
 source ~/.bashrc
 </pre>
 
-There's probably something I've left out but that's the general idea + the
-set up process is well documented online, [a simple google search should
+There's probably something I've left out but that's the general idea + the set
+up process is well documented online, [a simple google search should
 do][link12].
 
-_Ps: If you have services in other regions (from the US default) you have to
-set some URLs in the `~/.bashrc` file. Don't worry, keep reading ... I've
-mentioned this with a litlle more detail ahead._
+_Ps: If you have services in other regions (from the US default) you have to set
+some URLs in the `~/.bashrc` file. Don't worry, keep reading ... I've mentioned
+this with a litlle more detail ahead._
 
 ###Adding Support For The Other Services###
 
-To put it simply, the [`ec2-api-tools`][link13] only install `ec2-*`
-commands.
+To put it simply, the [`ec2-api-tools`][link13] only install `ec2-*` commands.
 
-What I mean is that, after installing the api-tools you should have access
-to `ec2-*` type commands but no `as-*` (autoscaling), `elb-*` (elastic load
-balancer) etc. type commands - i.e. the other services. That's because you
-have to manually install them. Check the [AWS Developer
-Tools][awsdevelopertools] for official documentation on the tools, changelog
-&amp; download links or check out this [blog- post][link1]. Below is a list
-of commonly used API tools ...
+What I mean is that, after installing the api-tools you should have access to
+`ec2-*` type commands but no `as-*` (autoscaling), `elb-*` (elastic load
+balancer) etc. type commands - i.e. the other services. That's because you have
+to manually install them. Check the [AWS Developer Tools][awsdevelopertools] for
+official documentation on the tools, changelog &amp; download links or check out
+this [blog- post][link1]. Below is a list of commonly used API tools ...
 
 * [Amazon EC2 Command Line Tool][link3]
 * [Auto Scaling Command Line Tool][link4]
 * [Elastic Load Balancing Command Line Tool][link5]
 * [Amazon CloudWatch Command Line Tool][link22]
 
-Assuming you are the super user &amp; taking the Elastic Load Balanacer as
-an example, copy the files from the `bin/` &amp; `lib/` folders (you see
-them after unzipping the downloaded file) into the respective folder for the
-service as was seen in the `~/.bashrc` file earlier. Please note that after
-installing the `ec2-api-tools`, the `/usr/local/aws/` folder should not
-exist (unless you made them yourself) since its actually never been created.
-The following commands therefore should create the folders (with sub-
-folders) for you.
+Assuming you are the super user &amp; taking the Elastic Load Balanacer as an
+example, copy the files from the `bin/` &amp; `lib/` folders (you see them after
+unzipping the downloaded file) into the respective folder for the service as was
+seen in the `~/.bashrc` file earlier. Please note that after installing the `ec2
+-api-tools`, the `/usr/local/aws/` folder should not exist (unless you made them
+yourself) since its actually never been created. The following commands
+therefore should create the folders (with sub- folders) for you.
 
 <pre class="brush: bash">
 wget --quiet http://ec2-downloads.s3.amazonaws.com/ElasticLoadBalancing.zip
@@ -119,8 +115,8 @@ rsync -a --no-o --no-g ElasticLoadBalancing-*/ /usr/local/aws/elb/
 
 And so on - repeat for each service that you wnat to add.
 
-Once your done, the commands for each service should now be available to
-your shell.
+Once your done, the commands for each service should now be available to your
+shell.
 
 Now we begin ...
 
@@ -128,42 +124,40 @@ Now we begin ...
 
 ####Prerequisite 1: Create/Choose Custom AMI####
 
-If you haven’t created an AMI from one of your running EC2 instances, create
-one now, or click over to your AMIs page on the AWS Console to retrieve the
-AMI ID to be used as a template, and write it down. You’ll need an AMI ID
-later. Think of it as your autoscaling-instance-template.
+If you haven’t created an AMI from one of your running EC2 instances, create one
+now, or click over to your AMIs page on the AWS Console to retrieve the AMI ID
+to be used as a template, and write it down. You’ll need an AMI ID later. Think
+of it as your autoscaling-instance-template.
 
-_Ps: If you already have a running EBS-backed instance, you can save this
-Amazon Machine Image (AMI) and autoscale with it ... [find steps on how to
-create your own AMIs here][link10]_
+_Ps: If you already have a running EBS-backed instance, you can save this Amazon
+Machine Image (AMI) and autoscale with it ... [find steps on how to create your
+own AMIs here][link10]_
 
 ####Prerequisite 2: Set Up Your Your ELB####
 
-The ELB name that is displayed on the AWS Console will also be required at
-some point. You can use the AWS Console to [create an ELB][link32] if you
-don't have one. Once your ELB is up, you will most likely create a CNAME
-record at your DNS provider pointing your landing page or vanity domain to
-the DNS name given in the AWS Console. Visit ['Use Domain Names with Elastic
-Load Balancing'][link14] at Amazon AWS Documentation page for details on
-this.
+The ELB name that is displayed on the AWS Console will also be required at some
+point. You can use the AWS Console to [create an ELB][link32] if you don't have
+one. Once your ELB is up, you will most likely create a CNAME record at your DNS
+provider pointing your landing page or vanity domain to the DNS name given in
+the AWS Console. Visit ['Use Domain Names with Elastic Load Balancing'][link14]
+at Amazon AWS Documentation page for details on this.
 
 ####Prerequisite 3: Check Credentials/ Keys/ Authorizations Are In Order####
 
-Some services will fail if the credentials are not in order. Common mistake
-is to set the key &amp; secret and assume that's all that the other services
-require. For example, [check out the set up process for autoscaling][link18]
-... it requires the `aws-credential-file.txt` that's referenced in
-`~/.bashrc`.
+Some services will fail if the credentials are not in order. Common mistake is
+to set the key &amp; secret and assume that's all that the other services
+require. For example, [check out the set up process for autoscaling][link18] ...
+it requires the `aws-credential-file.txt` that's referenced in `~/.bashrc`.
 
-When setting up the credential file, check in the unzipped folder of the
-service for the `credential-file-path.template` to use as a reference for
-your own credentials file.
+When setting up the credential file, check in the unzipped folder of the service
+for the `credential-file-path.template` to use as a reference for your own
+credentials file.
 
 Also ... By default, the Auto Scaling command line interface (CLI) uses the
 Eastern United States Region (us-east-1) with the autoscaling.us-
-east-1.amazonaws.com service endpoint URL. If your instances are in a
-different region, you must specify the region where your instances reside by
-setting the AWS_AUTO_SCALING_URL environment variable.
+east-1.amazonaws.com service endpoint URL. If your instances are in a different
+region, you must specify the region where your instances reside by setting the
+AWS_AUTO_SCALING_URL environment variable.
 
 <pre class="brush: bash">
 $ export AWS_AUTO_SCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
@@ -192,28 +186,27 @@ That's if you haven't already ... [spend some time here][link32].
 > necessary for Auto Scaling to launch instances that run your application.
 
 > A launch configuration is a template that the Auto Scaling group uses to
-> launch Amazon EC2 instances. You create the launch configuration by
-> including information such as the Amazon machine image ID to use for
-> launching the EC2 instance, the instance type, key pairs, security groups,
-> and block device mappings, among other configuration settings. When you
-> create your Auto Scaling group, you must associate it with a launch
-> configuration. You can attach only one launch configuration to an Auto
-> Scaling group at a time. Launch configurations cannot be modified. They
-> are immutable. If you want to change the launch configuration of your Auto
-> Scaling group, you have to first create a new launch configuration and
-> then update your Auto Scaling group by attaching the new launch
-> configuration. When you attach a new launch configuration to your Auto
-> Scaling group, any new instances will be launched using the new
-> configuration parameters. Existing instances are not affected.
+> launch Amazon EC2 instances. You create the launch configuration by including
+> information such as the Amazon machine image ID to use for launching the EC2
+> instance, the instance type, key pairs, security groups, and block device
+> mappings, among other configuration settings. When you create your Auto
+> Scaling group, you must associate it with a launch configuration. You can
+> attach only one launch configuration to an Auto Scaling group at a time.
+> Launch configurations cannot be modified. They are immutable. If you want to
+> change the launch configuration of your Auto Scaling group, you have to first
+> create a new launch configuration and then update your Auto Scaling group by
+> attaching the new launch configuration. When you attach a new launch
+> configuration to your Auto Scaling group, any new instances will be launched
+> using the new configuration parameters. Existing instances are not affected.
 
 <pre class="brush: bash; highlight: [1]">
 $ as-create-launch-config AutoscaleLC --image-id ami-xxxxxxxxc --instance-type m1.small --group your-security-group --key ~/.aws/your-key.pem
 $ OK-Created launch config
 </pre>
 
-Don't forget to set the `--key YourKey` especially if you want to ssh into
-the instances ... you can get a list of your keys from here in case you
-don't remember.
+Don't forget to set the `--key YourKey` especially if you want to ssh into the
+instances ... you can get a list of your keys from here in case you don't
+remember.
 
 <pre class="brush: bash">
 $ ec2-describe-keypairs
@@ -221,10 +214,9 @@ $ ec2-describe-keypairs
 
 ####Step 3: Create an Auto Scaling Group####
 
-> An Auto Scaling group is a collection of Amazon EC2 instances. You can
-> specify settings like the minimum, maximum, and desired number of EC2
-> instances for an Auto Scaling group to which you want to apply certain
-> scaling actions.
+> An Auto Scaling group is a collection of Amazon EC2 instances. You can specify
+> settings like the minimum, maximum, and desired number of EC2 instances for an
+> Auto Scaling group to which you want to apply certain scaling actions.
 
 <pre class="brush: bash; highlight: [1]">
 $ as-create-auto-scaling-group AutoScalingGroup --availability-zones eu-west-1a --launch-configuration AutoscaleLC --min-size 1 --max-size 2 --load-balancers AutoscaleLB --desired-capacity 1 --default-cooldown 300 --grace-period 300 --health-check-type ELB
@@ -233,33 +225,33 @@ $ OK-Created AutoScalingGroup
 
 ####Step 4: Scale Up &amp; Down####
 
-Scaling policie tells the Auto Scaling group what to do when the specified conditions change.
+Scaling policie tells the Auto Scaling group what to do when the specified
+conditions change.
 
 <pre class="brush: bash">
 $ as-put-scaling-policy --auto-scaling-group AutoScalingGroup --name scale-up --adjustment 1 --type ChangeInCapacity --cooldown 300
 $ arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
 </pre>
 
-Basic upscale policy defined, named “scale-up,” a ChangeInCapacity policy
-to add 1 server and wait 3 minutes before another policy can be triggered.
-Below is the reverse operation, or a “scale-down” policy to remove 1 server
-from the group.
+Basic upscale policy defined, named “scale-up,” a ChangeInCapacity policy to add
+1 server and wait 3 minutes before another policy can be triggered. Below is the
+reverse operation, or a “scale-down” policy to remove 1 server from the group.
 
 <pre class="brush: bash">
 $ as-put-scaling-policy --auto-scaling-group AutoScalingGroup --name scale-dn "--adjustment=-1" --type ChangeInCapacity --cooldown 300
 $ arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
 </pre>
 
-For details on the possible variations that can be applied such as the
-various adjustment types you can [read this ...][link23]
+For details on the possible variations that can be applied such as the various
+adjustment types you can [read this ...][link23]
 
 _Ps: Cooldown period is in seconds._
 
 ####Step 5: Link a CloudWatch event to an auto scaling policy####
 
 Use the CloudWatch command mon-put-metric-alarm to create an alarm to for
-increasing the size of the Auto Scaling group when the average CPU usage of
-all the instances goes up to 80 percent.
+increasing the size of the Auto Scaling group when the average CPU usage of all
+the instances goes up to 80 percent.
 
 <pre class="brush: bash">
 $ mon-put-metric-alarmScaleUpAlarm --alarm-description "Scale up at 80% load" --comparison-operator GreaterThanOrEqualToThreshold --evaluation-periods 2 --metric-name CPUUtilization --namespace "AWS/EC2" --period 120 --statistic Average --threshold 80 --alarm-actions arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp --dimensions "AutoScalingGroupName=AutoscaleG"
@@ -267,8 +259,8 @@ $ OK-Created Alarm
 </pre>
 
 Use the CloudWatch command mon-put-metric-alarm to create an alarm for
-decreasing the size of the Auto Scaling group when the average CPU usage of
-all the instances goes down 40 percent.
+decreasing the size of the Auto Scaling group when the average CPU usage of all
+the instances goes down 40 percent.
 
 <pre class="brush: bash">
 $ mon-put-metric-alarmScaleDownAlarm --alarm-description "Scale down at 40% load" --comparison-operator LessThanOrEqualToThreshold --evaluation-periods 2 --metric-name CPUUtilization --namespace "AWS/EC2" --period 120 --statistic Average --threshold 40 --alarm-actions arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleDown --dimensions "AutoScalingGroupName=AutoscaleG"
@@ -287,82 +279,82 @@ $ OK-Put Notification Configuration
 
 ###Considerations When Scaling LAMP-type Servers###
 
-When migrating a single-server LAMP app to an autoscaling deployment often
-takes some planning and changing some of the configuration a bit. For
-example, you'll need to store shared data, particularly sessions, on a
-separate instance, or better yet, use Amazon's shared MySQL cluster, called
-RDS.
+When migrating a single-server LAMP app to an autoscaling deployment often takes
+some planning and changing some of the configuration a bit. For example, you'll
+need to store shared data, particularly sessions, on a separate instance, or
+better yet, use Amazon's shared MySQL cluster, called RDS.
 
-By default, PHP stores sessions on disk as files, but that won't work in
-your example, because User A's session token got written to the first
-server, while User B's is on server 2. But on their second or third request,
-the user's request can be served by a different server instance, so they'll
-instantly be logged out. That's [why you'll want to use the database
-sessions][link30], and use the same connection info from all your instances
-to a single database server or RDS.
+By default, PHP stores sessions on disk as files, but that won't work in your
+example, because User A's session token got written to the first server, while
+User B's is on server 2. But on their second or third request, the user's
+request can be served by a different server instance, so they'll instantly be
+logged out. That's [why you'll want to use the database sessions][link30], and
+use the same connection info from all your instances to a single database server
+or RDS.
 
 If you enable [Application-Controlled Session Stickiness][link25];
 
 > The load balancer uses a special cookie to associate the session with the
 > original server that handled the request, but follows the lifetime of the
-> application-generated cookie corresponding to the cookie name specified in
-> the policy configuration. The load balancer only inserts a new stickiness
-> cookie if the application response includes a new application cookie. The
-> load balancer stickiness cookie does not update with each request. If the
-> application cookie is explicitly removed or expires, the session stops
-> being sticky until a new application cookie is issued.
+> application-generated cookie corresponding to the cookie name specified in the
+> policy configuration. The load balancer only inserts a new stickiness cookie
+> if the application response includes a new application cookie. The load
+> balancer stickiness cookie does not update with each request. If the
+> application cookie is explicitly removed or expires, the session stops being
+> sticky until a new application cookie is issued.
 
-> If an application server fails or is removed, the load balancer will try
-> to route the sticky session to another healthy application server. The
-> load balancer will try to stick to new healthy application server and
-> continue routing to currently stick application server even after the
-> failed application server comes back. However, it is up to the new
-> application server on how it'll respond to a request which it has not seen
-> previously.
+> If an application server fails or is removed, the load balancer will try to
+> route the sticky session to another healthy application server. The load
+> balancer will try to stick to new healthy application server and continue
+> routing to currently stick application server even after the failed
+> application server comes back. However, it is up to the new application server
+> on how it'll respond to a request which it has not seen previously.
 
 ... so if your PHP app has a specific cookie it uses to manage settings, the ELB
-will make sure the request is passed to the same server that issued the
-request.
+will make sure the request is passed to the same server that issued the request.
 
 Your AMI should only have Apache & PHP on it, and each instance will have the
-same, shared MySQL server or RDS connection info, baked into the AMI. If
-users can upload images, you'll need to move them from the instance to a
-shared server (rsync) or S3 bucket (cron script), and map that origin as your
-CloudFront endpoint for caching ...
+same, shared MySQL server or RDS connection info, baked into the AMI. If users
+can upload images, you'll need to move them from the instance to a shared server
+(rsync) or S3 bucket (cron script), and map that origin as your CloudFront
+endpoint for caching ...
 
 \- OR \-
 
 ... you could just have each instance upload the shared-data directly to a
-location that all the instances reference like S3. While AWS does a lot of
-the heavy lifting it is expected that you at least understand how your
+location that all the instances reference like S3. While AWS does a lot of the
+heavy lifting it is expected that you at least understand how your
 infrastructure is configured to achieve the desired result.
 
-There are, of course, other ways of achieving the same end result, but the
-above suggestions are the most common, easiest techniques within Amazon Web
-Services.
+There are, of course, other ways of achieving the same end result, but the above
+suggestions are the most common, easiest techniques within Amazon Web Services.
 
 ###Points To Note###
 
-* Your original instance doesn't have anything to do with Auto Scaling. It
-lives outside of your Auto Scaling setup and will not be touched. When Auto
-Scaling launches a new instance, it will always use the AMI you have defined
-in the launch configuration. That AMI never changes. You simply get a copy
-of the data from that point in time whenever an instance is launched.
+* Your original instance doesn't have anything to do with Auto Scaling. It lives
+outside of your Auto Scaling setup and will not be touched. When Auto Scaling
+launches a new instance, it will always use the AMI you have defined in the
+launch configuration. That AMI never changes. You simply get a copy of the data
+from that point in time whenever an instance is launched.
+
 * Each instance is entirely separate. There is no connection between them. If
 you make changes on one instance, you will need to walk through all of them
-manually. These changes will not be persistent though. When a new instance
-is launched, it will be a copy of the original AMI. So you will probably
-want to replace the AMI instead. If you have some application code that can
-change, you might want to consider building an AMI that can fetch everything
-on boot, and maybe also react on changes somehow. If you can avoid having to
-replace the AMI "all the time", that is going to make it easier for you.
-* You don't need an Elastic IP when you are using Elastic Load Balancing.
-* When you have a new AMI, you will need to create a new launch configuration
-and update the Auto Scaling group. You can then, say, double the capacity,
-wait for the new instances to become available, and finally have the old
-instances terminated.
+manually. These changes will not be persistent though. When a new instance is
+launched, it will be a copy of the original AMI. So you will probably want to
+replace the AMI instead. If you have some application code that can change, you
+might want to consider building an AMI that can fetch everything on boot, and
+maybe also react on changes somehow. If you can avoid having to replace the AMI
+"all the time", that is going to make it easier for you.
 
-<div markdown="1" class="post-footnotes">
+* You don't need an Elastic IP when you are using Elastic Load Balancing.
+
+* When you have a new AMI, you will need to create a new launch configuration
+and update the Auto Scaling group. You can then, say, double the capacity, wait
+for the new instances to become available, and finally have the old instances
+terminated.
+
+---
+
 1. [AWS Developer Tools][awsdevelopertools]
 2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from Amazon Downloads][link1]
 3. [EC2StartersGuide][ubuntuec2guide]
@@ -384,7 +376,6 @@ instances terminated.
 19. [Enable Application-Controlled Session Stickiness][link25]
 20. [Why Is It Good To Save Session in Database?][link30]
 21. [Understanding autoscaled instances][link33]
-</div>
 
 [aws]: https://aws.amazon.com/
 [awsconsole]: aws.amazon.com/console/
