@@ -1,44 +1,34 @@
-$(document).ready(function() {
+// +++ SHIFTING COLORS ~ Chameleon
+var Chameleon = {};
+Chameleon.noOfColors = 10; // should be in CSS, with the transitions
+Chameleon.duration = 5;    // should match the transition duration in css
 
-  /* SHIFTING COLORS ~ Chameleon */
+Chameleon.init = function() {
 
-  // Initialize object
-  var Chameleon = {};
+  // Check if we support CSS transitions on the browser
+  if ( Modernizr.csstransitions ) {
 
-  Chameleon.noOfColors = 10; // should be in CSS, with the transitions
-  Chameleon.duration = 5;    // should match the transition duration in css
+    // Grab the elements, we will be using it a lot
+    Chameleon.bodyElement = $('body');
+    Chameleon.logoElement = $('header a#logo');
 
-  Chameleon.init = function() {
-
-    // Check if we support CSS transitions on the browser
-    if ( Modernizr.csstransitions ) {
-
-      // Grab the elements, we will be using it a lot
-      Chameleon.bodyElement = $('body');
-      Chameleon.logoElement = $('header a#logo');
-
-      // ~~ faster than Math.floor() -> http://rocha.la/JavaScript-bitwise-operators-in-practice
-      Chameleon.colorT = ~~(Math.random()*Chameleon.noOfColors);
-      Chameleon.changeColor();
-    }
+    // ~~ faster than Math.floor() -> http://rocha.la/JavaScript-bitwise-operators-in-practice
+    Chameleon.colorT = ~~(Math.random()*Chameleon.noOfColors);
+    Chameleon.changeColor();
   }
+}
 
-  // Switch colors
-  Chameleon.changeColor = function() {
-    Chameleon.bodyElement.removeClass( 'color' + Chameleon.colorT % Chameleon.noOfColors );
-    Chameleon.logoElement.removeClass( 'bkgcolor' + Chameleon.colorT % Chameleon.noOfColors );
-    Chameleon.colorT++;
-    Chameleon.bodyElement.addClass( 'color' + Chameleon.colorT % Chameleon.noOfColors );
-    Chameleon.logoElement.addClass( 'bkgcolor' + Chameleon.colorT % Chameleon.noOfColors );
-    setTimeout( Chameleon.changeColor, Chameleon.duration * 1000 );
-  };
-
-  // Get ready, set ... GO!
-  Chameleon.init();
-
-});
+// Switch colors
+Chameleon.changeColor = function() {
+  Chameleon.bodyElement.removeClass( 'color' + Chameleon.colorT % Chameleon.noOfColors );
+  Chameleon.logoElement.removeClass( 'bkgcolor' + Chameleon.colorT % Chameleon.noOfColors );
+  Chameleon.colorT++;
+  Chameleon.bodyElement.addClass( 'color' + Chameleon.colorT % Chameleon.noOfColors );
+  Chameleon.logoElement.addClass( 'bkgcolor' + Chameleon.colorT % Chameleon.noOfColors );
+  setTimeout( Chameleon.changeColor, Chameleon.duration * 1000 );
+};
 
 // +++ NProgress
 $(document).on('page:fetch',   function() { NProgress.start(); });
-$(document).on('page:change',  function() { NProgress.done(); });
-$(document).on('page:restore', function() { NProgress.remove(); });
+$(document).on('page:change',  function() { NProgress.done(); Chameleon.init(); });
+$(document).on('page:restore', function() { NProgress.remove(); Chameleon.init(); });
