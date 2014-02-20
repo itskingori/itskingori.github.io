@@ -18,7 +18,6 @@ Chameleon.init = function() {
   }
 }
 
-// Switch colors
 Chameleon.changeColor = function() {
   Chameleon.bodyElement.removeClass( 'color' + Chameleon.colorT % Chameleon.noOfColors );
   Chameleon.logoElement.removeClass( 'bkgcolor' + Chameleon.colorT % Chameleon.noOfColors );
@@ -28,6 +27,12 @@ Chameleon.changeColor = function() {
   setTimeout( Chameleon.changeColor, Chameleon.duration * 1000 );
 };
 
+// +++ SYNTAX HIGHLIGHTER
+var SyntaxHighlighter = {};
+SyntaxHighlighter.init = function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+}
+
 // +++ NProgress
 $(document).on('page:fetch',   function() {
   NProgress.start();
@@ -35,10 +40,10 @@ $(document).on('page:fetch',   function() {
 $(document).on('page:change',  function() {
   NProgress.done();
   Chameleon.init();
-  hljs.initHighlightingOnLoad();
+  SyntaxHighlighter.init();
 });
 $(document).on('page:restore', function() {
   NProgress.remove();
   Chameleon.init();
-  hljs.initHighlightingOnLoad();
+  SyntaxHighlighter.init();
 });
