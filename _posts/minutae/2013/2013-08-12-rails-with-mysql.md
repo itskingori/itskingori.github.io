@@ -9,18 +9,18 @@ to preconfigure for selected database namely: mysql, oracle, postgresql,
 sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql,
 jdbc
 
-<pre class="brush: plain">
+```
 Usage:
     rails new APP_PATH [options]
 
 Options:
     -d, [--database=DATABASE]
-</pre>
+```
 
 So we could use `$rails new projectname -d mysql` the specify the port in the
 database config file, `config/database.yml`.
 
-<pre class="brush: plain; highlight: [9,19,29]">
+``` yaml
 development:
     adapter: mysql2
     encoding: utf8
@@ -50,11 +50,11 @@ production:
     password: **YOUR_PASSWORD**
     host: localhost
     port: 3306
-</pre>
+```
 
 If you are using MAMP, you can use the sockets instead;
 
-<pre class="brush: plain; highlight: [9,19,29]">
+``` yaml
 development:
     adapter: mysql2
     encoding: utf8
@@ -63,7 +63,7 @@ development:
     username: **YOUR_USERNAME**
     password: **YOUR_PASSWORD**
     host: localhost
-    socket: /Applications/MAMP/tmp/mysql/mysql.sock
+    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 test:
     adapter: mysql2
@@ -73,7 +73,7 @@ test:
     username: **YOUR_USERNAME**
     password: **YOUR_PASSWORD**
     host: localhost
-    socket: /Applications/MAMP/tmp/mysql/mysql.sock
+    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 production:
     adapter: mysql2
@@ -83,8 +83,8 @@ production:
     username: **YOUR_USERNAME**
     password: **YOUR_PASSWORD**
     host: localhost
-    socket: /Applications/MAMP/tmp/mysql/mysql.sock
-</pre>
+    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
+```
 
 Check out [this other post][3] that has details on installation of Rails on OS X
 (MySQL included).

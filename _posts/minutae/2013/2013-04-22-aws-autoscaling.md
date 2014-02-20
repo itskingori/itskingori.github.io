@@ -27,7 +27,7 @@ Double check you have the following environment variables set up in your shell
 profile. You should have something close to ... (see below code block) ... in
 your `~/.bashrc` if you use bash as your shell.
 
-<pre class="brush: plain">
+``` bash
 # WHERE YOUR JAVA IS
 export JAVA_HOME=/usr
 
@@ -67,13 +67,13 @@ export EC2_PRIVATE_KEY=$(echo $HOME/.aws/pk-*.pem)
 export EC2_CERT=$(echo $HOME/.aws/cert-*.pem)
 export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
 export ELASTIC_MAPREDUCE_CREDENTIALS=$HOME/.aws/aws-credentials.json
-</pre>
+```
 
 Refresh environment variables after editing `~/.bashrc` file. Just to be sure.
 
-<pre class="brush: bash">
+``` bash
 source ~/.bashrc
-</pre>
+```
 
 There's probably something I've left out but that's the general idea + the set
 up process is well documented online, [a simple google search should
@@ -107,11 +107,11 @@ seen in the `~/.bashrc` file earlier. Please note that after installing the `ec2
 yourself) since its actually never been created. The following commands
 therefore should create the folders (with sub- folders) for you.
 
-<pre class="brush: bash">
-wget --quiet http://ec2-downloads.s3.amazonaws.com/ElasticLoadBalancing.zip
-unzip -qq ElasticLoadBalancing.zip
-rsync -a --no-o --no-g ElasticLoadBalancing-*/ /usr/local/aws/elb/
-</pre>
+``` bash
+$ wget --quiet http://ec2-downloads.s3.amazonaws.com/ElasticLoadBalancing.zip
+$ unzip -qq ElasticLoadBalancing.zip
+$ rsync -a --no-o --no-g ElasticLoadBalancing-*/ /usr/local/aws/elb/
+```
 
 And so on - repeat for each service that you wnat to add.
 
@@ -159,21 +159,21 @@ east-1.amazonaws.com service endpoint URL. If your instances are in a different
 region, you must specify the region where your instances reside by setting the
 AWS_AUTO_SCALING_URL environment variable.
 
-<pre class="brush: bash">
+``` bash
 $ export AWS_AUTO_SCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
-</pre>
+```
 
 Same as the ELB ...
 
-<pre class="brush: bash">
+``` bash
 $ export AWS_ELB_URL=https://elasticloadbalancing.eu-west-1.amazonaws.com
-</pre>
+```
 
 Same as CloudWatch
 
-<pre class="brush: bash">
+``` bash
 $ export AWS_CLOUDWATCH_URL=https://monitoring.eu-west-1.amazonaws.com
-</pre>
+```
 
 ####Step 1: Create An Elastic Load Balancer####
 
@@ -199,18 +199,18 @@ That's if you haven't already ... [spend some time here][link32].
 > configuration to your Auto Scaling group, any new instances will be launched
 > using the new configuration parameters. Existing instances are not affected.
 
-<pre class="brush: bash; highlight: [1]">
+``` bash
 $ as-create-launch-config AutoscaleLC --image-id ami-xxxxxxxxc --instance-type m1.small --group your-security-group --key ~/.aws/your-key.pem
 $ OK-Created launch config
-</pre>
+```
 
 Don't forget to set the `--key YourKey` especially if you want to ssh into the
 instances ... you can get a list of your keys from here in case you don't
 remember.
 
-<pre class="brush: bash">
+``` bash
 $ ec2-describe-keypairs
-</pre>
+```
 
 ####Step 3: Create an Auto Scaling Group####
 
@@ -218,29 +218,29 @@ $ ec2-describe-keypairs
 > settings like the minimum, maximum, and desired number of EC2 instances for an
 > Auto Scaling group to which you want to apply certain scaling actions.
 
-<pre class="brush: bash; highlight: [1]">
+``` bash
 $ as-create-auto-scaling-group AutoScalingGroup --availability-zones eu-west-1a --launch-configuration AutoscaleLC --min-size 1 --max-size 2 --load-balancers AutoscaleLB --desired-capacity 1 --default-cooldown 300 --grace-period 300 --health-check-type ELB
 $ OK-Created AutoScalingGroup
-</pre>
+```
 
 ####Step 4: Scale Up &amp; Down####
 
 Scaling policie tells the Auto Scaling group what to do when the specified
 conditions change.
 
-<pre class="brush: bash">
+``` bash
 $ as-put-scaling-policy --auto-scaling-group AutoScalingGroup --name scale-up --adjustment 1 --type ChangeInCapacity --cooldown 300
 $ arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
-</pre>
+```
 
 Basic upscale policy defined, named “scale-up,” a ChangeInCapacity policy to add
 1 server and wait 3 minutes before another policy can be triggered. Below is the
 reverse operation, or a “scale-down” policy to remove 1 server from the group.
 
-<pre class="brush: bash">
+``` bash
 $ as-put-scaling-policy --auto-scaling-group AutoScalingGroup --name scale-dn "--adjustment=-1" --type ChangeInCapacity --cooldown 300
 $ arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
-</pre>
+```
 
 For details on the possible variations that can be applied such as the various
 adjustment types you can [read this ...][link23]
@@ -253,29 +253,29 @@ Use the CloudWatch command mon-put-metric-alarm to create an alarm to for
 increasing the size of the Auto Scaling group when the average CPU usage of all
 the instances goes up to 80 percent.
 
-<pre class="brush: bash">
+``` bash
 $ mon-put-metric-alarmScaleUpAlarm --alarm-description "Scale up at 80% load" --comparison-operator GreaterThanOrEqualToThreshold --evaluation-periods 2 --metric-name CPUUtilization --namespace "AWS/EC2" --period 120 --statistic Average --threshold 80 --alarm-actions arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp --dimensions "AutoScalingGroupName=AutoscaleG"
 $ OK-Created Alarm
-</pre>
+```
 
 Use the CloudWatch command mon-put-metric-alarm to create an alarm for
 decreasing the size of the Auto Scaling group when the average CPU usage of all
 the instances goes down 40 percent.
 
-<pre class="brush: bash">
+``` bash
 $ mon-put-metric-alarmScaleDownAlarm --alarm-description "Scale down at 40% load" --comparison-operator LessThanOrEqualToThreshold --evaluation-periods 2 --metric-name CPUUtilization --namespace "AWS/EC2" --period 120 --statistic Average --threshold 40 --alarm-actions arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleDown --dimensions "AutoScalingGroupName=AutoscaleG"
 $ OK-Created Alarm
-</pre>
+```
 
 You can create your own SNS notification for auto-scaling events from the
 console if you want ie. send an email when X happens. Create a topic via the
 console, this gives you an ARN something like this
 `arn:aws:sns:************************`
 
-<pre class="brush: bash">
+``` bash
 $ as-put-notification-configuration --topic-arn arn:aws:sns:************************ --auto-scaling-group 'MYTEST-SG' --notification-types autoscaling:EC2_INSTANCE_LAUNCH, autoscaling:EC2_INSTANCE_TERMINATE, autoscaling:EC2_INSTANCE_TERMINATE_ERROR, autoscaling:EC2_INSTANCE_LAUNCH_ERROR
 $ OK-Put Notification Configuration
-</pre>
+```
 
 ###Considerations When Scaling LAMP-type Servers###
 

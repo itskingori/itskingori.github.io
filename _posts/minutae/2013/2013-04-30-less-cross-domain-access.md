@@ -8,15 +8,15 @@ layout: post
 
 If you have a static file server on S3 ... this loads fine:
 
-<pre class="brush: css">
+``` css
 <link rel="stylesheet" href="http://static.example.com/css/screen.less" type="text/css" media="screen, projection, print">
-</pre>
+```
 
 This ... does not load.
 
-<pre class="brush: css">
+``` css
 <link rel="stylesheet/less" href="http://static.example.com/css/screen.less" type="text/css" media="screen, projection, print">
-</pre>
+```
 
 ###Reason###
 
@@ -47,20 +47,20 @@ support][link2] ... enable cross domain using a CORs policy just like the one
 below ... (for GET requests, see official documentation for more examples and
 details).
 
-<pre class="brush: xml">
-    <CORSConfiguration>
-        <CORSRule>
-            <AllowedOrigin>http://domain1.com</AllowedOrigin>
-            <AllowedOrigin>http://domain2</AllowedOrigin>
-            <AllowedMethod>GET</AllowedMethod>
-            <AllowedHeader>*</AllowedHeader>
-            <MaxAgeSeconds>3000</MaxAgeSeconds>
-            <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
-            <ExposeHeader>x-amz-request-id</ExposeHeader>
-            <ExposeHeader>x-amz-id-2</ExposeHeader>
-        </CORSRule>
-    </CORSConfiguration>
-</pre>
+``` xml
+<CORSConfiguration>
+    <CORSRule>
+        <AllowedOrigin>http://domain1.com</AllowedOrigin>
+        <AllowedOrigin>http://domain2</AllowedOrigin>
+        <AllowedMethod>GET</AllowedMethod>
+        <AllowedHeader>*</AllowedHeader>
+        <MaxAgeSeconds>3000</MaxAgeSeconds>
+        <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
+        <ExposeHeader>x-amz-request-id</ExposeHeader>
+        <ExposeHeader>x-amz-id-2</ExposeHeader>
+    </CORSRule>
+</CORSConfiguration>
+```
 
 S3 will then send the appropriate [`The_HTTP_response_headers`][link6].
 

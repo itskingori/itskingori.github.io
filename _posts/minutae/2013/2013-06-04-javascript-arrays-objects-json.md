@@ -9,26 +9,26 @@ layout: post
 > The JSON object contains methods for parsing JSON and converting values to
 > JSON.
 
-<pre class="brush: javascript">
+``` javascript
 assert(JSON.stringify({}) === '{}');
 assert(JSON.stringify(true) === 'true');
 assert(JSON.stringify("foo") === '"foo"');
 assert(JSON.stringify([1, "false", false]) === '[1,"false",false]');
 assert(JSON.stringify({ x: 5 }) === '{"x":5}');
 JSON.stringify({x: 5, y: 6}); // '{"x":5,"y":6}' or '{"y":6,"x":5}'
-</pre>
+```
 
 > Return a JSON string corresponding to the specified value, optionally
 > including only certain properties or replacing property values in a user-
 > defined manner.
 
-<pre class="brush: javascript">
+``` javascript
 JSON.parse('{}'); // {}
 JSON.parse('true'); // true
 JSON.parse('"foo"'); // "foo"
 JSON.parse('[1, 5, "false"]'); // [1, 5, "false"]
 JSON.parse('null'); // null
-</pre>
+```
 
 > Parse a string as JSON, optionally transform the produced value and its
 > properties, and return the value.

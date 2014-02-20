@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-<pre class="brush: bash">
+``` bash
 $ brew install auto-scaling
 $ brew install aws-cfn-tools
 $ brew install aws-elasticache
@@ -16,11 +16,11 @@ $ brew install ec2-ami-tools
 $ brew install ec2-api-tools
 $ brew install elb-tools
 $ brew install rds-command-line-tools
-</pre>
+```
 
 Add these to your environment ...
 
-<pre class="brush: bash">
+``` bash
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
@@ -37,7 +37,7 @@ export AWS_CLOUDWATCH_HOME="/usr/local/Cellar/cloud-watch/1.0.13.4/libexec"
 export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.4.0.9/libexec"
 export AWS_RDS_HOME="/usr/local/Cellar/rds-command-line-tools/1.14.001/libexec"
-</pre>
+```
 
 Thanks to [this guy ...][1]
 

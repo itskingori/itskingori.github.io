@@ -8,7 +8,7 @@ layout: post
 
 Global variable has undefined in certain case.
 
-<pre class="brush: javascript">
+``` javascript
 var value = 10;
 
 function test() {
@@ -22,14 +22,14 @@ function test() {
 }
 
 test();
-</pre>
+```
 
 Gives output as.
 
-<pre class="brush: javascript">
+``` javascript
 undefined
 20
-</pre>
+```
 
 ###Explanation###
 
@@ -38,7 +38,7 @@ you accessing the global variable in your function; you're only ever
 accessing the local value variable. Your code is equivalent to the
 following:
 
-<pre class="brush: javascript">
+``` javascript
 var value = 10;
 
 function test() {
@@ -51,7 +51,7 @@ function test() {
 }
 
 test();
-</pre>
+```
 
 ####Simple Explanation:####
 
@@ -65,7 +65,7 @@ test();
 > the beginning of the function (not inner-most code block), while the
 > definitions are left on the same place.
 
-<pre class="brush: javascript">
+``` javascript
 (function() {
 
     var a = 'a';
@@ -77,11 +77,11 @@ test();
     var c= 'c'; // antipattern
     // final lines of scripting
 })();
-</pre>
+```
 
 Will be rewritten by the interpreter as;
 
-<pre class="brush: javascript">
+``` javascript
 (function() {
 
     var a, b, c; // variables declared
@@ -95,7 +95,7 @@ Will be rewritten by the interpreter as;
     c= 'c'; // initialized
     // final lines of scripting
 })();
-</pre>
+```
 
 ####Complex Explanation:####
 
@@ -115,35 +115,35 @@ Will be rewritten by the interpreter as;
 Function hoisting means that functions are moved to the top of their scope. That
 is;
 
-<pre class="brush: javascript">
+``` javascript
 function b() {
     a = 10;
     return;
     function a() {}
 }
-</pre>
+```
 
 Will be rewritten by the interpreter as;
 
-<pre class="brush: javascript">
+``` javascript
 function b() {
     function a() {}
     a = 10;
     return;
 }
-</pre>
+```
 
 Also;
 
-<pre class="brush: javascript">
+``` javascript
 function a() {}
-</pre>
+```
 
 behaves the same as;
 
-<pre class="brush: javascript">
+``` javascript
 var a = function () {};
-</pre>
+```
 
 So all the function declarations are eventually assigned to a variable. In
 Javascript, functions are first class objects, just like strings and numbers.

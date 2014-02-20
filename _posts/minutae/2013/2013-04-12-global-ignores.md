@@ -10,7 +10,7 @@ awkward was that the project's `.gitignore` file paid no attention to OS-
 generated or editor-generated files. So I happily contributed those exclusions
 to the project's `.gitignore` so we ended up with [this][commit3] ...
 
-<pre class="brush: plain">
+```
 # Editor Files #
 *.komodoproject
 
@@ -23,7 +23,7 @@ to the project's `.gitignore` so we ended up with [this][commit3] ...
 Icon?
 ehthumbs.db
 Thumbs.db
-</pre>
+```
 
 Which isn't elegant. At all.
 
@@ -38,9 +38,9 @@ Git has a global configuration that applies rules to all of your projects.
 
 On linux for example:
 
-<pre class="brush: bash">
+```
 git config --global core.excludesfile ~/.global_ignore
-</pre>
+```
 
 On Windows (if using GitHub. for Windows) the `.gitconfig` file lives in the
 user's home directory. In my case, for example ( & on Windows Vista/8), the
@@ -48,18 +48,18 @@ location of the `.gitconfig` file is `C:\Users\YOU\.gitconfig`. To set up a
 global gitconfig, I use a directory `C:\Users\YOU\config\` containing a file
 called `global_ignore`, and in `.gitconfig` I would add;
 
-<pre class="brush: plain">
+```
 [user]
     name = King'ori Maina
     email = j@kingori.co
 
 [core]
     excludesfile = C:/Users/itsmrwave/configs/global_ignore
-</pre>
+```
 
 And finally in the `global_ignore` file we have something like;
 
-<pre class="brush: plain">
+``` text
 ## Editor Files ##
 *.sublime-project
 *.sublime-workspace
@@ -95,7 +95,7 @@ Desktop.ini
 Icon?
 ehthumbs.db
 Thumbs.db
-</pre>
+```
 
 Of course this is [my pref][my-global-ignore], feel free to use whatever
 suits you.

@@ -26,15 +26,17 @@ InnoDB. This makes InnoDB very slow in count queries without a where clause.
 > least one index. Just pick an index that will never contain a NULL value, and
 > tell MySQL to ‘use index (index_name)’.
 
-<pre class="brush: plain">
+```
 mysql> select count(*) from messages use index (index_messages_on_remote_created_at);
+
 +----------+
 | count(*) |
 +----------+
 |  1276831 |
 +----------+
+
 1 row in set (3.19 sec)
-</pre>
+```
 
 ---
 

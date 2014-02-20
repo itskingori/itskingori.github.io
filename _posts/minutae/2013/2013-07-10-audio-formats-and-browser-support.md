@@ -81,16 +81,18 @@ values are an empty string (negative response), _"maybe"_ and _"probably"_. >
 The empty string is falsy, in other words: `Modernizr.audio.ogg == ''` and > `''
 == false`
 
-<pre class="brush: javascript">
+``` javascript
 var audio = new Audio();
 audio.src = Modernizr.audio.ogg ? 'background.ogg' :
             Modernizr.audio.mp3 ? 'background.mp3' :
                                   'background.m4a';
 audio.play();
-</pre>
+```
 
 That allows you to serve the appropriate format based on browser support for a
 particular format.
+
+---
 
 1. [W3Schools | HTML5 Audio][1]
 2. [Mozilla Developer Network | Media formats supported by the HTML audio and video elements][2]

@@ -18,15 +18,15 @@ layout: post
 
 In the HTML document ... somewhere.
 
-<pre class="brush: javascript">
+``` javascript
 window.YourVariableName = 'Value';
-</pre>
+```
 
 Access it in the script ...
 
-<pre class="brush: javascript">
+``` javascript
 var handle = window.YourVariableName || null;
-</pre>
+```
 
 ---
 

@@ -12,7 +12,7 @@ absolute/ fixed._
 > really see how big they are. You need to code the size yourself, or sniff it
 > with JavaScript and set it at run-time.
 
-<pre class="brush: js">
+``` javascript
 var biggestHeight = "0";
 
 // Loop through elements children to find & set the biggest height
@@ -28,7 +28,7 @@ $(".container *").each(function(){
 
 // Set the container height
 $(".container").height(biggestHeight);
-</pre>
+```
 
 _Ps: The above snippet shows a concept and is not a one-size-fits-all solution.
 You need to adapt it to your use case appropriately. I know I did._

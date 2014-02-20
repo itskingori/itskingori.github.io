@@ -20,7 +20,7 @@ layout: post
 Just realized this won't make much sense a few years later if I change the theme
 & so ... the JS;
 
-<pre class="brush: javascript">
+``` javascript
 /* SHIFTING COLORS ~ Chameleon */
 
 // Initialize object
@@ -54,11 +54,11 @@ Chameleon.changeColor = function() {
 
 // Get ready, set ... GO!
 Chameleon.init();
-</pre>
+```
 
 The CSS (necessary bits only);
 
-<pre class="brush: css">
+``` css
 a {
     -webkit-transition: color 4.0s linear;
     -moz-transition: color 4.0s linear;
@@ -76,7 +76,7 @@ a {
 .color7 a { color: hsl( 310, 90%, 60% ); } // 8
 .color8 a { color: hsl( 330, 90%, 60% ); } // 9
 .color9 a { color: hsl( 350, 90%, 60% ); } // 10
-</pre>
+```
 
 ---
 

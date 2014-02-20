@@ -6,9 +6,9 @@ layout: post
 
 In the Gmail search box, type ...
 
-<pre class="brush: plain">
+```
 -label:inbox -label:sent -label:drafts -label:trash -label:notes
-</pre>
+```
 
 This should give you all your archived messages (excluding the emails in the
 inbox, sent, drafts, trash and notes).

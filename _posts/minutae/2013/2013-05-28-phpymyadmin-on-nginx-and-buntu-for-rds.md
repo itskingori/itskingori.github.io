@@ -10,9 +10,9 @@ An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
 performance because of the order of parsing;
 
-<pre class="brush: bash">
+``` bash
 $ apt-get install phpmyadmin
-</pre>
+```
 
 Preconfigure with `apache` or `lighttpd`? - I hit `ESC`.
 
@@ -35,7 +35,7 @@ be able to access RDS.
 
 Modify `/etc/config.inc.php`. It should look something like this.
 
-<pre class="brush: php">
+``` php
 /* Configure according to dbconfig-common if enabled */
 if (!empty($dbname)) {
 
@@ -84,13 +84,13 @@ if (!empty($dbname)) {
 $cfg['Servers'][$i]['auth_type'] = 'HTTP';
 $cfg['Servers'][$i]['hide_db'] = '(mysql|information_schema|phpmyadmin)';
 $cfg['Servers'][$i]['host'] = 'EXAMPLE.JUMBLE.us-east-1.rds.amazonaws.com';
-</pre>
+```
 
 ###Configure Nginx###
 
 Add serverblock to Nginx config.
 
-<pre class="brush: plain">
+```
 server {
     listen 80;
     server_name YOUR.DOMAIN.DOT;
@@ -116,7 +116,7 @@ server {
         include        fastcgi_params;
     }
 }
-</pre>
+```
 
 ---
 

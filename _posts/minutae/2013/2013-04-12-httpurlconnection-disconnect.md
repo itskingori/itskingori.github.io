@@ -30,7 +30,7 @@ In simpler terms ...
 
 Example;
 
-<pre class="brush: java; highlight: [49]">
+``` java
 //Initialize variables
 InputStream responseInputStream = null;
 HttpURLConnection conn = null;
@@ -89,7 +89,7 @@ finally {
         }
     }
 }
-</pre>
+```
 
 That should do.
 

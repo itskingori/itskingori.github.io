@@ -15,11 +15,11 @@ build][3] to manage and install your Ruby development environments.
 Install both using [Homebrew][6]. Once done, add a line to your
 `~/.bash_profile` and reload your terminal profile.
 
-<pre class="brush: bash">
+``` bash
 $ brew install rbenv ruby-build
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
-</pre>
+```
 
 They allow you to install different versions of Ruby and specify which version
 to use on a per project basis. This is very useful to keep a consistent
@@ -28,17 +28,17 @@ development environment if you need to work in a particular Ruby version.
 Install the latest stable of Ruby ([check the Ruby website][5]). To see a list
 of all available versions to install use `rbenv install --list`.
 
-<pre class="brush: bash">
+``` bash
 $ rbenv install 2.0.0-p247
 $ rbenv rehash
-</pre>
+```
 
 To set this version as the one to use globally so that you can make use of it in
 your terminal, do this:
 
-<pre class="brush: bash">
+``` bash
 $ rbenv global 2.0.0-p247
-</pre>
+```
 
 _Ps: You need to run the `rbenv rehash` after you install a new version of
 Ruby._
@@ -61,29 +61,29 @@ setting the `BENV_VERSION` environment variable in your shell. This version
 overrides application-specific versions and the global version. If you're
 paranoid you can always check your Ruby version with `ruby --version`.
 
-<pre class="brush: bash">
+``` bash
 $ rbenv shell 2.0.0-p247
 $ gem install bundler
 $ rbenv rehash
-</pre>
+```
 
 To configure Bundler to install gems in a location relative to your projects
 instead of globally, in this case the vendor folder of a Rails project, do this:
 
-<pre class="brush: bash">
+``` bash
 $ mkdir ~/.bundle
 $ touch ~/.bundle/config
 $ echo 'BUNDLE_PATH: vendor/bundle' >> ~/.bundle/config
-</pre>
+```
 
 ####Skip rdoc generation####
 
 If you use Google for finding your Gem documentation you might consider saving a
 bit of time when installing gems by skipping the documentation.
 
-<pre class="brush: bash">
+``` bash
 $ echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
-</pre>
+```
 
 _Ps: Notice `rbenv rehash` has been used again when installing bundler, you need
 to do this whenever you install a new gem that provides binaries. So if you've
@@ -98,10 +98,10 @@ your gems for each version as they are not shared._
 
 Check out the [Rails website][10] for the whole story on Rails.
 
-<pre class="brush: bash">
+``` bash
 $ gem install rails
 $ rbenv rehash
-</pre>
+```
 
 Rails has a numberq of dependencies to install so don't be surprised if you
 see loads of other gems being installed at the same time.
@@ -111,19 +111,19 @@ see loads of other gems being installed at the same time.
 
 Most people prefer MySQL as their DB of choice.
 
-<pre class="brush: bash">
+``` bash
 $ gem install mysql2
-</pre>
+```
 
 To connect:
 
-<pre class="brush: bash">
+``` bash
 $ mysql -u root
-</pre>
+```
 
 A few things that you should know:
 
-<pre class="brush: bash">
+``` bash
 # To have launchd start mysql at login:
 $ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
@@ -133,7 +133,7 @@ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 # Or, if you don't want/need launchctl, you can just run:
 # mysql.server {start|stop|restart|reload|force-reload|status}
 $ mysql.server start
-</pre>
+```
 
 If you are using MAMP and don't need MySQL, check out the config file details
 [in this other post][12].
@@ -149,10 +149,10 @@ the mysql2 gem install)._
 
 ###Your First Rails Project###
 
-<pre class="brush: bash">
+``` bash
 $ rails new helloworld
 $ cd helloworld
-</pre>
+```
 
 Set the local Ruby version for this project to make sure this stays constant,
 even if we change the global version later on. This command will write
@@ -163,10 +163,10 @@ don't have it installed.
 Then run Bundler to install all the project gems into vendor/bundle, they are
 kept with the project locally and won't interfere with anything else outside.
 
-<pre class="brush: bash">
+``` bash
 $ rbenv local 2.0.0-p247
 $ bundle install
-</pre>
+```
 
 If your gems ever stop working you can just delete the vendor/bundle directory
 and run the command again to re-install them. It's also worth updating your
@@ -174,9 +174,9 @@ and run the command again to re-install them. It's also worth updating your
 
 Now to test if the application is working:
 
-<pre class="brush: bash">
+``` bash
 $ rails server
-</pre>
+```
 
 ---
 

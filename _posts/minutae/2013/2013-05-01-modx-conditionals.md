@@ -11,9 +11,9 @@ An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
 performance because of the order of parsing;
 
-<pre class="brush: plain">
+```
 [[*field:is=`0`:then=`[[!SomeScript]]`:else=`[[$SomeChunk]]`]]
-</pre>
+```
 
 When MODX parses this tag, each of the tags contained in the then and the else
 conditional paths are parsed, The `*field` tag itself is parsed and finally, the
@@ -29,9 +29,9 @@ The brilliantly simple way to avoid this problem? Just return what's between the
 MODX tags and have the result of your conditional build what is going to be
 parsed next by MODX.
 
-<pre class="brush: plain">
+```
 [[[[*field:is=`0`:then=`!SomeScript`:else=`$SomeChunk`]]]]
-</pre>
+```
 
 MODX shouldn't take your tags and run with them when embedded as results in
 conditional paths. Make it wait until you've evaluated your condition to do
