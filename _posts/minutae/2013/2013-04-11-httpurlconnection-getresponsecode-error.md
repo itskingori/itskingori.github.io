@@ -20,10 +20,10 @@ Which simply means the response **must** include the `WWW-Authenticate` header
 set without which the method throws `java.io.IOException: No authentication
 challenges found`.
 
-<pre class="brush: plain; highlight: [1]">
+```
 header('WWW-Authenticate: OAuth realm="users"');
 header('HTTP/1.1 401 Unauthorized');
-</pre>
+```
 
 So far, this is normal and expected.
 

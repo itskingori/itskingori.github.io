@@ -29,6 +29,16 @@ Chameleon.changeColor = function() {
 };
 
 // +++ NProgress
-$(document).on('page:fetch',   function() { NProgress.start(); });
-$(document).on('page:change',  function() { NProgress.done(); Chameleon.init(); });
-$(document).on('page:restore', function() { NProgress.remove(); Chameleon.init(); });
+$(document).on('page:fetch',   function() {
+  NProgress.start();
+});
+$(document).on('page:change',  function() {
+  NProgress.done();
+  Chameleon.init();
+  hljs.initHighlightingOnLoad();
+});
+$(document).on('page:restore', function() {
+  NProgress.remove();
+  Chameleon.init();
+  hljs.initHighlightingOnLoad();
+});
