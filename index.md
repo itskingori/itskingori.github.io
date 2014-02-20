@@ -13,9 +13,9 @@ and [code minutae][minutae_archive] here.
 [github]: {{site.author.github_url}}
 [googleplus]: {{site.author.googleplus_url}}
 [linkedin]: {{site.author.linkedin_url}}
-[about]: about/
-[articles_archive]: articles/archive/
+[about]: /about/
+[articles_archive]: /articles/archive/
 [email]: mailto:?Subject=You're%20Awesome
-[minutae_archive]: minutae/archive/
+[minutae_archive]: /minutae/archive/
 [waabeh]: https://waabeh.com/
 [watungaji]: http://watungaji.com/

@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-![job-kingori-maina](assets/images/cover-image@2x.jpg "Job King'ori Maina")
+![job-kingori-maina](/assets/images/cover-image@2x.jpg "Job King'ori Maina")
 
 I'm **King'ori J. Maina** _(Job King'ori Maina)_ and I usually go under the
 alias _itsmrwave_. Sometimes, I use these aliases to _'rant'_ [here][twitter],
@@ -27,9 +27,9 @@ Kenya][3] ... if you prefer a face-to-face meet.
 [twitter]: {{site.author.twitter_url}}
 [github]: {{site.author.github_url}}
 [googleplus]: {{site.author.googleplus_url}}
-[articles_archive]: articles/archive/
-[minutae_archive]: minutae/archive/
+[articles_archive]: /articles/archive/
+[minutae_archive]: /minutae/archive/
 [email]: mailto:yo@kingori.co?Subject=You're%20Awesome
-[1]: articles/2013/06/publish-what-you-learn/
-[2]: articles/2013/09/riding-lions/
+[1]: /articles/2013/06/publish-what-you-learn/
+[2]: /articles/2013/09/riding-lions/
 [3]: https://www.google.co.ke/maps/preview#!q=nairobi%2C+kenya
