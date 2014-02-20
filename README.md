@@ -2,6 +2,8 @@
 porting/ported to [Jekyll][5]. Always a work in progress. Feed [here][3] & hala
 thru' yo@kingori.co.
 
+Run locally: `jekyll serve --baseurl '' --watch --safe --trace`
+
 [1]: http://kingori.co
 [2]: http://staceyapp.com/
 [3]: http://feeds.feedburner.com/kingorico
