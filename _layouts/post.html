@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="post">
-   <div class="row">
+  <div class="row">
     <div class="small-12 column">
       <div class="p-date">
           <a href="{{site.baseurl}}{{page.url}}">
@@ -19,12 +19,23 @@ layout: default
       </div>
       <div class="p-title">
         <h2>
-          <a href="{% if page.link %}{{page.link}}{% else %}}{{site.baseurl}}{{page.url}}{% endif %}">{{page.title}}</a>
+          <a href="{% if page.link %}{{page.link}}{% else %}{{site.baseurl}}{{page.url}}{% endif %}">{{page.title}}</a>
           {% if page.link %}↩{% endif %}
         </h2>
       </div>
       <div class="p-content">
       {{ content }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center small-12 column">
+      <div class="p-nav">
+        {% if page.category == 'articles' %}
+          <a href="articles/archive/">Back to article archive ↑</a>
+        {% elsif page.category == 'minutae' %}
+          <a href="minutae/archive/">Back to minutae archive ↑</a>
+        {% endif %}
       </div>
     </div>
   </div>
