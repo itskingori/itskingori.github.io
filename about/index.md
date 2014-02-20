@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-![job-kingori-maina](/assets/images/cover-image@2x.jpg "Job King'ori Maina")
+![job-kingori-maina](http://static.kingori.co/images/cover-image@2x.jpg "Job King'ori Maina")
 
 I'm **King'ori J. Maina** _(Job King'ori Maina)_ and I usually go under the
 alias _itsmrwave_. Sometimes, I use these aliases to _'rant'_ [here][twitter],
