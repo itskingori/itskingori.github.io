@@ -3,8 +3,8 @@ layout: homepage
 title: "I'm"
 ---
 
-I'm [{{site.author.fullname}}][about], I build web stuff like [this][waabeh].
-Often slaving away @ [Watungaji][watungaji]. Find me on [Twitter][twitter],
+I'm [{{site.author.fullname}}][about], I can build stuff like [this][waabeh].
+Part of the team @ [Watungaji][watungaji]. Find me on [Twitter][twitter],
 [G+][googleplus], [LinkedIn][linkedin], [Github][github] or plain old
 [email][email]. I archive smart [articles &amp; thoughts][articles_archive] here
 and [code minutae][minutae_archive] here.
