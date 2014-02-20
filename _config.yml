@@ -4,6 +4,9 @@ pygments: true
 baseurl: /kingori.co
 permalink: /:categories/:year/:month/:title/
 
+redcarpet:
+  extensions: ['no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'tables']
+
 author:
   fullname: "King'ori J. Maina"
   email: "yo@kingori.co"

@@ -22,48 +22,13 @@ layout: post
 Currently, there are 3 supported file formats for the `<audio>` element: MP3,
 WAV, and OGG:
 
-<table class="table table-hover table-striped">
-    <thead>
-        <tr>
-            <th>Browser</th>
-            <th>MP3</th>
-            <th>WAV</th>
-            <th>OGG</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Internet Explorer 9+</td>
-            <td class="success">YES</td>
-            <td class="error">NO</td>
-            <td class="error">NO</td>
-        </tr>
-        <tr>
-            <td>Chrome 6+</td>
-            <td class="success">YES</td>
-            <td class="success">YES</td>
-            <td class="success">YES</td>
-        </tr>
-        <tr>
-            <td>Firefox 3.6+</td>
-            <td class="error">NO</td>
-            <td class="success">YES</td>
-            <td class="success">YES</td>
-        </tr>
-        <tr>
-            <td>Safari 5+</td>
-            <td class="success">YES</td>
-            <td class="success">YES</td>
-            <td class="error">NO</td>
-        </tr>
-        <tr>
-            <td>Opera 10+</td>
-            <td class="error">NO</td>
-            <td class="success">YES</td>
-            <td class="success">YES</td>
-        </tr>
-    </tbody>
-</table>
+| Browser               | MP3 | WAV | OGG |
+| --------------------- | --- | --- | --- |
+| Internet Explorer 9+  | YES | NO  | NO  |
+| Chrome 6+             | YES | YES | YES |
+| Firefox 3.6+          | NO  | YES | YES |
+| Safari 5+             | YES | YES | NO  |
+| Opera 10+             | NO  | YES | YES |
 
 _Ps: [See here][3] for a more detailed breakdown of different format
 compatibility across different browsers (desktop-mobile, audio-video)._
