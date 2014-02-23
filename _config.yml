@@ -17,3 +17,5 @@ author:
   linkedin_url: "https://ke.linkedin.com/in/jobkingori"
   twitter: "@itsmrwave"
   twitter_url: "https://twitter.com/itsmrwave"
+
+exclude: ['CNAME', 'Gemfile', 'kingori.co.sublime-project', 'README.md']
