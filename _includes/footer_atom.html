@@ -1,0 +1,5 @@
+{% if  post.link %}
+&lt;p&gt;
+  &lt;a title=&quot;Permalink to &apos;{{ post.title | xml_escape  }}&apos;&quot; href=&quot;http://kingori.co{{post.url}}&quot; target=&quot;_blank&quot;&gt;&#8617;&lt;/a&gt;
+&lt;/p&gt;
+{% endif %}
