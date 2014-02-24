@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>{{ page.title}}</title>
+  <title>{{ page.title | xml_escape }}</title>
   <link href="http://kingori.co{{ page.url }}" rel="self" type="application/atom+xml"/>
   <link href="http://kingori.co/" rel="alternate" type="text/html"/>
   <icon>http://kingori.co/favicon.ico</icon>
