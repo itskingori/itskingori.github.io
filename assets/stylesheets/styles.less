@@ -2,16 +2,16 @@
 @highlight_default: hsl( 10, 90%, 60% );
 @lightergrey:       hsl(  0,  0%, 80% );
 
-@color1:  hsl(  10, 90%, 60% );
-@color2:  hsl(  30, 90%, 60% );
-@color3:  hsl( 152, 25%, 53% );
-@color4:  hsl( 210, 90%, 60% );
-@color5:  hsl( 230, 90%, 60% );
-@color6:  hsl( 270, 90%, 60% );
-@color7:  hsl( 290, 90%, 60% );
-@color8:  hsl( 310, 90%, 60% );
-@color9:  hsl( 330, 90%, 60% );
-@color10: hsl( 350, 90%, 60% );
+@color0: hsl(  10, 90%, 60% );
+@color1: hsl(  30, 90%, 60% );
+@color2: hsl( 152, 25%, 53% );
+@color3: hsl( 210, 90%, 60% );
+@color4: hsl( 230, 90%, 60% );
+@color5: hsl( 270, 90%, 60% );
+@color6: hsl( 290, 90%, 60% );
+@color7: hsl( 310, 90%, 60% );
+@color8: hsl( 330, 90%, 60% );
+@color9: hsl( 350, 90%, 60% );
 
 html, body {
   color: @font_color;
@@ -19,16 +19,16 @@ html, body {
   font-family: 'Lucida Grande', 'Helvetica Neue', Arial, sans-serif;
 }
 
-body.color0 a { color: @color1; } // 1
-body.color1 a { color: @color2; } // 2
-body.color2 a { color: @color3; } // 3
-body.color3 a { color: @color4; } // 4
-body.color4 a { color: @color5; } // 5
-body.color5 a { color: @color6; } // 6
-body.color6 a { color: @color7; } // 7
-body.color7 a { color: @color8; } // 8
-body.color8 a { color: @color9; } // 9
-body.color9 a { color: @color10; } // 10
+body.color0 a { color: @color0; } // 1
+body.color1 a { color: @color1; } // 2
+body.color2 a { color: @color2; } // 3
+body.color3 a { color: @color3; } // 4
+body.color4 a { color: @color4; } // 5
+body.color5 a { color: @color5; } // 6
+body.color6 a { color: @color6; } // 7
+body.color7 a { color: @color7; } // 8
+body.color8 a { color: @color8; } // 9
+body.color9 a { color: @color9; } // 10
 
 a, a:visited {
   color: @highlight_default;
@@ -84,16 +84,16 @@ header {
     transition: background-color 5.0s linear;
   }
 
-  a#logo.bkgcolor0 { background-color: @color1; } // 1
-  a#logo.bkgcolor1 { background-color: @color2; } // 2
-  a#logo.bkgcolor2 { background-color: @color3; } // 3
-  a#logo.bkgcolor3 { background-color: @color4; } // 4
-  a#logo.bkgcolor4 { background-color: @color5; } // 5
-  a#logo.bkgcolor5 { background-color: @color6; } // 6
-  a#logo.bkgcolor6 { background-color: @color7; } // 7
-  a#logo.bkgcolor7 { background-color: @color8; } // 8
-  a#logo.bkgcolor8 { background-color: @color9; } // 9
-  a#logo.bkgcolor9 { background-color: @color10; } // 10
+  a#logo.bkgcolor0 { background-color: @color0; } // 1
+  a#logo.bkgcolor1 { background-color: @color1; } // 2
+  a#logo.bkgcolor2 { background-color: @color2; } // 3
+  a#logo.bkgcolor3 { background-color: @color3; } // 4
+  a#logo.bkgcolor4 { background-color: @color4; } // 5
+  a#logo.bkgcolor5 { background-color: @color5; } // 6
+  a#logo.bkgcolor6 { background-color: @color6; } // 7
+  a#logo.bkgcolor7 { background-color: @color7; } // 8
+  a#logo.bkgcolor8 { background-color: @color8; } // 9
+  a#logo.bkgcolor9 { background-color: @color9; } // 10
 
   a#logo:hover {
     border-bottom: none;
@@ -253,15 +253,81 @@ sup {
 #nprogress {
 
   .bar {
-    background: @highlight_default !important;
+    -webkit-transition: background-color 2.5s linear;
+    -moz-transition: background-color 2.5s linear;
+    -ms-transition: background-color 2.5s linear;
+    -o-transition: background-color 2.5s linear;
+    transition: background-color 2.5s linear;
   }
+}
 
-  .spinner-icon {
-    border-top-color:  @highlight_default !important;
-    border-left-color: @highlight_default !important;
+body.color0 {
+  #nprogress {
+    .bar { background: @color0 !important; }
+    .spinner-icon { border-top-color:  @color0 !important; border-left-color: @color0 !important; }
+    .peg { box-shadow: 0 0 10px @color0, 0 0 5px @color0; }
   }
-
-  .peg {
-    box-shadow: 0 0 10px @highlight_default, 0 0 5px @highlight_default;
+}
+body.color1 {
+  #nprogress {
+    .bar { background: @color1 !important; }
+    .spinner-icon { border-top-color:  @color1 !important; border-left-color: @color1 !important; }
+    .peg { box-shadow: 0 0 10px @color1, 0 0 5px @color1; }
+  }
+}
+body.color2 {
+  #nprogress {
+    .bar { background: @color2 !important; }
+    .spinner-icon { border-top-color:  @color2 !important; border-left-color: @color2 !important; }
+    .peg { box-shadow: 0 0 10px @color2, 0 0 5px @color2; }
+  }
+}
+body.color3 {
+  #nprogress {
+    .bar { background: @color3 !important; }
+    .spinner-icon { border-top-color:  @color3 !important; border-left-color: @color3 !important; }
+    .peg { box-shadow: 0 0 10px @color3, 0 0 5px @color3; }
+  }
+}
+body.color4 {
+  #nprogress {
+    .bar { background: @color4 !important; }
+    .spinner-icon { border-top-color:  @color4 !important; border-left-color: @color4 !important; }
+    .peg { box-shadow: 0 0 10px @color4, 0 0 5px @color4; }
+  }
+}
+body.color5 {
+  #nprogress {
+    .bar { background: @color5 !important; }
+    .spinner-icon { border-top-color:  @color5 !important; border-left-color: @color5 !important; }
+    .peg { box-shadow: 0 0 10px @color5, 0 0 5px @color5; }
+  }
+}
+body.color6 {
+  #nprogress {
+    .bar { background: @color6 !important; }
+    .spinner-icon { border-top-color:  @color6 !important; border-left-color: @color6 !important; }
+    .peg { box-shadow: 0 0 10px @color6, 0 0 5px @color6; }
+  }
+}
+body.color7 {
+  #nprogress {
+    .bar { background: @color7 !important; }
+    .spinner-icon { border-top-color:  @color7 !important; border-left-color: @color7 !important; }
+    .peg { box-shadow: 0 0 10px @color7, 0 0 5px @color7; }
+  }
+}
+body.color8 {
+  #nprogress {
+    .bar { background: @color8 !important; }
+    .spinner-icon { border-top-color:  @color8 !important; border-left-color: @color8 !important; }
+    .peg { box-shadow: 0 0 10px @color8, 0 0 5px @color8; }
+  }
+}
+body.color9 {
+  #nprogress {
+    .bar { background: @color9 !important; }
+    .spinner-icon { border-top-color:  @color9 !important; border-left-color: @color9 !important; }
+    .peg { box-shadow: 0 0 10px @color9, 0 0 5px @color9; }
   }
 }
