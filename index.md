@@ -3,7 +3,7 @@ layout: homepage
 title: "I'm"
 ---
 
-I'm [{{site.author.fullname}}][about]; [researcher][research] and
+I'm [{{site.author.fullname}}][about], a [researcher][research] and
 [programmer][github]. Find me on [Twitter][twitter], [G+][googleplus],
 [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. I archive
 smart [articles &amp; thoughts][articles_archive] here and [code
