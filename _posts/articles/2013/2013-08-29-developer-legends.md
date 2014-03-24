@@ -25,6 +25,6 @@ layout: post
    expressing the same sentiments (albeit with less clarity).
 
 [1]: http://the-pastry-box-project.net/
-[2]: articles/2013/08/problem-solving-consulting/
+[2]: /articles/2013/08/problem-solving-consulting/
 [3]: https://waabeh.com/
 [4]: http://www.bigspaceship.com/

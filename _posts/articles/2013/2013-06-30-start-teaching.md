@@ -38,4 +38,4 @@ I'm seriously considering teaching. Somewhere. Anywhere.
 [1]: http://chriscoyier.net/
 [2]: http://css-tricks.com/
 [3]: http://www.smashingmagazine.com/2013/06/28/how-to-launch-anything/
-[4]: articles/2013/06/publish-what-you-learn/
+[4]: /articles/2013/06/publish-what-you-learn/

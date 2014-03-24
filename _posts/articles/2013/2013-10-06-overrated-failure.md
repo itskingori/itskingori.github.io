@@ -23,4 +23,4 @@ point of breaking it down to two types][1] ... I stumble on this.
 
 Ah. Brill all over.
 
-[1]: articles/2013/10/failure/
+[1]: /articles/2013/10/failure/
