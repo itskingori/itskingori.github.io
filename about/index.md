@@ -33,4 +33,4 @@ For additional privacy: [my PGP public key][6].
 [3]: https://www.google.co.ke/maps/preview#!q=nairobi%2C+kenya
 [4]: http://goo.gl/zUs5dg
 [5]: /research/
-[6]: http://static.kingori.co/files/6E1D9B22_public.asc
+[6]: http://static.kingori.co/files/pgp_key/6E1D9B22_public.asc
