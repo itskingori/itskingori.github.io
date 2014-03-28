@@ -3,7 +3,14 @@ layout: default
 ---
 
 <div id="archives">
-  <h2>{{page.title}}</h2>
+  <div class="row">
+    <div class="text-left small-11 column">
+      <h2>{{page.title}}</h2>
+    </div>
+    <div class="small-1 text-right column">
+      <a href="/feeds/{{page.group}}.xml" class="feed-link"><i class="fa fa-rss"></i></a>
+    </div>
+  </div>
   <ul>
     {% for post in site.categories[{{page.group}}] %}
       <li>
