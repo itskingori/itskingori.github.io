@@ -16,5 +16,5 @@ minutae][minutae_archive] here.
 [about]: /about/
 [research]: /research/
 [articles_archive]: /articles/archive/
-[email]: mailto:?Subject=You're%20Awesome
+[email]: mailto:j@kingori.co?Subject=Hey%20There
 [minutae_archive]: /minutae/archive/
