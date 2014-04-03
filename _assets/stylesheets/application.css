@@ -3,7 +3,7 @@
  *= require foundation
  *= require font-awesome
  *= require tomorrow-night
- * require nprogress
+ *= require nprogress
  * require styles
  */
 
