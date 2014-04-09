@@ -20,6 +20,6 @@ Also currently doing my Masters in Computer Science.
 2. [Overview video of the lab and three example projects][3]
 
 
-[1]:http://www.science.uct.ac.za/research/groups/ict4d/
+[1]: http://www.science.uct.ac.za/research/groups/ict4d/
 [2]: http://pubs.cs.uct.ac.za/view/laboratory/ICT4D.html
 [3]: https://www.youtube.com/watch?v=xNn2TEBgtfA
