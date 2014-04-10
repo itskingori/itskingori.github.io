@@ -18,8 +18,8 @@ layout: post
 
 > With reality television and overnight internet success stories, we all desire
 > to be known, to be famous, but fame is a deplorable desire. Fame is a
-> replacement for affirmation we should be receiving from God, it is a short-
-> term placebo. A narcissistic pill that feeds an addiction, as one cannot shut
+> replacement for affirmation we should be receiving from God, it is a short-term
+> placebo. A narcissistic pill that feeds an addiction, as one cannot shut
 > off the spigot of nourishing flattery derived from social media and expect to
 > be triumphant over the fear, the horror, of not being heard. In our struggle
 > to be discovered by the masses we forget to listen. It is a dichotomous life.
