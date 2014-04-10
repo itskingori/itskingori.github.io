@@ -14,6 +14,10 @@ not prepared to be wrong, you'll never come up with anything original.
 >
 > ~ [5:35](http://youtu.be/iG9CE55wbtY?t=5m35s)
 
+<div class="flex-video widescreen">
+  <iframe width="510" height="287" src="//www.youtube.com/embed/iG9CE55wbtY?rel=0&autoplay=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
 Hilarious. Worth. Every. 20:04 of it.
 
 [link1]: http://www.ted.com/speakers/sir_ken_robinson.html
