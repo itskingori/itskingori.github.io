@@ -39,12 +39,12 @@ hold an opinion][2].
 
 Think. Especially for yourself.
 
-> "No," says Warren. "We don't read other people's opinions. We want to get >
-the facts, and then think." And when it gets to the thinking part, for > Buffett
-and Munger, there's no one better to think with than their > partners. "Charlie
-can't encounter a problem without thinking of an > answer," posits Warren. "He
-has the best thirty-second mind I've ever > seen. I'll call him up, and within
-thirty seconds, he'll grasp it. He just > sees things immediately.
+> "No," says Warren. "We don't read other people's opinions. We want to get the
+> "facts, and then think." And when it gets to the thinking part, for Buffett
+> "and Munger, there's no one better to think with than their partners. "Charlie
+> "can't encounter a problem without thinking of an answer," posits Warren. "He
+> "has the best thirty-second mind I've ever seen. I'll call him up, and within
+> "thirty seconds, he'll grasp it. He just sees things immediately.
 
 Find time to read. Invest in yourself.
 
