@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-permalink: /
+permalink: /research/
 ---
 
 ![uct-ict4d-logo](http://static.kingori.co/content/research/uct_ict4d_logo_640x214.png "UCT ICT4D")
