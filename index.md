@@ -4,10 +4,9 @@ title: "I'm"
 ---
 
 I'm [{{site.author.fullname}}][about], a [researcher][research] and
-[programmer][github]. Find me on [Twitter][twitter], [G+][googleplus],
-[LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. I archive
-smart [articles &amp; thoughts][articles_archive] here and [code
-minutae][minutae_archive] here.
+[programmer][github]. Find me on [Twitter][twitter], [LinkedIn][linkedin],
+[GitHub][github] or plain old [email][email]. I archive smart [articles &amp;
+thoughts][articles_archive] here and [code minutae][minutae_archive] here.
 
 [twitter]: {{site.author.twitter_url}}
 [github]: {{site.author.github_url}}
