@@ -2,6 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
+sitemap: true
 ---
 
 ![uct-ict4d-logo](http://static.kingori.co/content/research/uct_ict4d_logo_640x214.png "UCT ICT4D")

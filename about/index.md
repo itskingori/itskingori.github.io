@@ -1,6 +1,8 @@
 ---
 layout: default
 title: About
+permalink: /about/
+sitemap: true
 ---
 
 ![job-kingori-maina](http://static.kingori.co/images/cover-image@2x.jpg "Job King'ori Maina")

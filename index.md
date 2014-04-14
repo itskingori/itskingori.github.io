@@ -1,6 +1,8 @@
 ---
 layout: homepage
 title: "I'm"
+permalink: /
+sitemap: true
 ---
 
 I'm [{{site.author.fullname}}][about], a [researcher][research] and
