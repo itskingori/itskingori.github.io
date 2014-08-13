@@ -6,6 +6,10 @@ permalink: /:categories/:year/:month/:title/
 redcarpet:
   extensions: ['no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'tables']
 
+sass:
+  sass_dir: _sass
+  style: :compressed
+
 author:
   fullname: "King'ori J. Maina"
   email: "j@kingori.co"
