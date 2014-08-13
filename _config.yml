@@ -1,7 +1,7 @@
 name: "King'ori J. Maina"
 markdown: redcarpet
 highlighter: true
-permalink: /:categories/:year/:month/:title/
+permalink: /:categories/:month/:title/
 
 redcarpet:
   extensions: ['no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'tables']
