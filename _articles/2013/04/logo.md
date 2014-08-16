@@ -1,0 +1,19 @@
+---
+title: Logo
+date: 2013-04-14
+category: articles
+layout: post
+---
+
+New logo samples with different border colors ...
+
+![logo-colors][logo-colors]
+
+My attempt at a design process :-)
+
+![logo-design][logo-design]
+
+[10 colors forming the color palette](minutae/2013/04/shifting-colors/).
+
+[logo-colors]: http://static.kingori.co/content/article/2013/04/logo-color-borders@2x.jpg
+[logo-design]: http://static.kingori.co/content/article/2013/04/logo-design@2x.jpg
