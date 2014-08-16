@@ -12,8 +12,8 @@ layout: default
     </div>
   </div>
   <ul>
-    {% assign posts = site.collections[{{page.group}}].docs | sort: 'date' %}
-    {% for post in posts %}
+    {% assign posts = site.collections[{{page.group}}].docs | sort:'date' %}
+    {% for post in posts reversed %}
       <li>
         <div class="row">
           <div class="p-date text-right small-3 column">
