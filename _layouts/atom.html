@@ -15,14 +15,16 @@
   <id>kingori.co:{{ page.url }}</id>
   <rights>Copyright (c) 2013-2014, Job King'ori Maina; all rights reserved.</rights>
 
-  {% for post in site.categories[{{page.category}}] %}
+  {% assign posts = site.collections[{{page.category}}].docs | sort:'date' %}
+  {% for post in posts reversed %}
   <entry>
     <title>{{ post.title | xml_escape }}{% if post.link %} ↩{% endif %}</title>
     <link href="{% if post.link %}{{post.link  | xml_escape }}{% else %}http://kingori.co{{post.url}}{% endif %}" rel="alternate" type="text/html" />
-    <published>{{ post.date | date_to_xmlschema }}</published>
+    {% assign date = post.date | append: ' 00:00:00' %}
+    <published>{{ date | date_to_xmlschema }}</published>
     <id>kingori.co:{{ post.url }}</id>
     <category term="{{page.category}}"/>
-    <content type="html">{{ post.content | xml_escape }}{% include footer_atom.html %}</content>
+    <content type="html">{{ post.output | xml_escape }}{% include footer_atom.html %}</content>
     <author>
       <name>{{ site.author.fullname }}</name>
       <email>{{ site.author.email }}</email>
