@@ -10,6 +10,14 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:path/
+  minutae:
+    output: true
+    permalink: /:collection/:path/
+
 author:
   fullname: "King'ori J. Maina"
   email: "j@kingori.co"
