@@ -24,7 +24,7 @@
     <published>{{ date | date_to_xmlschema }}</published>
     <id>kingori.co:{{ post.url }}</id>
     <category term="{{page.category}}"/>
-    <content type="html">{{ post.output | xml_escape }}{% include footer_atom.html %}</content>
+    <content type="html">{{ post.content | xml_escape }}{% include footer_atom.html %}</content>
     <author>
       <name>{{ site.author.fullname }}</name>
       <email>{{ site.author.email }}</email>
