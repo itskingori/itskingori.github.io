@@ -4,7 +4,7 @@ category: articles
 layout: post
 ---
 
-<img src="http://static.kingori.co/content/article/2014/09/creative_futures_connect_za.jpg">
+![creative_futures_connect_za](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za.jpg)
 
 I was fortunate enough to be part of the [Connect ZA Creative
 Futures][creativefuturesza] which brought 16 of the hottest digital, design,
@@ -20,7 +20,7 @@ Festival][fakugesi].
 
 ### J'Burg Visual Tour
 
-<img src="http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_lebogang_rasethaba_tour.jpg">
+![creative_futures_connect_za_lebogang_rasethaba_tour](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_lebogang_rasethaba_tour.jpg)
 
 We were given a visual experience tour of Johannesburg led by Future Sounds of
 Mzansi filmmaker Lebogang Rasethaba ([@LebooRabaji][26]) for professional
@@ -33,7 +33,7 @@ interact with it as a space.
 
 Took part in industry and open public events.
 
-<img src="http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_business_digital.jpg">
+![creative_futures_connect_za_business_digital](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_business_digital.jpg)
 
 #### Business in the Digital Age
 
@@ -64,7 +64,7 @@ business models.
 Discourse where we brainstormed in groups to solve common business challenges by
 sharing our experiences, ideas and worldviews about the marketplace.
 
-<img src="http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_participants.jpg">
+![creative_futures_connect_za_participants](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_participants.jpg)
 
 
 ### Food Jam
@@ -73,9 +73,9 @@ We also took part in a fun [food jam][11], a concept was started by Jade de Waal
 as an excuse to bring a group of friends together in her favourite place, the
 kitchen. Food Jams are social gatherings in which eating food is only half the
 fun. Participants were paired up, and each team was given a portion of the meal
-to prepare and invited to follow the recipe encouraged to improvise.
+to prepare and invited to follow the recipe and encouraged to improvise.
 
-<img src="http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_food_jam.jpg">
+![creative_futures_connect_za_food_jam](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_food_jam.jpg)
 
 
 ---
