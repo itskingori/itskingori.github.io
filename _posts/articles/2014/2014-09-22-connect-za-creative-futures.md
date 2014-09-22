@@ -1,5 +1,5 @@
 ---
-title: Connect ZA Creative Futures
+title: Connect ZA Creative Futures, Braamfontein, JBurg
 category: articles
 layout: post
 ---
