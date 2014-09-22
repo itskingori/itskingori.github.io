@@ -23,29 +23,29 @@ Festival][fakugesi].
 ![creative_futures_connect_za_lebogang_rasethaba_tour](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_lebogang_rasethaba_tour.jpg)
 
 We were given a visual experience tour of Johannesburg led by Future Sounds of
-Mzansi filmmaker Lebogang Rasethaba ([@LebooRabaji][26]) for professional
-photographers and filmmakers. It was a great opportunity to engage in dialogue
-around the geography of Johannesburg and the way its people move through and
-interact with it as a space.
+Mzansi filmmaker Lebogang Rasethaba ([@LebooRabaji][26]). It was a great
+opportunity to engage in dialogue around the geography of Johannesburg and the
+way its people move through and interact with it as a space. For example, the
+[Maboneng Precinct][27] and the [Drill Hall][28] to mention a few.
 
 
 ### Free, Public and Open Conversation
 
-Took part in industry and open public events.
+Took part in industry and open public events ...
 
 ![creative_futures_connect_za_business_digital](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_business_digital.jpg)
 
 #### Business in the Digital Age
 
-There was discussion on 'Business in the digital age' touching on how digital
-has changed the way business is done today; digital marketing strategies; how
-creative entrepreneurs are adapting to the migration to digital; digital
-solutions to business challenges; and the importance of branding in the digital
+There was discussion on _'Business in the digital age'_ touching on how digital
+has changed the way business is done today, digital marketing strategies, how
+creative entrepreneurs are adapting to the migration to digital, digital
+solutions to business challenges, and the importance of branding in the digital
 age.
 
 #### Business of Fashion
 
-There was also a discussion on the 'Business of Fashion'. We explored and
+There was also a discussion on the _'Business of Fashion'_. We explored and
 debated on what the essence of ZA fashion is, definitions and the reality of
 being a fashion entrepreneur, distribution of ZA fashion labels, the
 similarities and differences in the fashion industry across the globe – namely
@@ -61,22 +61,27 @@ business models.
 
 ### Internal Conversations
 
-Discourse where we brainstormed in groups to solve common business challenges by
-sharing our experiences, ideas and worldviews about the marketplace.
+We even brainstormed in groups to solve common business challenges by sharing
+our experiences, ideas and worldviews about the marketplace.
 
 ![creative_futures_connect_za_participants](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_participants.jpg)
 
 
 ### Food Jam
 
-We also took part in a fun [food jam][11], a concept was started by Jade de Waal
+We also took part in a fun [Food Jam][11], a concept was started by Jade de Waal
 as an excuse to bring a group of friends together in her favourite place, the
-kitchen. Food Jams are social gatherings in which eating food is only half the
-fun. Participants were paired up, and each team was given a portion of the meal
-to prepare and invited to follow the recipe and encouraged to improvise.
+kitchen. [Food Jams][11] are social gatherings in which eating food is only half
+the fun! We, the participants, were paired up, and each team was given a portion
+of the meal to prepare and invited to follow the recipe and if ingredients ran
+out we were encouraged to improvise.
 
 ![creative_futures_connect_za_food_jam](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_food_jam.jpg)
 
+
+This obviously doesn't capture the entire experience but at least it gives you a
+sneak peek into what I found to be _**a life changing experience with amazing
+people**_.
 
 ---
 
@@ -138,3 +143,5 @@ to prepare and invited to follow the recipe and encouraged to improvise.
 [24]: http://www.garethowenlloyd.com/
 [25]: https://twitter.com/GarethOwenLloyd
 [26]: https://twitter.com/LebooRabaji
+[27]: http://www.mabonengprecinct.com
+[28]: http://www.gauteng.net/attractions/entry/the_drill_hall/
