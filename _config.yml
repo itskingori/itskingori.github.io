@@ -1,6 +1,6 @@
 name: "King'ori J. Maina"
 markdown: redcarpet
-highlighter: true
+highlighter: "pygments"
 permalink: /:categories/:year/:month/:title/
 
 redcarpet:
