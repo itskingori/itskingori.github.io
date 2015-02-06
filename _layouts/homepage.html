@@ -23,13 +23,9 @@
           <div id="homepage-projects" class="text-center">
             <h2>Projects</h2>
             <ul class="no-bullet">
-              <li><a href="https://github.com/itsmrwave/annotator_store-gem">Annotator Store gem</a></li>
-              <li><a href="https://arusiguru.com/">Arusi Guru</a></li>
-              <li><a href="http://nairuby.org/">Nairuby</a></li>
-              <li><a href="http://oculusid.com">OculusID</a></li>
-              <li><a href="https://itsmrwave.github.io/pesapal-gem">Pesapal gem</a></li>
-              <li><a href="http://kingori.co/systematic-theology/">Systematic Theology</a></li>
-              <li><a href="https://waabeh.com">Waabeh</a></li>
+              {% for project in site.data.projects %}
+                <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </div>
