@@ -17,7 +17,7 @@
 
   {% for post in site.categories[{{page.category}}] %}
   <entry>
-    <title>{{ post.title | xml_escape }}{% if post.link %} ↩{% endif %}</title>
+    <title>{{ post.title | xml_escape }}{% if post.link %} ∞{% endif %}</title>
     <link href="{% if post.link %}{{post.link  | xml_escape }}{% else %}http://kingori.co{{post.url}}{% endif %}" rel="alternate" type="text/html" />
     <published>{{ post.date | date_to_xmlschema }}</published>
     <id>kingori.co:{{ post.url }}</id>
