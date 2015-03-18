@@ -20,3 +20,5 @@ layout: post
 > significant contribution to society with this? If we can't, and if we can't
 > own the key technologies, we don't do it. That philosophy comes directly from
 > him and it still very much permeates the place. I hope that it always will.
+
+~ Tim Cook
