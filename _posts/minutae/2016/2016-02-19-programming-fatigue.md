@@ -19,9 +19,9 @@ This was published as "[JavaScript fatigue fatigue][source]" but I feel it appli
 >  * Do exploratory toy projects: I like creating small projects that explore technologies or aspects of technologies.
 >  * Diversify in life: Specializing is good, but it's also good to have regular activities not related to tech and/or brain. The advantage is that if you are frustrated in one area of your life, you have others to fall back on.
 >  * Even with the last of the previous tips, I find it important to remain human. Don't overdo discipline, don't become a life improvement machine. Periods of boredom and doing nothing are important for recuperating and inspiration.
-
-  When in doubt about what to learn next, you can always go back to fundamentals:
-
+>
+> When in doubt about what to learn next, you can always go back to fundamentals:
+>
 >  * JavaScript, CSS, etc. (which technologies are fundamental depends on your work)
 >  * Non-technological skills: time management, social skills (communication, team building, …), health (posture, breathing properly, moving well, eating well, …), management processes and so on.
 
