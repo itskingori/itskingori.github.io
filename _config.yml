@@ -1,5 +1,5 @@
 name: "King'ori J. Maina"
-highlighter: "pygments"
+highlighter: rouge
 permalink: /:categories/:year/:month/:title/
 
 sass:
