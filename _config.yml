@@ -77,7 +77,7 @@ kramdown:
   #
   # Insert HTML <br /> tags inside paragraphs where the original Markdown
   # document had newlines (by default, Markdown ignores these newlines).
-  hard_wrap: true
+  hard_wrap: false
 
   # Defines the HTML entity names or code points for smart quote output
   #
