@@ -5,7 +5,7 @@ category: minutae
 layout: post
 ---
 
-###Problem###
+### Problem
 
 Always wondered why jQuery returns true if you are trying to find elements by a
 selector that doesn't exist in the DOM structure. Like this example using an id-
@@ -33,7 +33,7 @@ var div = $('#two') || $('<div id="two"></div>');
 
 Wouldn't it be more logical if the id-selector returned null if not found?
 
-###Explanation###
+### Explanation
 
 Almost all jQuery functions return a jQuery object as a wrapper around the DOM
 elements in question, so you can use dot notation. This behaviour was chosen

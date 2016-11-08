@@ -7,7 +7,7 @@ layout: post
 These are tips collated from various sources _(links at the bottom)_.
 
 
-###Supervisor
+### Supervisor
 
 > Your success is as important to you as it is to him/her if he/she is a good
 > advisor. [[~1][1]]
@@ -26,7 +26,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > context of existing work in the field. [[~1][1]]
 
 
-###Why Write A Thesis?
+### Why Write A Thesis?
 
 > A master's degree makes more of a contribution to the field than a project. If
 > you want to do more than spend your life writing code for other people, a
@@ -35,7 +35,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > then make that contribution. [[~1][1]]
 
 
-###Area review
+### Area review
 
 > Begin by looking through conference proceedings, journals, online, books, etc.
 > Xerox relevant papers AND any papers that interest you. Sometimes what you are
@@ -59,7 +59,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > [[~1][1]]
 
 
-###Choosing the Thesis Area
+### Choosing the Thesis Area
 
 > Once you've chosen an area you need to think carefully about what its
 > contribution is. In general a thesis is a new contribution to the field you
@@ -73,7 +73,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > never get to because there are simply too many things to work on. [[~1][1]]
 
 
-###Articulating Your Thesis
+### Articulating Your Thesis
 
 > Try to be as specific as possible about what you want to achieve in your
 > thesis. This is for your benefit as well as your advisor because coming up
@@ -93,13 +93,13 @@ These are tips collated from various sources _(links at the bottom)_.
 > [[~1][1]]
 
 
-###Perform a Feasibility Study
+### Perform a Feasibility Study
 
 > Try and implement a few ideas on the computer to "concretize" your thesis
 > ideas. [[~1][1]]
 
 
-###Implement The Thesis
+### Implement The Thesis
 
 > If it is a program or algorithm use the techniques you learned in software
 > engineering to design, build and document your system. Remember the purpose of
@@ -110,7 +110,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > conference reviewers can sometimes be useful too. [[~1][1]]
 
 
-###Demostrating That Your System Works & Is Good
+### Demostrating That Your System Works & Is Good
 
 > * Build a demo program around your algorithm to illustrate how it would be used in an application. Use this same demonstration when you present your final thesis.
 > * Gather a group of users and have them use your system; perform a user study. Usually about 5 is enough. More the better.
@@ -119,7 +119,7 @@ These are tips collated from various sources _(links at the bottom)_.
 > [[~1][1]]
 
 
-###Graduation
+### Graduation
 
 > The thing to remember is that you must learn to find a path and follow a path
 > by yourself. Your advisor can only help you find the path and help you learn

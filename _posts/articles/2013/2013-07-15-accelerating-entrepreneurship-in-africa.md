@@ -17,9 +17,9 @@ entrepreneurial assets:
 2. Skills and talent
 3. Infrastructure
 
-###Financing###
+### Financing
 
-####Cost Of Funding Is Prohibitive####
+#### Cost Of Funding Is Prohibitive
 
 * While many Afro-entrepreneurs bemoan a limited supply of capital, financiers
 point out that many projects are not fundable.
@@ -37,7 +37,7 @@ nepotism (only 5% of survey respondents used government funding).
 * Many entrepreneurs admit to being unaware of alternative funding options
 available from government or private sources, other than banks.
 
-####Access To Finance Remains A Dilemma####
+#### Access To Finance Remains A Dilemma
 
 * The risk-reward structure of banks makes them reticent to invest in start-up
 ventures. If one considers the fact that banks’ earnings are capped on loans
@@ -51,7 +51,7 @@ equity upside, provides a more appropriate source of financing which is
 relatively small. Only 33% of respondents in the survey believe
 that there is sufficient supply of venture capital.
 
-####Communication Plays A Vital Role In Accessing Capital####
+#### Communication Plays A Vital Role In Accessing Capital
 
 * Funders need to perform a thorough due diligence on companies in which they
 invest. Their stringent requirements are designed to reveal the extent to
@@ -65,7 +65,7 @@ discounting this type of funding as prohibitive or even impossible. Many of
 these misperceptions and misunderstandings can be mitigated by enhanced
 communication.
 
-####The Power Of Networks Is Critical To Shaping An Entrepreneur’s Horizon####
+#### The Power Of Networks Is Critical To Shaping An Entrepreneur’s Horizon
 
 * The size of an idea is shaped by the resources — financially and otherwise —
 that an entrepreneur has at his or her disposal to nurture the idea and
@@ -76,16 +76,16 @@ difficulty for entrepreneurs who do not have a network of potential
 investors and mentors beyond their family and friends, as their ventures
 face a higher chance of stagnation.
 
-###Skills & Talent###
+### Skills & Talent
 
-####The Culture Of Innovation Is Lacking In Schools####
+#### The Culture Of Innovation Is Lacking In Schools
 
 * Stakeholders generally agree that the education system tends to focus on
 theoretical education and harnessing skills most useful in corporate firms,
 failing to offer more practical curricula that can adequately prepare youth
 to work in entrepreneurial enterprises.
 
-####Formal Education, Including Attitudes And Behaviours, Play A Role In Entrepreneurship####
+#### Formal Education, Including Attitudes And Behaviours, Play A Role In Entrepreneurship
 
 * The lack of a basic business culture in most small-scale enterprises —
 evidenced by traits such as procrastination, poor client management and
@@ -94,7 +94,7 @@ employees have worked at entrepreneurial ventures. Such employee challenges
 in most small businesses reduce their ability to retain long-term clients or
 acquire new ones.
 
-####Developing An Entrepreneurial Skills Base Requires A Shift In Culture####
+#### Developing An Entrepreneurial Skills Base Requires A Shift In Culture
 
 * Society fails to encourage students to recognise or take advantage of their
 inherent entrepreneurial potential, as society often values and respects
@@ -103,7 +103,7 @@ into studying more professional courses rather than entrepreneurial or
 creative ones, sometimes even tagging them as ‘crazy’ when students make the
 decision to work in start-up companies or develop their own businesses.
 
-####Entrepreneurial Ventures Need Professional Skills####
+#### Entrepreneurial Ventures Need Professional Skills
 
 * Often, entrepreneurs take on too much when trying to sustain their business,
 which can eventually stunt growth. For entrepreneurial organisations to
@@ -115,7 +115,7 @@ on the team and then source the missing skills accordingly.
 entrepreneurs, a significant fear exists that, whilst engaging advisory
 services, the service providers may steal their business ideas.
 
-####Financial Remuneration Is Not The Only Tool Available For Entrepreneurs To Attract Talent####
+#### Financial Remuneration Is Not The Only Tool Available For Entrepreneurs To Attract Talent
 
 * The notion that remuneration always has to be monetary, and therefore that
 small enterprises cannot attract the most talented staff, should be
@@ -128,9 +128,9 @@ regularjob market. Providing opportunities for problem solving in the work
 environment, which offers increased individual responsibility, is an
 effective means of attracting talented staff.
 
-###Infrastructure###
+### Infrastructure
 
-####The Culture Of Innovation Is Lacking In Schools####
+#### The Culture Of Innovation Is Lacking In Schools
 
 * Unreliable electricity supply, poor quality and limited breadth of road and
 rail networks, and poor communications infrastructure are all highlighted as

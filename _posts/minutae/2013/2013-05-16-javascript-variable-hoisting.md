@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###Example Problem:###
+### Example Problem:
 
 Global variable has undefined in certain case.
 
@@ -31,7 +31,7 @@ undefined
 20
 ```
 
-###Explanation###
+### Explanation
 
 This phenomenon is known as __Javascript Variable Hoisting__. At no point are
 you accessing the global variable in your function; you're only ever
@@ -53,7 +53,7 @@ function test() {
 test();
 ```
 
-####Simple Explanation:####
+#### Simple Explanation:
 
 > Variables in JavaScript always have function-wide scope. Even if they were
 > defined in the middle of the function, they are visible before. Similar
@@ -97,7 +97,7 @@ Will be rewritten by the interpreter as;
 })();
 ```
 
-####Complex Explanation:####
+#### Complex Explanation:
 
 > This is something that every Javascript programmer bumps into sooner or later.
 > Simply put, whatever variables you declare are always hoisted to the top of
@@ -110,7 +110,7 @@ Will be rewritten by the interpreter as;
 > locally declared variable, which has got nothing assigned to it yet; hence
 > undefined.
 
-####Other: Function Hoisting####
+#### Other: Function Hoisting
 
 Function hoisting means that functions are moved to the top of their scope. That
 is;

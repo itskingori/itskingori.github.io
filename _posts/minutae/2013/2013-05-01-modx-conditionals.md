@@ -5,7 +5,7 @@ category: minutae
 layout: post
 ---
 
-###Build tags as a result of a conditional, not in conditional results###
+### Build tags as a result of a conditional, not in conditional results
 
 An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on

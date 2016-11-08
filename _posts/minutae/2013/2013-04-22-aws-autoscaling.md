@@ -8,7 +8,7 @@ _Please note that this is not a detailed guide ... relevant links are included
 if you want detail. The objective is to highlight the key steps or rather, the
 'points-to-note 'throughout the process. A LOT is assumed._
 
-###Basic Expected Setup###
+### Basic Expected Setup
 
 The first obvious assumption is that you are running Ubuntu. Running [Ubuntu
 Cloud Guest][link31] on [Amazon Web Services][aws] requires you to go through
@@ -83,7 +83,7 @@ _Ps: If you have services in other regions (from the US default) you have to set
 some URLs in the `~/.bashrc` file. Don't worry, keep reading ... I've mentioned
 this with a litlle more detail ahead._
 
-###Adding Support For The Other Services###
+### Adding Support For The Other Services
 
 To put it simply, the [`ec2-api-tools`][link13] only install `ec2-*` commands.
 
@@ -120,9 +120,9 @@ shell.
 
 Now we begin ...
 
-###Configuring Autoscaling Using ELB &amp; EC2###
+### Configuring Autoscaling Using ELB &amp; EC2
 
-####Prerequisite 1: Create/Choose Custom AMI####
+#### Prerequisite 1: Create/Choose Custom AMI
 
 If you haven’t created an AMI from one of your running EC2 instances, create one
 now, or click over to your AMIs page on the AWS Console to retrieve the AMI ID
@@ -133,7 +133,7 @@ _Ps: If you already have a running EBS-backed instance, you can save this Amazon
 Machine Image (AMI) and autoscale with it ... [find steps on how to create your
 own AMIs here][link10]_
 
-####Prerequisite 2: Set Up Your Your ELB####
+#### Prerequisite 2: Set Up Your Your ELB
 
 The ELB name that is displayed on the AWS Console will also be required at some
 point. You can use the AWS Console to [create an ELB][link32] if you don't have
@@ -142,7 +142,7 @@ provider pointing your landing page or vanity domain to the DNS name given in
 the AWS Console. Visit ['Use Domain Names with Elastic Load Balancing'][link14]
 at Amazon AWS Documentation page for details on this.
 
-####Prerequisite 3: Check Credentials/ Keys/ Authorizations Are In Order####
+#### Prerequisite 3: Check Credentials/ Keys/ Authorizations Are In Order
 
 Some services will fail if the credentials are not in order. Common mistake is
 to set the key &amp; secret and assume that's all that the other services
@@ -175,11 +175,11 @@ Same as CloudWatch
 $ export AWS_CLOUDWATCH_URL=https://monitoring.eu-west-1.amazonaws.com
 ```
 
-####Step 1: Create An Elastic Load Balancer####
+#### Step 1: Create An Elastic Load Balancer
 
 That's if you haven't already ... [spend some time here][link32].
 
-####Step 2: Create Launch Config####
+#### Step 2: Create Launch Config
 
 > The launch configuration specifies the template that Auto Scaling uses to
 > launch Amazon EC2 instances. This template contains all the information
@@ -212,7 +212,7 @@ remember.
 $ ec2-describe-keypairs
 ```
 
-####Step 3: Create an Auto Scaling Group####
+#### Step 3: Create an Auto Scaling Group
 
 > An Auto Scaling group is a collection of Amazon EC2 instances. You can specify
 > settings like the minimum, maximum, and desired number of EC2 instances for an
@@ -223,7 +223,7 @@ $ as-create-auto-scaling-group AutoScalingGroup --availability-zones eu-west-1a 
 $ OK-Created AutoScalingGroup
 ```
 
-####Step 4: Scale Up &amp; Down####
+#### Step 4: Scale Up &amp; Down
 
 Scaling policie tells the Auto Scaling group what to do when the specified
 conditions change.
@@ -247,7 +247,7 @@ adjustment types you can [read this ...][link23]
 
 _Ps: Cooldown period is in seconds._
 
-####Step 5: Link a CloudWatch event to an auto scaling policy####
+#### Step 5: Link a CloudWatch event to an auto scaling policy
 
 Use the CloudWatch command mon-put-metric-alarm to create an alarm to for
 increasing the size of the Auto Scaling group when the average CPU usage of all
@@ -277,7 +277,7 @@ $ as-put-notification-configuration --topic-arn arn:aws:sns:********************
 $ OK-Put Notification Configuration
 ```
 
-###Considerations When Scaling LAMP-type Servers###
+### Considerations When Scaling LAMP-type Servers
 
 When migrating a single-server LAMP app to an autoscaling deployment often takes
 some planning and changing some of the configuration a bit. For example, you'll
@@ -329,7 +329,7 @@ infrastructure is configured to achieve the desired result.
 There are, of course, other ways of achieving the same end result, but the above
 suggestions are the most common, easiest techniques within Amazon Web Services.
 
-###Points To Note###
+### Points To Note
 
 * Your original instance doesn't have anything to do with Auto Scaling. It lives
 outside of your Auto Scaling setup and will not be touched. When Auto Scaling

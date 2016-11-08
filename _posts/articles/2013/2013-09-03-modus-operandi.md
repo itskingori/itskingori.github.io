@@ -25,14 +25,14 @@ changes in the operations or workforce.
 
 On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 
-###[Guidelines][3]###
+### [Guidelines][3]
 
 * [Best Practice][4] - techniques that have consistently shown results
 * [Code Review][5] - how to examine each others code
 * [Convention][6] - that which is considered acceptable or polite to most
 * [Style][7] - easy to read and good to look at
 
-###[The Top Layer][8]###
+### [The Top Layer][8]
 
 * Be consistent.
 * Teach, if you can.
@@ -44,7 +44,7 @@ On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 * Code well. Everyone leaves. Your last duty should be to hand it off to a competent successor.
 * Don't wait for crisis to change, adopt an M.O. asap and stay safe.
 
-###[Language][8]###
+### [Language][8]
 
 * _"Avoid"_ means don't do it unless you have good reason.
 * _"Don't"_ means there's never a good reason.

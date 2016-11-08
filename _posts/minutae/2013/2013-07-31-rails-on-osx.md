@@ -6,7 +6,7 @@ layout: post
 
 Start by [installing homebrew][11] :-)
 
-###Installing Ruby###
+### Installing Ruby
 
 OS X comes with [Ruby][4] installed but it's an older version, and you don't
 want to be messing with core files so it's better to use [rbenv][2] and [ruby-
@@ -48,7 +48,7 @@ bookmarking that page for reference later, or there is always `rbenv --help`.
 The most common are:_
 
 
-###Installing Bundler###
+### Installing Bundler
 
 [Bundler][9] is a [Ruby gem][8] manages an application's dependencies, kind of
 like a shopping list of other libraries the application needs to work. If you're
@@ -76,7 +76,7 @@ $ touch ~/.bundle/config
 $ echo 'BUNDLE_PATH: vendor/bundle' >> ~/.bundle/config
 ```
 
-####Skip rdoc generation####
+#### Skip rdoc generation
 
 If you use Google for finding your Gem documentation you might consider saving a
 bit of time when installing gems by skipping the documentation.
@@ -94,7 +94,7 @@ versions available including JRuby just remember you will need to re-install
 your gems for each version as they are not shared._
 
 
-###Installing Rails###
+### Installing Rails
 
 Check out the [Rails website][10] for the whole story on Rails.
 
@@ -107,7 +107,7 @@ Rails has a numberq of dependencies to install so don't be surprised if you
 see loads of other gems being installed at the same time.
 
 
-###Installing MySQL###
+### Installing MySQL
 
 Most people prefer MySQL as their DB of choice.
 
@@ -147,7 +147,7 @@ everything reuired for a full MySQL installation (which might be necessary for
 the mysql2 gem install)._
 
 
-###Your First Rails Project###
+### Your First Rails Project
 
 ``` bash
 $ rails new helloworld

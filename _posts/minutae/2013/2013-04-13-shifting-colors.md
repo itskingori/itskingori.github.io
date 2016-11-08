@@ -15,7 +15,7 @@ layout: post
 <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 330, 90%, 60% );"></div>
 <div markdown="1" style="width: 100%; height: 30px; background-color: hsl( 350, 90%, 60% );"></div>
 
-### Update: ###
+### Update:
 
 Just realized this won't make much sense a few years later if I change the theme
 & so ... the JS;

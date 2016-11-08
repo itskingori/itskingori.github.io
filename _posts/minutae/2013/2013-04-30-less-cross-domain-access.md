@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###Problem###
+### Problem
 
 If you have a static file server on S3 ... this loads fine:
 
@@ -18,7 +18,7 @@ This ... does not load.
 <link rel="stylesheet/less" href="http://static.example.com/css/screen.less" type="text/css" media="screen, projection, print">
 ```
 
-###Reason###
+### Reason
 
 > Cross-site HTTP requests are HTTP requests for resources from a different
 > domain than the domain of the resource making the request.  For instance, a
@@ -40,7 +40,7 @@ This ... does not load.
 
 [Read more here ...][link4]
 
-###Fix (Amazon S3 Only)###
+### Fix (Amazon S3 Only)
 
 If you're using Amazon S3, they [announced Cross-Origin Resource Sharing (CORS)
 support][link2] ... enable cross domain using a CORs policy just like the one

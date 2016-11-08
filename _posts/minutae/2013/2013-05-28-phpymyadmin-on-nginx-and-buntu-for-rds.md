@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###Installing PHPMyAdmin###
+### Installing PHPMyAdmin
 
 An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
@@ -18,7 +18,7 @@ Preconfigure with `apache` or `lighttpd`? - I hit `ESC`.
 
 Configure database for phpmyadmin with dbconfig-common? No.
 
-###Configure Amazon RDS###
+### Configure Amazon RDS
 
 > The one thing I had trouble with was the DB Security Group setup.  When you go
 > to add access for an CIDR/IP it provides a recommended value.  It took some
@@ -31,7 +31,7 @@ Configure database for phpmyadmin with dbconfig-common? No.
 In summary, just add your EC2 Security group ... i.e. the one that you want to
 be able to access RDS.
 
-###Configure PHPMyAdmin###
+### Configure PHPMyAdmin
 
 Modify `/etc/config.inc.php`. It should look something like this.
 
@@ -86,7 +86,7 @@ $cfg['Servers'][$i]['hide_db'] = '(mysql|information_schema|phpmyadmin)';
 $cfg['Servers'][$i]['host'] = 'EXAMPLE.JUMBLE.us-east-1.rds.amazonaws.com';
 ```
 
-###Configure Nginx###
+### Configure Nginx
 
 Add serverblock to Nginx config.
 

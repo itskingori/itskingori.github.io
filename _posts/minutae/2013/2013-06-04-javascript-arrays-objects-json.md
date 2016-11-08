@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###JSON Object###
+### JSON Object
 
 > The JSON object contains methods for parsing JSON and converting values to
 > JSON.
@@ -33,7 +33,7 @@ JSON.parse('null'); // null
 > Parse a string as JSON, optionally transform the produced value and its
 > properties, and return the value.
 
-###Browser Compatibility###
+### Browser Compatibility
 
 [Newer browsers][4] support the [JSON object][1] natively. Well-known polyfills
 for the JSON object are [JSON2][5] and [JSON3][6] that will only define
