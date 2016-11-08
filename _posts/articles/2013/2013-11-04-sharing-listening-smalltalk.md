@@ -19,7 +19,7 @@ sharing during smalltalk ...
 > friend. I wondered if he had similar experiences. He clearly explained,
 > “People share things with you because you ask the follow-up question.”
 
-###Furthering The Smalltalk###
+### Furthering The Smalltalk
 
 Be creative with ...
 
@@ -35,7 +35,7 @@ Be creative with ...
 Then simply rinse and repeat ... obviously, after letting the person finish
 speaking.
 
-###Listening###
+### Listening
 
 1. Make eye contact while the other person speaks. In general, you should
 aim for eye contact about 60-70% of the time that you are listening. Lean
@@ -60,7 +60,7 @@ tend to shut down conversation.
 listening to the other person.
 8. As you listen, be open, neutral, and withhold judgment and stereotypes.
 
-###Tips###
+### Tips
 
 1. Show interest and encourage the other person to speak by smiling and
 nodding during conversation.

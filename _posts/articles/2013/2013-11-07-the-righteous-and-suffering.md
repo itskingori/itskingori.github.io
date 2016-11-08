@@ -5,7 +5,7 @@ link: http://www.ccel.org/contrib/exec_outlines/job/job_01.htm
 layout: post
 ---
 
-###Purpose###
+### Purpose
 
 > It is common to suggest that the purpose of the book is to answer the age -
 > old question, _"Why does God allow the righteous to suffer?"_  That is
@@ -24,7 +24,7 @@ layout: post
 > the book shows us how the righteous should bear up under suffering (_"You
 > have heard of the perseverance of Job"_ - Jm 5:11)
 
-###Some Lessons###
+### Some Lessons
 
 > * **The book defends the absolute glory and perfection of God** - It sets
 > forth the theme echoed in Ps 18:3 (_"I will call upon the Lord, who is

@@ -16,7 +16,7 @@ If you're asking these questions ... then this is for you.
 ---
 
 1. [GitHub / Collaborating / Syncing a fork][1]
-2. [Stack Overflow | Keep sync with another git repository?][2]
+2. [Stack Overflow: Keep sync with another git repository?][2]
 
 [1]: https://help.github.com/articles/syncing-a-fork
 [2]: http://stackoverflow.com/questions/11646080/keep-sync-with-another-git-repository

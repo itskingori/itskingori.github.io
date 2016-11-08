@@ -16,7 +16,7 @@ The highlights ...
 > for its citizens. More than ever before, many Kenyans are having to put up
 > with low-paying, low quality jobs.
 
-###Quality Of Jobs###
+### Quality Of Jobs
 
 > Every so often, our economists reel out statistics showing how hundreds of
 > thousands of jobs are created in the informal sector. But do we even pause to
@@ -26,13 +26,13 @@ The highlights ...
 > The truth is that work in the informal sector is characterised by maximum
 > physical exertion, inhuman working hours and meagre returns on effort.
 
-###Spending###
+### Spending
 
 > We have done very well in terms of jerking up infrastructure spending. We have
 > a fairly strong financial sector, but the growth of public sector debt as a
 > percentage of GDP is just too high.
 
-###The Way Forward###
+### The Way Forward
 
 > Policy must seek to eliminate this sector so that we can move citizens away
 > from the beastly working conditions to sectors that can offer decent and

@@ -10,7 +10,7 @@ layout: post
 > from ‘Liking’ everything I see without considering how it affects the
 > popularity of that content?
 
-#####Recommendations and Favourites#####
+##### Recommendations and Favourites
 
 Favourites are your personal way of saving the what you love to a place where
 you can easily find them again.

@@ -5,7 +5,7 @@ category: articles
 layout: post
 ---
 
-###My Thoughts###
+### My Thoughts
 
 I've been thinking about the effects of social media (the online culture as a
 whole) ... particularly how communication (at least in my view) is losing that
@@ -38,7 +38,7 @@ He takes the words right out of my mouth. Here goes:
 
 And he goes on to explain the four trends that he's noticed in online culture.
 
-###Trend 1: Compression###
+### Trend 1: Compression
 
 > One thing we've seen, actually predating the web, but accentuated with the
 > web, is the compressing and shortening and speeding up of communication. So
@@ -54,7 +54,7 @@ And he goes on to explain the four trends that he's noticed in online culture.
 > or do we hit some kind of wall and bounce back in the other direction craving
 > a little more depth and substance again?
 
-###Trend 2: Disposability###
+### Trend 2: Disposability
 
 > A lot of the stuff that we put out there into the world as individuals, we
 > have this sort of complicit understanding that it's going to be swallowed up
@@ -62,7 +62,7 @@ And he goes on to explain the four trends that he's noticed in online culture.
 > comes after it, there's the sense of just expressing yourself in a sort of
 > disposable way that won't have any sort of lasting impact.
 
-###Trend 3: Curation###
+### Trend 3: Curation
 
 > So people were increasingly expressing themselves through the stuff that they
 > thought was cool. So there are web services like Pinterest and Tumblr and
@@ -73,7 +73,7 @@ And he goes on to explain the four trends that he's noticed in online culture.
 > like walking into someone's apartment and judging them by what they have
 > hanging on the walls instead of talking to them.
 
-###Trend 4: Self-promotion###
+### Trend 4: Self-promotion
 
 > Life as an advertisement. This is something, I think we all feel, to different
 > degress, when we fill out our Facebook profiles and when we develop these

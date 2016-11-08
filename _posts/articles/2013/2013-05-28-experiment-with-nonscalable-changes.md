@@ -25,7 +25,7 @@ layout: post
 ---
 
 1. [How design thinking transformed Airbnb from a failing startup to a billion dollar business][1]
-2. [VIDEO | How design thinking transformed Airbnb from failing startup to billion-d...][2]
+2. [VIDEO: How design thinking transformed Airbnb from failing startup to billion-d...][2]
 
 [1]: http://firstround.com/article/How-design-thinking-transformed-Airbnb-from-failing-startup-to-billion-dollar-business#
 [2]: http://youtu.be/RUEjYswwWPY

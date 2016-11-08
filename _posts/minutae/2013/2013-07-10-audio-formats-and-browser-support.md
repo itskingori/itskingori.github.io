@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###Problem###
+### Problem
 
 > The `<audio>` and `<video>` elements provide support for playing audio and
 > video media without requiring plug-ins. Video codecs and audio codecs are used
@@ -17,7 +17,7 @@ layout: post
 > Different browsers do not support the same media formats in their
 > implementations of HTML 5 video and audio, mainly because of patent issues.
 
-###The State Of Things###
+### The State Of Things
 
 Currently, there are 3 supported file formats for the `<audio>` element: MP3,
 WAV, and OGG:
@@ -33,7 +33,7 @@ WAV, and OGG:
 _Ps: [See here][3] for a more detailed breakdown of different format
 compatibility across different browsers (desktop-mobile, audio-video)._
 
-###Progressing Enhancement/ Graceful Degradation###
+### Progressing Enhancement/ Graceful Degradation
 
 > If audio support is detected, [Modernizr][6] assesses which formats the
 > current browser will play. Currently, [Modernizr][6] tests OGG, MP3, WAV and
@@ -59,10 +59,10 @@ particular format.
 
 ---
 
-1. [W3Schools | HTML5 Audio][1]
-2. [Mozilla Developer Network | Media formats supported by the HTML audio and video elements][2]
-3. [Wikipedia | HTML5 Audio][4]
-4. [Modernizr | HTML5 Features][5]
+1. [W3Schools: HTML5 Audio][1]
+2. [Mozilla Developer Network: Media formats supported by the HTML audio and video elements][2]
+3. [Wikipedia: HTML5 Audio][4]
+4. [Modernizr: HTML5 Features][5]
 
 [1]: http://www.w3schools.com/html/html5_audio.asp
 [2]: https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats

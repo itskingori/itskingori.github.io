@@ -13,7 +13,7 @@ We could also call this _'18 Lessons on Wealth from Paul Graham'_.
 
 _Emphasis, mine._
 
-###Lesson #1: Startups &amp; Life###
+### Lesson #1: Startups &amp; Life
 
 > Economically, you can think of a startup as a way to compress your whole
 > working life into a few years. Instead of working at a low intensity for forty
@@ -31,13 +31,13 @@ _Emphasis, mine._
 
 > If starting a startup were easy, everyone would do it.
 
-###Lesson #2: How To, Summarized###
+### Lesson #2: How To, Summarized
 
 > The advantage of creating wealth, as a way to get rich, is not just that it's
 > more legitimate (many of the other methods are now illegal) but that it's more
 > straightforward. _You just have to do something people want_.
 
-###Lesson #3: Wealth Is NOT Money###
+### Lesson #3: Wealth Is NOT Money
 
 > Wealth is the fundamental thing. Wealth is stuff we want: food, clothes,
 > houses, cars, gadgets, travel to interesting places, and so on. You can have
@@ -54,7 +54,7 @@ _Emphasis, mine._
 > counterfeiting, talking about making money can make it harder to understand
 > how to make money.
 
-###Lesson #4: The Pie Fallacy###
+### Lesson #4: The Pie Fallacy
 
 > A surprising number of people retain from childhood the idea that there is a
 > fixed amount of wealth in the world. There is, in any normal family, a fixed
@@ -68,7 +68,7 @@ _Emphasis, mine._
 > pristine old car the richer. And not just in some metaphorical way. If you
 > sell your car, you'll get more for it.
 
-###Lesson #5: What Is A Job?###
+### Lesson #5: What Is A Job?
 
 > But here there is another layer that tends to obscure the underlying reality.
 > In a company, the work you do is averaged together with a lot of other
@@ -86,7 +86,7 @@ _Emphasis, mine._
 > group of people working together to do something people want. _It's doing
 > something people want that matters, not joining the group._
 
-###Lesson #6: The 'Working Harder' Misconception &amp; The Value of Work###
+### Lesson #6: The 'Working Harder' Misconception &amp; The Value of Work
 
 > That averaging gets to be a problem. I think the single biggest problem
 > afflicting large companies is the difficulty of assigning a value to each
@@ -122,7 +122,7 @@ _Emphasis, mine._
 > with a large number of other people's. In a large group, your performance is
 > not separately measurable-- and the rest of the group slows you down._
 
-###Lesson #7: Measurement &amp; Leverage###
+### Lesson #7: Measurement &amp; Leverage
 
 > To get rich you need to get yourself in a situation with two things,
 > measurement and leverage. You need to be in a position where your performance
@@ -144,7 +144,7 @@ _Emphasis, mine._
 > measurement and leverage. All you need to do is be part of a small group
 > working on a hard problem._
 
-###Lesson #8: Smallness = Measurement###
+### Lesson #8: Smallness = Measurement
 
 > If you can't measure the value of the work done by individual employees, you
 > can get close. You can measure the value of the work done by small groups.
@@ -171,7 +171,7 @@ _Emphasis, mine._
 > than you get from smallness alone. A startup is not merely ten people, but ten
 > people like you._
 
-###Lesson #9: Technology = Leverage###
+### Lesson #9: Technology = Leverage
 
 > _What is technology? It's technique._ It's the way we all do things. And when
 > you discover a new way to do things, its value is multiplied by all the people
@@ -185,7 +185,7 @@ _Emphasis, mine._
 > wealth did it by developing new technology. You just can't fry eggs or cut
 > hair fast enough._
 
-###Lesson #10: Bureaucracy###
+### Lesson #10: Bureaucracy
 
 > ... Small companies are more at home in this world, because they don't have
 layers of bureaucracy to slow them down. Also, technical advances tend to come
@@ -200,7 +200,7 @@ convention.
 > aircraft. And even in those fields they depend heavily on startups for
 > components and ideas.
 
-###Lesson #11: Difficulty As A Guide###
+### Lesson #11: Difficulty As A Guide
 
 > Use difficulty as a guide not just in selecting the overall aim of your
 > company, but also at decision points along the way.
@@ -218,16 +218,16 @@ convention.
 > problem. And I'd be delighted, because something that was hard for us would be
 > impossible for our competitors.
 
-###Lesson #12: Patents &amp; Competition###
+### Lesson #12: Patents &amp; Competition
 
 > Here, as so often, the best defense is a good offense. If you can develop
 > technology that's simply too hard for competitors to duplicate, you don't need
 > to rely on other defenses. Start by picking a hard problem, and then at every
 > decision point, take the harder choice.
 
-###Lesson #13: The Catch(es) - of The Startup Route###
+### Lesson #13: The Catch(es) - of The Startup Route
 
-####Catch 1####
+#### Catch 1
 
 > ... you can't choose the point on the curve that you want to inhabit. You
 can't decide, for example, that you'd like to work just two or three times as
@@ -235,7 +235,7 @@ hard, and get paid that much more. When you're running a startup, your
 competitors decide how hard you work. And they pretty much all make the same
 decision: as hard as you possibly can.
 
-####Catch 2####
+#### Catch 2
 
 > ... the payoff is only on average proportionate to your productivity. There
 is, as I said before, a large random multiplier in the success of any company.
@@ -247,14 +247,14 @@ during the Internet Bubble. It's common for a startup to be developing a
 genuinely good product, take slightly too long to do it, run out of money, and
 have to shut down.
 
-####Catch 3####
+#### Catch 3
 
 > A startup is like a mosquito. A bear can absorb a hit and a crab is armored
 > against one, but a mosquito is designed for one thing: to score. No energy is
 > wasted on defense. The defense of mosquitos, as a species, is that there are a
 > lot of them, but this is little consolation to the individual mosquito.
 
-####Catch 4####
+#### Catch 4
 
 > ... companies doing acquisitions are not looking for bargains. A company big
 enough to acquire startups will be big enough to be fairly conservative, and
@@ -263,7 +263,7 @@ conservative, because they are likely to be business school types who joined the
 company late. They would rather overpay for a safe choice. So it is easier to
 sell an established startup, even at a large premium, than an early-stage one.
 
-###Lesson #14: To Sell Or Not To Sell?###
+### Lesson #14: To Sell Or Not To Sell?
 
 > ... it's a good idea to get bought, if you can. Running a business is
 different from growing one. It is just as well to let a big company take over
@@ -271,7 +271,7 @@ once you reach cruising altitude. It's also financially wiser, because selling
 allows you to diversify. What would you think of a financial advisor who put all
 his client's assets into one volatile stock?
 
-###Lesson #15: How To Get Bought###
+### Lesson #15: How To Get Bought
 
 > Mostly by doing the same things you'd do if you didn't intend to sell the
 > company. Being profitable, for example. But getting bought is also an art in
@@ -285,7 +285,7 @@ his client's assets into one volatile stock?
 > worry that, if they don't buy you now, you'll continue to grow rapidly and
 > will cost more to acquire later, or even become a competitor.
 
-###Lesson #16: Get Users###
+### Lesson #16: Get Users
 
 > ... it all comes down to is users. You'd think that a company about to buy you
 would do a lot of research and decide for themselves how valuable your
@@ -305,7 +305,7 @@ technology was. Not at all. What they go by is the number of users you have.
 > Certainly it's a better test than your a priori notions of what problems are
 > important to solve, no matter how technically adept you are.
 
-###Lesson #17: Premature Optimization###
+### Lesson #17: Premature Optimization
 
 > ... Now we can recognize this as something hackers already know to avoid:
 premature optimization. Get a version 1.0 out there as soon as you can. Until
@@ -320,7 +320,7 @@ you have some users to measure, you're optimizing based on guesses.
 > please or annoy customers wholesale. The closer you can get to what they want,
 > the more wealth you generate.
 
-###Lesson #18: Wealth &amp; Power (with some history)###
+### Lesson #18: Wealth &amp; Power (with some history)
 
 > Making wealth is not the only way to get rich. For most of human history it
 > has not even been the most common. Until a few centuries ago, the main sources

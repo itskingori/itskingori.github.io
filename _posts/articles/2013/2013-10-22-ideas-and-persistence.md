@@ -5,7 +5,7 @@ category: articles
 layout: post
 ---
 
-###Mediocre Ideas###
+### Mediocre Ideas
 
 > Truly great ideas are rare. Jokers like us will probably never have one.
 > That’s OK. We have mediocre ones all the time and they work just fine. I once
@@ -13,14 +13,14 @@ layout: post
 > designing. The vibe at the time was that everything important about CSS had
 > already been written. Nobody told me.
 
-###Showing Up###
+### Showing Up
 
 > I didn’t just have the idea, I did it. That’s the showing up part. Hands on
 > the keyboard, go. I barely knew what I was doing. I stumbled through even
 > following simple walkthroughs on how to install the software. Executing your
 > ideas is never overly comfortable.
 
-###Persistence###
+### Persistence
 
 > Then never stop. Don’t get distracted by some other idea and prance away to
 > that tomorrow. Keep doing it until you’ve done everything you set out to do

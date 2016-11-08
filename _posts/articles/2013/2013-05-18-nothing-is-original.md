@@ -5,7 +5,7 @@ category: articles
 layout: post
 ---
 
-####COPY. TRANSFORM. COMBINE.####
+#### COPY. TRANSFORM. COMBINE.
 
 > The act of creation is surrounded by a fog of myths. Myths that creativity
 > comes via inspiration ... that original creations break the mould ... that

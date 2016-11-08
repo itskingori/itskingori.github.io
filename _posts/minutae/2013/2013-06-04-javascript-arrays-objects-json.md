@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-###JSON Object###
+### JSON Object
 
 > The JSON object contains methods for parsing JSON and converting values to
 > JSON.
@@ -33,7 +33,7 @@ JSON.parse('null'); // null
 > Parse a string as JSON, optionally transform the produced value and its
 > properties, and return the value.
 
-###Browser Compatibility###
+### Browser Compatibility
 
 [Newer browsers][4] support the [JSON object][1] natively. Well-known polyfills
 for the JSON object are [JSON2][5] and [JSON3][6] that will only define
@@ -42,7 +42,7 @@ leaving any browser native implementation intact.
 
 ---
 
-1. [Mozilla Developer Network | JSON][1]
+1. [Mozilla Developer Network: JSON][1]
 2. [`JSON.stringify` method][2]
 3. [`JSON.parse` method][3]
 4. [Serializing to JSON in jQuery][7]

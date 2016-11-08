@@ -7,7 +7,7 @@ layout: post
 
 _"Time is highly limited, uniquely limited, and equitably limited."_
 
-> ####Highly limited:####
+> #### Highly limited:
 
 > Each person only has 24 hours a day and no more.  In total, we have about
 > 70-80 years worth of time granted to us.  We use about a third of that for
@@ -15,7 +15,7 @@ _"Time is highly limited, uniquely limited, and equitably limited."_
 > We spend the first couple decades in various stages of physical and emotional
 > immaturity, and the last couple decades in similarly declining health.
 
-> ####Uniquely limited:####
+> #### Uniquely limited:
 
 > Unlike many other resources, time is neither bankable, transferable, nor
 > recoverable once spent (i.e. in contrast to resources like money, fuel, or
@@ -23,7 +23,7 @@ _"Time is highly limited, uniquely limited, and equitably limited."_
 > not, making time management an activity you must (or can) constantly engage
 > in.
 
-> ####Equitably limited:####
+> #### Equitably limited:
 
 > The average American human life expectancy is about 77 years, with a standard
 > deviation of about 16 years.  This is a fairly equitable distribution of this

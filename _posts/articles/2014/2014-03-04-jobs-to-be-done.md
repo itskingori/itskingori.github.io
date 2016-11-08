@@ -5,7 +5,7 @@ category: articles
 layout: post
 ---
 
-###The [Jobs-to-be-Done][1] Concept
+### The [Jobs-to-be-Done][1] Concept
 
 > When planning new products, companies often start by segmenting their markets
 > and positioning their merchandise accordingly. This segmentation involves

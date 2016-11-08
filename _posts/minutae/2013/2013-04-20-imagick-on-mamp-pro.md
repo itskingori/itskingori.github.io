@@ -94,7 +94,7 @@ ImageMagick number of supported formats:  191
 
 _Ps: Original post - see footnote #4, has extra's on enabling tiff support_
 
-####Update <sup>7th/05/2013</sup> :####
+#### Update <sup>7th/05/2013</sup> :
 
 After installing Imagemagick using Homebrew on Lion, everything is fine except
 that it doesn't work at all when being called from php.
@@ -110,7 +110,7 @@ Turns out, for php to work convert should be in /usr/bin/ so this solved it:
 ln -s /usr/local/bin/convert /usr/bin/convert
 ```
 
-####Update <sup>25th/12/2013</sup> :####
+#### Update <sup>25th/12/2013</sup> :
 
 This article was originally linked to [this][1] ... which is now broken. I've
 also update Homebrew links which seem to have moved. Thanks to
