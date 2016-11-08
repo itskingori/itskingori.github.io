@@ -152,11 +152,11 @@ be stored in arrays, and so on.
 
 ---
 
-1. [Adequately Good Decent Programming Advice | JavaScript Scoping and Hoisting][1]
-2. [Nettuts | Quick Tip: JavaScript Hoisting Explained][2]
-3. [Stack Overflow | Surprised that global variable has undefined value in JavaScript][3]
-4. [Stack Overflow | Javascript function scoping and hoisting][4]
-5. [Stack Overflow | Javascript variable declarations at the head of a function][5]
+1. [Adequately Good Decent Programming Advice: JavaScript Scoping and Hoisting][1]
+2. [Nettuts: Quick Tip: JavaScript Hoisting Explained][2]
+3. [Stack Overflow: Surprised that global variable has undefined value in JavaScript][3]
+4. [Stack Overflow: Javascript function scoping and hoisting][4]
+5. [Stack Overflow: Javascript variable declarations at the head of a function][5]
 
 [1]: http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
 [2]: http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-javascript-hoisting-explained/

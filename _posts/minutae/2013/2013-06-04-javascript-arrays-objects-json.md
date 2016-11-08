@@ -42,7 +42,7 @@ leaving any browser native implementation intact.
 
 ---
 
-1. [Mozilla Developer Network | JSON][1]
+1. [Mozilla Developer Network: JSON][1]
 2. [`JSON.stringify` method][2]
 3. [`JSON.parse` method][3]
 4. [Serializing to JSON in jQuery][7]

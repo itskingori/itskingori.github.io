@@ -51,6 +51,6 @@ Hence, you just gotta use .length or .size().
 
 ---
 
-1. [Stack Overflow | Why does $('#id') return true if id doesn't exist?][1]
+1. [Stack Overflow: Why does $('#id') return true if id doesn't exist?][1]
 
 [1]: http://stackoverflow.com/questions/2076988/why-does-id-return-true-if-id-doesnt-exist

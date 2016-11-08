@@ -41,8 +41,8 @@ mysql> select count(*) from messages use index (index_messages_on_remote_created
 ---
 
 1. [Fast MySQL InnoDB count. Really fast][link1]
-2. [MySQL Performance Blog | COUNT(*) for Innodb Tables][link2]
-3. [MySQL 5.1 Reference Manual | Counting Rows][link3]
+2. [MySQL Performance Blog: COUNT(*) for Innodb Tables][link2]
+3. [MySQL 5.1 Reference Manual: Counting Rows][link3]
 4. COUNT doesn't count NULL values, so if you are counting values _by a field_ that has NULL values, those rows won't be counted by COUNT.
 
 [link1]: http://www.cloudspace.com/blog/2009/08/06/fast-mysql-innodb-count-really-fast/
