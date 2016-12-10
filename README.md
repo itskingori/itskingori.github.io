@@ -1,14 +1,16 @@
-[Personal site][1], initially on [Stacey][2] [for a while][4] but now ported to
-[Jekyll][5].
+[Personal site][1], initially on [Stacey][2] [for a while][4] but now ported to [Jekyll][5].
 
-Install dependencies by running `bundle install`.
+To install dependencies run:
 
-Build assets using `ruby _build/preprocess_assets.rb`
+```
+$ bundle install
+```
 
-Run locally: `bundle exec jekyll serve --watch --safe --trace`
+To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll with Bundler. Run:
 
-To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll
-with Bundler. Use the command `bundle exec jekyll serve --watch --safe --trace`.
+```
+$ bundle exec jekyll serve --watch --safe --trace`
+```
 
 [1]: http://kingori.co
 [2]: http://staceyapp.com/
