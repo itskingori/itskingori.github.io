@@ -12,7 +12,7 @@ To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll
 with Bundler. Run:
 
 ```bash
-$ bundle exec jekyll serve --watch --safe --trace
+$ bundle exec jekyll serve --watch --safe --trace --incremental
 ```
 
 To run tests i.e. check if we can successfully build via jekyll build and run
