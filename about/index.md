@@ -8,7 +8,7 @@ sitemap: true
 ![job-kingori-maina](http://static.kingori.co/images/cover-image@2x.jpg "Job King'ori Maina")
 
 I'm **{{site.author.fullname}}** (Job King'ori Maina), a Kenyan, and I often go under
-the alias _itsmrwave_ online. I use these aliases to chat and share useful links
+the alias _"itsmrwave"_ online. I use these aliases to chat and share useful links
 [on Twitter][twitter] and ... to put up or contribute to code [on
 GitHub][github].
 
@@ -20,8 +20,9 @@ can.
 I also love God, _**deeply**_ & I'm constantly trying to be a man of character
 ... in a world of compromise.
 
-Correspondence can be done via [j@kingori.co][email]. I live in [Cape Town,
-South Africa][4] ... ping me if you're ever in the area and would fancy a face-to-face meet.
+Correspondence can be done via [j@kingori.co][email] or
+[{{site.author.twitter}}][twitter]. I live in [Cape Town, South Africa][4]
+... ping me if you're ever in the area and would fancy a face-to-face meet.
 
 For additional privacy: [my PGP public key][6].
 
