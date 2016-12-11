@@ -1,5 +1,6 @@
 ---
 title: "The Tenth Man Rule"
+link: http://www.quora.com/World-War-Z-2013-movie/Do-the-Israelis-really-have-a-10th-man-doctrine
 category: articles
 layout: post
 ---
@@ -14,8 +15,8 @@ In [World War Z][1] ...
 
 > ~ [timesofisrael.com][2]
 
-According to [Eytan Buchman][5], IDF spokesperson on [a Quora discussion on the
-10th man doctrine][5] ...
+According to [Eytan Buchman][4], IDF spokesperson on [a Quora discussion on the
+10th man doctrine][4] ...
 
 > The Israeli military does indeed have a similar doctrine but it is not called
 > the 10th man doctrine.
@@ -47,10 +48,8 @@ According to [Eytan Buchman][5], IDF spokesperson on [a Quora discussion on the
    used to head the Research Division of the IDF. Search for _"The devil’s
    advocate office ensures that AMAN’s intelligence assessments are creative
    and do not fall prey to group think."_
-3. Quora - [Do the Israelis really have a 10th man doctrine?][4]
 
 [1]: http://www.imdb.com/title/tt0816711/
 [2]: http://www.timesofisrael.com/in-turkey-world-war-z-is-no-world-war-zion/
 [3]: http://www.brookings.edu/~/media/research/files/papers/2007/10/intelligence%20kuperwasser/10_intelligence_kuperwasser.pdf
-[4]: http://www.quora.com/World-War-Z-2013-movie/Do-the-Israelis-really-have-a-10th-man-doctrine
-[5]: http://www.quora.com/Eytan-Buchman
+[4]: http://www.quora.com/Eytan-Buchman
