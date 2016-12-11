@@ -1,6 +1,6 @@
 ---
 title: Thesis Tips
-category: articles
+category: blog
 layout: post
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "M.O. ★"
-category: articles
+category: blog
 layout: post
 ---
 

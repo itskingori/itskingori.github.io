@@ -1,6 +1,6 @@
 ---
 title: "Bucket List"
-category: articles
+category: blog
 layout: post
 ---
 
@@ -53,7 +53,7 @@ And in no particular order:
 2. [Check it out on Wikipedia][6] as well
 3. See [bucket list edit history here][8]
 
-[1]: /articles/2013/08/my-bucket-list/
+[1]: /blog/2013/08/my-bucket-list/
 [2]: http://bible.us/111/pro.31.10-31.niv
 [3]: /articles/2013/08/how-to-get-smarter/
 [4]: https://www.bible.com/bible/111/gen.1.niv
@@ -64,4 +64,4 @@ And in no particular order:
 [9]: /articles/2013/04/the-worlds-brilliants/
 [10]: /articles/2013/04/making-wealth/
 [11]: /articles/2013/06/start-teaching/
-[12]: /articles/2013/10/readlist/
+[12]: /blog/2013/10/readlist/
