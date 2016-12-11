@@ -34,6 +34,8 @@ layout: default
       <div class="p-nav">
         {% if page.category == 'articles' %}
           <a href="/articles/archive/">Back to article archive ↑</a>
+        {% elsif page.category == 'blog' %}
+          <a href="/blog/archive/">Back to blog archive ↑</a>
         {% elsif page.category == 'minutae' %}
           <a href="/minutae/archive/">Back to minutae archive ↑</a>
         {% endif %}
