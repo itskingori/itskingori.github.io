@@ -46,7 +46,7 @@ values are an empty string (negative response), _"maybe"_ and _"probably"_. >
 The empty string is falsy, in other words: `Modernizr.audio.ogg == ''` and > `''
 == false`
 
-``` javascript
+```javascript
 var audio = new Audio();
 audio.src = Modernizr.audio.ogg ? 'background.ogg' :
             Modernizr.audio.mp3 ? 'background.mp3' :

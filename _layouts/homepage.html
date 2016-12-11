@@ -20,7 +20,14 @@
         <div class="small-11 small-centered medium-8 medium-centered large-8 large-centered column clearfix">
           <div id="homepage-entrance" class="text-center">{{ content }}</div>
           <br>
-          <div id="homepage-projects" class="text-center">
+          <div id="homepage-lists" class="text-center">
+            <h2>Communities</h2>
+            <ul class="no-bullet">
+              {% for community in site.data.communities %}
+                <li><a href="{{ community.url }}">{{ community.name }}</a></li>
+              {% endfor %}
+            </ul>
+
             <h2>Projects</h2>
             <ul class="no-bullet">
               {% for project in site.data.projects %}

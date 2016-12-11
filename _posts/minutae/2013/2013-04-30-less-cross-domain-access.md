@@ -8,14 +8,20 @@ layout: post
 
 If you have a static file server on S3 ... this loads fine:
 
-``` css
-<link rel="stylesheet" href="http://static.example.com/css/screen.less" type="text/css" media="screen, projection, print">
+```html
+<link rel="stylesheet"
+      href="http://static.example.com/css/screen.less"
+      type="text/css"
+      media="screen, projection, print">
 ```
 
 This ... does not load.
 
-``` css
-<link rel="stylesheet/less" href="http://static.example.com/css/screen.less" type="text/css" media="screen, projection, print">
+```html
+<link rel="stylesheet/less"
+      href="http://static.example.com/css/screen.less"
+      type="text/css"
+      media="screen, projection, print">
 ```
 
 ### Reason
@@ -47,18 +53,18 @@ support][link2] ... enable cross domain using a CORs policy just like the one
 below ... (for GET requests, see official documentation for more examples and
 details).
 
-``` xml
+```xml
 <CORSConfiguration>
-    <CORSRule>
-        <AllowedOrigin>http://domain1.com</AllowedOrigin>
-        <AllowedOrigin>http://domain2</AllowedOrigin>
-        <AllowedMethod>GET</AllowedMethod>
-        <AllowedHeader>*</AllowedHeader>
-        <MaxAgeSeconds>3000</MaxAgeSeconds>
-        <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
-        <ExposeHeader>x-amz-request-id</ExposeHeader>
-        <ExposeHeader>x-amz-id-2</ExposeHeader>
-    </CORSRule>
+  <CORSRule>
+    <AllowedOrigin>http://domain1.com</AllowedOrigin>
+    <AllowedOrigin>http://domain2</AllowedOrigin>
+    <AllowedMethod>GET</AllowedMethod>
+    <AllowedHeader>*</AllowedHeader>
+    <MaxAgeSeconds>3000</MaxAgeSeconds>
+    <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
+    <ExposeHeader>x-amz-request-id</ExposeHeader>
+    <ExposeHeader>x-amz-id-2</ExposeHeader>
+  </CORSRule>
 </CORSConfiguration>
 ```
 

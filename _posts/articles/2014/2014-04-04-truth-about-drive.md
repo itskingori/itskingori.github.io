@@ -33,7 +33,7 @@ Read the [entire unedited transcript of Dan Pink's talk][1] here courtesy of
 2. [Drive: The Surprising Truth About What Motivates Us][4] by [Daniel H. Pink][2].
 
 
-[1]: http://static.kingori.co/content/article/2014/04/rsa_lecture_dan_pink_transcript.pdf
+[1]: /files/content/article/2014/04/rsa_lecture_dan_pink_transcript.pdf
 [2]: http://www.danpink.com/
 [3]: http://www.thersa.org/events
 [4]: http://amzn.to/1m9OU8u

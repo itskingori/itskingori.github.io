@@ -34,7 +34,6 @@ File.open(app_css_file, 'w') { |f| f.write environment['application.css'].to_s }
 File.open(app_js_file,  'w') { |f| f.write environment['application.js'].to_s }
 
 # See; https://gist.github.com/itsmrwave/9954229
-
 ```
 
 Then push to GitHub. Comment, discuss or view this script [here][1].

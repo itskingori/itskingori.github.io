@@ -42,13 +42,13 @@ $ rvm --default use ruby-2.1.2
 To list available Ruby versions, run:
 
 ```bash
-rvm list known
+$ rvm list known
 ```
 
 For example to change to Ruby version 2.0.0-p481, run:
 
 ```bash
-rvm install ruby-2.0.0-p481
+$ rvm install ruby-2.0.0-p481
 ```
 
 ### Gems & RubyGems

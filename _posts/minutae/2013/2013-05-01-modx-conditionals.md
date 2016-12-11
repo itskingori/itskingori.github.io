@@ -11,7 +11,7 @@ An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
 performance because of the order of parsing;
 
-```
+```text
 [[*field:is=`0`:then=`[[!SomeScript]]`:else=`[[$SomeChunk]]`]]
 ```
 
@@ -29,7 +29,7 @@ The brilliantly simple way to avoid this problem? Just return what's between the
 MODX tags and have the result of your conditional build what is going to be
 parsed next by MODX.
 
-```
+```text
 [[[[*field:is=`0`:then=`!SomeScript`:else=`$SomeChunk`]]]]
 ```
 

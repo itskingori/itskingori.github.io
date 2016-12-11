@@ -1,4 +1,4 @@
-name: "King'ori J. Maina"
+name: "King'ori Maina"
 highlighter: rouge
 permalink: /:categories/:year/:month/:title/
 
@@ -7,7 +7,7 @@ sass:
   style: :compressed
 
 author:
-  fullname: "King'ori J. Maina"
+  fullname: "King'ori Maina"
   email: "j@kingori.co"
   jsfiddle: "itsmrwave"
   jsfiddle_url: "http://jsfiddle.net/user/itsmrwave/"
@@ -22,7 +22,7 @@ author:
   twitter: "@itsmrwave"
   twitter_url: "https://twitter.com/itsmrwave"
 
-exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'kingori.co.sublime-project', 'README.md']
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'kingori.co.sublime-project', 'README.md', 'Rakefile', 'vendor/']
 
 relative_permalinks: false
 

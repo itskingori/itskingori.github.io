@@ -9,7 +9,7 @@ layout: post
 > The JSON object contains methods for parsing JSON and converting values to
 > JSON.
 
-``` javascript
+```javascript
 assert(JSON.stringify({}) === '{}');
 assert(JSON.stringify(true) === 'true');
 assert(JSON.stringify("foo") === '"foo"');
@@ -22,7 +22,7 @@ JSON.stringify({x: 5, y: 6}); // '{"x":5,"y":6}' or '{"y":6,"x":5}'
 > including only certain properties or replacing property values in a user-
 > defined manner.
 
-``` javascript
+```javascript
 JSON.parse('{}'); // {}
 JSON.parse('true'); // true
 JSON.parse('"foo"'); // "foo"

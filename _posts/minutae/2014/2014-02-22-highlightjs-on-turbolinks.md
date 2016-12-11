@@ -9,7 +9,7 @@ Seems like [highlight.js][1] relies on the conventional on the `ready()` event
 (or something close to that) to trigger ... which is obviously broken by
 [Turbolinks][2].
 
-``` javascript
+```javascript
 $(document).on('page:change',  function() {
   hljs.initHighlightingOnLoad();
 });
@@ -20,7 +20,7 @@ $(document).on('page:restore', function() {
 
 Instead do this ...
 
-``` javascript
+```javascript
 $(document).on('page:change',  function() {
   $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 });

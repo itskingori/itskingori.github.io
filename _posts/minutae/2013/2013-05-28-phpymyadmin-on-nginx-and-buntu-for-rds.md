@@ -10,7 +10,7 @@ An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
 performance because of the order of parsing;
 
-``` bash
+```bash
 $ apt-get install phpmyadmin
 ```
 
@@ -35,50 +35,49 @@ be able to access RDS.
 
 Modify `/etc/config.inc.php`. It should look something like this.
 
-``` php
+```php
 /* Configure according to dbconfig-common if enabled */
 if (!empty($dbname)) {
+  /* Authentication type */
+  $cfg['Servers'][$i]['auth_type'] = 'config';
+  $cfg['Servers'][$i]['user'] = 'YOUR_USERNAME';
+  $cfg['Servers'][$i]['password'] = 'YOUR_PASSWORD';
+  $cfg['Servers'][$i]['hide_db'] = '(mysql|information_schema|phpmyadmin)';
 
-    /* Authentication type */
-    $cfg['Servers'][$i]['auth_type'] = 'config';
-    $cfg['Servers'][$i]['user'] = 'YOUR_USERNAME';
-    $cfg['Servers'][$i]['password'] = 'YOUR_PASSWORD';
-    $cfg['Servers'][$i]['hide_db'] = '(mysql|information_schema|phpmyadmin)';
+  /* Server parameters */
+  if (empty($dbserver)) $dbserver = 'localhost';
+  $cfg['Servers'][$i]['host'] = $dbserver;
 
-    /* Server parameters */
-    if (empty($dbserver)) $dbserver = 'localhost';
-    $cfg['Servers'][$i]['host'] = $dbserver;
+  if (!empty($dbport)) {
+      $cfg['Servers'][$i]['connect_type'] = 'tcp';
+      $cfg['Servers'][$i]['port'] = $dbport;
+  }
+  //$cfg['Servers'][$i]['compress'] = false;
 
-    if (!empty($dbport)) {
-        $cfg['Servers'][$i]['connect_type'] = 'tcp';
-        $cfg['Servers'][$i]['port'] = $dbport;
-    }
-    //$cfg['Servers'][$i]['compress'] = false;
+  /* Select mysqli if your server has it */
+  $cfg['Servers'][$i]['extension'] = 'mysqli';
 
-    /* Select mysqli if your server has it */
-    $cfg['Servers'][$i]['extension'] = 'mysqli';
+  /* Optional: User for advanced features */
+  //$cfg['Servers'][$i]['controluser'] = $dbuser;
+  //$cfg['Servers'][$i]['controlpass'] = $dbpass;
 
-    /* Optional: User for advanced features */
-    //$cfg['Servers'][$i]['controluser'] = $dbuser;
-    //$cfg['Servers'][$i]['controlpass'] = $dbpass;
+  /* Optional: Advanced phpMyAdmin features */
+  $cfg['Servers'][$i]['pmadb'] = $dbname;
+  $cfg['Servers'][$i]['bookmarktable'] = 'pma_bookmark';
+  $cfg['Servers'][$i]['relation'] = 'pma_relation';
+  $cfg['Servers'][$i]['table_info'] = 'pma_table_info';
+  $cfg['Servers'][$i]['table_coords'] = 'pma_table_coords';
+  $cfg['Servers'][$i]['pdf_pages'] = 'pma_pdf_pages';
+  $cfg['Servers'][$i]['column_info'] = 'pma_column_info';
+  $cfg['Servers'][$i]['history'] = 'pma_history';
+  $cfg['Servers'][$i]['designer_coords'] = 'pma_designer_coords';
 
-    /* Optional: Advanced phpMyAdmin features */
-    $cfg['Servers'][$i]['pmadb'] = $dbname;
-    $cfg['Servers'][$i]['bookmarktable'] = 'pma_bookmark';
-    $cfg['Servers'][$i]['relation'] = 'pma_relation';
-    $cfg['Servers'][$i]['table_info'] = 'pma_table_info';
-    $cfg['Servers'][$i]['table_coords'] = 'pma_table_coords';
-    $cfg['Servers'][$i]['pdf_pages'] = 'pma_pdf_pages';
-    $cfg['Servers'][$i]['column_info'] = 'pma_column_info';
-    $cfg['Servers'][$i]['history'] = 'pma_history';
-    $cfg['Servers'][$i]['designer_coords'] = 'pma_designer_coords';
+  /* Uncomment the following to enable logging in to passwordless accounts,
+   * after taking note of the associated security risks. */
+  // $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
 
-    /* Uncomment the following to enable logging in to passwordless accounts,
-     * after taking note of the associated security risks. */
-    // $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
-
-    /* Advance to next server for rest of config */
-    $i++;
+  /* Advance to next server for rest of config */
+  $i++;
 }
 
 $cfg['Servers'][$i]['auth_type'] = 'HTTP';
@@ -90,31 +89,31 @@ $cfg['Servers'][$i]['host'] = 'EXAMPLE.JUMBLE.us-east-1.rds.amazonaws.com';
 
 Add serverblock to Nginx config.
 
-```
+```nginx
 server {
-    listen 80;
-    server_name YOUR.DOMAIN.DOT;
-    index index.php;
-    root /usr/share/phpmyadmin;
+  listen 80;
+  server_name YOUR.DOMAIN.DOT;
+  index index.php;
+  root /usr/share/phpmyadmin;
 
-    location / {
-        try_files $uri $uri/ @phpmyadmin;
-    }
+  location / {
+    try_files $uri $uri/ @phpmyadmin;
+  }
 
-    location @phpmyadmin {
-        fastcgi_pass unix:/var/run/php5-fpm.sock;
-        fastcgi_param SCRIPT_FILENAME /usr/share/phpmyadmin/index.php;
-        include /etc/nginx/fastcgi_params;
-        fastcgi_param SCRIPT_NAME /index.php;
-    }
+  location @phpmyadmin {
+    fastcgi_pass unix:/var/run/php5-fpm.sock;
+    fastcgi_param SCRIPT_FILENAME /usr/share/phpmyadmin/index.php;
+    include /etc/nginx/fastcgi_params;
+    fastcgi_param SCRIPT_NAME /index.php;
+  }
 
-    location ~ \.php$ {
-        try_files $uri @phpmyadmin;
-        fastcgi_pass unix:/var/run/php5-fpm.sock;
-        fastcgi_index  index.php;
-        fastcgi_param  SCRIPT_FILENAME  /usr/share/phpmyadmin$fastcgi_script_name;
-        include        fastcgi_params;
-    }
+  location ~ \.php$ {
+    try_files $uri @phpmyadmin;
+    fastcgi_pass unix:/var/run/php5-fpm.sock;
+    fastcgi_index  index.php;
+    fastcgi_param  SCRIPT_FILENAME  /usr/share/phpmyadmin$fastcgi_script_name;
+    include        fastcgi_params;
+  }
 }
 ```
 

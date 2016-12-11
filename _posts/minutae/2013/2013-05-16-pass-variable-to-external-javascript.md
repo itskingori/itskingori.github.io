@@ -18,13 +18,13 @@ layout: post
 
 In the HTML document ... somewhere.
 
-``` javascript
+```javascript
 window.YourVariableName = 'Value';
 ```
 
 Access it in the script ...
 
-``` javascript
+```javascript
 var handle = window.YourVariableName || null;
 ```
 

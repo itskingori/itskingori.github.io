@@ -52,5 +52,5 @@ Just, _[EMBRACE THE REMIX][6]_
 [4]: http://vimeo.com/36881035
 [5]: http://vimeo.com/kirbyferguson/videos
 [6]: http://www.youtube.com/watch?v=zd-dqUuvLk4
-[poster]: http://static.kingori.co/content/article/2013/05/good-vs-bad-theft.jpeg
+[poster]: /files/content/article/2013/05/good-vs-bad-theft.jpeg
 

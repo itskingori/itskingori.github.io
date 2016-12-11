@@ -1,12 +1,26 @@
-[Personal site][1], initially on [Stacey][2] [for a while][4] but now ported to
-[Jekyll][5].
+[![Build Status](https://travis-ci.org/itsmrwave/itsmrwave.github.io.svg?branch=master)](https://travis-ci.org/itsmrwave/itsmrwave.github.io)
 
-Build assets using `ruby _build/preprocess_assets.rb`
+[Personal site][1], initially on [Stacey][2] [for a while][4] but now ported to [Jekyll][5].
 
-Run locally: `jekyll serve --watch --safe --trace`
+To install dependencies run:
+
+```bash
+$ bundle install
+```
 
 To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll
-with Bundler. Use the command `bundle exec jekyll serve --watch --safe --trace`.
+with Bundler. Run:
+
+```bash
+$ bundle exec jekyll serve --watch --safe --trace`
+```
+
+To run tests i.e. check if we can successfully build via jekyll build and run
+HTML::Proofer do this:
+
+```bash
+$ bundle exec rake test
+```
 
 [1]: http://kingori.co
 [2]: http://staceyapp.com/

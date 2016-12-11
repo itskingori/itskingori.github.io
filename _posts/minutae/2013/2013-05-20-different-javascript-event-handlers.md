@@ -10,9 +10,9 @@ layout: post
 > Bind attaches an event handler only to the elements that match a particular
 > selector. This, expectedly, excludes any dynamically generated elements.
 
-``` javascript
+```javascript
 $("#items li").click(function() {
-    $(this).parent().append("<li>New Element</li>");
+  $(this).parent().append("<li>New Element</li>");
 });
 ```
 
@@ -22,9 +22,9 @@ $("#items li").click(function() {
 > work well with chaining. Don't expect to chain live() after calls like
 > children().next()...etc.
 
-``` javascript
+```javascript
 $("li").live("click", function() {
-    $(this).parent().append("<li>New Element</li>");
+  $(this).parent().append("<li>New Element</li>");
 });
 ```
 
@@ -35,9 +35,9 @@ $("li").live("click", function() {
 > It also doesn't suffer from the chaining issues that live does. There are many
 > performance benefits to using this method over live().
 
-``` javascript
+```javascript
 $('#items').delegate('li', 'click', function() {
-    $(this).parent().append('<li>New Element</li>');
+  $(this).parent().append('<li>New Element</li>');
 });
 ```
 
@@ -46,8 +46,8 @@ $('#items').delegate('li', 'click', function() {
 > the context, not the document - which is the default context. The code below
 > is equivalent to the delegate() version shown above.
 
-``` javascript
+```javascript
 $("li", $("#items")[0]).live("click", function() {
-    $(this).parent().append("<li>New Element</li>");
+  $(this).parent().append("<li>New Element</li>");
 });
 ```

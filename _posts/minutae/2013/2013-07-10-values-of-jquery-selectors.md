@@ -11,7 +11,7 @@ Always wondered why jQuery returns true if you are trying to find elements by a
 selector that doesn't exist in the DOM structure. Like this example using an id-
 selector:
 
-``` html
+```html
 <div id="one">one</div>
 
 <script>
@@ -27,7 +27,7 @@ null (like the native `document.getElementById` does).
 
 Consequentially, as an example, this logic can't be done in jQuery:
 
-``` javascript
+```javascript
 var div = $('#two') || $('<div id="two"></div>');
 ```
 
@@ -39,7 +39,7 @@ Almost all jQuery functions return a jQuery object as a wrapper around the DOM
 elements in question, so you can use dot notation. This behaviour was chosen
 because otherwise jQuery would regularly throw errors.
 
-``` javascript
+```javascript
 $("#balloon").css({"color":"red"});
 ```
 
@@ -47,7 +47,7 @@ Now imagine `$("#balloon")` returned null. That means that
 `$("#balloon").css({"color":"red"});` would throw an error, rather than silently
 doing nothing as you would normally want.
 
-Hence, you just gotta use .length or .size().
+Hence, you just gotta use `.length` or `.size()`.
 
 ---
 

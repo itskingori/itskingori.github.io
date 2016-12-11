@@ -15,39 +15,39 @@ panel.
 Install [Homebrew][homebrew] which will be used to install libs/components as
 well as manage the dependencies for us.
 
-``` bash
+```bash
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
 Install [ImageMagick][imagemagick].
 
-``` bash
+```bash
 $ brew install imagemagick
 ```
 
 Installing a PHP53 compatible version of [Imagick][imagick] ... first let
 Homebrew search the formula for you
 
-``` bash
+```bash
 $ brew search php53-imagick
 ```
 
 ... OR ...
 
-``` bash
+```bash
 $ brew search imagick
 ```
 
 The above searches should return something like 'josegonzalez/php/php53-imagick'
 ... use this for the next step:
 
-``` bash
+```bash
 $ brew install josegonzalez/php/php53-imagick
 ```
 
 If you get "No formula & taping" errors ...
 
-``` bash
+```text
 Error: No available formula for XYZ
 Please tap it and then try again: brew tap XYZ
 ```
@@ -61,29 +61,29 @@ simple editor window will popup where you can edit the ini file. A search for
 the term 'extension=', will lead you to a block with various lines of
 'extension=...'. Now simply ad the following one and save the file:
 
-``` bash
-extension="/usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so"
+```bash
+$ extension="/usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so"
 ```
 
 Copy libfreetype to MAMP lib (freetype version in path may vary)
 
-``` bash
-cp /usr/local/Cellar/freetype/2.4.11/lib/libfreetype.6.dylib /Applications/MAMP/Library/lib/
+```bash
+$ cp /usr/local/Cellar/freetype/2.4.11/lib/libfreetype.6.dylib /Applications/MAMP/Library/lib/
 ```
 
 Fix library version incompatibilities by open the file
 `/Applications/MAMP/Library/bin/envvars` in the editor, and comment out the
 following lines:
 
-``` bash
-cDYLD_LIBRARY_PATH="/Applications/MAMP/Library/lib:$DYLD_LIBRARY_PATH"
-export DYLD_LIBRARY_PATH
+```bash
+$ cDYLD_LIBRARY_PATH="/Applications/MAMP/Library/lib:$DYLD_LIBRARY_PATH"
+$ export DYLD_LIBRARY_PATH
 ```
 
 Restart MAMP and check the phpinfo tab: a search for the term `imagick` should
 bring you to a section reading like so:
 
-``` bash
+```text
 imagick module version                    3.1.0RC2
 imagick classes                           Imagick, ImagickDraw, ImagickPixel, ImagickPixelIterator
 ImageMagick version                       ImageMagick 6.7.7-6 2012-09-18 Q16 http://www.imagemagick.org
@@ -99,15 +99,15 @@ _Ps: Original post - see footnote #4, has extra's on enabling tiff support_
 After installing Imagemagick using Homebrew on Lion, everything is fine except
 that it doesn't work at all when being called from php.
 
-``` php
+```php
 exec ('/usr/local/bin/convert') // works, but
 exec ('which convert') // doesn't
 ```
 
 Turns out, for php to work convert should be in /usr/bin/ so this solved it:
 
-``` bash
-ln -s /usr/local/bin/convert /usr/bin/convert
+```bash
+$ ln -s /usr/local/bin/convert /usr/bin/convert
 ```
 
 #### Update <sup>25th/12/2013</sup> :
