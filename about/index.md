@@ -5,7 +5,7 @@ permalink: /about/
 sitemap: true
 ---
 
-![job-kingori-maina](http://static.kingori.co/images/cover-image@2x.jpg "Job King'ori Maina")
+![job-kingori-maina](/assets/images/cover-image@2x.jpg "Job King'ori Maina")
 
 I'm **{{site.author.fullname}}** (Job King'ori Maina), a Kenyan, and I often go under
 the alias _"itsmrwave"_ online. I use these aliases to chat and share useful links
@@ -36,5 +36,4 @@ For additional privacy: [my PGP public key][6].
 [2]: /articles/2013/09/riding-lions/
 [3]: https://www.google.co.ke/maps/preview#!q=nairobi%2C+kenya
 [4]: http://goo.gl/zUs5dg
-[5]: /research/
 [6]: http://static.kingori.co/files/pgp_key/6E1D9B22_public.asc
