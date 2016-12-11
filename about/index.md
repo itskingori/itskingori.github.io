@@ -13,9 +13,9 @@ the alias _"itsmrwave"_ online. I use these aliases to chat and share useful lin
 GitHub][github].
 
 This is an attempt at creating a portfolio of sorts and occassionally
-['Publishing What I Learn'][1] under thoughts/articles -
-[here][articles_archive] & code minutae - [here][minutae_archive] ... when I
-can.
+['Publishing What I Learn'][1] under articles/thoughts -
+[here][articles_archive], blog - [here][blog_archive] and code minutae -
+[here][minutae_archive] ... whenever I can.
 
 I also love God, _**deeply**_ & I'm constantly trying to be a man of character
 ... in a world of compromise.
@@ -30,6 +30,7 @@ For additional privacy: [my PGP public key][6].
 [github]: {{site.author.github_url}}
 [googleplus]: {{site.author.googleplus_url}}
 [articles_archive]: /articles/archive/
+[blog_archive]: /blog/archive/
 [minutae_archive]: /minutae/archive/
 [email]: mailto:j@kingori.co?Subject=Hey%20There
 [1]: /articles/2013/06/publish-what-you-learn/

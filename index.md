@@ -5,7 +5,7 @@ permalink: /
 sitemap: true
 ---
 
-I'm [{{site.author.fullname}}][about], a [DevOps][engineering-devops] and [Software][engineering-software] engineer at [ZappiStore][zappistore]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find my [blog][blog_archive] and archive of [articles/thoughts][articles_archive] and [code minutae][minutae_archive].
+I'm [{{site.author.fullname}}][about], a [DevOps][engineering-devops] and [Software][engineering-software] engineer at [ZappiStore][zappistore]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find my [blog][blog_archive] and archive of smart [articles/thoughts][articles_archive] and personal [code minutae][minutae_archive].
 
 [engineering-software]: https://en.wikipedia.org/wiki/Software_engineering
 [engineering-devops]: https://en.wikipedia.org/wiki/DevOps
