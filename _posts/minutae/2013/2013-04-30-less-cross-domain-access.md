@@ -8,7 +8,7 @@ layout: post
 
 If you have a static file server on S3 ... this loads fine:
 
-```css
+```html
 <link rel="stylesheet"
       href="http://static.example.com/css/screen.less"
       type="text/css"
@@ -17,7 +17,7 @@ If you have a static file server on S3 ... this loads fine:
 
 This ... does not load.
 
-```css
+```html
 <link rel="stylesheet/less"
       href="http://static.example.com/css/screen.less"
       type="text/css"
