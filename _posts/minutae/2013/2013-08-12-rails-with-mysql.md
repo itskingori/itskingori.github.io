@@ -9,7 +9,7 @@ to preconfigure for selected database namely: mysql, oracle, postgresql,
 sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql,
 jdbc
 
-```
+```text
 Usage:
     rails new APP_PATH [options]
 
@@ -20,70 +20,70 @@ Options:
 So we could use `$rails new projectname -d mysql` the specify the port in the
 database config file, `config/database.yml`.
 
-``` yaml
+```yaml
 development:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_development**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    port: 3306
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_development**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  port: 3306
 
 test:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_test**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    port: 3306
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_test**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  port: 3306
 
 production:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_production**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    port: 3306
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_production**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  port: 3306
 ```
 
 If you are using MAMP, you can use the sockets instead;
 
-``` yaml
+```yaml
 development:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_development**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_development**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 test:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_test**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_test**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 production:
-    adapter: mysql2
-    encoding: utf8
-    database: **YOURDBNAME_production**
-    pool: 5
-    username: **YOUR_USERNAME**
-    password: **YOUR_PASSWORD**
-    host: localhost
-    socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
+  adapter: mysql2
+  encoding: utf8
+  database: **YOURDBNAME_production**
+  pool: 5
+  username: **YOUR_USERNAME**
+  password: **YOUR_PASSWORD**
+  host: localhost
+  socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 ```
 
 Check out [this other post][3] that has details on installation of Rails on OS X

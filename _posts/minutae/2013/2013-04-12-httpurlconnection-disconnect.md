@@ -30,64 +30,57 @@ In simpler terms ...
 
 Example;
 
-``` java
+```java
 //Initialize variables
 InputStream responseInputStream = null;
 HttpURLConnection conn = null;
 int responseCode = -1;
 
 try {
+  // Create a connection
+  URL url = new URL(targetURL);
+  conn = (HttpURLConnection) url.openConnection();
 
-    // Create a connection
-    URL url = new URL(targetURL);
-    conn = (HttpURLConnection) url.openConnection();
+  // SET FANCY DETAILS HERE
 
-    // SET FANCY DETAILS HERE
+  // Starts the connection
+  conn.connect();
 
-    // Starts the connection
-    conn.connect();
+  // Get the response code
+  responseCode = conn.getResponseCode();
 
-    // Get the response code
-    responseCode = conn.getResponseCode();
-
-    // Check the response code, if the HTTP response code is 4nn
-    // (Client Error) or 5nn (Server Error), then you may want to
-    // read the HttpURLConnection#getErrorStream() to see if the
-    // server has sent any useful error information.
-    if (responseCode < 400) {
-
-        // Get the response InputStream if all is well
-        responseInputStream = conn.getInputStream();
-    }
-    else if (responseCode >= 400) {
-
-        // Get the response ErrorStream if we got an error instead
-        responseInputStream = conn.getErrorStream();
-    }
+  // Check the response code, if the HTTP response code is 4nn
+  // (Client Error) or 5nn (Server Error), then you may want to
+  // read the HttpURLConnection#getErrorStream() to see if the
+  // server has sent any useful error information.
+  if (responseCode < 400) {
+    // Get the response InputStream if all is well
+    responseInputStream = conn.getInputStream();
+  }
+  else if (responseCode >= 400) {
+    // Get the response ErrorStream if we got an error instead
+    responseInputStream = conn.getErrorStream();
+  }
 }
+
 catch (IOException e) {
-
-    // YOU CAN DO WHATEVER HERE
-
-    e.printStackTrace();
+  // YOU CAN DO WHATEVER HERE
+  e.printStackTrace();
 }
+
 finally {
-
-    // Makes sure that the InputStream is closed after
-    // we are done with it
-    if (responseInputStream != null) {
-
-        try {
-
-            responseInputStream.close();
-        }
-        catch (IOException e) {
-
-            // YOU CAN DO WHATEVER HERE
-
-            e.printStackTrace();
-        }
+  // Makes sure that the InputStream is closed after
+  // we are done with it
+  if (responseInputStream != null) {
+    try {
+      responseInputStream.close();
     }
+
+    catch (IOException e) {
+      // YOU CAN DO WHATEVER HERE
+      e.printStackTrace();
+    }
+  }
 }
 ```
 

@@ -15,7 +15,7 @@ build][3] to manage and install your Ruby development environments.
 Install both using [Homebrew][6]. Once done, add a line to your
 `~/.bash_profile` and reload your terminal profile.
 
-``` bash
+```bash
 $ brew install rbenv ruby-build
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
@@ -28,7 +28,7 @@ development environment if you need to work in a particular Ruby version.
 Install the latest stable of Ruby ([check the Ruby website][5]). To see a list
 of all available versions to install use `rbenv install --list`.
 
-``` bash
+```bash
 $ rbenv install 2.0.0-p247
 $ rbenv rehash
 ```
@@ -36,7 +36,7 @@ $ rbenv rehash
 To set this version as the one to use globally so that you can make use of it in
 your terminal, do this:
 
-``` bash
+```bash
 $ rbenv global 2.0.0-p247
 ```
 
@@ -61,7 +61,7 @@ setting the `BENV_VERSION` environment variable in your shell. This version
 overrides application-specific versions and the global version. If you're
 paranoid you can always check your Ruby version with `ruby --version`.
 
-``` bash
+```bash
 $ rbenv shell 2.0.0-p247
 $ gem install bundler
 $ rbenv rehash
@@ -70,7 +70,7 @@ $ rbenv rehash
 To configure Bundler to install gems in a location relative to your projects
 instead of globally, in this case the vendor folder of a Rails project, do this:
 
-``` bash
+```bash
 $ mkdir ~/.bundle
 $ touch ~/.bundle/config
 $ echo 'BUNDLE_PATH: vendor/bundle' >> ~/.bundle/config
@@ -81,7 +81,7 @@ $ echo 'BUNDLE_PATH: vendor/bundle' >> ~/.bundle/config
 If you use Google for finding your Gem documentation you might consider saving a
 bit of time when installing gems by skipping the documentation.
 
-``` bash
+```bash
 $ echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 ```
 
@@ -98,7 +98,7 @@ your gems for each version as they are not shared._
 
 Check out the [Rails website][10] for the whole story on Rails.
 
-``` bash
+```bash
 $ gem install rails
 $ rbenv rehash
 ```
@@ -111,19 +111,19 @@ see loads of other gems being installed at the same time.
 
 Most people prefer MySQL as their DB of choice.
 
-``` bash
+```bash
 $ gem install mysql2
 ```
 
 To connect:
 
-``` bash
+```bash
 $ mysql -u root
 ```
 
 A few things that you should know:
 
-``` bash
+```bash
 # To have launchd start mysql at login:
 $ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
@@ -149,7 +149,7 @@ the mysql2 gem install)._
 
 ### Your First Rails Project
 
-``` bash
+```bash
 $ rails new helloworld
 $ cd helloworld
 ```
@@ -163,7 +163,7 @@ don't have it installed.
 Then run Bundler to install all the project gems into vendor/bundle, they are
 kept with the project locally and won't interfere with anything else outside.
 
-``` bash
+```bash
 $ rbenv local 2.0.0-p247
 $ bundle install
 ```
@@ -174,7 +174,7 @@ and run the command again to re-install them. It's also worth updating your
 
 Now to test if the application is working:
 
-``` bash
+```bash
 $ rails server
 ```
 

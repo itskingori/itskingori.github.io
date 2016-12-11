@@ -12,15 +12,15 @@ layout: post
 > you’ll need to use the Terminal to set the preference. Terminal is in
 > `Applications Utilities`. Open Terminal and type:
 
-``` bash
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
+```bash
+$ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 ```
 
 If you decide this isn’t what you’re looking for, to restore inline attachment
 viewing type:
 
-``` bash
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool false
+```bash
+$ defaults write com.apple.mail DisableInlineAttachmentViewing -bool false
 ```
 
 Restart Mail and you’re back to normal.

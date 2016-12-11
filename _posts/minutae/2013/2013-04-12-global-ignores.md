@@ -10,7 +10,7 @@ awkward was that the project's `.gitignore` file paid no attention to OS-
 generated or editor-generated files. So I happily contributed those exclusions
 to the project's `.gitignore` so we ended up with [this][commit3] ...
 
-```
+```text
 # Editor Files #
 *.komodoproject
 
@@ -38,8 +38,8 @@ Git has a global configuration that applies rules to all of your projects.
 
 On linux for example:
 
-```
-git config --global core.excludesfile ~/.global_ignore
+```bash
+$ git config --global core.excludesfile ~/.global_ignore
 ```
 
 On Windows (if using GitHub. for Windows) the `.gitconfig` file lives in the
@@ -48,7 +48,7 @@ location of the `.gitconfig` file is `C:\Users\YOU\.gitconfig`. To set up a
 global gitconfig, I use a directory `C:\Users\YOU\config\` containing a file
 called `global_ignore`, and in `.gitconfig` I would add;
 
-```
+```ini
 [user]
     name = King'ori Maina
     email = j@kingori.co
@@ -59,7 +59,7 @@ called `global_ignore`, and in `.gitconfig` I would add;
 
 And finally in the `global_ignore` file we have something like;
 
-``` text
+```text
 ## Editor Files ##
 *.sublime-project
 *.sublime-workspace

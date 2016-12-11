@@ -8,17 +8,16 @@ layout: post
 
 Global variable has undefined in certain case.
 
-``` javascript
+```javascript
 var value = 10;
 
 function test() {
+  //A
+  console.log(value);
 
-    //A
-    console.log(value);
-
-    //B
-    var value = 20;
-    console.log(value);
+  //B
+  var value = 20;
+  console.log(value);
 }
 
 test();
@@ -26,7 +25,7 @@ test();
 
 Gives output as.
 
-``` javascript
+```javascript
 undefined
 20
 ```
@@ -38,16 +37,15 @@ you accessing the global variable in your function; you're only ever
 accessing the local value variable. Your code is equivalent to the
 following:
 
-``` javascript
+```javascript
 var value = 10;
 
 function test() {
+  var value;
+  console.log(value);
 
-    var value;
-    console.log(value);
-
-    var value = 20;
-    console.log(value);
+  var value = 20;
+  console.log(value);
 }
 
 test();
@@ -65,35 +63,33 @@ test();
 > the beginning of the function (not inner-most code block), while the
 > definitions are left on the same place.
 
-``` javascript
+```javascript
 (function() {
+  var a = 'a';
+  // lines of code
 
-    var a = 'a';
-    // lines of code
+  var b = 'b';
+  // more lines of code
 
-    var b = 'b';
-    // more lines of code
-
-    var c= 'c'; // antipattern
-    // final lines of scripting
+  var c= 'c'; // antipattern
+  // final lines of scripting
 })();
 ```
 
 Will be rewritten by the interpreter as;
 
-``` javascript
+```javascript
 (function() {
+  var a, b, c; // variables declared
 
-    var a, b, c; // variables declared
+  a = 'a';
+  // lines of code
 
-    a = 'a';
-    // lines of code
+  b = 'b'; // initialized
+  // more lines of code
 
-    b = 'b'; // initialized
-    // more lines of code
-
-    c= 'c'; // initialized
-    // final lines of scripting
+  c= 'c'; // initialized
+  // final lines of scripting
 })();
 ```
 
@@ -115,33 +111,33 @@ Will be rewritten by the interpreter as;
 Function hoisting means that functions are moved to the top of their scope. That
 is;
 
-``` javascript
+```javascript
 function b() {
-    a = 10;
-    return;
-    function a() {}
+  a = 10;
+  return;
+  function a() {}
 }
 ```
 
 Will be rewritten by the interpreter as;
 
-``` javascript
+```javascript
 function b() {
-    function a() {}
-    a = 10;
-    return;
+  function a() {}
+  a = 10;
+  return;
 }
 ```
 
 Also;
 
-``` javascript
+```javascript
 function a() {}
 ```
 
 behaves the same as;
 
-``` javascript
+```javascript
 var a = function () {};
 ```
 
