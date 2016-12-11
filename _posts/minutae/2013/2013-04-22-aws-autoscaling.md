@@ -424,7 +424,7 @@ terminated.
 21. [Understanding autoscaled instances][link33]
 
 [aws]: https://aws.amazon.com/
-[awsconsole]: aws.amazon.com/console/
+[awsconsole]: https://aws.amazon.com/console/
 [awsdevelopertools]: http://aws.amazon.com/developertools
 [ubuntuec2guide]: https://help.ubuntu.com/community/EC2StartersGuide
 
