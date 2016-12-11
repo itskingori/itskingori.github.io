@@ -22,7 +22,7 @@ author:
   twitter: "@itsmrwave"
   twitter_url: "https://twitter.com/itsmrwave"
 
-exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'kingori.co.sublime-project', 'README.md']
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'kingori.co.sublime-project', 'README.md', 'Rakefile']
 
 relative_permalinks: false
 
