@@ -13,7 +13,7 @@
     <uri>http://kingori.co/</uri>
   </author>
   <id>kingori.co:{{ page.url }}</id>
-  <rights>Copyright (c) 2013-2014, Job King'ori Maina; all rights reserved.</rights>
+  <rights>Copyright © 2013-{{ 'now' | date: "%Y" }}, Job King'ori Maina; all rights reserved.</rights>
 
   {% for post in site.categories[{{page.category}}] %}
   <entry>
