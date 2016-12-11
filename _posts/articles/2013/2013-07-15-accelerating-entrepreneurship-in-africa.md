@@ -146,7 +146,7 @@ having a significant impact on the cost of doing business.
     * The Way Forward
 3. Found this report from [@whiteafrican][3]'s blog. [Find post here][4].
 
-[1]: http://static.kingori.co/content/article/2013/07/ON_Africa_Report_April_2013_Final.pdf
+[1]: /files/content/article/2013/07/ON_Africa_Report_April_2013_Final.pdf
 [2]: http://www.omidyar.com/
 [3]: https://twitter.com/whiteafrican
 [4]: http://whiteafrican.com/2013/07/12/report-accelerating-entrepreneurship-in-africa/

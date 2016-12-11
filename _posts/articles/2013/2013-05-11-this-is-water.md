@@ -37,5 +37,5 @@ here][6].
 [3]: http://en.wikipedia.org/wiki/This_Is_Water#cite_note-Bissell-1
 [4]: http://en.wikipedia.org/wiki/This_Is_Water#cite_note-2
 [5]: http://en.wikipedia.org/wiki/This_Is_Water
-[6]: http://static.kingori.co/content/article/2013/05/transcript_2005_kenyon_commencement_address.pdf
+[6]: /files/content/article/2013/05/transcript_2005_kenyon_commencement_address.pdf
 [7]: http://web.ics.purdue.edu/~drkelly/DFWKenyonAddress2005.pdf

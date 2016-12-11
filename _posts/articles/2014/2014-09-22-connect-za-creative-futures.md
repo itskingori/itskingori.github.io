@@ -4,7 +4,7 @@ category: articles
 layout: post
 ---
 
-![creative_futures_connect_za](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za.jpg)
+![creative_futures_connect_za](/files/content/article/2014/09/creative_futures_connect_za.jpg)
 
 I was fortunate enough to be part of the [Connect ZA Creative
 Futures][creativefuturesza] which brought 16 of the hottest digital, design,
@@ -20,7 +20,7 @@ Festival][fakugesi].
 
 ### J'Burg Visual Tour
 
-![creative_futures_connect_za_lebogang_rasethaba_tour](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_lebogang_rasethaba_tour.jpg)
+![creative_futures_connect_za_lebogang_rasethaba_tour](/files/content/article/2014/09/creative_futures_connect_za_lebogang_rasethaba_tour.jpg)
 
 We were given a visual experience tour of Johannesburg led by Future Sounds of
 Mzansi filmmaker Lebogang Rasethaba ([@LebooRabaji][26]). It was a great
@@ -33,7 +33,7 @@ way its people move through and interact with it as a space. For example, the
 
 Took part in industry and open public events ...
 
-![creative_futures_connect_za_business_digital](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_business_digital.jpg)
+![creative_futures_connect_za_business_digital](/files/content/article/2014/09/creative_futures_connect_za_business_digital.jpg)
 
 #### Business in the Digital Age
 
@@ -64,7 +64,7 @@ business models.
 We even brainstormed in groups to solve common business challenges by sharing
 our experiences, ideas and worldviews about the marketplace.
 
-![creative_futures_connect_za_participants](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_participants.jpg)
+![creative_futures_connect_za_participants](/files/content/article/2014/09/creative_futures_connect_za_participants.jpg)
 
 
 ### Food Jam
@@ -76,7 +76,7 @@ the fun! We, the participants, were paired up, and each team was given a portion
 of the meal to prepare and invited to follow the recipe and if ingredients ran
 out we were encouraged to improvise.
 
-![creative_futures_connect_za_food_jam](http://static.kingori.co/content/article/2014/09/creative_futures_connect_za_food_jam.jpg)
+![creative_futures_connect_za_food_jam](/files/content/article/2014/09/creative_futures_connect_za_food_jam.jpg)
 
 
 This obviously doesn't capture the entire experience but at least it gives you a
