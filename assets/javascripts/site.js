@@ -30,7 +30,7 @@ Chameleon.changeColor = function() {
 // +++ SYNTAX HIGHLIGHTER
 var SyntaxHighlighter = {};
 SyntaxHighlighter.init = function() {
-  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+  $('div.p-content > div.highlighter-rouge').each(function(i, e) {hljs.highlightBlock(e)});
 }
 
 // +++ NProgress
