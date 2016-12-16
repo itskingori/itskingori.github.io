@@ -51,7 +51,6 @@ And in no particular order:
 
 1. [The Bucket List (2007) - IMDb][5]
 2. [Check it out on Wikipedia][6] as well
-3. See [bucket list edit history here][8]
 
 [1]: /blog/2013/08/my-bucket-list/
 [2]: http://bible.us/111/pro.31.10-31.niv
@@ -60,7 +59,6 @@ And in no particular order:
 [5]: http://www.imdb.com/title/tt0825232/
 [6]: http://en.wikipedia.org/wiki/The_Bucket_List
 [7]: http://www.ted.com/
-[8]: https://github.com/itsmrwave/kingori.co/commits/master/content/articles/1.2013/5.08/6.my-bucket-list/article.yml
 [9]: /articles/2013/04/the-worlds-brilliants/
 [10]: /articles/2013/04/making-wealth/
 [11]: /articles/2013/06/start-teaching/
