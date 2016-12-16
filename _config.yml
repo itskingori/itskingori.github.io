@@ -10,14 +10,6 @@ sass:
 author:
   fullname: "King'ori Maina"
   email: "j@kingori.co"
-  github: "itsmrwave"
-  github_url: "https://github.com/itsmrwave"
-  instagram: "itsmrwave"
-  instagram_url: "https://instagram.com/itsmrwave"
-  linkedin: "jobkingori"
-  linkedin_url: "https://ke.linkedin.com/in/jobkingori"
-  twitter: "@itsmrwave"
-  twitter_url: "https://twitter.com/itsmrwave"
 
 exclude: [
   'CNAME',

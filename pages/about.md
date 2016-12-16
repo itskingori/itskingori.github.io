@@ -26,8 +26,8 @@ Correspondence can be done via [j@kingori.co][email] or
 
 For additional privacy: [my PGP public key][6].
 
-[twitter]: {{site.author.twitter_url}}
-[github]: {{site.author.github_url}}
+[twitter]: {{site.data.profiles.twitter.url}}
+[github]: {{site.data.profiles.github.url}}
 [articles_archive]: /articles/archive/
 [blog_archive]: /blog/archive/
 [minutae_archive]: /minutae/archive/

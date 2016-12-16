@@ -12,10 +12,10 @@ I'm [{{site.author.fullname}}][about], a [DevOps][engineering-devops] and [Softw
 [zappistore]: http://zappistore.com
 [email]: mailto:j@kingori.co?Subject=Hey%20There
 
-[twitter]: {{site.author.twitter_url}}
-[github]: {{site.author.github_url}}
-[instagram]: {{site.author.instagram_url}}
-[linkedin]: {{site.author.linkedin_url}}
+[twitter]: {{site.data.profiles.twitter.url}}
+[github]: {{site.data.profiles.github.url}}
+[instagram]: {{site.data.profiles.instagram.url}}
+[linkedin]: {{site.data.profiles.linkedin.url}}
 
 [about]: /about/
 [articles_archive]: /articles/archive/
