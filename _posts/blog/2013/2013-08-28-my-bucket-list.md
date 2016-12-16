@@ -62,4 +62,4 @@ And in no particular order:
 [9]: /articles/2013/04/the-worlds-brilliants/
 [10]: /articles/2013/04/making-wealth/
 [11]: /articles/2013/06/start-teaching/
-[12]: /blog/2013/10/readlist/
+[12]: /about/reading-list

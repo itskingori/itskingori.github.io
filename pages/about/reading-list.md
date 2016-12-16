@@ -1,7 +1,8 @@
 ---
-title: "Readlist"
-category: blog
-layout: post
+layout: page
+title: Reading List
+permalink: /about/reading-list
+sitemap: true
 ---
 
 > Learning something insightful is harder, you have to read something
