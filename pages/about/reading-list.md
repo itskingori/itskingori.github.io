@@ -19,13 +19,11 @@ sitemap: true
 
 [2016-book-1]: https://duckduckgo.com/?q=the+5+love+languages%3a+the+secret+to+love+that+lasts+by+gary+d.+chapman
 
-
 ### 2014
 
 1. [God's Not Dead: Evidence for God in an Age of Uncertainty][2014-book-1] (Rice Broocks)
 
 [2014-book-1]: https://duckduckgo.com/?q=god's+not+dead%3a+evidence+for+god+in+an+age+of+uncertainty+rice+broocks&ia=products
-
 
 ### 2013
 
