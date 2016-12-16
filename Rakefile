@@ -5,5 +5,8 @@ task :test do
   system "bundle exec jekyll build"
 
   puts "\n## HTML Proofing the generated site"
-  HTMLProofer.check_directory('./_site', alt_ignore: [/.*/], disable_external: true).run
+  HTMLProofer.check_directory('./_site',
+    alt_ignore: [/.*/],
+    disable_external: true,
+    assume_extension: true).run
 end
