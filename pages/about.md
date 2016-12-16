@@ -7,9 +7,9 @@ sitemap: true
 
 ![job-kingori-maina](/assets/images/cover-image@2x.jpg "Job King'ori Maina")
 
-I'm **{{site.author.fullname}}** (Job King'ori Maina), a Kenyan, and I often go under
-the alias _"itsmrwave"_ online. I use these aliases to chat and share useful links
-[on Twitter][twitter] and ... to put up or contribute to code [on
+I'm **{{site.data.me.fullname}}** (Job King'ori Maina), a Kenyan, and I often go
+under the alias _"itsmrwave"_ online. I use these aliases to chat and share
+useful links [on Twitter][twitter] and ... to put up or contribute to code [on
 GitHub][github].
 
 This is an attempt at creating a portfolio of sorts and occassionally

@@ -7,10 +7,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-author:
-  fullname: "King'ori Maina"
-  email: "j@kingori.co"
-
 exclude: [
   'CNAME',
   'Gemfile',

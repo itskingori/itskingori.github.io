@@ -8,7 +8,7 @@
   <logo>http://kingori.co/assets/images/logo-dark-24@2x.png</logo>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author>
-    <name>{{ site.author.fullname }}</name>
+    <name>{{ site.data.me.fullname }}</name>
     <email>{{ site.author.email }}</email>
     <uri>http://kingori.co/</uri>
   </author>
@@ -24,7 +24,7 @@
     <category term="{{page.category}}"/>
     <content type="html">{{ post.content | xml_escape }}{% include footer_atom.html %}</content>
     <author>
-      <name>{{ site.author.fullname }}</name>
+      <name>{{ site.data.me.fullname }}</name>
       <email>{{ site.author.email }}</email>
       <uri>http://kingori.co/</uri>
     </author>
