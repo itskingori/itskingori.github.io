@@ -20,64 +20,12 @@ exclude: [
 markdown: kramdown
 kramdown:
   input: GFM
-
-  # Prefix used for automatically generated header IDs.
-  #
-  # This option can be used to set a prefix for the automatically generated
-  # header IDs so that there is no conflict when rendering multiple kramdown
-  # documents into one output file separately. The prefix should only contain
-  # characters that are valid in an ID!
   auto_id_prefix: ''
-
-  # Strip all formatting from header text for automatic ID generation.
-  #
-  # If this option is true, only the text elements of a header are used for
-  # generating the ID later (in contrast to just using the raw header text
-  # line). This option will be removed in version 2.0 because this will be the
-  # default then.
   auto_id_stripping: true
-
-  # Use automatic header ID generation.
-  #
-  # If this option is true, ID values for all headers are automatically
-  # generated if no ID is explicitly specified.
   auto_ids: true
-
-  # Defines how entities are output.
-  #
-  # The possible values are :as_input (entities are output in the same form as
-  # found in the input), :numeric (entities are output in numeric form),
-  # :symbolic (entities are output in symbolic form if possible) or :as_char
-  # (entities are output as characters if possible, only available on Ruby 1.9).
   entity_output: as_char
-
-  # Defines the text that should be used for the footnote backlinks.
-  #
-  # The footnote backlink is just text, so any special HTML characters will be
-  # escaped. If the footnote backlint text is an empty string, no footnote
-  # backlinks will be generated.
   footnote_backlink: '&8617;'
-
-  # The number of the first footnote
-  #
-  # This option can be used to specify the number that is used for the first
-  # footnote.
   footnote_nr: 1
-
-  # Interprets line breaks literally.
-  #
-  # Insert HTML <br /> tags inside paragraphs where the original Markdown
-  # document had newlines (by default, Markdown ignores these newlines).
   hard_wrap: false
-
-  # Defines the HTML entity names or code points for smart quote output
-  #
-  # The entities identified by entity name or code point that should be used
-  # for, in order, a left single quote, a right single quote, a left double and
-  # a right double quote are specified by separating them with commas.
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-
-  # Defines the levels that are used for the table of contents
-  #
-  # The individual levels can be specified by separating them with commas (e.g. 1,2,3) or by using the range syntax (e.g. 1..3). Only the specified levels are used for the table of contents.
   toc_levels: 1..6
