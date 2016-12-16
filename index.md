@@ -14,7 +14,6 @@ I'm [{{site.author.fullname}}][about], a [DevOps][engineering-devops] and [Softw
 
 [twitter]: {{site.author.twitter_url}}
 [github]: {{site.author.github_url}}
-[googleplus]: {{site.author.googleplus_url}}
 [instagram]: {{site.author.instagram_url}}
 [linkedin]: {{site.author.linkedin_url}}
 

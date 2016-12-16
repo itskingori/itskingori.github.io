@@ -28,7 +28,6 @@ For additional privacy: [my PGP public key][6].
 
 [twitter]: {{site.author.twitter_url}}
 [github]: {{site.author.github_url}}
-[googleplus]: {{site.author.googleplus_url}}
 [articles_archive]: /articles/archive/
 [blog_archive]: /blog/archive/
 [minutae_archive]: /minutae/archive/
