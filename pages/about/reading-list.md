@@ -20,7 +20,7 @@ sitemap: true
 
 ### 2014
 
-1. [God's Not Dead: Evidence for God in an Age of Uncertainty][2014-book-1] (Gary D. Chapman)
+1. [God's Not Dead: Evidence for God in an Age of Uncertainty][2014-book-1] (Rice Broocks)
 
 [2014-book-1]: https://duckduckgo.com/?q=God's+Not+Dead%3A+Evidence+for+God+in+an+Age+of+Uncertainty+Rice+Broocks&ia=products
 
