@@ -9,6 +9,8 @@ sitemap: true
 > clearly above your current level. You need to find writers who are more
 > knowledgeable on a particular subject than yourself. It's also [how you
 > get smarter](/articles/2013/08/how-to-get-smarter/).
+>
+> ~ [Farnam Street][1]
 
 
 ### 2016
@@ -80,3 +82,5 @@ sitemap: true
    other personal transitions.
 8. 16th December 2016 I renewed my commitment to pick up a habit to reading
    books without giving excuses (refer to excuses 1-7). We'll see how it goes.
+
+[1]: http://www.farnamstreetblog.com/2013/05/the-buffett-formula-how-to-get-smarter/
