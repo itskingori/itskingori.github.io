@@ -1,6 +1,7 @@
 name: "King'ori Maina"
 highlighter: rouge
 permalink: /:categories/:year/:month/:title/
+relative_permalinks: false
 
 sass:
   sass_dir: _sass
@@ -22,13 +23,19 @@ author:
   twitter: "@itsmrwave"
   twitter_url: "https://twitter.com/itsmrwave"
 
-exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'kingori.co.sublime-project', 'README.md', 'Rakefile', 'vendor/']
-
-relative_permalinks: false
+exclude: [
+  'CNAME',
+  'Gemfile',
+  'Gemfile.lock',
+  'kingori.co.sublime-project',
+  'README.md',
+  'Rakefile',
+  'vendor/'
+]
 
 markdown: kramdown
 kramdown:
-  input:          GFM
+  input: GFM
 
   # Prefix used for automatically generated header IDs.
   #
@@ -58,7 +65,7 @@ kramdown:
   # found in the input), :numeric (entities are output in numeric form),
   # :symbolic (entities are output in symbolic form if possible) or :as_char
   # (entities are output as characters if possible, only available on Ruby 1.9).
-  entity_output:  as_char
+  entity_output: as_char
 
   # Defines the text that should be used for the footnote backlinks.
   #
