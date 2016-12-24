@@ -43,6 +43,14 @@ sitemap: true
 
 [2012-book-1]: https://duckduckgo.com/?q=it's+our+turn+to+eat%3a+the+story+of+a+kenyan+whistle-blower+michela+wrong&ia=products
 
+### 2010
+
+1. [Dreams from My Father: A Story of Race and Inheritance][2010-book-1] (Barack Obama)
+2. [Michelle: A Biography][2010-book-2] (Liza Mundy)
+
+[2010-book-1]: https://duckduckgo.com/?q=dreams+of+my+father+by+barack+obama&ia=products
+[2010-book-2]: https://duckduckgo.com/?q=michelle+a+biography+by+liza+mundy&ia=products
+
 ### 2006
 
 1. [Jesus Freaks: Stories of Those Who Stood For Jesus, The Ultimate Jesus Freaks][2006-book-1] (D.C. Talk)
