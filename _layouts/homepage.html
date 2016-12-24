@@ -24,21 +24,21 @@
             <h2>Communities</h2>
             <ul class="no-bullet">
               {% for community in site.data.communities %}
-                <li><a href="{{ community.url }}">{{ community.name }}</a></li>
+                <li><a target="_blank" href="{{ community.url }}">{{ community.name }}</a></li>
               {% endfor %}
             </ul>
 
             <h2>Projects</h2>
             <ul class="no-bullet">
               {% for personal_project in site.data.projects.personal %}
-                <li><a href="{{ personal_project.url }}">{{ personal_project.title }}</a></li>
+                <li><a target="_blank" href="{{ personal_project.url }}">{{ personal_project.title }}</a></li>
               {% endfor %}
             </ul>
 
             <h2>Open Source</h2>
             <ul class="no-bullet">
               {% for open_souce_project in site.data.projects.open_source %}
-                <li><a href="{{ open_souce_project.url }}">{{ open_souce_project.title }}</a></li>
+                <li><a target="_blank" href="{{ open_souce_project.url }}">{{ open_souce_project.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
