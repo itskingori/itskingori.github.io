@@ -54,7 +54,7 @@ called `global_ignore`, and in `.gitconfig` I would add;
     email = j@kingori.co
 
 [core]
-    excludesfile = C:/Users/itsmrwave/configs/global_ignore
+    excludesfile = C:/Users/itskingori/configs/global_ignore
 ```
 
 And finally in the `global_ignore` file we have something like;
@@ -109,8 +109,8 @@ suits you.
    Windows](http://www.lemoda.net/git/github-gitignore-windows/index.html)
 4. [Global gitignores](http://augustl.com/blog/2009/global_gitignores/)
 
-[commit1]: https://github.com/itsmrwave/oauth2-server-php/commit/640498926f2ebe8499c14184b89d613acf60ae59  "Update README with more info on grant types"
-[commit2]: https://github.com/itsmrwave/oauth2-server-php/commit/31fc8c2a2f9dcf1d3a0a58736c7b6d7cd88bb74a  "Place the realm & scope values in ..."
-[commit3]: https://github.com/itsmrwave/oauth2-server-php/commit/f26798ce7007c19671e7fed5bfe42d5c63240639  "Ignore editor, OS and test files"
+[commit1]: https://github.com/itskingori/oauth2-server-php/commit/640498926f2ebe8499c14184b89d613acf60ae59  "Update README with more info on grant types"
+[commit2]: https://github.com/itskingori/oauth2-server-php/commit/31fc8c2a2f9dcf1d3a0a58736c7b6d7cd88bb74a  "Place the realm & scope values in ..."
+[commit3]: https://github.com/itskingori/oauth2-server-php/commit/f26798ce7007c19671e7fed5bfe42d5c63240639  "Ignore editor, OS and test files"
 [oauth2-server-php]: https://github.com/bshaffer/oauth2-server-php  "bshaffer/oauth2-server-php"
-[my-global-ignore]: https://github.com/itsmrwave/configs/blob/master/gitignore/global_ignore  "itsmrwave/configs/gitignore/global_ignore"
+[my-global-ignore]: https://github.com/itskingori/configs/blob/master/gitignore/global_ignore  "itskingori/configs/gitignore/global_ignore"
