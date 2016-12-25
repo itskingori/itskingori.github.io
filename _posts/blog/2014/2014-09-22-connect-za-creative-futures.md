@@ -95,7 +95,7 @@ people**_.
   3. [Food Jams][11] creator, Jade de Waal (ZA) — [@FoodJams][5]
   4. DJ Spoko (ZA) — [@ghostship8][6]
   5. [Creative Nestlings][10] co-founder, Dillion Phiri (ZA) — [@dillionsphiri][9]
-  6. Researcher and programmer, [King'ori Maina][12] (KE) — [@itsmrwave][13]
+  6. Researcher and programmer, [King'ori Maina][12] (KE) — [@itskingori][13]
   7. Visual artist, Jody Paulsen (ZA)
   8. Keleketla! Library co-founder, [Malose Malahlela][8] (ZA) — [@kadromatt][7]
   9. [Hesey Designs][14] fashion entrepreneur, Eseoghene Odiete (Nigera) — [@HeseyInspired][15]
@@ -129,7 +129,7 @@ people**_.
 [10]: http://creativenestlings.com
 [11]: http://foodjams.co.za/
 [12]: http://kingori.co/
-[13]: https://twitter.com/itsmrwave
+[13]: https://twitter.com/itskingori
 [14]: http://www.heseydesigns.com/
 [15]: https://twitter.com/HeseyInspired
 [16]: http://seventhirtyfilms.com/
