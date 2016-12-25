@@ -62,11 +62,11 @@ On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 2. [M.O. ★][2] on [my Github page][9]
 
 [1]: http://en.wikipedia.org/wiki/Modus_operandi
-[2]: https://github.com/itsmrwave/mo
-[3]: https://github.com/itsmrwave/mo#guidelines
-[4]: https://github.com/itsmrwave/mo/blob/master/best-practice/README.md
-[5]: https://github.com/itsmrwave/mo/blob/master/code-review/README.md
-[6]: https://github.com/itsmrwave/mo/blob/master/convention/README.md
-[7]: https://github.com/itsmrwave/mo/blob/master/style/README.md
-[8]: https://github.com/itsmrwave/mo#the-top-layer
-[9]: https://github.com/itsmrwave/
+[2]: https://github.com/itskingori/mo
+[3]: https://github.com/itskingori/mo#guidelines
+[4]: https://github.com/itskingori/mo/blob/master/best-practice/README.md
+[5]: https://github.com/itskingori/mo/blob/master/code-review/README.md
+[6]: https://github.com/itskingori/mo/blob/master/convention/README.md
+[7]: https://github.com/itskingori/mo/blob/master/style/README.md
+[8]: https://github.com/itskingori/mo#the-top-layer
+[9]: https://github.com/itskingori/

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/itsmrwave/itsmrwave.github.io.svg?branch=master)](https://travis-ci.org/itsmrwave/itsmrwave.github.io)
+[![Build Status](https://travis-ci.org/itskingori/itskingori.github.io.svg?branch=master)](https://travis-ci.org/itskingori/itskingori.github.io)
 
 [Personal site][1], initially on [Stacey][2] [for a while][4] but now ported to [Jekyll][5].
 
@@ -25,5 +25,5 @@ $ bundle exec rake test
 [1]: http://kingori.co
 [2]: http://staceyapp.com/
 [3]: http://feeds.feedburner.com/kingorico
-[4]: https://github.com/itsmrwave/kingori.co/tree/on-stacey
+[4]: https://github.com/itskingori/kingori.co/tree/on-stacey
 [5]: http://jekyllrb.com/
