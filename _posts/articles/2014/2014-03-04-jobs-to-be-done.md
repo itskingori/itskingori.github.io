@@ -23,8 +23,8 @@ layout: post
 > "job to be done.' And it turns out that it's really effective in allowing a
 > "company to build products that people want to buy."
 
-> [...] there's an important difference between determining a product's function and
-> its job. "Looking at the market from the function of a product really
+> [...] there's an important difference between determining a product's function
+> and its job. "Looking at the market from the function of a product really
 > originates from your competitors or your own employees deciding what you
 > need," he says. "Whereas the jobs-to-be-done point of view causes you to crawl
 > into the skin of your customer and go with her as she goes about her day,

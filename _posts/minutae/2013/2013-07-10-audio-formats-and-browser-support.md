@@ -60,7 +60,8 @@ particular format.
 ---
 
 1. [W3Schools: HTML5 Audio][1]
-2. [Mozilla Developer Network: Media formats supported by the HTML audio and video elements][2]
+2. [Mozilla Developer Network: Media formats supported by the HTML audio and
+   video elements][2]
 3. [Wikipedia: HTML5 Audio][4]
 4. [Modernizr: HTML5 Features][5]
 

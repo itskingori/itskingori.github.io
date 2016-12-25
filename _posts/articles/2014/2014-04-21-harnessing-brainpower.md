@@ -35,8 +35,8 @@ layout: post
 > not follow that kind of intellectual rigour".
 
 ---
-1. ["How Amazon applied the Wall Street mindset to Hi-Tech"][1] by
-Charles Miller
+1. ["How Amazon applied the Wall Street mindset to Hi-Tech"][1] by Charles
+   Miller
 
 
 [1]: http://www.bbc.com/news/business-27055407

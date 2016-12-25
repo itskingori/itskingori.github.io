@@ -14,9 +14,11 @@ and exciting and revolutionary and you can probably get a career in it.
 > 3. Anything invented after you’re thirty-five is against the natural order of
 things
 
-~ [The Salmon of Doubt: Hitchhiking the Galaxy One Last Time][2] by [Douglas Adams][3]
+~ [The Salmon of Doubt: Hitchhiking the Galaxy One Last Time][2] by [Douglas
+Adams][3]
 
 ---
+
 1. From [the book's Wikipedia page][1], _"The Salmon of Doubt: Hitchhiking the
 Galaxy One Last Time is a posthumous collection of previously published and
 unpublished material by [Douglas Adams][3]. It consists largely of essays about

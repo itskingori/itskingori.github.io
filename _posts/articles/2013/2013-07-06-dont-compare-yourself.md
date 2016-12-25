@@ -8,6 +8,8 @@ layout: post
 > While jealously can be a motivator for some people, it’s a trait that never
 > leads to positive outcome. Things to try to compare yourself to:
 
-> * You, 3 months ago. How are you doing since then? What can you improve? What got worse?
+> * You, 3 months ago. How are you doing since then? What can you improve? What
+> got worse?
 
-> * A favorite character or religous story. How would they handle your situation? What can you learn from them?
+> * A favorite character or religous story. How would they handle your
+> situation? What can you learn from them?

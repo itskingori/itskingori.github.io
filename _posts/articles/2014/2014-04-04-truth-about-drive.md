@@ -22,7 +22,12 @@ layout: post
 
 
 <div class="flex-video widescreen">
-  <iframe width="510" height="287" src="//www.youtube.com/embed/u6XAPnuFjJc?rel=0&autoplay=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    width="510" height="287"
+    src="//www.youtube.com/embed/u6XAPnuFjJc?rel=0&autoplay=0&showinfo=0&autohide=1"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
 </div>
 
 Read the [entire unedited transcript of Dan Pink's talk][1] here courtesy of

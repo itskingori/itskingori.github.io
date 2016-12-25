@@ -30,6 +30,7 @@ var handle = window.YourVariableName || null;
 
 ---
 
-1. [In Javascript, is it possible to pass a variable into script “src” parameter?][1]
+1. [In Javascript, is it possible to pass a variable into script “src”
+   parameter?][1]
 
 [1]: http://stackoverflow.com/questions/4493319/in-javascript-is-it-possible-to-pass-a-variable-into-script-src-parameter?answertab=votes#tab-top

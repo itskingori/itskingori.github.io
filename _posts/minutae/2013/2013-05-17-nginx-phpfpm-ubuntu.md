@@ -47,6 +47,7 @@ do._
 
 ---
 
-1. [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu 12.10][1]
+1. [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu
+   12.10][1]
 
 [1]: http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-lemp-on-ubuntu-12.10

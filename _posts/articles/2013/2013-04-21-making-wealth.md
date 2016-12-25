@@ -361,13 +361,21 @@ you have some users to measure, you're optimizing based on guesses.
 ---
 
 1. [More Essays][paulgrahamessays] by [Paul Graham][paulgraham]
-2. The original excerpt was from a book he wrote called ['Hackers &amp; Painters'][hackerspainters], you can get if [from Amazon here][hackersfromamazon]
-3. Just to be clear, I did not write this article ... for your reference, I've linked back severally to the original article/essay, including the header ...
+2. The original excerpt was from a book he wrote called ['Hackers &amp;
+   Painters'][hackerspainters], you can get if [from Amazon
+   here][hackersfromamazon]
+3. Just to be clear, I did not write this article ... for your reference, I've
+   linked back severally to the original article/essay, including the header ...
 4. If you think this was long, wait till you see [the original][howtomakewealth]
-5. Anything in quoteblocks is the same as what is in the original article - other than the emphasis (i.e. _Italics_)
-6. You could comment on the original article [reddit.com/info?id=20775][howtomakewealthcomments] as per the author suggests, but the link on reddit seems to be down.
-7. I'd encourage you to still [read the original][howtomakewealth] or better yet, [buy the book][hackersfromamazon], if you can
-8. Also check out the [author's footnotes in the original article][howtomakewealthfootnotes] ... they are worth a look
+5. Anything in quoteblocks is the same as what is in the original article -
+   other than the emphasis (i.e. _Italics_)
+6. You could comment on the original article
+   [reddit.com/info?id=20775][howtomakewealthcomments] as per the author
+   suggests, but the link on reddit seems to be down.
+7. I'd encourage you to still [read the original][howtomakewealth] or better
+   yet, [buy the book][hackersfromamazon], if you can
+8. Also check out the [author's footnotes in the original
+   article][howtomakewealthfootnotes] ... they are worth a look
 
 [hackersfromamazon]: http://amzn.to/ZaSZhz
 [hackerspainters]: http://www.paulgraham.com/hackpaint.html

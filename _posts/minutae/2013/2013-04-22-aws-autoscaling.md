@@ -14,7 +14,8 @@ The first obvious assumption is that you are running Ubuntu. Running [Ubuntu
 Cloud Guest][link31] on [Amazon Web Services][aws] requires you to go through
 the following steps;
 
-1. Create your account on Amazon (if you do not already have one) and setup your credentials - [Getting Started With Aws][link26]
+1. Create your account on Amazon (if you do not already have one) and setup your
+   credentials - [Getting Started With Aws][link26]
 2. [Install Amazon EC2 API Tools][ubuntuec2guide]
 3. Instantiate your [images(s)][link28]
 4. Configure your [instance][link27]
@@ -402,7 +403,8 @@ terminated.
 ---
 
 1. [AWS Developer Tools][awsdevelopertools]
-2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from Amazon Downloads][link1]
+2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from
+   Amazon Downloads][link1]
 3. [EC2StartersGuide][ubuntuec2guide]
 4. [Autoscaling with EC2][link2]
 5. [Installing AWS Command Line Tools from Amazon Downloads][link6]
@@ -415,7 +417,8 @@ terminated.
 12. [Autoscaling Documentation - Amazon AWS][link15]
 13. [Amazon EC2 Instance Types][link16]
 14. [Setting Up the Amazon EC2 Command Line Tools][link17]
-15. [Autoscaling Documentation: Set the AWS_CREDENTIAL_FILE environment variable][link18]
+15. [Autoscaling Documentation: Set the AWS_CREDENTIAL_FILE environment
+    variable][link18]
 16. [Register EC2 Instances to more than one Elastic Load Balancer][link19]
 17. [Amazon AutoScaling Documentation: Scaling Based On Demand][link23]
 18. [Amazon AutoScaling Documentation: Cooldown Period][link24]

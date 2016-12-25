@@ -89,7 +89,6 @@ $ gem install rails
 $ rails -v
 ```
 
-
 ---
 1. [RailsApps by Daniel Kehoe][1]
 2. [RVM, Ruby Version Manager][2]

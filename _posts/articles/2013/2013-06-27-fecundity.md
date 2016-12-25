@@ -12,13 +12,23 @@ layout: post
 
 > What culture hacks does Amazon use that you might be able to learn from?
 
-> * **Use price cuts to scare yourself into innovation** - We are internally driven to improve our services, adding benefits and features, before we have to. We lower prices and increase value for customers before we have to. We invent before we have to. These investments are motivated by customer focus rather than by reaction to competition.
+> * **Use price cuts to scare yourself into innovation** - We are internally
+> driven to improve our services, adding benefits and features, before we have
+> to. We lower prices and increase value for customers before we have to. We
+> invent before we have to. These investments are motivated by customer focus
+> rather than by reaction to competition.
 
-> * **Just-in-time improvements are too clever by half** - It's risky in a fast-moving world to think you can manage innovation. Go full out. Make your customers happy rather than play to your competition.
+> * **Just-in-time improvements are too clever by half** - It's risky in a fast-
+> moving world to think you can manage innovation. Go full out. Make your
+> customers happy rather than play to your competition.
 
-> * **Get your customers to say wow** - AWS has cut prices 27 times since 2006 and developed 159 new features and services in 2012. This helps develop long term customer loyalty.
+> * **Get your customers to say wow** - AWS has cut prices 27 times since 2006
+> and developed 159 new features and services in 2012. This helps develop long
+> term customer loyalty.
 
-> * **Grow rapidly at the expense of short-term profits** - Amazon has invested in Prime, Kindle, AWS, and digital media all as a way to get ahead of competition and make customers happy.
+> * **Grow rapidly at the expense of short-term profits** - Amazon has invested
+> in Prime, Kindle, AWS, and digital media all as a way to get ahead of
+> competition and make customers happy.
 
 ---
 

@@ -101,8 +101,11 @@ the mysql2 gem install)._
 
 ---
 
-1. [Stack Overflow: Convert a Ruby on Rails app from sqlite to MySQL?][1] ... shows you step by step guide on how to migrate an existing SQLite DB to MySQL.
-2. [Stack Overflow: Using SQLite vs. MySQL with Ruby?][2] ... debate on which is the better way to go. Personally I prefer MySQL.
+1. [Stack Overflow: Convert a Ruby on Rails app from sqlite to MySQL?][1] ...
+   shows you step by step guide on how to migrate an existing SQLite DB to
+   MySQL.
+2. [Stack Overflow: Using SQLite vs. MySQL with Ruby?][2] ... debate on which is
+   the better way to go. Personally I prefer MySQL.
 
 [1]: http://stackoverflow.com/questions/1670154/convert-a-ruby-on-rails-app-from-sqlite-to-mysql
 [2]: http://stackoverflow.com/questions/5781482/using-sqlite-vs-mysql-with-ruby

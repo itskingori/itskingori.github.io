@@ -119,10 +119,12 @@ server {
 
 ---
 
-1. There's the assumption that you already have Nginx up and running on an Ubuntu box.
+1. There's the assumption that you already have Nginx up and running on an
+   Ubuntu box.
 2. This was done practially on Ubuntu 13.04
 3. [Ubuntu Community Help Wiki: phpMyAdmin][1]
-4. [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu 12.10][2]
+4. [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu
+   12.10][2]
 5. [How to remotely manage an Amazon RDS instance with PHPMyAdmin][3]
 
 [1]: https://help.ubuntu.com/community/phpMyAdmin

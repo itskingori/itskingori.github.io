@@ -7,8 +7,8 @@ layout: post
 
 > In sum, today's graduates enter a harsher landscape.
 
-> ... the group she calls Cynic Kids "don't like the system — however, they are wary
-> of other alternatives as well as dismissive of their ability to actually
+> ... the group she calls Cynic Kids "don't like the system — however, they are
+> wary of other alternatives as well as dismissive of their ability to actually
 > achieve the desired modifications. As such, the generation is very
 > conservative in its appetite for change. Broadly speaking, Cynic Kids
 > _distrust the link between action and result_."

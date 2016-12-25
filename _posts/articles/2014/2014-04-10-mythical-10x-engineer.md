@@ -28,9 +28,9 @@ layout: post
 
 * **Source lines of code (SLOC)**, also known as **lines of code (LOC)**, is a
   software metric used to measure the size of a computer program by counting the
-  number of lines in the text of the program's source code. SLOC is typically used
-  to predict the amount of effort that will be required to develop a program, as
-  well as to estimate programming productivity or maintainability once the
-  software is produced. ~ [from Wikipedia][1]
+  number of lines in the text of the program's source code. SLOC is typically
+  used to predict the amount of effort that will be required to develop a
+  program, as well as to estimate programming productivity or maintainability
+  once the software is produced. ~ [from Wikipedia][1]
 
 [1]: http://en.wikipedia.org/wiki/Source_lines_of_code

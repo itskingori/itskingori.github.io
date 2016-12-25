@@ -18,19 +18,19 @@ layout: post
   > that illustrates how we changed our thinking to focus on making sure we
   > found something people wanted before we built it.
 
-  > **Aaron**: ...So Pete, the last thing that you just said was we needed to make
-  > something people actually wanted, which is the model of Y Combinator. It's
-  > on all of our shirts. It just says, "Make something people want." And I
+  > **Aaron**: ...So Pete, the last thing that you just said was we needed to
+  > make something people actually wanted, which is the model of Y Combinator.
+  > It's on all of our shirts. It just says, "Make something people want." And I
   > think it's a really tough idea for a lot of people to actually internalize,
   > because they can find things that maybe they want. "I want a puppy." But
   > that might not be a startup. I think you gave me the answer. The way that
   > you actually figure out something that people want, that's actually a
   > business. It's that they are willing to pay for.
 
-  > **Pete:** That was our proxy. Because we need up building a business that sold
-  > things to people for actual money, I think, unlike a lot of tech startups,
-  > we had an easy proxy there for demand. It was just trying to get someone to
-  > pay for it.
+  > **Pete:** That was our proxy. Because we need up building a business that
+  > sold things to people for actual money, I think, unlike a lot of tech
+  > startups, we had an easy proxy there for demand. It was just trying to get
+  > someone to pay for it.
 
   > **Aaron**: How long did it take for you to get someone to pay for it?
 

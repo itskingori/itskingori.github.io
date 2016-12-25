@@ -22,11 +22,11 @@ layout: post
 
 > This essay covers subjects including “the difficulty of empathy,” “the
 > importance of being well adjusted,” and “the essential lonesomeness of adult
-> life.”[[1][3]] Additionally, Wallace’s speech suggests that the overall purpose of
-> higher education is to be able to consciously choose how to perceive others,
-> think about meaning, and act appropriately in everyday life. He argues that
-> the true freedom acquired through education is the ability to be adjusted,
-> conscious, and sympathetic.[[2][4]]
+> life.”[[1][3]] Additionally, Wallace’s speech suggests that the overall
+> purpose of higher education is to be able to consciously choose how to
+> perceive others, think about meaning, and act appropriately in everyday life.
+> He argues that the true freedom acquired through education is the ability to
+> be adjusted, conscious, and sympathetic.[[2][4]]
 
 Read the [entire transcript of David Wallace's Kenyon commencement address
 here][6].

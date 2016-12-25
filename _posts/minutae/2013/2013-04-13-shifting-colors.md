@@ -80,6 +80,9 @@ a {
 
 ---
 
-1. [Metafizzy: Business end](http://metafizzy.co/) of [David Desandro](http://desandro.com/) - he deserves the credit for the idea of changing font colors site-wide
-2. [Tilde (~~) or the Floor?](http://rocha.la/JavaScript-bitwise-operators-in-practice) - hint: tilde is faster
+1. [Metafizzy: Business end](http://metafizzy.co/) of [David
+   Desandro](http://desandro.com/) - he deserves the credit for the idea of
+   changing font colors site-wide
+2. [Tilde (~~) or the Floor?](http://rocha.la/JavaScript-bitwise-operators-in-
+   practice) - hint: tilde is faster
 3. [Modernizr: CSS3 feature detection](http://modernizr.com/docs/#features-css)
