@@ -181,7 +181,9 @@ $ rails server
 ---
 
 1. [Official Ruby website][5]
-2. This post is borrowed heavily from [Ruby on Rails development with Mac OS X Mountain Lion][1]. He deserves the credit. This is merely my own personal reference of the procedure.
+2. This post is borrowed heavily from [Ruby on Rails development with Mac OS X
+   Mountain Lion][1]. He deserves the credit. This is merely my own personal
+   reference of the procedure.
 3. [`rbenv` Command Reference][7]
 4. [Bundler Ruby Gem][9]
 5. [Rails Ruby Gem][8]

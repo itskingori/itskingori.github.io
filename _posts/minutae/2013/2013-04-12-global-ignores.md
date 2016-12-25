@@ -27,8 +27,8 @@ Thumbs.db
 
 Which isn't elegant. At all.
 
-> I have a slight problem with this, though. The .DS_Store isn’t related to your
-> project, it is related to the system you’re coding on. _Your .gitignore file
+> I have a slight problem with this, though. The .DS_Store isn't related to your
+> project, it is related to the system you're coding on. _Your .gitignore file
 > will be a lot more elegant if it only lists files that are related to the
 > projects_.
 
@@ -102,9 +102,11 @@ suits you.
 
 ---
 
-1. [A collection of useful .gitignore Templates](https://github.com/github/gitignore)
+1. [A collection of useful .gitignore
+   Templates](https://github.com/github/gitignore)
 2. [Ignoring files](https://help.github.com/articles/ignoring-files)
-3. [Setting up a global .gitignore for Github for Windows](http://www.lemoda.net/git/github-gitignore-windows/index.html)
+3. [Setting up a global .gitignore for Github for
+   Windows](http://www.lemoda.net/git/github-gitignore-windows/index.html)
 4. [Global gitignores](http://augustl.com/blog/2009/global_gitignores/)
 
 [commit1]: https://github.com/itsmrwave/oauth2-server-php/commit/640498926f2ebe8499c14184b89d613acf60ae59  "Update README with more info on grant types"

@@ -4,13 +4,13 @@ category: minutae
 layout: post
 ---
 
-Ubuntu provides a package manager system for installing system software. You’ll
-use this to prepare your computer before installing Ruby. However, don’t use
+Ubuntu provides a package manager system for installing system software. You'll
+use this to prepare your computer before installing Ruby. However, don't use
 `apt-get` to install Ruby. The package manager will install an outdated version
-of Ruby. And it will install Ruby at the system level (for all users). It’s
+of Ruby. And it will install Ruby at the system level (for all users). It's
 better to use RVM to install Ruby within your user environment.
 
-But if you have an older version of Ruby installed on your computer, there’s no
+But if you have an older version of Ruby installed on your computer, there's no
 need to remove it. RVM will leave your "system Ruby" untouched and use your
 shell to intercept any calls to Ruby. Any older Ruby versions will remain on
 your system and the RVM version will take precedence.
@@ -19,10 +19,10 @@ your system and the RVM version will take precedence.
 
 Use [RVM, the Ruby Version Manager][2], to install Ruby and manage your Rails
 versions as you might need an easy way to switch between Ruby versions. Just as
-important, you’ll have a dependency mess if you install gems into the system
+important, you'll have a dependency mess if you install gems into the system
 environment. RVM is popular, well-supported, and full-featured.
 
-Here’s the simplest way:
+Here's the simplest way:
 
 ```bash
 $ \curl -L https://get.rvm.io | bash -s stable --ruby
@@ -57,9 +57,9 @@ $ rvm install ruby-2.0.0-p481
 the Ruby gem manager if necessary.
 
 By default, when you install gems, documentation files will be installed.
-Developers seldom use gem documentation files (they’ll browse the web instead).
+Developers seldom use gem documentation files (they'll browse the web instead).
 Installing gem documentation files takes time, so many developers like to toggle
-the default so no documentation is installed. Here’s how to speed up gem
+the default so no documentation is installed. Here's how to speed up gem
 installation by disabling the documentation step:
 
 ```bash
@@ -88,7 +88,6 @@ Install most recent stable release:
 $ gem install rails
 $ rails -v
 ```
-
 
 ---
 1. [RailsApps by Daniel Kehoe][1]

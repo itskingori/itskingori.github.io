@@ -12,7 +12,7 @@ The highlights ...
 > ordinary citizen.
 
 > We have had quantitative growth, but not qualitative development. Fifty years
-> later, our economy’s biggest weakness is its inability to provide decent jobs
+> later, our economy's biggest weakness is its inability to provide decent jobs
 > for its citizens. More than ever before, many Kenyans are having to put up
 > with low-paying, low quality jobs.
 

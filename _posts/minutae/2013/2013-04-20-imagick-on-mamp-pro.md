@@ -120,10 +120,17 @@ also update Homebrew links which seem to have moved. Thanks to
 
 1. This was done on MacOSX 10.8.3 (other versions may vary)
 2. Tested with MAMP Pro 2.1.2 (other versions may vary)
-3. [Image Magick][imagemagick] & [Imagick][imagick] are two very different things. The former is the core library and the latter is a PHP Wrapper that uses the API of the former, so you do need to install the former before the latter
-4. [Xcode 4.3 and Homebrew: Where did my command line tools go?](http://holgr.com/blog/2012/02/xcode-4-3-and-homebrew-where-did-my-command-line-tools-go/)
-5. [Resolved: MAMP Php can't exec ('convert') after Homebrew ImageMagick install][link1]
-6. [Installing PHP PEAR and PECL extensions on MAMP for Mac OS X 10.7 (Lion)][link2]
+3. [Image Magick][imagemagick] & [Imagick][imagick] are two very different
+   things. The former is the core library and the latter is a PHP Wrapper that
+   uses the API of the former, so you do need to install the former before the
+   latter
+4. [Xcode 4.3 and Homebrew: Where did my command line tools
+   go?](http://holgr.com/blog/2012/02/xcode-4-3-and-homebrew-where-did-my-
+   command-line-tools-go/)
+5. [Resolved: MAMP Php can't exec ('convert') after Homebrew ImageMagick
+   install][link1]
+6. [Installing PHP PEAR and PECL extensions on MAMP for Mac OS X 10.7
+   (Lion)][link2]
 
 [xcode]: https://developer.apple.com/xcode/
 [xcode43]: http://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_3.html

@@ -12,14 +12,14 @@ I'm seriously considering teaching. Somewhere. Anywhere.
 > considered myself an intermediate Web designer.
 
 > At the same time, [Chris Coyier][1] started writing [CSS-Tricks][2]. I
-> remember reading his first articles and thinking, _“Oh, I know that already.
-> What qualifies Chris to teach when he doesn’t know any more than I do?”_
+> remember reading his first articles and thinking, _"Oh, I know that already.
+> What qualifies Chris to teach when he doesn't know any more than I do?"_
 
 > I was a bit arrogant.
 
 > But Chris kept putting out CSS tutorials, and I kept patting myself on the
 > back for already knowing the skills he was teaching. But then, as my friends
-> started asking me questions about CSS, I found myself linking to Chris’
+> started asking me questions about CSS, I found myself linking to Chris'
 > articles, not just because they saved me the effort of having to explain
 > myself, but also because they were really well written.
 

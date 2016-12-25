@@ -9,7 +9,7 @@ layout: post
 > card displayed on a watch? A slightly larger or smaller screen?
 
 > None of these. Consider the only way to beat entrenched competitors is to
-> leapfrog their technology. You can’t beat Apple by building a better iPhone
+> leapfrog their technology. You can't beat Apple by building a better iPhone
 > and you can't beat Google by building a better search. You must obsolete the
 > old technology with something disruptive and move customers over to the new
 > thing while the old thing lives on. The car didn't displace horses. TV didn't

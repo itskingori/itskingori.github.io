@@ -35,7 +35,8 @@ You need to adapt it to your use case appropriately. I know I did._
 
 ---
 
-1. [CSS: fit relative positioned parent to height of absolute positioned child][link1]
+1. [CSS: fit relative positioned parent to height of absolute positioned
+   child][link1]
 2. [Auto height on parent container with Absolute/Fixed Children][link2]
 
 [link1]: http://stackoverflow.com/questions/8577090/css-fit-relative-positioned-parent-to-height-of-absolute-positioned-child

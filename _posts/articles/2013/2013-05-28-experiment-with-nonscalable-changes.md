@@ -7,7 +7,7 @@ layout: post
 
 > If you are stuck drowning in too much data and too many options and are
 > dazzled by all the possibilities of code, here's a helpful bit of advice from
-> Airbnb's rags to riches origin story: it's okay to do things that don’t scale.
+> Airbnb's rags to riches origin story: it's okay to do things that don't scale.
 
 > A corollary is the idea of paying attention to and learning from what your
 > users are actually doing and let that lead you without out that annoying voice

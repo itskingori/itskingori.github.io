@@ -18,7 +18,8 @@ layout: post
 
 > And this upset me, as it does every. single. time.
 
-> Why? Because most of the time it's simply _not true!_ It's a cop-out. A (lame) excuse.
+> Why? Because most of the time it's simply _not true!_ It's a cop-out. A (lame)
+> excuse.
 
 > **What often looks like "smart," or "successful," is really just a combination
 > of a bit of interest and a lot of persistence.**

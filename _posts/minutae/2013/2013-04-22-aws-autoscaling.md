@@ -14,7 +14,8 @@ The first obvious assumption is that you are running Ubuntu. Running [Ubuntu
 Cloud Guest][link31] on [Amazon Web Services][aws] requires you to go through
 the following steps;
 
-1. Create your account on Amazon (if you do not already have one) and setup your credentials - [Getting Started With Aws][link26]
+1. Create your account on Amazon (if you do not already have one) and setup your
+   credentials - [Getting Started With Aws][link26]
 2. [Install Amazon EC2 API Tools][ubuntuec2guide]
 3. Instantiate your [images(s)][link28]
 4. Configure your [instance][link27]
@@ -124,9 +125,9 @@ Now we begin ...
 
 #### Prerequisite 1: Create/Choose Custom AMI
 
-If you haven’t created an AMI from one of your running EC2 instances, create one
+If you haven't created an AMI from one of your running EC2 instances, create one
 now, or click over to your AMIs page on the AWS Console to retrieve the AMI ID
-to be used as a template, and write it down. You’ll need an AMI ID later. Think
+to be used as a template, and write it down. You'll need an AMI ID later. Think
 of it as your autoscaling-instance-template.
 
 _Ps: If you already have a running EBS-backed instance, you can save this Amazon
@@ -251,9 +252,9 @@ $ as-put-scaling-policy \
 arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
 ```
 
-Basic upscale policy defined, named “scale-up,” a ChangeInCapacity policy to add
+Basic upscale policy defined, named "scale-up," a ChangeInCapacity policy to add
 1 server and wait 3 minutes before another policy can be triggered. Below is the
-reverse operation, or a “scale-down” policy to remove 1 server from the group.
+reverse operation, or a "scale-down" policy to remove 1 server from the group.
 
 ```bash
 $ as-put-scaling-policy \
@@ -402,7 +403,8 @@ terminated.
 ---
 
 1. [AWS Developer Tools][awsdevelopertools]
-2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from Amazon Downloads][link1]
+2. [Ubuntu developers: Eric Hammond: Installing AWS Command Line Tools from
+   Amazon Downloads][link1]
 3. [EC2StartersGuide][ubuntuec2guide]
 4. [Autoscaling with EC2][link2]
 5. [Installing AWS Command Line Tools from Amazon Downloads][link6]
@@ -415,7 +417,8 @@ terminated.
 12. [Autoscaling Documentation - Amazon AWS][link15]
 13. [Amazon EC2 Instance Types][link16]
 14. [Setting Up the Amazon EC2 Command Line Tools][link17]
-15. [Autoscaling Documentation: Set the AWS_CREDENTIAL_FILE environment variable][link18]
+15. [Autoscaling Documentation: Set the AWS_CREDENTIAL_FILE environment
+    variable][link18]
 16. [Register EC2 Instances to more than one Elastic Load Balancer][link19]
 17. [Amazon AutoScaling Documentation: Scaling Based On Demand][link23]
 18. [Amazon AutoScaling Documentation: Cooldown Period][link24]

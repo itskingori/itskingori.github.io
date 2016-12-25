@@ -16,17 +16,17 @@ layout: post
 > Living a Compassionate Life** is an essay by [David Foster Wallace][1], first
 > published in book form by [Little, Brown and Company][2] in 2009. The text
 > originates from a commencement speech given by Wallace at Kenyon College on
-> May 21, 2005. Before Little, Brown’s publication, a transcript of the speech
+> May 21, 2005. Before Little, Brown's publication, a transcript of the speech
 > circulated around the Internet. The essay was also published in The Best
 > American Nonrequired Reading 2006.[[1][3]]
 
-> This essay covers subjects including “the difficulty of empathy,” “the
-> importance of being well adjusted,” and “the essential lonesomeness of adult
-> life.”[[1][3]] Additionally, Wallace’s speech suggests that the overall purpose of
-> higher education is to be able to consciously choose how to perceive others,
-> think about meaning, and act appropriately in everyday life. He argues that
-> the true freedom acquired through education is the ability to be adjusted,
-> conscious, and sympathetic.[[2][4]]
+> This essay covers subjects including "the difficulty of empathy," "the
+> importance of being well adjusted," and "the essential lonesomeness of adult
+> life."[[1][3]] Additionally, Wallace's speech suggests that the overall
+> purpose of higher education is to be able to consciously choose how to
+> perceive others, think about meaning, and act appropriately in everyday life.
+> He argues that the true freedom acquired through education is the ability to
+> be adjusted, conscious, and sympathetic.[[2][4]]
 
 Read the [entire transcript of David Wallace's Kenyon commencement address
 here][6].

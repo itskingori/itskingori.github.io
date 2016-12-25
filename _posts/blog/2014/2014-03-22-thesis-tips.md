@@ -84,7 +84,8 @@ These are tips collated from various sources _(links at the bottom)_.
 > following questions in your thesis. You need to find a good and convincing
 > answer for this in order to pass:
 
-> * What is the **problem** you are trying to solve? Or what is the research **question** you are trying to answer?
+> * What is the **problem** you are trying to solve? Or what is the research
+>   **question** you are trying to answer?
 > * Why is this problem/question **worth** solving/asking? Who would care?
 > * How have other people in the past tried to solve/answer it?
 > * What is your **new** approach to solving/answering this problem? Or what improvement are you making on an existing solution?
@@ -112,10 +113,16 @@ These are tips collated from various sources _(links at the bottom)_.
 
 ### Demostrating That Your System Works & Is Good
 
-> * Build a demo program around your algorithm to illustrate how it would be used in an application. Use this same demonstration when you present your final thesis.
-> * Gather a group of users and have them use your system; perform a user study. Usually about 5 is enough. More the better.
-> * If your thesis is heavily human-factors based you may need to think up a way to measure success **quantitatively** - i.e. using statistics. This is difficult. You need to talk to your advisor about this.
-> * Publish a paper in a conference. This adds credibility to your work. For Masters you should publish 1 conference paper before you graduate.
+> * Build a demo program around your algorithm to illustrate how it would be
+>   used in an application. Use this same demonstration when you present your
+>   final thesis.
+> * Gather a group of users and have them use your system; perform a user study.
+>   Usually about 5 is enough. More the better.
+> * If your thesis is heavily human-factors based you may need to think up a way
+>   to measure success **quantitatively** - i.e. using statistics. This is
+>   difficult. You need to talk to your advisor about this.
+> * Publish a paper in a conference. This adds credibility to your work. For
+>   Masters you should publish 1 conference paper before you graduate.
 > [[~1][1]]
 
 

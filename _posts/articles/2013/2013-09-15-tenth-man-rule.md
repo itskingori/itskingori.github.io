@@ -45,8 +45,8 @@ According to [Eytan Buchman][4], IDF spokesperson on [a Quora discussion on the
 
 1. [In Turkey, 'World War Z' is no World War Zion][2]
 2. [Lessons From Israel's Intelligence Reforms][3] by Yosef Kuperwasser, who
-   used to head the Research Division of the IDF. Search for _"The devil’s
-   advocate office ensures that AMAN’s intelligence assessments are creative
+   used to head the Research Division of the IDF. Search for _"The devil's
+   advocate office ensures that AMAN's intelligence assessments are creative
    and do not fall prey to group think."_
 
 [1]: http://www.imdb.com/title/tt0816711/

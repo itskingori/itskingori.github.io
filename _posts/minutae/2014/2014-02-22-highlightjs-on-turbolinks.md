@@ -31,4 +31,3 @@ $(document).on('page:restore', function() {
 
 [1]: http://highlightjs.org/usage/
 [2]: https://github.com/rails/turbolinks
-

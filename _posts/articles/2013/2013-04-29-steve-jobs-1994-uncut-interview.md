@@ -39,7 +39,8 @@ experiences, and learning the value of creating your own environment.
 
 ---
 
-1. Most of this footage has been incorporated into the film [Steve Jobs: Visionary Entrepreneur][link1]
+1. Most of this footage has been incorporated into the film [Steve Jobs:
+   Visionary Entrepreneur][link1]
 2. Production Date: February 2013 Playing Time: 25 minutes.
 
 [link1]: http://www.siliconvalleyhistorical.org/#!steve-jobs-visionary-entrepreneur-trailer/czyr

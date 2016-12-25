@@ -18,25 +18,32 @@ trace 'progress' and God's faithfulness over the years.
 And in no particular order:
 
 * Make a bucket list - [(proof)][1]
-* Build a successful _(and honest)_ business that can operate in my absence; passive income
-* Build/buy a good house; have a _'permanent'_ roof over my head that is rent-free
-* Build a family: with a [godly woman][2] (you never know these days) and _healthy_ kids; basically have a home
+* Build a successful _(and honest)_ business that can operate in my absence;
+  passive income
+* Build/buy a good house; have a _'permanent'_ roof over my head that is rent-
+  free
+* Build a family: with a [godly woman][2] (you never know these days) and
+  _healthy_ kids; basically have a home
 * Raise my children to be men or women of character in a world of compromise
 * Teach my children the [Word of God][4]
-* Treat my daughter like a queen (if I get one) to raise the bar on the quality of men she will allow in her life (take her for dates as well)
+* Treat my daughter like a queen (if I get one) to raise the bar on the quality
+  of men she will allow in her life (take her for dates as well)
 * Feed my family, never should they go a day hungry
 * Educate my children
 * Educate others (especially the unfortunate - who are not my children)
-* Read the entire Bible (not as a story book but in detailed manner, almost with a theological approach)
+* Read the entire Bible (not as a story book but in detailed manner, almost with
+  a theological approach)
 * Preach the [Word of God][4] (an actual sermon)
-* Have Bible Study (complete with praise & worship) once a week on a day that's not Sunday
+* Have Bible Study (complete with praise & worship) once a week on a day that's
+  not Sunday
 * Fall in love
 * Never fall out of love
 * Love my wife (in thought & deed - the deed part is the hard one)
 * Marry the same woman till I die
 * Never cheat on my wife
 * [Start teaching][11]
-* Speak at [TED (global)][7] about something cool I've contributed to the world ... be part of the [whole world's brilliants][9]
+* Speak at [TED (global)][7] about something cool I've contributed to the world
+  ... be part of the [whole world's brilliants][9]
 * Achieve financial abundance with my passion
 * Mentor someone
 * Learn to cook
@@ -44,7 +51,8 @@ And in no particular order:
 * Leave my children a legacy and good name
 * Get a motorcycle (and ride it)
 * Sky dive
-* Go to bed smarter than I was when I woke up, everyday - [(hard to prove but here's how I'm doing it)][3]
+* Go to bed smarter than I was when I woke up, everyday - [(hard to prove but
+  here's how I'm doing it)][3]
 * [Make wealth (wealth is NOT money)][10]
 
 ---

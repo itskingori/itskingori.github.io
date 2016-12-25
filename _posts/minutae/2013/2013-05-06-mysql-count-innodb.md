@@ -12,7 +12,7 @@ InnoDB. This makes InnoDB very slow in count queries without a where clause.
 > MyISAM (MEMORY and some others) tables because they would simply read number
 > of rows in the table from stored value. Innodb will however need to perform
 > full table scan or full index scan because it does not have such counter, it
-> also can’t be solved by simple singe counter for Innodb tables as different
+> also can't be solved by simple singe counter for Innodb tables as different
 > transactions may see different number of rows in the table.
 
 > If you have query like SELECT COUNT(*) FROM IMAGE WHERE USER_ID=5 this query
@@ -20,11 +20,11 @@ InnoDB. This makes InnoDB very slow in count queries without a where clause.
 > index rage scan. This can be faster or slower both for MyISAM and Innodb
 > depending on various conditions.
 
-> The trick is to hint it at a specific index. So, if you’re getting poor
-> response times from InnoDB count, it means you’ve got lots of rows that have
-> to be counted one at a time. And since you’ve got a lot of rows, you have at
+> The trick is to hint it at a specific index. So, if you're getting poor
+> response times from InnoDB count, it means you've got lots of rows that have
+> to be counted one at a time. And since you've got a lot of rows, you have at
 > least one index. Just pick an index that will never contain a NULL value, and
-> tell MySQL to ‘use index (index_name)’.
+> tell MySQL to 'use index (index_name)'.
 
 ```sql
 mysql> SELECT count(*) FROM messages USE INDEX (index_messages_on_remote_created_at);

@@ -41,14 +41,16 @@ On that note, I wrote an [M.O. ★][2] ... it boils down to the following.
 * Don't violate a guideline without a good reason.
 * A reason is good when you can convince a teammate.
 * Don't rewrite existing code to follow the code guidelines.
-* Code well. Everyone leaves. Your last duty should be to hand it off to a competent successor.
+* Code well. Everyone leaves. Your last duty should be to hand it off to a
+  competent successor.
 * Don't wait for crisis to change, adopt an M.O. asap and stay safe.
 
 ### [Language][8]
 
 * _"Avoid"_ means don't do it unless you have good reason.
 * _"Don't"_ means there's never a good reason.
-* _"Prefer"_ indicates there's a better option, you can evaluate it's pros and cons.
+* _"Prefer"_ indicates there's a better option, you can evaluate it's pros and
+  cons.
 * _"Use"_ is a positive instruction.
 * _"Limit"_ is a caution against excesses.
 * _"Team"_ comprises a group of people linked in a common purpose.

@@ -73,7 +73,8 @@ S3 will then send the appropriate [`The_HTTP_response_headers`][link6].
 ---
 
 1. [In-browser rel="stylesheet/less" not loading from static file server][link1]
-2. [Announcement: Announcing Amazon S3 Support for Cross-Origin Resource Sharing (CORS)][link2]
+2. [Announcement: Announcing Amazon S3 Support for Cross-Origin Resource Sharing
+   (CORS)][link2]
 3. [How Do I Enable CORS On My Bucket?][link3]
 4. [HTTP access control (CORS)][link4] - [Mozilla Developer Network][link5]
 
