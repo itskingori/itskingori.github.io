@@ -5,10 +5,10 @@ category: articles
 layout: post
 ---
 
-> The scariest part of this new binge culture is that hours spent bingeing don’t
-seem to displace other media consumption hours; we’re just adding them to our
+> The scariest part of this new binge culture is that hours spent bingeing don't
+seem to displace other media consumption hours; we're just adding them to our
 weekly totals. Lump in hours on Facebook, Pinterest, YouTube, and maybe even the
-occasional non-torrented big-screen feature film and you’re looking at a huge
+occasional non-torrented big-screen feature film and you're looking at a huge
 number of hours per person.
 
 > [...]

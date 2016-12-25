@@ -44,7 +44,7 @@ Whom He sacredly anoints,
 With wisdom He will hide him,  
 Never minding what betide him;  
 Makes him so lonely  
-So that only God’s high messages shall reach him,  
+So that only God's high messages shall reach him,  
 So that He may surely teach him  
 What the Hierarchy planned.
 

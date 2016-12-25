@@ -16,14 +16,14 @@ layout: post
 > value. He finished with the memorable line, "You never know what book you
 > wrote until you know what book people read."
 
-> That turned out to be a major problem for me at O’Reilly. I talked so much
+> That turned out to be a major problem for me at O'Reilly. I talked so much
 > about our ideals, our goal to create more value than we capture, to change the
 > world by spreading the knowledge of innovators, that I forgot to make sure
 > everyone understood that we were still a business. Even when I said things
-> like, “Money in a business is like gas in the car. You have to fill the tank,
-> but a road trip is not a tour of gas stations,” people heard the “road trip is
-> not a tour of gas stations” way louder than they heard “you have to fill the
-> tank.”
+> like, "Money in a business is like gas in the car. You have to fill the tank,
+> but a road trip is not a tour of gas stations," people heard the "road trip is
+> not a tour of gas stations" way louder than they heard "you have to fill the
+> tank."
 
 An interesting perspective of the value that you create. This is just an excerpt
 from [How I Failed][4] by [Tim O'Reilly][5].

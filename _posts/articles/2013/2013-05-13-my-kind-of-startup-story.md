@@ -12,7 +12,7 @@ layout: post
 > Just make a living. The real startup story that most people live.
 
 > In the startup community, we keep emphasizing the dramatic, the kids out of
-> college cashing in on a billion-dollar IPO. But hell, that’s not the story
+> college cashing in on a billion-dollar IPO. But hell, that's not the story
 > that any of us who are actually doing the work are actually living. We need
 > more realistic success stories if we truly want to help each other out.
 

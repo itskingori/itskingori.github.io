@@ -27,8 +27,8 @@ Thumbs.db
 
 Which isn't elegant. At all.
 
-> I have a slight problem with this, though. The .DS_Store isn’t related to your
-> project, it is related to the system you’re coding on. _Your .gitignore file
+> I have a slight problem with this, though. The .DS_Store isn't related to your
+> project, it is related to the system you're coding on. _Your .gitignore file
 > will be a lot more elegant if it only lists files that are related to the
 > projects_.
 

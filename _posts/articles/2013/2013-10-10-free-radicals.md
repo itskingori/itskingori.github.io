@@ -4,29 +4,29 @@ category: articles
 layout: post
 ---
 
-> When it comes to our careers and our experience at work, we’ve become
+> When it comes to our careers and our experience at work, we've become
 > selfish—but in a good way. Getting paid is no longer enough; we expect to
 > actually learn on the job. We want our skills to be fully utilized and are
-> left unsatisfied by “easy jobs.” We want more responsibility when we’re ready,
-> rather than waiting until we’ve “put in our time.” We expect to do more of
+> left unsatisfied by "easy jobs." We want more responsibility when we're ready,
+> rather than waiting until we've "put in our time." We expect to do more of
 > what we love, automating the more laborious and monotonous parts of our work.
 
 > Chalk it up to new technology, social media, or the once out-of-reach business
-> tools now at your fingertips. The fact is, we’re empowered to work on our own
+> tools now at your fingertips. The fact is, we're empowered to work on our own
 > terms and do more with less. As a result, we expect more from those that
 > employ us and we expect more from ourselves. When we get the resources and
 > opportunities we deserve, we create the future.
 
-> Here’s a name for us: _**Free Radicals**_.
+> Here's a name for us: _**Free Radicals**_.
 
 > Free Radicals want to take their careers into their own hands and put the
 > world to work for them. Free Radicals are resilient, self-reliant, and
-> extremely potent. You’ll find them working solo, in small teams, or within
-> large companies. As the world changes, Free Radicals have re-imagined “work”
+> extremely potent. You'll find them working solo, in small teams, or within
+> large companies. As the world changes, Free Radicals have re-imagined "work"
 > as we know it. No doubt, we have lofty expectations:
 
 > **We do work that is, first and foremost, intrinsically rewarding** But, we
-> don’t create solely for ourselves, we want to make a real and lasting impact
+> don't create solely for ourselves, we want to make a real and lasting impact
 > in the world around us.
 
 > **We thrive on flexibility and are most productive when we feel fully
@@ -40,25 +40,25 @@ layout: post
 
 > **We have little tolerance for the friction of bureaucracy, old-boy networks,
 > and antiquated business practices** As often as possible, we question
-> “standard operating procedure” and assert ourselves. But even when we can’t,
-> we don’t surrender to the friction of the status quo. Instead, we find clever
+> "standard operating procedure" and assert ourselves. But even when we can't,
+> we don't surrender to the friction of the status quo. Instead, we find clever
 > ways (and hacks) around it.
 
 > **We expect to be fully utilized and constantly optimized, regardless of
-> whether we’re working in a startup or a large organization** When our
-> contributions and learning plateau, we leave. But when we’re leveraging a
-> large company’s resources to make an impact in something we care about, we are
+> whether we're working in a startup or a large organization** When our
+> contributions and learning plateau, we leave. But when we're leveraging a
+> large company's resources to make an impact in something we care about, we are
 > thrilled! We want to always be doing our best work and making the greatest
 > impact we can.
 
-> **We consider “open source” technology, API’s, and the vast collective
+> **We consider "open source" technology, API's, and the vast collective
 > knowledge of the Internet to be our personal arsenal** Wikipedia, Quora, and
 > open communities for designers, developers, and thinkers were built by us and
 > for us. Whenever possible, we leverage collective knowledge to help us make
 > better decisions for ourselves and our clients. We also contribute to these
-> open resources with a “pay it forward” mentality.
+> open resources with a "pay it forward" mentality.
 
-> **We believe that “networking” is sharing** People listen to (and follow) us
+> **We believe that "networking" is sharing** People listen to (and follow) us
 > because of our discernment and curatorial instinct. As we share our creations
 > as well as what fascinates us, we authentically build a community of
 > supporters that give us feedback, encouragement, and lead us to new

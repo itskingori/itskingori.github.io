@@ -12,12 +12,12 @@ sharing during smalltalk ...
 > get to read as much as I intend. Instead, I get into conversations with
 > complete strangers who tell me very personal details of their lives. For
 > example, on two different flights in one day, I had two separate women tell me
-> about their [hysterectomies][1]. I hadn’t asked anything specific that would
+> about their [hysterectomies][1]. I hadn't asked anything specific that would
 > lead both women to share this very personal experience, but they both did.
 
 > I shared these and other examples of stories that have been told to me with a
 > friend. I wondered if he had similar experiences. He clearly explained,
-> “People share things with you because you ask the follow-up question.”
+> "People share things with you because you ask the follow-up question."
 
 ### Furthering The Smalltalk
 

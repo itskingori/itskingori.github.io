@@ -14,7 +14,7 @@ for 3 days of creative exchanges, collaborations, talks, performances and
 parties.
 
 The gathering was a [British Council Connect ZA][bcconnectza] initiative in
-association with [Live SA][livesa] and a part of the [Fak’ugesi Digital Africa
+association with [Live SA][livesa] and a part of the [Fak'ugesi Digital Africa
 Festival][fakugesi].
 
 

@@ -6,7 +6,7 @@ layout: post
 
 While there are [Jekyll plugins][2] to minify assets just like the [Rails Asset
 Pipeline][3], GitHub generates sites using the `--safe` option to disable custom
-plugins for security reasons. This means that those plugins won’t work.
+plugins for security reasons. This means that those plugins won't work.
 
 However, you could store some assets in `_assets/`, run the
 `_build/preprocess_assets.rb` script below to generate the minified files in

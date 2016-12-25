@@ -22,11 +22,11 @@ Configure database for phpmyadmin with dbconfig-common? No.
 
 > The one thing I had trouble with was the DB Security Group setup.  When you go
 > to add access for an CIDR/IP it provides a recommended value.  It took some
-> messing around to determine that this default value isn’t actually what needed
-> to be there.  If you’re not able to connect to your instance when it’s all
+> messing around to determine that this default value isn't actually what needed
+> to be there.  If you're not able to connect to your instance when it's all
 > said and done, be sure to double check this value. The IP they provided did
-> not match the IP address that was provided to us by our ISP.  Once you’ve
-> created your DB Instance and setup the security group you’re good to go.
+> not match the IP address that was provided to us by our ISP.  Once you've
+> created your DB Instance and setup the security group you're good to go.
 
 In summary, just add your EC2 Security group ... i.e. the one that you want to
 be able to access RDS.

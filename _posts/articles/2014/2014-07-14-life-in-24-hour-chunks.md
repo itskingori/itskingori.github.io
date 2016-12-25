@@ -11,11 +11,11 @@ layout: post
 > clinical training, he is often described as the "Father of Modern Medicine."
 
 > Osler was a fascinating, accomplished, and erudite man who liked to quote
-> Thomas Carlyle’s prescription that "Our main business is not to see what lies
+> Thomas Carlyle's prescription that "Our main business is not to see what lies
 > dimly in the distance, but to do what lies clearly at hand."
 
 > As I followed up on Osler, I quickly came to his speech "A Way of Life,"
-> delivered to students at Yale University in 1913. True to Carlyle’s
+> delivered to students at Yale University in 1913. True to Carlyle's
 > prescription, Osler proposes that men work steadily towards success and
 > fulfillment in life by taking the world in strict 24-hour increments, letting
 > neither yesterday nor tomorrow be a worry today. (He called it "Life in day-
@@ -31,5 +31,5 @@ layout: post
 > > not a formal scheme, simply a habit as easy or as hard to adopt as any other
 > > habit, good or bad ... The way of life that I preach is a habit to be
 > > acquired gradually by long and steady repetition: It is the practice of
-> > living for the day only, and for the day’s work; Life in day-tight
+> > living for the day only, and for the day's work; Life in day-tight
 > > compartments.

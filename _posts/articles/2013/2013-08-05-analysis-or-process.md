@@ -11,14 +11,14 @@ layout: post
 > the presentation, but the prosecutor has a good answer to every objection. So
 > the judge decides, and the accused man is sentenced.
 
-> That wouldn’t be due process, right? So if you would find this process
+> That wouldn't be due process, right? So if you would find this process
 > shocking in a courtroom, why is it acceptable when you make an investment
 > decision? Now of course, this is an oversimplification, but this process is
 > essentially the one most companies follow to make a decision. They have a team
 > arguing only one side of the case. The team has a choice of what points it
 > wants to make and what way it wants to make them. And it falls to the final
 > decision maker to be both the challenger and the ultimate judge. Building a
-> good decision-making process is largely ensuring that these flaws don’t
+> good decision-making process is largely ensuring that these flaws don't
 > happen.
 
 An interesting analogy using the legal system: originally [found here by

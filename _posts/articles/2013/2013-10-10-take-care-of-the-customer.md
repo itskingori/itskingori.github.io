@@ -15,16 +15,16 @@ layout: post
 
 > [...]
 
-> He’s the Evelyn Harrison of car selling. He has a quiet, watchful intelligence
-> and a courtly charm. He is thoughtful and attentive. He’s a wonderful
+> He's the Evelyn Harrison of car selling. He has a quiet, watchful intelligence
+> and a courtly charm. He is thoughtful and attentive. He's a wonderful
 > listener. He has, he says, three simple rules that guide his every action:
-> “Take care of the customer. Take care of the customer. Take care of the
-> customer.” If you buy a car from Bob Golomb, he will be on the phone to you
+> "Take care of the customer. Take care of the customer. Take care of the
+> customer." If you buy a car from Bob Golomb, he will be on the phone to you
 > the next day, making sure everything is all right. If you come to the
-> dealership but don’t end up buying anything, he’ll call you the next day,
-> thanking you for stopping by. “You always put on your best face, even if you
-> are having a bad day. You leave that behind,” he says. “Even if things are
-> horrendous at home, you give the customer your best.”
+> dealership but don't end up buying anything, he'll call you the next day,
+> thanking you for stopping by. "You always put on your best face, even if you
+> are having a bad day. You leave that behind," he says. "Even if things are
+> horrendous at home, you give the customer your best."
 
 From [Blink: The Power Of Thinking Without Thinking][1] by Malcolm Gladwell.
 Even if you don't sell cars, there's something that you can pick from that

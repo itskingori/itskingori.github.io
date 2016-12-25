@@ -6,7 +6,7 @@ layout: post
 ---
 
 > _"Jesus lifted up His eyes, and seeing a great multitude coming toward Him, He
-> said to Philip, ‘Where shall we buy bread, that these may eat?’ But this He
+> said to Philip, 'Where shall we buy bread, that these may eat?' But this He
 > said to test him, for He Himself knew what He would do."_  
 _John 6:5,6_
 
@@ -18,7 +18,7 @@ _John 6:5,6_
 
 > This explains why it sometimes appears that the Lord delays in answering us.
 > He already knows what He is going to do, but we do not know. He waits for us
-> to see if we will trust Him as Infinite Supply. Is Jesus “Lord” only after He
-> answers us? Or is Jesus “Lord” whether He answers us or not? The Lord’s
-> “proving ground” is just there, in between the Need and the Answer. And
+> to see if we will trust Him as Infinite Supply. Is Jesus "Lord" only after He
+> answers us? Or is Jesus "Lord" whether He answers us or not? The Lord's
+> "proving ground" is just there, in between the Need and the Answer. And
 > sometimes it is, indeed, quite a stretching, and a thorough test.

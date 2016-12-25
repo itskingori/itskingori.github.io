@@ -8,9 +8,9 @@ layout: post
 I always ignore my LinkedIn's _'Top Content, Tailored For You'_ emails but
 something gripped me about that heading.
 
-> First, it’s important to know that a website isn’t a product, it’s a service.
-> The woes of Web development stem from this ... and the fact that it’s is a
-> fairly new industry with very little standards doesn’t help, either.
+> First, it's important to know that a website isn't a product, it's a service.
+> The woes of Web development stem from this ... and the fact that it's is a
+> fairly new industry with very little standards doesn't help, either.
 
 The guy goes on to give (in his opinion), the _steps for a better website
 development process_.

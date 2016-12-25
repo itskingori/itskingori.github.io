@@ -125,9 +125,9 @@ Now we begin ...
 
 #### Prerequisite 1: Create/Choose Custom AMI
 
-If you haven’t created an AMI from one of your running EC2 instances, create one
+If you haven't created an AMI from one of your running EC2 instances, create one
 now, or click over to your AMIs page on the AWS Console to retrieve the AMI ID
-to be used as a template, and write it down. You’ll need an AMI ID later. Think
+to be used as a template, and write it down. You'll need an AMI ID later. Think
 of it as your autoscaling-instance-template.
 
 _Ps: If you already have a running EBS-backed instance, you can save this Amazon
@@ -252,9 +252,9 @@ $ as-put-scaling-policy \
 arn:aws:autoscaling:eu-west-1:xxxxxxxxxxxx:scalingPolicy:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:autoScalingGroupName/AutoscaleG:policyNameScaleUp
 ```
 
-Basic upscale policy defined, named “scale-up,” a ChangeInCapacity policy to add
+Basic upscale policy defined, named "scale-up," a ChangeInCapacity policy to add
 1 server and wait 3 minutes before another policy can be triggered. Below is the
-reverse operation, or a “scale-down” policy to remove 1 server from the group.
+reverse operation, or a "scale-down" policy to remove 1 server from the group.
 
 ```bash
 $ as-put-scaling-policy \
