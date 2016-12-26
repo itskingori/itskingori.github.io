@@ -5,8 +5,6 @@ layout: post
 link: https://twitter.com/kelseyhightower/status/808436229851090945
 ---
 
-**[Kelsey Hightower][link-1]**:
-
 > I'm often asked why I joined a DevRel organization. Why am I a [Developer
 > Advocate][link-2]?
 
@@ -38,6 +36,8 @@ link: https://twitter.com/kelseyhightower/status/808436229851090945
 
 > If you haven't caught on yet, there is no limit to what a Developer Advocate
 > (CTO) can do. Don't let your job title limit your impact.
+
+~ [@kelseyhightower][link-1]
 
 [link-1]: https://twitter.com/kelseyhightower
 [link-2]: https://en.wikipedia.org/wiki/Platform_evangelism
