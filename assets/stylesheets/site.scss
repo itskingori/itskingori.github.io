@@ -288,20 +288,20 @@ sup {
 
     p {
       line-height: 1.8em;
-
-      code {
-        background-color: hsl(0, 0%, 94%);
-        border-radius: 3px;
-        color: $font_color;
-        font-weight: normal;
-        padding: 1px 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        border-radius: 3px;
-      }
     }
+
+    code {
+      background-color: hsl(0, 0%, 94%);
+      border-radius: 3px;
+      color: $font_color;
+      font-weight: normal;
+      padding: 1px 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      }
 
     table {
       width: 100%;
