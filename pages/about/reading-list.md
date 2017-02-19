@@ -16,9 +16,11 @@ sitemap: true
 
 1. [Buffett: The Biography][2017-book-1] (Roger Lowenstein)
 2. [Sense and Sensuality: Jesus Talks to Oscar Wilde on the Pursuit of Pleasure][2017-book-2] (Ravi Zacharias)
+3. [The Grand Weaver: How God Shapes Us Through the Events of Our Lives][2017-book-3] (Ravi Zacharias)
 
 [2017-book-1]: https://duckduckgo.com/?q=buffett%3a+the+biography+by+roger+lowenstein&ia=products
 [2017-book-2]: https://duckduckgo.com/?q=sense+and+sensuality+by+ravi+zacharias&ia=products
+[2017-book-3]: https://duckduckgo.com/?q=the+grand+weaver+by+ravi+zacharias&ia=products
 
 ### 2016
 
