@@ -12,16 +12,19 @@ sitemap: true
 >
 > ~ [Farnam Street][1]
 
+### 2017
+
+1. [Buffett: The Biography][2017-book-1] (Roger Lowenstein)
+2. [Sense and Sensuality: Jesus Talks to Oscar Wilde on the Pursuit of Pleasure][2017-book-2] (Ravi Zacharias)
+
+[2017-book-1]: https://duckduckgo.com/?q=buffett%3a+the+biography+by+roger+lowenstein&ia=products
+[2017-book-2]: https://duckduckgo.com/?q=sense+and+sensuality+by+ravi+zacharias&ia=products
 
 ### 2016
 
 1. [The 5 Love Languages: The Secret to Love that Lasts][2016-book-1] (Gary D. Chapman)
-2. [Buffett: The Biography][2016-book-2] (Roger Lowenstein)
-3. [Sense and Sensuality: Jesus Talks to Oscar Wilde on the Pursuit of Pleasure][2016-book-3] (Ravi Zacharias)
 
 [2016-book-1]: https://duckduckgo.com/?q=the+5+love+languages%3a+the+secret+to+love+that+lasts+by+gary+d.+chapman
-[2016-book-2]: https://duckduckgo.com/?q=buffett%3a+the+biography+by+roger+lowenstein&ia=products
-[2016-book-3]: https://duckduckgo.com/?q=sense+and+sensuality+by+ravi+zacharias&ia=products
 
 ### 2014
 
