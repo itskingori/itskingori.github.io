@@ -6,7 +6,7 @@ layout: post
 
 In the Gmail search box, type ...
 
-```text
+```
 -label:inbox -label:sent -label:drafts -label:trash -label:notes
 ```
 

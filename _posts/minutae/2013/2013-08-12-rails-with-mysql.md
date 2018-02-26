@@ -9,7 +9,7 @@ to preconfigure for selected database namely: mysql, oracle, postgresql,
 sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql,
 jdbc
 
-```text
+```
 Usage:
     rails new APP_PATH [options]
 
