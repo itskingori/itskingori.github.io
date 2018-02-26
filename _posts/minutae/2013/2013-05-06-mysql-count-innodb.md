@@ -30,7 +30,7 @@ InnoDB. This makes InnoDB very slow in count queries without a where clause.
 mysql> SELECT count(*) FROM messages USE INDEX (index_messages_on_remote_created_at);
 ```
 
-```text
+```
 +----------+
 | count(*) |
 +----------+

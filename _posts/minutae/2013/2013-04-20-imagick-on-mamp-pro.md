@@ -47,7 +47,7 @@ $ brew install josegonzalez/php/php53-imagick
 
 If you get "No formula & taping" errors ...
 
-```text
+```
 Error: No available formula for XYZ
 Please tap it and then try again: brew tap XYZ
 ```
@@ -83,7 +83,7 @@ $ export DYLD_LIBRARY_PATH
 Restart MAMP and check the phpinfo tab: a search for the term `imagick` should
 bring you to a section reading like so:
 
-```text
+```
 imagick module version                    3.1.0RC2
 imagick classes                           Imagick, ImagickDraw, ImagickPixel, ImagickPixelIterator
 ImageMagick version                       ImageMagick 6.7.7-6 2012-09-18 Q16 http://www.imagemagick.org

@@ -10,7 +10,7 @@ awkward was that the project's `.gitignore` file paid no attention to OS-
 generated or editor-generated files. So I happily contributed those exclusions
 to the project's `.gitignore` so we ended up with [this][commit3] ...
 
-```text
+```
 # Editor Files #
 *.komodoproject
 
@@ -59,7 +59,7 @@ called `global_ignore`, and in `.gitconfig` I would add;
 
 And finally in the `global_ignore` file we have something like;
 
-```text
+```
 ## Editor Files ##
 *.sublime-project
 *.sublime-workspace

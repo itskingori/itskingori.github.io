@@ -225,19 +225,19 @@ sup {
 
     p {
       line-height: 1.8em;
-    }
 
-    code {
-      background-color: hsl(0, 0%, 94%);
-      border-radius: 3px;
-      color: $font_color;
-      font-weight: normal;
-      padding: 1px 3px;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
+      code {
+        background-color: hsl(0, 0%, 94%);
+        border-radius: 3px;
+        color: $font_color;
+        font-weight: normal;
+        padding: 1px 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+      }
     }
 
     table {
@@ -290,43 +290,39 @@ sup {
 
     p {
       line-height: 1.8em;
-    }
 
-    code {
-      background-color: hsl(0, 0%, 94%);
-      border-radius: 3px;
-      color: $font_color;
-      font-weight: normal;
-      padding: 1px 3px;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
+      code {
+        background-color: hsl(0, 0%, 94%);
+        border-radius: 3px;
+        color: $font_color;
+        font-weight: normal;
+        padding: 1px 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+      }
     }
 
     table {
       width: 100%;
     }
 
-    div.highlighter-rouge {
+    pre {
       margin-bottom: 1.25rem;
-      padding-bottom: 0.75em;
-      padding-top: 0.75em;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
 
-      pre {
-        code {
-          white-space: pre;
-          overflow-x: scroll;
-          font-weight: normal;
-          font-size: 0.9em;
-          font-family: monospace;
-        }
+      code {
+        padding: 0.75em;
+        white-space: pre;
+        overflow-x: scroll;
+        font-weight: normal;
+        font-family: monospace;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
       }
     }
   }
