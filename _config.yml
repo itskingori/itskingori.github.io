@@ -1,5 +1,5 @@
 name: "King'ori Maina"
-highlighter: rouge
+highlighter: null
 permalink: /:categories/:year/:month/:title/
 relative_permalinks: false
 
