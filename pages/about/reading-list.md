@@ -12,6 +12,14 @@ sitemap: true
 >
 > ~ [Farnam Street][1]
 
+### 2018
+
+1. [Born a Crime: Stories from a South African Childhood][2018-book-1] (Trevor Noah)
+2. [The President's Keepers: Those Keeping Zuma in Power and Out of Prison][2018-book-2] (Jacques Pauw)
+
+[2018-book-1]: https://duckduckgo.com/?q=born+a+crime+stories+from+a+south+african+childhood+trevor+noah&ia=products
+[2018-book-2]: https://duckduckgo.com/?q=The+President%27s+Keepers%3A+Those+Keeping+Zuma+in+Power+and+Out+of+Prison+Jacques+Pauw&ia=products
+
 ### 2017
 
 1. [Buffett: The Biography][2017-book-1] (Roger Lowenstein)
