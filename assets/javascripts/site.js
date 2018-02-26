@@ -27,10 +27,10 @@ Chameleon.changeColor = function() {
   setTimeout( Chameleon.changeColor, Chameleon.duration * 1000 );
 };
 
-// +++ SYNTAX HIGHLIGHTER
+// +++ Syntax Highlighter
 var SyntaxHighlighter = {};
 SyntaxHighlighter.init = function() {
-  $('div.p-content > div.highlighter-rouge').each(function(i, e) {hljs.highlightBlock(e)});
+  $('div.p-content > pre code').each(function(i, e) {hljs.highlightBlock(e)});
 }
 
 // +++ NProgress
