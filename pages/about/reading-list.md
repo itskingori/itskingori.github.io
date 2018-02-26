@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading List
-permalink: /about/reading-list
+permalink: /about/reading-list/
 sitemap: true
 ---
 

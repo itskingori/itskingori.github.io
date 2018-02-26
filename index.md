@@ -17,7 +17,7 @@ I'm [{{site.data.me.fullname}}][about], a [DevOps][devops] practitioner at [Zapp
 [linkedin]: {{site.data.profiles.linkedin.url}}
 
 [about]: /about/
-[readling_list]: /about/reading-list
+[readling_list]: /about/reading-list/
 [articles_archive]: /articles/archive/
 [blog_archive]: /blog/archive/
 [minutae_archive]: /minutae/archive/
