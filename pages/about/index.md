@@ -21,8 +21,9 @@ I also love God, _**deeply**_ & I'm constantly trying to be a man of character
 ... in a world of compromise.
 
 Correspondence can be done via [j@kingori.co][email] or
-[{{site.author.twitter}}][twitter]. I live in [Cape Town, South Africa][4]
-... ping me if you're ever in the area and would fancy a face-to-face meet.
+[{{site.data.profiles.twitter.handle}}][twitter]. I live in [Cape Town, South
+Africa][4] ... ping me if you're ever in the area and would fancy a face-to-face
+meet.
 
 For additional privacy: [my PGP public key][6].
 

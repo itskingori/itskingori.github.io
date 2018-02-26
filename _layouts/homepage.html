@@ -28,17 +28,17 @@
               {% endfor %}
             </ul>
 
-            <h2>Projects</h2>
-            <ul class="no-bullet">
-              {% for personal_project in site.data.projects.personal %}
-                <li><a target="_blank" href="{{ personal_project.url }}">{{ personal_project.title }}</a></li>
-              {% endfor %}
-            </ul>
-
             <h2>Open Source</h2>
             <ul class="no-bullet">
               {% for open_souce_project in site.data.projects.open_source %}
                 <li><a target="_blank" href="{{ open_souce_project.url }}">{{ open_souce_project.title }}</a></li>
+              {% endfor %}
+            </ul>
+
+            <h2>Projects</h2>
+            <ul class="no-bullet">
+              {% for personal_project in site.data.projects.personal %}
+                <li><a target="_blank" href="{{ personal_project.url }}">{{ personal_project.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
