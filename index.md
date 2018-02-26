@@ -5,7 +5,7 @@ permalink: /
 sitemap: true
 ---
 
-I'm [{{site.data.me.fullname}}][about], a [DevOps][devops] practitioner at [ZappiStore][zappistore]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find [my blog][blog_archive], an archive of smart [articles/thoughts][articles_archive], some [code minutae][minutae_archive] and a [list of books I've read][readling_list].
+I'm [{{site.data.me.fullname}}][about], a [DevOps][devops] practitioner at [ZappiStore][zappistore]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find [my blog][blog_archive], an archive of smart [articles/thoughts][articles_archive], some [code minutae][minutae_archive] and a [list of books I've read][reading_list].
 
 [devops]: https://en.wikipedia.org/wiki/DevOps
 [zappistore]: http://zappistore.com
@@ -17,7 +17,7 @@ I'm [{{site.data.me.fullname}}][about], a [DevOps][devops] practitioner at [Zapp
 [linkedin]: {{site.data.profiles.linkedin.url}}
 
 [about]: /about/
-[readling_list]: /about/reading-list/
+[reading_list]: /about/reading-list/
 [articles_archive]: /articles/archive/
 [blog_archive]: /blog/archive/
 [minutae_archive]: /minutae/archive/
