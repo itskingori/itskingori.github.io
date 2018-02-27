@@ -312,10 +312,10 @@ sup {
     pre {
       margin-bottom: 1.25rem;
       padding: 0.75em;
+      overflow-x: scroll;
 
       code {
         white-space: pre;
-        overflow-x: scroll;
         font-weight: normal;
         font-family: monospace;
         -webkit-border-radius: 3px;
