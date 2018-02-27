@@ -1,5 +1,4 @@
 name: "King'ori Maina"
-highlighter: null
 permalink: /:categories/:year/:month/:title/
 relative_permalinks: false
 
@@ -29,3 +28,4 @@ kramdown:
   hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   toc_levels: 1..6
+  syntax_highlighter: rouge
