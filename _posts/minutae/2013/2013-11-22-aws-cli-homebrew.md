@@ -4,7 +4,7 @@ category: minutae
 layout: post
 ---
 
-```bash
+```console
 $ brew install auto-scaling
 $ brew install aws-cfn-tools
 $ brew install aws-elasticache

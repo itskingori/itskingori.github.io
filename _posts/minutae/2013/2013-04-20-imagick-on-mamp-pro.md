@@ -15,33 +15,33 @@ panel.
 Install [Homebrew][homebrew] which will be used to install libs/components as
 well as manage the dependencies for us.
 
-```bash
+```console
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
 Install [ImageMagick][imagemagick].
 
-```bash
+```console
 $ brew install imagemagick
 ```
 
 Installing a PHP53 compatible version of [Imagick][imagick] ... first let
 Homebrew search the formula for you
 
-```bash
+```console
 $ brew search php53-imagick
 ```
 
 ... OR ...
 
-```bash
+```console
 $ brew search imagick
 ```
 
 The above searches should return something like 'josegonzalez/php/php53-imagick'
 ... use this for the next step:
 
-```bash
+```console
 $ brew install josegonzalez/php/php53-imagick
 ```
 
@@ -61,13 +61,13 @@ simple editor window will popup where you can edit the ini file. A search for
 the term 'extension=', will lead you to a block with various lines of
 'extension=...'. Now simply ad the following one and save the file:
 
-```bash
+```console
 $ extension="/usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so"
 ```
 
 Copy libfreetype to MAMP lib (freetype version in path may vary)
 
-```bash
+```console
 $ cp /usr/local/Cellar/freetype/2.4.11/lib/libfreetype.6.dylib /Applications/MAMP/Library/lib/
 ```
 
@@ -75,7 +75,7 @@ Fix library version incompatibilities by open the file
 `/Applications/MAMP/Library/bin/envvars` in the editor, and comment out the
 following lines:
 
-```bash
+```console
 $ cDYLD_LIBRARY_PATH="/Applications/MAMP/Library/lib:$DYLD_LIBRARY_PATH"
 $ export DYLD_LIBRARY_PATH
 ```
@@ -106,7 +106,7 @@ exec ('which convert') // doesn't
 
 Turns out, for php to work convert should be in /usr/bin/ so this solved it:
 
-```bash
+```console
 $ ln -s /usr/local/bin/convert /usr/bin/convert
 ```
 

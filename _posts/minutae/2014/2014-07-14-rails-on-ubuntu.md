@@ -24,8 +24,8 @@ environment. RVM is popular, well-supported, and full-featured.
 
 Here's the simplest way:
 
-```bash
-$ \curl -L https://get.rvm.io | bash -s stable --ruby
+```console
+$ curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
 The "—ruby" flag will install the newest version of Ruby. RVM includes an
@@ -33,7 +33,7 @@ The "—ruby" flag will install the newest version of Ruby. RVM includes an
 operating system. If you already have RVM installed, update it to the latest
 version and install Ruby:
 
-```bash
+```console
 $ rvm get stable --autolibs=enable
 $ rvm install ruby
 $ rvm --default use ruby-2.1.2
@@ -41,13 +41,13 @@ $ rvm --default use ruby-2.1.2
 
 To list available Ruby versions, run:
 
-```bash
+```console
 $ rvm list known
 ```
 
 For example to change to Ruby version 2.0.0-p481, run:
 
-```bash
+```console
 $ rvm install ruby-2.0.0-p481
 ```
 
@@ -62,7 +62,7 @@ Installing gem documentation files takes time, so many developers like to toggle
 the default so no documentation is installed. Here's how to speed up gem
 installation by disabling the documentation step:
 
-```bash
+```console
 $ echo "gem: --no-document" >> ~/.gemrc
 ```
 
@@ -78,13 +78,13 @@ gemsets, so each project has the appropriate version of Rails.
 If you install Rails at this point, you will install it into the global gemset.
 Instead, make a gemset just for the current stable release:
 
-```bash
+```console
 $ rvm use ruby-2.0.0-p481@rails4.1 --create
 ```
 
 Install most recent stable release:
 
-```bash
+```console
 $ gem install rails
 $ rails -v
 ```

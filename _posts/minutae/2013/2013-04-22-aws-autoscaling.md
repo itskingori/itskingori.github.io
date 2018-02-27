@@ -72,7 +72,7 @@ export ELASTIC_MAPREDUCE_CREDENTIALS=$HOME/.aws/aws-credentials.json
 
 Refresh environment variables after editing `~/.bashrc` file. Just to be sure.
 
-```bash
+```console
 $ source ~/.bashrc
 ```
 
@@ -108,7 +108,7 @@ seen in the `~/.bashrc` file earlier. Please note that after installing the `ec2
 yourself) since its actually never been created. The following commands
 therefore should create the folders (with sub- folders) for you.
 
-```bash
+```console
 $ wget --quiet http://ec2-downloads.s3.amazonaws.com/ElasticLoadBalancing.zip
 $ unzip -qq ElasticLoadBalancing.zip
 $ rsync -a --no-o --no-g ElasticLoadBalancing-*/ /usr/local/aws/elb/
@@ -160,19 +160,19 @@ east-1.amazonaws.com service endpoint URL. If your instances are in a different
 region, you must specify the region where your instances reside by setting the
 AWS_AUTO_SCALING_URL environment variable.
 
-```bash
+```console
 $ export AWS_AUTO_SCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
 ```
 
 Same as the ELB ...
 
-```bash
+```console
 $ export AWS_ELB_URL=https://elasticloadbalancing.eu-west-1.amazonaws.com
 ```
 
 Same as CloudWatch
 
-```bash
+```console
 $ export AWS_CLOUDWATCH_URL=https://monitoring.eu-west-1.amazonaws.com
 ```
 
@@ -200,7 +200,7 @@ That's if you haven't already ... [spend some time here][link32].
 > configuration to your Auto Scaling group, any new instances will be launched
 > using the new configuration parameters. Existing instances are not affected.
 
-```bash
+```console
 $ as-create-launch-config AutoscaleLC \
   --image-id="ami-xxxxxxxxc" \
   --instance-type="m1.small" \
@@ -213,7 +213,7 @@ Don't forget to set the `--key YourKey` especially if you want to ssh into the
 instances ... you can get a list of your keys from here in case you don't
 remember.
 
-```bash
+```console
 $ ec2-describe-keypairs
 ```
 
@@ -223,7 +223,7 @@ $ ec2-describe-keypairs
 > settings like the minimum, maximum, and desired number of EC2 instances for an
 > Auto Scaling group to which you want to apply certain scaling actions.
 
-```bash
+```console
 $ as-create-auto-scaling-group AutoScalingGroup \
   --availability-zones="eu-west-1a" \
   --launch-configuration="AutoscaleLC" \
@@ -242,7 +242,7 @@ OK-Created AutoScalingGroup
 Scaling policie tells the Auto Scaling group what to do when the specified
 conditions change.
 
-```bash
+```console
 $ as-put-scaling-policy \
   --auto-scaling-group="AutoScalingGroup" \
   --name="scale-up" \
@@ -256,7 +256,7 @@ Basic upscale policy defined, named "scale-up," a ChangeInCapacity policy to add
 1 server and wait 3 minutes before another policy can be triggered. Below is the
 reverse operation, or a "scale-down" policy to remove 1 server from the group.
 
-```bash
+```console
 $ as-put-scaling-policy \
   --auto-scaling-group="AutoScalingGroup" \
   --name="scale-dn" \
@@ -277,7 +277,7 @@ Use the CloudWatch command mon-put-metric-alarm to create an alarm to for
 increasing the size of the Auto Scaling group when the average CPU usage of all
 the instances goes up to 80 percent.
 
-```bash
+```console
 $ mon-put-metric-alarmScaleUpAlarm \
   --alarm-description="Scale up at 80% load" \
   --comparison-operator="GreaterThanOrEqualToThreshold" \
@@ -296,7 +296,7 @@ Use the CloudWatch command mon-put-metric-alarm to create an alarm for
 decreasing the size of the Auto Scaling group when the average CPU usage of all
 the instances goes down 40 percent.
 
-```bash
+```console
 $ mon-put-metric-alarmScaleDownAlarm \
   --alarm-description="Scale down at 40% load" \
   --comparison-operator="LessThanOrEqualToThreshold" \
@@ -316,7 +316,7 @@ console if you want ie. send an email when X happens. Create a topic via the
 console, this gives you an ARN something like this
 `arn:aws:sns:************************`
 
-```bash
+```console
 $ as-put-notification-configuration \
   --topic-arn="arn:aws:sns:************************" \
   --auto-scaling-group="MYTEST-SG" \

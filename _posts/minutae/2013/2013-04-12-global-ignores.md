@@ -38,7 +38,7 @@ Git has a global configuration that applies rules to all of your projects.
 
 On linux for example:
 
-```bash
+```console
 $ git config --global core.excludesfile ~/.global_ignore
 ```
 

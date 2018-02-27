@@ -10,7 +10,7 @@ An example using conditional filter expressions that have multiple conditional
 paths. Here is a simple conditional that can quickly become a drain on
 performance because of the order of parsing;
 
-```bash
+```console
 $ apt-get install phpmyadmin
 ```
 

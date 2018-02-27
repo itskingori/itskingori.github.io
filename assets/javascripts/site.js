@@ -27,12 +27,6 @@ Chameleon.changeColor = function() {
   setTimeout( Chameleon.changeColor, Chameleon.duration * 1000 );
 };
 
-// +++ Syntax Highlighter
-var SyntaxHighlighter = {};
-SyntaxHighlighter.init = function() {
-  $('div.p-content > pre code').each(function(i, e) {hljs.highlightBlock(e)});
-}
-
 // +++ NProgress
 $(document).on('page:fetch',   function() {
   NProgress.start();
@@ -40,10 +34,8 @@ $(document).on('page:fetch',   function() {
 $(document).on('page:change',  function() {
   NProgress.done();
   Chameleon.init();
-  SyntaxHighlighter.init();
 });
 $(document).on('page:restore', function() {
   NProgress.remove();
   Chameleon.init();
-  SyntaxHighlighter.init();
 });
