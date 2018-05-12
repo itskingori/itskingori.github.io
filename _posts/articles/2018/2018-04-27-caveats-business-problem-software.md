@@ -1,5 +1,5 @@
 ---
-title: "Misconception of the Separation between Software Development and Deep Analysis of the Business Problem"
+title: "Caveats of Solving Business Problems with Software"
 category: articles
 layout: post
 link: https://www.linkedin.com/pulse/hard-thing-software-development-jesse-watson/
