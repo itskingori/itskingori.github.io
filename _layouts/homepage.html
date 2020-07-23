@@ -21,6 +21,17 @@
           <div id="homepage-entrance" class="text-center">{{ content }}</div>
           <br>
           <div id="homepage-lists" class="text-center">
+            <h2>Talks</h2>
+            <ul class="no-bullet">
+              {% for talk in site.data.talks %}
+                <li>
+                  <small>({{ talk.date }})</small>
+                  <br/>
+                  <a target="_blank" href="{{ talk.deck_url }}">{{ talk.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
             <h2>Communities</h2>
             <ul class="no-bullet">
               {% for community in site.data.communities %}
