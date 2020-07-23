@@ -21,11 +21,6 @@ Other stuff includes ...
 
 ### Open Source 💻
 
-**Notable libraries/binaries:**
-
-* [ghoum](https://github.com/itskingori/ghoum) - GitHub Organization & User
-  Manager (WIP).
-
 **Notable PRs:**
 
 * [kubernetes-incubator/metrics-server#32](https://github.com/kubernetes-incubator/metrics-server/pull/32)  

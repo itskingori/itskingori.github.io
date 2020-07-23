@@ -21,17 +21,28 @@
           <div id="homepage-entrance" class="text-center">{{ content }}</div>
           <br>
           <div id="homepage-lists" class="text-center">
-            <h2>Communities</h2>
+            <h2>Talks</h2>
             <ul class="no-bullet">
-              {% for community in site.data.communities %}
-                <li><a target="_blank" href="{{ community.url }}">{{ community.name }}</a></li>
+              {% for talk in site.data.talks %}
+                <li>
+                  <small>({{ talk.date }})</small>
+                  <br/>
+                  <a target="_blank" href="{{ talk.deck_url }}">{{ talk.title }}</a>
+                </li>
               {% endfor %}
             </ul>
 
             <h2>Open Source</h2>
             <ul class="no-bullet">
-              {% for open_souce_project in site.data.projects.open_source %}
-                <li><a target="_blank" href="{{ open_souce_project.url }}">{{ open_souce_project.title }}</a></li>
+              {% for open_source_project in site.data.projects.open_source %}
+                <li><a target="_blank" href="{{ open_source_project.url }}">{{ open_source_project.title }}</a></li>
+              {% endfor %}
+            </ul>
+
+            <h2>Communities</h2>
+            <ul class="no-bullet">
+              {% for community in site.data.communities %}
+                <li><a target="_blank" href="{{ community.url }}">{{ community.name }}</a></li>
               {% endfor %}
             </ul>
 
