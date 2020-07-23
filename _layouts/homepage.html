@@ -32,17 +32,17 @@
               {% endfor %}
             </ul>
 
-            <h2>Communities</h2>
-            <ul class="no-bullet">
-              {% for community in site.data.communities %}
-                <li><a target="_blank" href="{{ community.url }}">{{ community.name }}</a></li>
-              {% endfor %}
-            </ul>
-
             <h2>Open Source</h2>
             <ul class="no-bullet">
               {% for open_source_project in site.data.projects.open_source %}
                 <li><a target="_blank" href="{{ open_source_project.url }}">{{ open_source_project.title }}</a></li>
+              {% endfor %}
+            </ul>
+
+            <h2>Communities</h2>
+            <ul class="no-bullet">
+              {% for community in site.data.communities %}
+                <li><a target="_blank" href="{{ community.url }}">{{ community.name }}</a></li>
               {% endfor %}
             </ul>
 
