@@ -7,7 +7,7 @@
 3. `make test` - runs tests i.e. check if we can successfully build via jekyll build.
 
 [1]: http://kingori.co
-[2]: http://staceyapp.com/
+[2]: https://github.com/kolber/stacey
 [3]: http://feeds.feedburner.com/kingorico
-[4]: https://github.com/itskingori/kingori.co/tree/on-stacey
+[4]: https://github.com/itskingori/itskingori.github.io/tree/on-stacey
 [5]: http://jekyllrb.com/
