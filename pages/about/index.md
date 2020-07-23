@@ -9,8 +9,7 @@ sitemap: true
 
 I'm **{{site.data.me.fullname}}** (Job King'ori Maina), a Kenyan, and I often go
 under the alias _"itskingori"_ online. I use these aliases to chat and share
-useful links [on Twitter][twitter] and ... to put up or contribute to code [on
-GitHub][github].
+useful links [on Twitter][twitter] and ... to share code [on GitHub][github].
 
 This is an attempt at creating a portfolio of sorts and occassionally
 ['Publishing What I Learn'][1] under articles/thoughts -
