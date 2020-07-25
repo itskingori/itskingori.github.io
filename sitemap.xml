@@ -7,7 +7,7 @@ sitemap: false
   {% for page in site.pages %}
     {% if !page.sitemap %}
     <url>
-      <loc>http://nairuby.org{{ page.url }}</loc>
+      <loc>https://kingori.co{{ page.url }}</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -16,7 +16,7 @@ sitemap: false
 
   {% for post in site.posts %}
     <url>
-      <loc>http://kingori.co{{ post.url }}</loc>
+      <loc>https://kingori.co{{ post.url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
