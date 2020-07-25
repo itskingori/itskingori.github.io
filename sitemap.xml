@@ -7,7 +7,7 @@ sitemap: false
   {% for page in site.pages %}
     {% if !page.sitemap %}
     <url>
-      <loc>http://nairuby.org{{ page.url }}</loc>
+      <loc>http://kingori.co{{ page.url }}</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
