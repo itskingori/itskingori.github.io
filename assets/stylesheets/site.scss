@@ -1,6 +1,7 @@
 ---
 ---
 
+$font_family:       "Source Sans Pro", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 $font_color:        hsl(  0,  0%, 30% );
 $highlight_default: hsl( 10, 90%, 60% );
 $lightergrey:       hsl(  0,  0%, 80% );
@@ -19,7 +20,7 @@ $color9: hsl( 350, 90%, 60% );
 html, body {
   color: $font_color;
   font-size: 16px;
-  font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+  font-family: $font_family;
 }
 
 body.color0 a { color: $color0; } // 1
@@ -35,6 +36,7 @@ body.color9 a { color: $color9; } // 10
 
 a, a:visited {
   color: $highlight_default;
+  border-radius: color 5.0s linear;
   -webkit-border-radius: color 5.0s linear;
   -moz-transition: color 5.0s linear;
   -ms-transition: color 5.0s linear;
@@ -48,7 +50,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: $font_color;
-  font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+  font-family: $font_family;
   font-weight: bold;
 }
 
@@ -138,6 +140,7 @@ sup {
 
 #homepage-entrance p {
   line-height: 1.2em;
+  font-family: "Noto Sans", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;;
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -160,7 +163,7 @@ sup {
 #archives {
   h2 {
     font-size: 1em;
-    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-family: $font_family;
     font-weight: bold;
   }
 
