@@ -1,6 +1,42 @@
 ---
 ---
 
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/noto-sans/NotoSans-Bold.eot');
+  src: url('../fonts/noto-sans/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/noto-sans/NotoSans-Bold.woff2') format('woff2'),
+      url('../fonts/noto-sans/NotoSans-Bold.woff') format('woff'),
+      url('../fonts/noto-sans/NotoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/source-sans-pro/SourceSansPro-Regular.eot');
+  src: url('../fonts/source-sans-pro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/source-sans-pro/SourceSansPro-Regular.woff2') format('woff2'),
+      url('../fonts/source-sans-pro/SourceSansPro-Regular.woff') format('woff'),
+      url('../fonts/source-sans-pro/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/source-sans-pro/SourceSansPro-Bold.eot');
+  src: url('../fonts/source-sans-pro/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/source-sans-pro/SourceSansPro-Bold.woff2') format('woff2'),
+      url('../fonts/source-sans-pro/SourceSansPro-Bold.woff') format('woff'),
+      url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 $font_family:       "Source Sans Pro", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 $font_color:        hsl(  0,  0%, 30% );
 $highlight_default: hsl( 10, 90%, 60% );
