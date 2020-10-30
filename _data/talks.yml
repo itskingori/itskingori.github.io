@@ -1,3 +1,10 @@
+- title: "Pitfalls of Kubernetes Adoption"
+  program: https://www.usenix.org/srecon/conversations/20emea
+  session_url: https://www.usenix.org/srecon/conversations/20emea
+  deck_url: https://speakerdeck.com/itskingori/pitfalls-of-kubernetes-adoption
+  video_url: TBU
+  type: Full Talk
+  date: 2020/010/28
 - title: "Around & After Kubernetes: The Principles and Ideas that Guide Us"
   program: https://devopsdays.org/events/2019-cape-town/program/
   session_url: https://devopsdays.org/events/2019-cape-town/program/kingori-maina
