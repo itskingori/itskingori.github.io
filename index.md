@@ -7,8 +7,9 @@ sitemap: true
 
 HI,
 
-I'm [{{site.data.me.fullname}}][about]. I work at [Zappi][zappi], applying my [software engineering][software_engineering] skills to [make infrastructure boring][boring_infrastructure]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find [my blog][blog_archive], an archive of smart [articles/thoughts][articles_archive], some [code minutae][minutae_archive] and a [list of books I'm reading][reading_list].
+I'm [{{site.data.me.fullname}}][about]. I work at [Zappi][zappi], applying my [software engineering][software_engineering] and [engineering management][engineering_management] skills to [make infrastructure boring][boring_infrastructure]. Find me on [Twitter][twitter], [Instagram][instagram], [LinkedIn][linkedin], [GitHub][github] or plain old [email][email]. Here you can find [my blog][blog_archive], an archive of smart [articles/thoughts][articles_archive], some [code minutae][minutae_archive] and a [list of books I'm reading][reading_list].
 
+[engineering_management]: https://en.wikipedia.org/wiki/Engineering_management
 [software_engineering]: https://en.wikipedia.org/wiki/Software_engineering
 [zappi]: https://zappi.io
 [email]: mailto:j@kingori.co?Subject=Hey%20There
