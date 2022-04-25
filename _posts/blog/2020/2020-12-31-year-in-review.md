@@ -1,8 +1,13 @@
 ---
-title: "2020: Year In Review (So Far) 🚢"
+title: "2020: Year In Review 🦠"
 category: blog
 layout: post
 ---
+
+The [COVID-19](https://en.wikipedia.org/wiki/COVID-19) pandemic 😷 made this
+such a tough year! All in all, it has not been the most productive year
+work-wise. I'm just glad I made it to the end with my immediate and extended
+family alive and healthy.
 
 ### Open Source 💻
 
@@ -19,6 +24,10 @@ layout: post
 
 * [arangamani/jenkins_api_client#294](https://github.com/arangamani/jenkins_api_client/issues/294)  
   Remove escape characters from Jenkins response body.
+* [intellection/docker-redirector#13](https://github.com/Intellection/docker-redirector/issues/13)  
+  Permission denied error while modifying /etc/nginx/conf.d/default.conf.
+* [kubernetes-sigs/aws-load-balancer-controller#1567](https://github.com/kubernetes-sigs/aws-load-balancer-controller/issues/1567)  
+  Certificate ARN merge behaviour for groups broken by certificate discovery logic.
 * [takama/daemon#89](https://github.com/takama/daemon/issues/89)  
   Add support for LaunchAgents on macOSX.
 
