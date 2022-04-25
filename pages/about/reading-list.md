@@ -12,6 +12,38 @@ sitemap: true
 >
 > ~ [Farnam Street][1]
 
+### 2022
+
+1. [An Elegant Puzzle: Systems of Engineering Management][2022-book-1] (Will Larson)
+2. [Become an Effective Software Engineering Manager: How to Be the Leader Your Development Team Needs][2022-book-2] (James Stanier)
+3. [Building Microservices][2022-book-3] (Sam Newman)
+4. [Empowered: Ordinary People, Extraordinary Products][2022-book-4] (Marty Cagan)
+5. [Go Put Your Strengths to Work: 6 Powerful Steps to Achieve Outstanding Performance][2022-book-5] (Marcus Buckingham)
+6. [Inspired: How to Create Tech Products Customers Love][2022-book-6] (Marty Cagan)
+7. [Leading Without Authority: How the New Power of Co-Elevation Can Break Down Silos, Transform Teams, and Reinvent Collaboration][2022-book-7] (Keith Ferrazzi)
+8. [Mythical Man-Month, The: Essays on Software Engineering][2022-book-8] (Fred Brooks)
+9. [Scrum: The Art of Doing Twice the Work in Half the Time][2022-book-9] (Jeff Sutherland)
+
+[2022-book-1]: https://www.google.com/search?q=An+Elegant+Puzzle:+Systems+of+Engineering+Management+Will+Larson
+[2022-book-2]: https://www.google.com/search?q=Become+an+Effective+Software+Engineering+Manager:+How+to+Be+the+Leader+Your+Development+Team+Needs+Stanier+James
+[2022-book-3]: https://www.google.com/search?q=Building+Microservices+Sam+Newman
+[2022-book-4]: https://www.google.com/search?q=Empowered:+Ordinary+People,+Extraordinary+Products+Marty+Cagan
+[2022-book-5]: https://www.google.com/search?q=Go+Put+Your+Strengths+to+Work:+6+Powerful+Steps+to+Achieve+Outstanding+Performance+Marcus+Buckingham
+[2022-book-6]: https://www.google.com/search?q=Inspired:+How+to+Create+Tech+Products+Customers+Love+Marty+Cagan
+[2022-book-7]: https://www.google.com/search?q=Leading+Without+Authority:+How+the+New+Power+of+Co-Elevation+Can+Break+Down+Silos,+Transform+Teams,+and+Reinvent+Collaboration+Keith+Ferrazzi
+[2022-book-8]: https://www.google.com/search?q=Mythical+Man-Month,+The:+Essays+on+Software+Engineering+Fred+Brooks.
+[2022-book-9]: https://www.google.com/search?q=Scrum:+The+Art+of+Doing+Twice+the+Work+in+Half+the+Time+Jeff+Sutherland
+
+### 2021
+
+1. [Accelerate: The Science of Lean Software and DevOps][2021-book-1] (Nicole Forsgren, Jez Humble & Gene Kim)
+2. [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change][2021-book-2] (Camille Fournier)
+3. [The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win][2021-book-3] (Gene Kim, Kevin Behr & George Spafford)
+
+[2021-book-1]: https://www.google.com/search?q=Accelerate%3A+The+Science+of+Lean+Software+and+DevOps+Nicole+Forsgren%2C+Jez+Humble+%26+Gene+Kim
+[2021-book-2]: https://www.google.com/search?q=The+Manager's+Path:+A+Guide+for+Tech+Leaders+Navigating+Growth+and+Change+Camille+Fournier
+[2021-book-3]: https://www.google.com/search?q=The+Phoenix+Project:+A+Novel+about+IT,+DevOps,+and+Helping+Your+Business+Win+Gene+Kim,+Kevin+Behr+&+George+Spafford
+
 ### 2018
 
 1. [Born a Crime: Stories from a South African Childhood][2018-book-1] (Trevor Noah)
