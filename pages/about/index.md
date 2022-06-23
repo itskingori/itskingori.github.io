@@ -35,6 +35,6 @@ For additional privacy: [my PGP public key][6].
 [1]: /articles/2013/06/publish-what-you-learn/
 [2]: /articles/2013/09/riding-lions/
 [3]: https://www.google.co.ke/maps/preview#!q=nairobi%2C+kenya
-[4]: https://www.google.co.za/search?q=cape+town%2C+south+africa&oq=cape+town%2C+south+africa
-[5]: https://www.google.co.za/search?q=cape+town%2C+south+africa&oq=nairobi%2C+kenya
+[4]: https://www.google.co.za/search?q=cape+town%2C+south+africa
+[5]: https://www.google.co.za/search?q=nairobi%2C+kenya
 [6]: http://static.kingori.co/files/pgp_key/6E1D9B22_public.asc
