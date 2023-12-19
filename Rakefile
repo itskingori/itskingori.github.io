@@ -1,6 +1,6 @@
 require 'html-proofer'
 
-task :test do
+task :html_proofer do
   puts "\n## Generating Site with Jekyll"
   system "bundle exec jekyll build"
 
