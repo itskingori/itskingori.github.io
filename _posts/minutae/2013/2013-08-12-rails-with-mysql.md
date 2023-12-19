@@ -24,30 +24,30 @@ database config file, `config/database.yml`.
 development:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_development**
+  database: <YOURDBNAME_development>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   port: 3306
 
 test:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_test**
+  database: <YOURDBNAME_test>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   port: 3306
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_production**
+  database: <YOURDBNAME_production>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   port: 3306
 ```
@@ -58,30 +58,30 @@ If you are using MAMP, you can use the sockets instead;
 development:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_development**
+  database: <YOURDBNAME_development>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 test:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_test**
+  database: <YOURDBNAME_test>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: **YOURDBNAME_production**
+  database: <YOURDBNAME_production>
   pool: 5
-  username: **YOUR_USERNAME**
-  password: **YOUR_PASSWORD**
+  username: <YOUR_USERNAME>
+  password: <YOUR_PASSWORD>
   host: localhost
   socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
 ```
